@@ -1,0 +1,33 @@
+name: "hyperledger"
+description: "Hyperledger Labs SmartBFT implementation"
+system_type: "distributed"
+language: "go"
+
+repository:
+  url: "https://github.com/hyperledger-labs/SmartBFT.git"
+  branch: "main"
+
+source_files:
+  - path: "internal/bft/controller.go"
+    description: Main bft algorithm execution logic
+  - path: "internal/bft/view.go"
+    description: View structs and proposal processing logic
+  - path: "internal/bft/state.go"
+    description: Logic for persisting the state of progress of replicas
+  - path: "internal/bft/viewchanger.go"
+    description: General overview of processing adn validating view changes
+  - path: "internal/bft/util.go"
+    description: Utility methods for processing the algorithm
+
+default_source_file: "internal/bft/controller.go"
+specModule: "SmartBFT"
+
+metadata:
+  original_project: "hyperledger-labs/SmartBFT"
+  protocol_scope: "consensus_core_only"
+  version: "v1.0.1"
+  notes: "Excludes logging, scripts, metrics, tests, and examples."
+
+tv:
+  repo_path: "artifacts/smartbft"
+  target_actions: ["ProposeBlock", "PrepareBlock", "CommitBlock", "StartViewChange", "SendViewData", "SendNewView", "Decide", "SyncState"]

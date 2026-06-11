@@ -1,0 +1,3 @@
+./generate.go
+./logrecord.pb.go
+./messages.pb.go

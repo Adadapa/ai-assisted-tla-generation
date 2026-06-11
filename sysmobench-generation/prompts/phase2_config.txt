@@ -1,0 +1,41 @@
+You are a TLA+ expert. Generate a complete TLC configuration file (.cfg) for the SmartBFT specification that can be directly saved and used for model checking.
+
+## Input Specification:
+
+$tla_spec
+
+## Generated Invariants:
+
+$invariants
+
+## Requirements:
+
+1. **Analyze the specification** to identify the main specification name and all declared constants
+2. **Generate complete .cfg file content** with SPECIFICATION, CONSTANTS, and INVARIANT sections
+3. **Use small values for constants** to ensure efficient model checking — use N=4 nodes (3f+1 with f=1), meaning a quorum requires 3 out of 4 replicas; use a small number of sequence numbers (2-3) and a small value set (1-2 distinct proposal values)
+4. **Include ALL provided invariants** in the INVARIANT section
+5. **Output ONLY the raw .cfg file content** - no explanations, no markdown, no code blocks
+
+## SmartBFT-specific constant guidance:
+- `Nodes` should be a set of 4 node identifiers, e.g. `{n1, n2, n3, n4}`
+- `F` (Byzantine fault threshold) must satisfy N = 3F+1, so bind `F <- 1`
+- `MaxSeq` (or equivalent sequence number bound) should be set to 2 or 3 to keep the state space finite
+- `Values` (the set of proposable values) should be a small set, e.g. `{v1, v2}`
+- `NULL` or any sentinel constant declared in the spec must be bound to a model value, e.g. `NULL <- null`
+- Do not bind constants that are defined (via `==`) in the spec itself — only bind declared `CONSTANT` id
+
+## Example Output Format:
+
+SPECIFICATION SpecName
+
+CONSTANTS
+    Server = {1, 2, 3}
+    Nil = "Nil"
+    ...
+INVARIANT
+    TypeOK
+    ElectionSafety
+    LogMatching
+    ...
+
+**CRITICAL: Your response must contain exactly ONE complete .cfg file. Do not repeat any sections. Start your response immediately with "SPECIFICATION" and include nothing else. Each invariant name must be on its own line. Stop immediately after the last invariant name with no additional text.**

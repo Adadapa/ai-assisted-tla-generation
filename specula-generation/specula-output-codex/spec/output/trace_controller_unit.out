@@ -1,0 +1,1048 @@
+TLC2 Version 2026.05.26.235334 (rev: 4ba7d88)
+Warning: Please run the Java VM, which executes TLC with a throughput optimized garbage collector, by passing the "-XX:+UseParallelGC" property.
+(Use the -nowarning option to disable this warning.)
+Running breadth-first search Model-Checking with fp 0 and seed -3045807136691219822 with 1 worker on 8 cores with 2048MB heap and 64MB offheap memory [pid: 47466] (Mac OS X 15.6 aarch64, Amazon.com Inc. 21.0.9 64bit, MSBDiskFPSet, DiskStateQueue).
+Parsing file /Users/adaturgut/software-analysis/Specula/.specula-output/spec/Trace.tla
+Parsing file /Users/adaturgut/software-analysis/Specula/.specula-output/spec/base.tla
+Parsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-16874216814010452501/Json.tla (jar:file:/Users/adaturgut/software-analysis/Specula/lib/tla2tools.jar!/tla2sany/StandardModules/Json.tla)
+Parsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-16874216814010452501/IOUtils.tla (jar:file:/Users/adaturgut/software-analysis/Specula/lib/CommunityModules-deps.jar!/IOUtils.tla)
+Parsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-16874216814010452501/_TLCTrace.tla (jar:file:/Users/adaturgut/software-analysis/Specula/lib/tla2tools.jar!/tla2sany/StandardModules/_TLCTrace.tla)
+Parsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-16874216814010452501/Naturals.tla (jar:file:/Users/adaturgut/software-analysis/Specula/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-16874216814010452501/Integers.tla (jar:file:/Users/adaturgut/software-analysis/Specula/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)
+Parsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-16874216814010452501/Sequences.tla (jar:file:/Users/adaturgut/software-analysis/Specula/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Parsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-16874216814010452501/FiniteSets.tla (jar:file:/Users/adaturgut/software-analysis/Specula/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Parsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-16874216814010452501/TLC.tla (jar:file:/Users/adaturgut/software-analysis/Specula/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)
+Parsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-16874216814010452501/TLCExt.tla (jar:file:/Users/adaturgut/software-analysis/Specula/lib/tla2tools.jar!/tla2sany/StandardModules/TLCExt.tla)
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module base
+Semantic processing of module Json
+Semantic processing of module IOUtils
+Semantic processing of module TLCExt
+Semantic processing of module _TLCTrace
+Semantic processing of module Trace
+Linting of module base
+Linting of module Json
+Linting of module IOUtils
+Linting of module TLCExt
+Linting of module _TLCTrace
+Linting of module Trace
+Starting... (2026-06-11 15:56:41)
+Implied-temporal checking--satisfiability problem has 1 branches.
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-06-11 15:56:43.
+Progress(8) at 2026-06-11 15:56:44: 8 states generated, 8 distinct states found, 0 states left on queue.
+Checking temporal properties for the complete state space with 8 total distinct states at (2026-06-11 15:56:44)
+Error: Temporal property TraceMatched was violated.
+
+Error: The following behavior constitutes a counter-example:
+
+State 1: <Initial predicate>
+/\ decisionsInView = (s1 :> 0 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ leader = (s1 :> s1 @@ s2 :> s1 @@ s3 :> s1 @@ s4 :> s1)
+/\ l = 1
+/\ wal = (s1 :> <<>> @@ s2 :> <<>> @@ s3 :> <<>> @@ s4 :> <<>>)
+/\ proposalSeq = (s1 :> 1 @@ s2 :> 1 @@ s3 :> 1 @@ s4 :> 1)
+/\ inFlightPrepared = (s1 :> FALSE @@ s2 :> FALSE @@ s3 :> FALSE @@ s4 :> FALSE)
+/\ selectedInFlight = (s1 :> Nil @@ s2 :> Nil @@ s3 :> Nil @@ s4 :> Nil)
+/\ viewData = (s1 :> {} @@ s2 :> {} @@ s3 :> {} @@ s4 :> {})
+/\ checkpointVal = ( s1 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s2 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s3 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s4 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) )
+/\ viewNum = (s1 :> 0 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ viewDecisions = (s1 :> 0 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ delivered = (s1 :> {} @@ s2 :> {} @@ s3 :> {} @@ s4 :> {})
+/\ phase = ( s1 :> PhaseCommitted @@
+  s2 :> PhaseCommitted @@
+  s3 :> PhaseCommitted @@
+  s4 :> PhaseCommitted )
+/\ restoredPhase = ( s1 :> PhaseCommitted @@
+  s2 :> PhaseCommitted @@
+  s3 :> PhaseCommitted @@
+  s4 :> PhaseCommitted )
+/\ crashed = (s1 :> FALSE @@ s2 :> FALSE @@ s3 :> FALSE @@ s4 :> FALSE)
+/\ syncLockHolder = {}
+/\ blacklist = (s1 :> {} @@ s2 :> {} @@ s3 :> {} @@ s4 :> {})
+/\ checkpointSeq = (s1 :> 0 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ stopped = (s1 :> FALSE @@ s2 :> FALSE @@ s3 :> FALSE @@ s4 :> FALSE)
+/\ syncResult = (s1 :> Nil @@ s2 :> Nil @@ s3 :> Nil @@ s4 :> Nil)
+/\ deliveredVal = ( s1 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s2 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s3 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s4 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) )
+/\ inFlight = (s1 :> Nil @@ s2 :> Nil @@ s3 :> Nil @@ s4 :> Nil)
+/\ messages = {}
+
+State 2: <TraceControllerStartView line 99, col 5 to line 104, col 14 of module Trace>
+/\ decisionsInView = (s1 :> 0 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ leader = (s1 :> s1 @@ s2 :> s1 @@ s3 :> s1 @@ s4 :> s1)
+/\ l = 2
+/\ wal = (s1 :> <<>> @@ s2 :> <<>> @@ s3 :> <<>> @@ s4 :> <<>>)
+/\ proposalSeq = (s1 :> 1 @@ s2 :> 1 @@ s3 :> 1 @@ s4 :> 1)
+/\ inFlightPrepared = (s1 :> FALSE @@ s2 :> FALSE @@ s3 :> FALSE @@ s4 :> FALSE)
+/\ selectedInFlight = (s1 :> Nil @@ s2 :> Nil @@ s3 :> Nil @@ s4 :> Nil)
+/\ viewData = (s1 :> {} @@ s2 :> {} @@ s3 :> {} @@ s4 :> {})
+/\ checkpointVal = ( s1 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s2 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s3 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s4 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) )
+/\ viewNum = (s1 :> 1 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ viewDecisions = (s1 :> 0 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ delivered = (s1 :> {} @@ s2 :> {} @@ s3 :> {} @@ s4 :> {})
+/\ phase = ( s1 :> PhaseCommitted @@
+  s2 :> PhaseCommitted @@
+  s3 :> PhaseCommitted @@
+  s4 :> PhaseCommitted )
+/\ restoredPhase = ( s1 :> PhaseCommitted @@
+  s2 :> PhaseCommitted @@
+  s3 :> PhaseCommitted @@
+  s4 :> PhaseCommitted )
+/\ crashed = (s1 :> FALSE @@ s2 :> FALSE @@ s3 :> FALSE @@ s4 :> FALSE)
+/\ syncLockHolder = {}
+/\ blacklist = (s1 :> {} @@ s2 :> {} @@ s3 :> {} @@ s4 :> {})
+/\ checkpointSeq = (s1 :> 0 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ stopped = (s1 :> FALSE @@ s2 :> FALSE @@ s3 :> FALSE @@ s4 :> FALSE)
+/\ syncResult = (s1 :> Nil @@ s2 :> Nil @@ s3 :> Nil @@ s4 :> Nil)
+/\ deliveredVal = ( s1 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s2 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s3 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s4 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) )
+/\ inFlight = (s1 :> Nil @@ s2 :> Nil @@ s3 :> Nil @@ s4 :> Nil)
+/\ messages = {}
+
+State 3: <TraceControllerStartView line 99, col 5 to line 104, col 14 of module Trace>
+/\ decisionsInView = (s1 :> 0 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ leader = (s1 :> s1 @@ s2 :> s1 @@ s3 :> s1 @@ s4 :> s1)
+/\ l = 3
+/\ wal = (s1 :> <<>> @@ s2 :> <<>> @@ s3 :> <<>> @@ s4 :> <<>>)
+/\ proposalSeq = (s1 :> 1 @@ s2 :> 1 @@ s3 :> 1 @@ s4 :> 1)
+/\ inFlightPrepared = (s1 :> FALSE @@ s2 :> FALSE @@ s3 :> FALSE @@ s4 :> FALSE)
+/\ selectedInFlight = (s1 :> Nil @@ s2 :> Nil @@ s3 :> Nil @@ s4 :> Nil)
+/\ viewData = (s1 :> {} @@ s2 :> {} @@ s3 :> {} @@ s4 :> {})
+/\ checkpointVal = ( s1 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s2 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s3 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s4 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) )
+/\ viewNum = (s1 :> 2 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ viewDecisions = (s1 :> 0 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ delivered = (s1 :> {} @@ s2 :> {} @@ s3 :> {} @@ s4 :> {})
+/\ phase = ( s1 :> PhaseCommitted @@
+  s2 :> PhaseCommitted @@
+  s3 :> PhaseCommitted @@
+  s4 :> PhaseCommitted )
+/\ restoredPhase = ( s1 :> PhaseCommitted @@
+  s2 :> PhaseCommitted @@
+  s3 :> PhaseCommitted @@
+  s4 :> PhaseCommitted )
+/\ crashed = (s1 :> FALSE @@ s2 :> FALSE @@ s3 :> FALSE @@ s4 :> FALSE)
+/\ syncLockHolder = {}
+/\ blacklist = (s1 :> {} @@ s2 :> {} @@ s3 :> {} @@ s4 :> {})
+/\ checkpointSeq = (s1 :> 0 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ stopped = (s1 :> FALSE @@ s2 :> FALSE @@ s3 :> FALSE @@ s4 :> FALSE)
+/\ syncResult = (s1 :> Nil @@ s2 :> Nil @@ s3 :> Nil @@ s4 :> Nil)
+/\ deliveredVal = ( s1 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s2 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s3 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s4 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) )
+/\ inFlight = (s1 :> Nil @@ s2 :> Nil @@ s3 :> Nil @@ s4 :> Nil)
+/\ messages = {}
+
+State 4: <TraceControllerChangeView line 146, col 5 to line 154, col 14 of module Trace>
+/\ decisionsInView = (s1 :> 0 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ leader = (s1 :> s1 @@ s2 :> s1 @@ s3 :> s1 @@ s4 :> s1)
+/\ l = 4
+/\ wal = (s1 :> <<>> @@ s2 :> <<>> @@ s3 :> <<>> @@ s4 :> <<>>)
+/\ proposalSeq = (s1 :> 1 @@ s2 :> 1 @@ s3 :> 1 @@ s4 :> 1)
+/\ inFlightPrepared = (s1 :> FALSE @@ s2 :> FALSE @@ s3 :> FALSE @@ s4 :> FALSE)
+/\ selectedInFlight = (s1 :> Nil @@ s2 :> Nil @@ s3 :> Nil @@ s4 :> Nil)
+/\ viewData = (s1 :> {} @@ s2 :> {} @@ s3 :> {} @@ s4 :> {})
+/\ checkpointVal = ( s1 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s2 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s3 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s4 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) )
+/\ viewNum = (s1 :> 2 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ viewDecisions = (s1 :> 0 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ delivered = (s1 :> {} @@ s2 :> {} @@ s3 :> {} @@ s4 :> {})
+/\ phase = ( s1 :> PhaseCommitted @@
+  s2 :> PhaseCommitted @@
+  s3 :> PhaseCommitted @@
+  s4 :> PhaseCommitted )
+/\ restoredPhase = ( s1 :> PhaseCommitted @@
+  s2 :> PhaseCommitted @@
+  s3 :> PhaseCommitted @@
+  s4 :> PhaseCommitted )
+/\ crashed = (s1 :> FALSE @@ s2 :> FALSE @@ s3 :> FALSE @@ s4 :> FALSE)
+/\ syncLockHolder = {}
+/\ blacklist = (s1 :> {} @@ s2 :> {} @@ s3 :> {} @@ s4 :> {})
+/\ checkpointSeq = (s1 :> 0 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ stopped = (s1 :> FALSE @@ s2 :> FALSE @@ s3 :> FALSE @@ s4 :> FALSE)
+/\ syncResult = (s1 :> Nil @@ s2 :> Nil @@ s3 :> Nil @@ s4 :> Nil)
+/\ deliveredVal = ( s1 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s2 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s3 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s4 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) )
+/\ inFlight = (s1 :> Nil @@ s2 :> Nil @@ s3 :> Nil @@ s4 :> Nil)
+/\ messages = {}
+
+State 5: <TraceControllerStartView line 99, col 5 to line 104, col 14 of module Trace>
+/\ decisionsInView = (s1 :> 0 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ leader = (s1 :> s1 @@ s2 :> s1 @@ s3 :> s1 @@ s4 :> s1)
+/\ l = 5
+/\ wal = (s1 :> <<>> @@ s2 :> <<>> @@ s3 :> <<>> @@ s4 :> <<>>)
+/\ proposalSeq = (s1 :> 1 @@ s2 :> 1 @@ s3 :> 1 @@ s4 :> 1)
+/\ inFlightPrepared = (s1 :> FALSE @@ s2 :> FALSE @@ s3 :> FALSE @@ s4 :> FALSE)
+/\ selectedInFlight = (s1 :> Nil @@ s2 :> Nil @@ s3 :> Nil @@ s4 :> Nil)
+/\ viewData = (s1 :> {} @@ s2 :> {} @@ s3 :> {} @@ s4 :> {})
+/\ checkpointVal = ( s1 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s2 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s3 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s4 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) )
+/\ viewNum = (s1 :> 3 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ viewDecisions = (s1 :> 0 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ delivered = (s1 :> {} @@ s2 :> {} @@ s3 :> {} @@ s4 :> {})
+/\ phase = ( s1 :> PhaseCommitted @@
+  s2 :> PhaseCommitted @@
+  s3 :> PhaseCommitted @@
+  s4 :> PhaseCommitted )
+/\ restoredPhase = ( s1 :> PhaseCommitted @@
+  s2 :> PhaseCommitted @@
+  s3 :> PhaseCommitted @@
+  s4 :> PhaseCommitted )
+/\ crashed = (s1 :> FALSE @@ s2 :> FALSE @@ s3 :> FALSE @@ s4 :> FALSE)
+/\ syncLockHolder = {}
+/\ blacklist = (s1 :> {} @@ s2 :> {} @@ s3 :> {} @@ s4 :> {})
+/\ checkpointSeq = (s1 :> 0 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ stopped = (s1 :> FALSE @@ s2 :> FALSE @@ s3 :> FALSE @@ s4 :> FALSE)
+/\ syncResult = (s1 :> Nil @@ s2 :> Nil @@ s3 :> Nil @@ s4 :> Nil)
+/\ deliveredVal = ( s1 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s2 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s3 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s4 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) )
+/\ inFlight = (s1 :> Nil @@ s2 :> Nil @@ s3 :> Nil @@ s4 :> Nil)
+/\ messages = {}
+
+State 6: <TraceControllerChangeView line 146, col 5 to line 154, col 14 of module Trace>
+/\ decisionsInView = (s1 :> 0 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ leader = (s1 :> s1 @@ s2 :> s1 @@ s3 :> s1 @@ s4 :> s1)
+/\ l = 6
+/\ wal = (s1 :> <<>> @@ s2 :> <<>> @@ s3 :> <<>> @@ s4 :> <<>>)
+/\ proposalSeq = (s1 :> 1 @@ s2 :> 1 @@ s3 :> 1 @@ s4 :> 1)
+/\ inFlightPrepared = (s1 :> FALSE @@ s2 :> FALSE @@ s3 :> FALSE @@ s4 :> FALSE)
+/\ selectedInFlight = (s1 :> Nil @@ s2 :> Nil @@ s3 :> Nil @@ s4 :> Nil)
+/\ viewData = (s1 :> {} @@ s2 :> {} @@ s3 :> {} @@ s4 :> {})
+/\ checkpointVal = ( s1 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s2 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s3 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s4 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) )
+/\ viewNum = (s1 :> 3 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ viewDecisions = (s1 :> 0 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ delivered = (s1 :> {} @@ s2 :> {} @@ s3 :> {} @@ s4 :> {})
+/\ phase = ( s1 :> PhaseCommitted @@
+  s2 :> PhaseCommitted @@
+  s3 :> PhaseCommitted @@
+  s4 :> PhaseCommitted )
+/\ restoredPhase = ( s1 :> PhaseCommitted @@
+  s2 :> PhaseCommitted @@
+  s3 :> PhaseCommitted @@
+  s4 :> PhaseCommitted )
+/\ crashed = (s1 :> FALSE @@ s2 :> FALSE @@ s3 :> FALSE @@ s4 :> FALSE)
+/\ syncLockHolder = {}
+/\ blacklist = (s1 :> {} @@ s2 :> {} @@ s3 :> {} @@ s4 :> {})
+/\ checkpointSeq = (s1 :> 0 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ stopped = (s1 :> FALSE @@ s2 :> FALSE @@ s3 :> FALSE @@ s4 :> FALSE)
+/\ syncResult = (s1 :> Nil @@ s2 :> Nil @@ s3 :> Nil @@ s4 :> Nil)
+/\ deliveredVal = ( s1 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s2 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s3 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s4 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) )
+/\ inFlight = (s1 :> Nil @@ s2 :> Nil @@ s3 :> Nil @@ s4 :> Nil)
+/\ messages = {}
+
+State 7: <TraceControllerStartView line 99, col 5 to line 104, col 14 of module Trace>
+/\ decisionsInView = (s1 :> 0 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ leader = (s1 :> s1 @@ s2 :> s1 @@ s3 :> s1 @@ s4 :> s1)
+/\ l = 7
+/\ wal = (s1 :> <<>> @@ s2 :> <<>> @@ s3 :> <<>> @@ s4 :> <<>>)
+/\ proposalSeq = (s1 :> 1 @@ s2 :> 1 @@ s3 :> 1 @@ s4 :> 1)
+/\ inFlightPrepared = (s1 :> FALSE @@ s2 :> FALSE @@ s3 :> FALSE @@ s4 :> FALSE)
+/\ selectedInFlight = (s1 :> Nil @@ s2 :> Nil @@ s3 :> Nil @@ s4 :> Nil)
+/\ viewData = (s1 :> {} @@ s2 :> {} @@ s3 :> {} @@ s4 :> {})
+/\ checkpointVal = ( s1 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s2 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s3 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s4 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) )
+/\ viewNum = (s1 :> 3 @@ s2 :> 1 @@ s3 :> 0 @@ s4 :> 0)
+/\ viewDecisions = (s1 :> 0 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ delivered = (s1 :> {} @@ s2 :> {} @@ s3 :> {} @@ s4 :> {})
+/\ phase = ( s1 :> PhaseCommitted @@
+  s2 :> PhaseCommitted @@
+  s3 :> PhaseCommitted @@
+  s4 :> PhaseCommitted )
+/\ restoredPhase = ( s1 :> PhaseCommitted @@
+  s2 :> PhaseCommitted @@
+  s3 :> PhaseCommitted @@
+  s4 :> PhaseCommitted )
+/\ crashed = (s1 :> FALSE @@ s2 :> FALSE @@ s3 :> FALSE @@ s4 :> FALSE)
+/\ syncLockHolder = {}
+/\ blacklist = (s1 :> {} @@ s2 :> {} @@ s3 :> {} @@ s4 :> {})
+/\ checkpointSeq = (s1 :> 0 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ stopped = (s1 :> FALSE @@ s2 :> FALSE @@ s3 :> FALSE @@ s4 :> FALSE)
+/\ syncResult = (s1 :> Nil @@ s2 :> Nil @@ s3 :> Nil @@ s4 :> Nil)
+/\ deliveredVal = ( s1 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s2 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s3 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s4 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) )
+/\ inFlight = (s1 :> Nil @@ s2 :> Nil @@ s3 :> Nil @@ s4 :> Nil)
+/\ messages = {}
+
+State 8: <TraceControllerSyncBegin line 159, col 5 to line 163, col 14 of module Trace>
+/\ decisionsInView = (s1 :> 0 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ leader = (s1 :> s1 @@ s2 :> s1 @@ s3 :> s1 @@ s4 :> s1)
+/\ l = 8
+/\ wal = (s1 :> <<>> @@ s2 :> <<>> @@ s3 :> <<>> @@ s4 :> <<>>)
+/\ proposalSeq = (s1 :> 1 @@ s2 :> 1 @@ s3 :> 1 @@ s4 :> 1)
+/\ inFlightPrepared = (s1 :> FALSE @@ s2 :> FALSE @@ s3 :> FALSE @@ s4 :> FALSE)
+/\ selectedInFlight = (s1 :> Nil @@ s2 :> Nil @@ s3 :> Nil @@ s4 :> Nil)
+/\ viewData = (s1 :> {} @@ s2 :> {} @@ s3 :> {} @@ s4 :> {})
+/\ checkpointVal = ( s1 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s2 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s3 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s4 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) )
+/\ viewNum = (s1 :> 3 @@ s2 :> 1 @@ s3 :> 0 @@ s4 :> 0)
+/\ viewDecisions = (s1 :> 0 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ delivered = (s1 :> {} @@ s2 :> {} @@ s3 :> {} @@ s4 :> {})
+/\ phase = ( s1 :> PhaseCommitted @@
+  s2 :> PhaseCommitted @@
+  s3 :> PhaseCommitted @@
+  s4 :> PhaseCommitted )
+/\ restoredPhase = ( s1 :> PhaseCommitted @@
+  s2 :> PhaseCommitted @@
+  s3 :> PhaseCommitted @@
+  s4 :> PhaseCommitted )
+/\ crashed = (s1 :> FALSE @@ s2 :> FALSE @@ s3 :> FALSE @@ s4 :> FALSE)
+/\ syncLockHolder = {s1}
+/\ blacklist = (s1 :> {} @@ s2 :> {} @@ s3 :> {} @@ s4 :> {})
+/\ checkpointSeq = (s1 :> 0 @@ s2 :> 0 @@ s3 :> 0 @@ s4 :> 0)
+/\ stopped = (s1 :> FALSE @@ s2 :> FALSE @@ s3 :> FALSE @@ s4 :> FALSE)
+/\ syncResult = (s1 :> Nil @@ s2 :> Nil @@ s3 :> Nil @@ s4 :> Nil)
+/\ deliveredVal = ( s1 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s2 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s3 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) @@
+  s4 :>
+      ( 0 :> Genesis @@
+        1 :> Nil @@
+        2 :> Nil @@
+        3 :> Nil @@
+        4 :> Nil @@
+        5 :> Nil @@
+        6 :> Nil @@
+        7 :> Nil @@
+        8 :> Nil @@
+        9 :> Nil @@
+        10 :> Nil ) )
+/\ inFlight = (s1 :> Nil @@ s2 :> Nil @@ s3 :> Nil @@ s4 :> Nil)
+/\ messages = {}
+
+State 9: Stuttering
+Finished checking temporal properties in 00s at 2026-06-11 15:56:44
+8 states generated, 8 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 8.
+Finished in 03s at (2026-06-11 15:56:44)
+Trace exploration spec path: ./Trace_TTrace_1781186200.tla

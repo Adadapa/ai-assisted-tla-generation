@@ -1,0 +1,239 @@
+diff --git a/internal/bft/controller.go b/internal/bft/controller.go
+index 8a19251..57333e4 100644
+--- a/internal/bft/controller.go
++++ b/internal/bft/controller.go
+@@ -402,6 +402,7 @@ func (c *Controller) startView(proposalSequence uint64) {
+ 	}
+ 	c.LeaderMonitor.ChangeRole(role, c.currViewNumber, c.leaderID())
+ 	c.Logger.Infof("Starting view with number %d, sequence %d, and decisions %d", c.currViewNumber, proposalSequence, c.currDecisionsInView)
++	tlaTraceController(c, "controller_start_view", nil)
+ }
+ 
+ func (c *Controller) changeView(newViewNumber uint64, newProposalSequence uint64, newDecisionsInView uint64) {
+@@ -432,6 +433,7 @@ func (c *Controller) changeView(newViewNumber uint64, newProposalSequence uint64
+ 	if iAm, _ := c.iAmTheLeader(); iAm {
+ 		c.Batcher.Reset()
+ 	}
++	tlaTraceController(c, "controller_change_view", nil)
+ }
+ 
+ func (c *Controller) abortView(view uint64) bool {
+@@ -548,6 +550,7 @@ func (c *Controller) decide(d decision) {
+ 		return
+ 	}
+ 	c.incrementCurrentDecisionsInView()
++	tlaTraceControllerDecision(c, d.proposal)
+ 
+ 	md := &protos.ViewMetadata{}
+ 	if err := proto.Unmarshal(d.proposal.Metadata, md); err != nil {
+@@ -592,6 +595,10 @@ func (c *Controller) sync() (viewNum uint64, seq uint64, decisions uint64) {
+ 
+ 	c.syncLock.Lock()
+ 	defer c.syncLock.Unlock()
++	tlaTraceControllerSyncBegin(c)
++	defer func() {
++		tlaTraceControllerSyncApply(c, viewNum, seq, decisions)
++	}()
+ 
+ 	syncResponse := c.Synchronizer.Sync()
+ 	if syncResponse.Reconfig.InReplicatedDecisions {
+@@ -959,6 +966,7 @@ func (med *MutuallyExclusiveDeliver) Deliver(proposal types.Proposal, signature
+ 			"returning result from sync", pendingProposalMetadata.LatestSequence, latest)
+ 		syncResult := med.C.Synchronizer.Sync()
+ 		med.C.Checkpoint.Set(syncResult.Latest.Proposal, syncResult.Latest.Signatures)
++		tlaTraceMutuallyExclusiveDeliver(med.C, proposal, false)
+ 		return types.Reconfig{
+ 			CurrentNodes:     syncResult.Reconfig.CurrentNodes,
+ 			InLatestDecision: syncResult.Reconfig.InReplicatedDecisions,
+@@ -972,6 +980,7 @@ func (med *MutuallyExclusiveDeliver) Deliver(proposal types.Proposal, signature
+ 
+ 	// Only set the proposal in case it is later than the already known checkpoint.
+ 	med.C.Checkpoint.Set(proposal, signature)
++	tlaTraceMutuallyExclusiveDeliver(med.C, proposal, true)
+ 
+ 	return result
+ }
+diff --git a/internal/bft/state.go b/internal/bft/state.go
+index 8b8659a..8fb5079 100644
+--- a/internal/bft/state.go
++++ b/internal/bft/state.go
+@@ -119,6 +119,7 @@ func (ps *PersistedState) Restore(v *View) error {
+ 	entries := ps.Entries
+ 	if len(entries) == 0 {
+ 		ps.Logger.Infof("Nothing to restore")
++		tlaTraceRecover(v)
+ 		return nil
+ 	}
+ 
+@@ -141,11 +142,13 @@ func (ps *PersistedState) Restore(v *View) error {
+ 
+ 	if newViewMsg := lastPersistedMessage.GetNewView(); newViewMsg != nil {
+ 		ps.Logger.Infof("last entry in WAL is a newView record")
++		tlaTraceRecover(v)
+ 		return nil
+ 	}
+ 
+ 	if viewChangeMsg := lastPersistedMessage.GetViewChange(); viewChangeMsg != nil {
+ 		ps.Logger.Infof("last entry in WAL is a viewChange message")
++		tlaTraceRecover(v)
+ 		return nil
+ 	}
+ 
+@@ -178,6 +181,7 @@ func (ps *PersistedState) recoverProposed(lastPersistedMessage *protos.ProposedR
+ 	}
+ 	v.DecisionsInView = md.DecisionsInView
+ 	ps.Logger.Infof("Restored proposal with sequence %d", lastPersistedMessage.GetPrePrepare().Seq)
++	tlaTraceRecover(v)
+ 	return nil
+ }
+ 
+@@ -207,6 +211,7 @@ func (ps *PersistedState) recoverPrepared(lastPersistedMessage *protos.Message,
+ 	// Check if the WAL's last sequence has been persisted into the application layer.
+ 	if v.ProposalSequence > prePrepareFromWAL.Seq {
+ 		ps.Logger.Infof("Last proposal with sequence %d has been safely committed", v.ProposalSequence)
++		tlaTraceRecover(v)
+ 		return nil
+ 	}
+ 
+@@ -243,5 +248,6 @@ func (ps *PersistedState) recoverPrepared(lastPersistedMessage *protos.Message,
+ 	}
+ 
+ 	ps.Logger.Infof("Restored proposal with sequence %d", prePrepareFromWAL.Seq)
++	tlaTraceRecover(v)
+ 	return nil
+ }
+diff --git a/internal/bft/view.go b/internal/bft/view.go
+index 0566eb4..b3b0473 100644
+--- a/internal/bft/view.go
++++ b/internal/bft/view.go
+@@ -413,6 +413,8 @@ func (v *View) processProposal() Phase {
+ 	if err = v.State.Save(savedMsg); err != nil {
+ 		v.Logger.Panicf("Failed to save message to state, error: %v", err)
+ 	}
++	tlaIncWal(tlaNodeID(v.SelfID))
++	tlaTraceView(v, "view_process_preprepare", &proposal, "PhaseProposed")
+ 	v.lastBroadcastSent = prepareMessage
+ 	v.currPrepareSent = proto.Clone(prepareMessage).(*protos.Message)
+ 	v.currPrepareSent.GetPrepare().Assist = true
+@@ -509,6 +511,8 @@ func (v *View) processPrepares() Phase {
+ 	if err = v.State.Save(preparedProof); err != nil {
+ 		v.Logger.Panicf("Failed to save message to state, error: %v", err)
+ 	}
++	tlaIncWal(tlaNodeID(v.SelfID))
++	tlaTraceView(v, "view_process_prepares", proposal, "PhasePrepared")
+ 	v.currCommitSent = proto.Clone(commitMsg).(*protos.Message)
+ 	v.currCommitSent.GetCommit().Assist = true
+ 	v.lastBroadcastSent = commitMsg
+@@ -974,6 +978,7 @@ func (v *View) Propose(proposal types.Proposal) {
+ 	// Send the proposal to yourself in order to pre-prepare yourself and record
+ 	// it in the WAL before sending it to other nodes.
+ 	v.HandleMessage(v.LeaderID, msg)
++	tlaTraceView(v, "view_propose", &proposal, "")
+ 	v.Logger.Debugf("Proposing proposal sequence %d in view %d", seq, v.Number)
+ }
+ 
+diff --git a/internal/bft/viewchanger.go b/internal/bft/viewchanger.go
+index 9a98a8b..2c794cf 100644
+--- a/internal/bft/viewchanger.go
++++ b/internal/bft/viewchanger.go
+@@ -301,15 +301,16 @@ func (v *ViewChanger) processMsg(sender uint64, m *protos.Message) {
+ 	}
+ 
+ 	// viewData message
+-	if vd := m.GetViewData(); vd != nil {
+-		v.Logger.Debugf("Node %d is processing a view data message %s from %d", v.SelfID, MsgToString(m), sender)
+-		if !v.validateViewDataMsg(vd, sender) {
++		if vd := m.GetViewData(); vd != nil {
++			v.Logger.Debugf("Node %d is processing a view data message %s from %d", v.SelfID, MsgToString(m), sender)
++			if !v.validateViewDataMsg(vd, sender) {
++				return
++			}
++			v.viewDataMsgs.registerVote(sender, m)
++			tlaTraceViewData(v, sender, vd)
++			v.processViewDataMsg()
+ 			return
+ 		}
+-		v.viewDataMsgs.registerVote(sender, m)
+-		v.processViewDataMsg()
+-		return
+-	}
+ 
+ 	// newView message
+ 	if nv := m.GetNewView(); nv != nil {
+@@ -411,10 +412,11 @@ func (v *ViewChanger) processViewChangeMsg(restore bool) {
+ 				},
+ 			},
+ 		}
+-		if err := v.State.Save(msgToSave); err != nil {
+-			v.Logger.Panicf("Failed to save message to state, error: %v", err)
++			if err := v.State.Save(msgToSave); err != nil {
++				v.Logger.Panicf("Failed to save message to state, error: %v", err)
++			}
++			tlaIncWal(tlaNodeID(v.SelfID))
+ 		}
+-	}
+ 	v.Controller.AbortView(v.currView) // before preparing the view data message abort the current view
+ 	v.currView = v.nextView
+ 	v.MetricsViewChange.CurrentView.Set(float64(v.currView))
+@@ -426,9 +428,10 @@ func (v *ViewChanger) processViewChangeMsg(restore bool) {
+ 		v.viewDataMsgs.registerVote(v.SelfID, msg)
+ 	} else {
+ 		v.Comm.SendConsensus(leader, msg)
++		}
++		v.Logger.Debugf("Node %d sent view data msg, with next view %d, to the new leader %d", v.SelfID, v.currView, leader)
++		tlaTraceViewChanger(v, "viewchanger_process_viewchange", nil, "PhaseAbort")
+ 	}
+-	v.Logger.Debugf("Node %d sent view data msg, with next view %d, to the new leader %d", v.SelfID, v.currView, leader)
+-}
+ 
+ func (v *ViewChanger) prepareViewDataMsg() *protos.Message {
+ 	lastDecision, lastDecisionSignatures := v.Checkpoint.Get()
+@@ -749,7 +752,7 @@ func (v *ViewChanger) processViewDataMsg() {
+ 		return // need enough (quorum) data to continue
+ 	}
+ 	v.Logger.Debugf("Node %d got a quorum of viewData messages", v.SelfID)
+-	ok, _, _, err := CheckInFlight(v.getViewDataMessages(), v.f, v.quorum, v.N, v.Verifier)
++	ok, noInFlight, inFlightProposal, err := CheckInFlight(v.getViewDataMessages(), v.f, v.quorum, v.N, v.Verifier)
+ 	if err != nil {
+ 		v.Logger.Panicf("Node %d checked the in flight and it got an error: %v", v.SelfID, err)
+ 	}
+@@ -758,6 +761,12 @@ func (v *ViewChanger) processViewDataMsg() {
+ 		return
+ 	}
+ 	v.Logger.Debugf("Node %d checked the in flight and it was valid", v.SelfID)
++	if !noInFlight && inFlightProposal != nil {
++		tlaTraceViewChanger(v, "viewchanger_check_inflight", map[string]interface{}{
++			"selected_inflight_seq": tlaProtoProposalMetadata(inFlightProposal).LatestSequence,
++			"value":                 tlaProtoProposalValue(inFlightProposal),
++		}, "PhaseAbort")
++	}
+ 	// create the new view message
+ 	signedMsgs := make([]*protos.SignedViewData, 0)
+ 	myMsg := v.prepareViewDataMsg()                      // since it might have changed by now
+@@ -1149,6 +1158,7 @@ func (v *ViewChanger) processNewViewMsg(msg *protos.NewView) {
+ 	if err = v.State.Save(newViewToSave); err != nil {
+ 		v.Logger.Panicf("Failed to save message to state, error: %v", err)
+ 	}
++	tlaIncWal(tlaNodeID(v.SelfID))
+ 
+ 	select { // if there was a delivery or sync with a reconfig when committing the in-flight proposal we should stop
+ 	case <-v.stopChan:
+@@ -1160,6 +1170,7 @@ func (v *ViewChanger) processNewViewMsg(msg *protos.NewView) {
+ 	v.MetricsViewChange.RealView.Set(float64(v.realView))
+ 	v.nvs.clear()
+ 	v.Controller.ViewChanged(v.currView, mySequence+1)
++	tlaTraceViewChanger(v, "viewchanger_process_newview", nil, "PhaseCommitted")
+ 
+ 	v.RequestsTimer.RestartTimers()
+ 	v.checkTimeout = false
+@@ -1278,6 +1289,10 @@ func (v *ViewChanger) commitInFlightProposal(proposal *protos.Proposal) (success
+ 
+ 	inFlightView.Start()
+ 	defer inFlightView.Abort()
++	tlaTraceViewChanger(v, "viewchanger_commit_inflight", map[string]interface{}{
++		"selected_inflight_seq": proposalMD.LatestSequence,
++		"value":                 tlaProtoProposalValue(proposal),
++	}, "PhasePrepared")
+ 
+ 	v.inFlightViewLock.Unlock()
+ 

@@ -1,0 +1,54 @@
+
+- name: "Agreement_Safety"
+  type: "safety"
+  natural_language: >
+    Two non-faulty replicas agree on the sequence number of requests that
+    commit locally in the same view at the two replicas, whether that be in the same view or across views.
+    No two correct replicas decide different values for the same sequence number.
+    This is the core BFT agreement property: once a value is decided at sequence
+    number seq, no other value can ever be decided at that same seq by any correct
+    replica, regardless of Byzantine behaviour.
+  formal_description: >
+    ∀ i, j ∈ Nodes, ∀ seq ∈ ℕ:
+      decided[i][seq] ≠ NULL ∧ decided[j][seq] ≠ NULL
+        → decided[i][seq] = decided[j][seq]
+  tla_example: |
+    AgreementSafety ==
+      \A i, j \in Nodes :
+        \A seq \in DOMAIN decided[i] \cap DOMAIN decided[j] :
+          decided[i][seq] # NULL /\ decided[j][seq] # NULL =>
+            decided[i][seq] = decided[j][seq]
+
+- name: "Decision_Liveness"
+  type: "liveness"
+  natural_language: >
+    Every request submitted by a correct client is eventually decided, provided
+    at most F replicas are faulty and the network is eventually timely.
+  formal_description: >
+    ∀ i ∈ Nodes, ∀ r ∈ SubmittedRequests:
+      <>( ∃ seq ∈ ℕ : decided[i][seq] = r )
+
+    Precondition: at most F Byzantine faults and weak synchrony
+    (message delay eventually bounded).
+  tla_example: |
+    Decision_Liveness ==
+      \A i \in Nodes :
+        \A r \in SubmittedRequests :
+          <>(\E seq \in DOMAIN decided[i] : decided[i][seq] = r)
+
+- name: "Validity"
+  type: "safety"
+  natural_language: >
+    If a correct replica decides a value v at sequence number seq, then v was
+    proposed by some replica in the system. A Byzantine leader cannot cause
+    correct replicas to decide a value that was never submitted as a proposal.
+  formal_description: >
+    ∀ i ∈ Nodes, ∀ seq ∈ ℕ:
+      decided[i][seq] ≠ NULL → decided[i][seq] ∈ proposedValues
+  tla_example: |
+    Validity ==
+      \A i \in CorrectNodes :
+        \A seq \in DOMAIN decided[i] :
+          decided[i][seq] # NULL =>
+            \E p \in Nodes :
+              decided[i][seq] \in proposedBy[p]

@@ -1,0 +1,76 @@
+You are an expert in formal verification and TLA+ specifications with deep expertise in distributed systems, particularly Byzantine fault-tolerant consensus protocols and the SmartBFT library.
+
+Convert the following SmartBFT source code to a comprehensive TLA+ specification.
+
+System: SmartBFT Byzantine fault-tolerant consensus library (Hyperledger Labs)
+Focus: {focus}
+
+Source Code from {file_path}:
+```go
+{source_code}
+```
+
+SmartBFT-specific modeling requirements:
+
+MANDATORY CORE ACTIONS (must include all):
+1. 【Preprepare Phase】Leader assembles a batch of client requests into a proposal and broadcasts a Preprepare message to all replicas
+2. 【Prepare Phase】Non-leader replica receives the Preprepare, validates it, makes sure it is in the right view, and broadcasts a Prepare message
+3. 【Commit Phase】If a replica collects a quorum of Prepare messages (2f+1), then it broadcasts a Commit message
+4. 【Decision】If a replica collects a quorum of Commit messages (2f+1), it delivers the decided proposal to the application
+5. 【ViewChange】A replica suspects the current leader (heartbeat timeout or equivocation) and sends a ViewChange message to all nodes
+6. 【ViewData】After collecting 2f+1 ViewChange messages, a replica sends a signed ViewData message to the next-view leader
+7. 【NewView】If the new leader collects 2f+1 ViewData messages, then it broadcasts a NewView message to resume consensus
+
+EXPLICITLY EXCLUDED (do not model):
+- Request pool management and batching internals (Pool, BatchBuilder timeouts)
+- Write-ahead log (WAL) persistence and crash-recovery replay
+- Leader rotation scheduling and DecisionsPerLeader counter
+- Heartbeat timer mechanics and LeaderHeartbeatCount intervals
+- Dynamic reconfiguration and node list changes
+- Cryptographic signature verification details (treat signatures as always valid)
+- Network-level flow control and message re-transmission retries
+
+REQUIRED BEHAVIORAL SCOPE:
+- Normal-case three-phase protocol (Preprepare → Prepare → Commit) must be modeled in full
+- View numbering: each view has a unique leader determined by (viewNumber mod N); views advance monotonically
+- Sequence numbering: proposals within a view are sequenced; sequence numbers advance monotonically
+- Quorum rule: all quorums require exactly 2f+1 out of N=3f+1 replicas; f is the Byzantine fault tolerance threshold
+- View change trigger: any replica may initiate a view change upon suspecting the leader; a replica must not process normal-case messages from an old view
+- Phase state per replica: each replica tracks its current phase (IDLE, PREPARED, COMMITTED) per sequence number within a view
+- Message validation: a replica ignores messages from views older than its current view
+- Basic network message delays and losses (asynchronous network model)
+
+EVALUATION METHOD:
+Your specification will be validated against execution traces collected from the real SmartBFT system. For each observed state transition in a trace, we check whether one of your actions, applied from the trace's pre-state, reaches the trace's post-state in exactly one step. Each target action is graded independently (pass rate across sampled windows).
+
+Generate a TLA+ specification that accurately models SmartBFT's distributed Byzantine fault-tolerant consensus behavior.
+
+MANDATORY NAMING CONVENTIONS (Trace Validation Interface):
+To ensure the specification can be validated against real system execution traces, the following action names MUST appear EXACTLY (case-sensitive) as top-level action operators in your TLA+ specification. The TV evaluator maps trace events to these action names — any mismatch and the action scores 0.
+
+Required actions:
+  - `Preprepare`
+  - `Prepare`
+  - `Commit`
+  - `Decide`
+  - `ViewChange`
+  - `ViewData`
+  - `NewView`
+
+Each required action must be a named definition (e.g. `ActionName(args) == ...`) referenced from `Next` via `\/ \E ... : ActionName(...)` or a direct disjunct. Do not rename, merge, or split these actions — they form the contract between your spec and the trace harness.
+
+SYMBOL DECLARATION SAFETY (SANY will reject the spec otherwise):
+- Every identifier you reference must be declared or defined. Common pitfalls:
+  * `NULL` / `Nil` / `None` are NOT TLA+ built-ins. If you need a sentinel, declare it as a CONSTANT (and bind it in the cfg) or define it, e.g. `NULL == CHOOSE v : v \notin Nodes`.
+  * `Min` / `Max` are NOT in the standard modules. Either `EXTENDS FiniteSetsExt` and use `Min(S)` / `Max(S)`, or define your own (e.g. `Min2(a, b) == IF a <= b THEN a ELSE b`).
+  * Every name in `VARIABLES <...>` must appear in `Init` and be transformed by `Next`; every CONSTANT must appear in the .cfg's `CONSTANTS` block with a concrete value.
+- Before emitting the spec, scan each identifier: is it (a) brought in by an EXTENDS, (b) declared as a CONSTANT/VARIABLE, or (c) defined via `==` earlier in the module? If none of the three, SANY will flag it as `Unknown operator`.
+
+CRITICAL OUTPUT REQUIREMENTS:
+1. The MODULE name must be exactly "SmartBFT" (---- MODULE SmartBFT ----)
+2. Output EXACTLY TWO fenced code blocks — a ```tla block and a ```cfg block. Output NOTHING else (no prose, no markdown outside the fences).
+3. The ```tla block contains the full TLA+ specification, starting with ---- MODULE SmartBFT ---- and ending with ====
+4. The ```cfg block contains the TLC configuration. Use SPECIFICATION Spec (NOT INIT/NEXT), and a CONSTANTS section that assigns a concrete finite value to every CONSTANT declared in your .tla. Use N=4 (tolerating f=1 Byzantine fault) as the default cluster size.
+5. Do NOT add INVARIANT or PROPERTY lines to the .cfg. Do NOT include comments or explanations outside the two fenced blocks.
+6. **DO NOT define invariants** (like AgreementSafety, Invariant, etc.) — focus on modeling the system behavior only.
+7. **MANDATORY Spec Definition with Fairness**: The Spec definition MUST include appropriate fairness assumptions (e.g., WF_vars/SF_vars for action operations) to ensure liveness properties.
