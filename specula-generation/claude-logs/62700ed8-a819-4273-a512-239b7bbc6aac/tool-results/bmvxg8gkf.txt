@@ -1,0 +1,2158 @@
+Parsed as JSON successfully
+Keys: ['status', 'message', 'raw_output', 'success']
+status: error
+message: TLC reported an error
+raw_output: TLC2 Version 2026.05.26.235334 (rev: 4ba7d88)
+Running breadth-first search Model-Checking with fp 0 and seed 3865942984701517874 with 1 worker on 10 cores with 3641MB heap and 64MB offheap memory [pid: 48801] (Mac OS X 26.3 aarch64, Eclipse Adoptium 25.0.2 64bit, MSBDiskFPSet, DiskStateQueue).
+Parsing file /Users/tess/dev/Specula/case-studies/smartbft/.specula-output/spec/Trace.tla
+Parsing file /Users/tess/dev/Specula/case-studies/smartbft/.specula-output/spec/base.tla
+Parsing file /private/var/folders/t4/47krvbs96xs48n5zvds52dg80000gn/T/tlc-16660295159297088506/Json.tla (jar:file:/Users/tess/dev/Specula/lib/tla2tools.jar!/tla2sany/StandardModules/Json.tla)
+Parsing file /private/var/folders/t4/47krvbs96xs48n5zvds52dg80000gn/T/tlc-16660295159297088506/IOUtils.tla (jar:file:/Users/tess/dev/Specula/lib/CommunityModules-deps.jar!/IOUtils.tla)
+Parsing file /private/var/folders/t4/47krvbs96xs48n5zvds52dg80000gn/T/tlc-16660295159297088506/Sequences.tla (jar:file:/Users/tess/dev/Specula/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Parsing file /private/var/folders/t4/47krvbs96xs48n5zvds52dg80000gn/T/tlc-16660295159297088506/FiniteSets.tla (jar:file:/Users/tess/dev/Specula/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Parsing file /private/var/folders/t4/47krvbs96xs48n5zvds52dg80000gn/T/tlc-16660295159297088506/TLC.tla (jar:file:/Users/tess/dev/Specula/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)
+Parsing file /private/var/folders/t4/47krvbs96xs48n5zvds52dg80000gn/T/tlc-16660295159297088506/_TLCTrace.tla (jar:file:/Users/tess/dev/Specula/lib/tla2tools.jar!/tla2sany/StandardModules/_TLCTrace.tla)
+Parsing file /private/var/folders/t4/47krvbs96xs48n5zvds52dg80000gn/T/tlc-16660295159297088506/Integers.tla (jar:file:/Users/tess/dev/Specula/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)
+Parsing file /private/var/folders/t4/47krvbs96xs48n5zvds52dg80000gn/T/tlc-16660295159297088506/Naturals.tla (jar:file:/Users/tess/dev/Specula/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file /private/var/folders/t4/47krvbs96xs48n5zvds52dg80000gn/T/tlc-16660295159297088506/TLCExt.tla (jar:file:/Users/tess/dev/Specula/lib/tla2tools.jar!/tla2sany/StandardModules/TLCExt.tla)
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module base
+Semantic processing of module Json
+Semantic processing of module IOUtils
+Semantic processing of module TLCExt
+Semantic processing of module _TLCTrace
+Semantic processing of module Trace
+Linting of module base
+Linting of module Json
+Linting of module IOUtils
+Linting of module TLCExt
+Linting of module _TLCTrace
+Linting of module Trace
+Starting... (2026-06-12 23:12:33)
+Implied-temporal checking--satisfiability problem has 1 branches.
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-06-12 23:12:34.
+Error: Deadlock reached.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ phase = <<"NORMAL", "NORMAL", "NORMAL", "NORMAL">>
+/\ hbm_view = <<0, 0, 0, 0>>
+/\ commit_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ blacklist = <<{}, {}, {}, {}>>
+/\ log = <<<<>>, <<>>, <<>>, <<>>>>
+/\ committed_during_vc = <<0, 0, 0, 0>>
+/\ l = 1
+/\ vc_view = <<0, 0, 0, 0>>
+/\ prepare_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ vc_delivered_seq = <<0, 0, 0, 0>>
+/\ in_flight = <<0, 0, 0, 0>>
+/\ hbm_role = <<"LEADER", "FOLLOWER", "FOLLOWER", "FOLLOWER">>
+/\ vc_quorum = <<{}, {}, {}, {}>>
+/\ hbm_timed_out = <<FALSE, FALSE, FALSE, FALSE>>
+/\ hbm_chg_pend = <<FALSE, FALSE, FALSE, FALSE>>
+/\ vc_start_dropped = <<FALSE, FALSE, FALSE, FALSE>>
+/\ msgs = {}
+/\ ctrl_decisions = <<0, 0, 0, 0>>
+/\ ctrl_updating = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view = <<0, 0, 0, 0>>
+/\ hbm_artif_pending = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view_pending = <<0, 0, 0, 0>>
+
+State 2: <SilentSendChangeRole line 249, col 5 to line 256, col 18 of module Trace>
+/\ phase = <<"NORMAL", "NORMAL", "NORMAL", "NORMAL">>
+/\ hbm_view = <<0, 0, 0, 0>>
+/\ commit_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ blacklist = <<{}, {}, {}, {}>>
+/\ log = <<<<>>, <<>>, <<>>, <<>>>>
+/\ committed_during_vc = <<0, 0, 0, 0>>
+/\ l = 1
+/\ vc_view = <<0, 0, 0, 0>>
+/\ prepare_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ vc_delivered_seq = <<0, 0, 0, 0>>
+/\ in_flight = <<0, 0, 0, 0>>
+/\ hbm_role = <<"LEADER", "FOLLOWER", "FOLLOWER", "FOLLOWER">>
+/\ vc_quorum = <<{}, {}, {}, {}>>
+/\ hbm_timed_out = <<FALSE, FALSE, FALSE, FALSE>>
+/\ hbm_chg_pend = <<TRUE, FALSE, FALSE, FALSE>>
+/\ vc_start_dropped = <<FALSE, FALSE, FALSE, FALSE>>
+/\ msgs = {}
+/\ ctrl_decisions = <<0, 0, 0, 0>>
+/\ ctrl_updating = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view = <<0, 0, 0, 0>>
+/\ hbm_artif_pending = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view_pending = <<0, 0, 0, 0>>
+
+State 3: <TraceProcessChangeRole line 128, col 5 to line 139, col 17 of module Trace>
+/\ phase = <<"NORMAL", "NORMAL", "NORMAL", "NORMAL">>
+/\ hbm_view = <<0, 0, 0, 0>>
+/\ commit_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ blacklist = <<{}, {}, {}, {}>>
+/\ log = <<<<>>, <<>>, <<>>, <<>>>>
+/\ committed_during_vc = <<0, 0, 0, 0>>
+/\ l = 2
+/\ vc_view = <<0, 0, 0, 0>>
+/\ prepare_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ vc_delivered_seq = <<0, 0, 0, 0>>
+/\ in_flight = <<0, 0, 0, 0>>
+/\ hbm_role = <<"LEADER", "FOLLOWER", "FOLLOWER", "FOLLOWER">>
+/\ vc_quorum = <<{}, {}, {}, {}>>
+/\ hbm_timed_out = <<FALSE, FALSE, FALSE, FALSE>>
+/\ hbm_chg_pend = <<FALSE, FALSE, FALSE, FALSE>>
+/\ vc_start_dropped = <<FALSE, FALSE, FALSE, FALSE>>
+/\ msgs = {}
+/\ ctrl_decisions = <<0, 0, 0, 0>>
+/\ ctrl_updating = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view = <<0, 0, 0, 0>>
+/\ hbm_artif_pending = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view_pending = <<0, 0, 0, 0>>
+
+State 4: <SilentSendChangeRole line 249, col 5 to line 256, col 18 of module Trace>
+/\ phase = <<"NORMAL", "NORMAL", "NORMAL", "NORMAL">>
+/\ hbm_view = <<0, 0, 0, 0>>
+/\ commit_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ blacklist = <<{}, {}, {}, {}>>
+/\ log = <<<<>>, <<>>, <<>>, <<>>>>
+/\ committed_during_vc = <<0, 0, 0, 0>>
+/\ l = 2
+/\ vc_view = <<0, 0, 0, 0>>
+/\ prepare_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ vc_delivered_seq = <<0, 0, 0, 0>>
+/\ in_flight = <<0, 0, 0, 0>>
+/\ hbm_role = <<"LEADER", "FOLLOWER", "FOLLOWER", "FOLLOWER">>
+/\ vc_quorum = <<{}, {}, {}, {}>>
+/\ hbm_timed_out = <<FALSE, FALSE, FALSE, FALSE>>
+/\ hbm_chg_pend = <<FALSE, TRUE, FALSE, FALSE>>
+/\ vc_start_dropped = <<FALSE, FALSE, FALSE, FALSE>>
+/\ msgs = {}
+/\ ctrl_decisions = <<0, 0, 0, 0>>
+/\ ctrl_updating = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view = <<0, 0, 0, 0>>
+/\ hbm_artif_pending = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view_pending = <<0, 0, 0, 0>>
+
+State 5: <TraceProcessChangeRole line 128, col 5 to line 139, col 17 of module Trace>
+/\ phase = <<"NORMAL", "NORMAL", "NORMAL", "NORMAL">>
+/\ hbm_view = <<0, 0, 0, 0>>
+/\ commit_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ blacklist = <<{}, {}, {}, {}>>
+/\ log = <<<<>>, <<>>, <<>>, <<>>>>
+/\ committed_during_vc = <<0, 0, 0, 0>>
+/\ l = 3
+/\ vc_view = <<0, 0, 0, 0>>
+/\ prepare_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ vc_delivered_seq = <<0, 0, 0, 0>>
+/\ in_flight = <<0, 0, 0, 0>>
+/\ hbm_role = <<"LEADER", "FOLLOWER", "FOLLOWER", "FOLLOWER">>
+/\ vc_quorum = <<{}, {}, {}, {}>>
+/\ hbm_timed_out = <<FALSE, FALSE, FALSE, FALSE>>
+/\ hbm_chg_pend = <<FALSE, FALSE, FALSE, FALSE>>
+/\ vc_start_dropped = <<FALSE, FALSE, FALSE, FALSE>>
+/\ msgs = {}
+/\ ctrl_decisions = <<0, 0, 0, 0>>
+/\ ctrl_updating = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view = <<0, 0, 0, 0>>
+/\ hbm_artif_pending = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view_pending = <<0, 0, 0, 0>>
+
+State 6: <SilentSendChangeRole line 249, col 5 to line 256, col 18 of module Trace>
+/\ phase = <<"NORMAL", "NORMAL", "NORMAL", "NORMAL">>
+/\ hbm_view = <<0, 0, 0, 0>>
+/\ commit_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ blacklist = <<{}, {}, {}, {}>>
+/\ log = <<<<>>, <<>>, <<>>, <<>>>>
+/\ committed_during_vc = <<0, 0, 0, 0>>
+/\ l = 3
+/\ vc_view = <<0, 0, 0, 0>>
+/\ prepare_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ vc_delivered_seq = <<0, 0, 0, 0>>
+/\ in_flight = <<0, 0, 0, 0>>
+/\ hbm_role = <<"LEADER", "FOLLOWER", "FOLLOWER", "FOLLOWER">>
+/\ vc_quorum = <<{}, {}, {}, {}>>
+/\ hbm_timed_out = <<FALSE, FALSE, FALSE, FALSE>>
+/\ hbm_chg_pend = <<FALSE, FALSE, TRUE, FALSE>>
+/\ vc_start_dropped = <<FALSE, FALSE, FALSE, FALSE>>
+/\ msgs = {}
+/\ ctrl_decisions = <<0, 0, 0, 0>>
+/\ ctrl_updating = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view = <<0, 0, 0, 0>>
+/\ hbm_artif_pending = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view_pending = <<0, 0, 0, 0>>
+
+State 7: <TraceProcessChangeRole line 128, col 5 to line 139, col 17 of module Trace>
+/\ phase = <<"NORMAL", "NORMAL", "NORMAL", "NORMAL">>
+/\ hbm_view = <<0, 0, 0, 0>>
+/\ commit_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ blacklist = <<{}, {}, {}, {}>>
+/\ log = <<<<>>, <<>>, <<>>, <<>>>>
+/\ committed_during_vc = <<0, 0, 0, 0>>
+/\ l = 4
+/\ vc_view = <<0, 0, 0, 0>>
+/\ prepare_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ vc_delivered_seq = <<0, 0, 0, 0>>
+/\ in_flight = <<0, 0, 0, 0>>
+/\ hbm_role = <<"LEADER", "FOLLOWER", "FOLLOWER", "FOLLOWER">>
+/\ vc_quorum = <<{}, {}, {}, {}>>
+/\ hbm_timed_out = <<FALSE, FALSE, FALSE, FALSE>>
+/\ hbm_chg_pend = <<FALSE, FALSE, FALSE, FALSE>>
+/\ vc_start_dropped = <<FALSE, FALSE, FALSE, FALSE>>
+/\ msgs = {}
+/\ ctrl_decisions = <<0, 0, 0, 0>>
+/\ ctrl_updating = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view = <<0, 0, 0, 0>>
+/\ hbm_artif_pending = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view_pending = <<0, 0, 0, 0>>
+
+State 8: <SilentSendChangeRole line 249, col 5 to line 256, col 18 of module Trace>
+/\ phase = <<"NORMAL", "NORMAL", "NORMAL", "NORMAL">>
+/\ hbm_view = <<0, 0, 0, 0>>
+/\ commit_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ blacklist = <<{}, {}, {}, {}>>
+/\ log = <<<<>>, <<>>, <<>>, <<>>>>
+/\ committed_during_vc = <<0, 0, 0, 0>>
+/\ l = 4
+/\ vc_view = <<0, 0, 0, 0>>
+/\ prepare_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ vc_delivered_seq = <<0, 0, 0, 0>>
+/\ in_flight = <<0, 0, 0, 0>>
+/\ hbm_role = <<"LEADER", "FOLLOWER", "FOLLOWER", "FOLLOWER">>
+/\ vc_quorum = <<{}, {}, {}, {}>>
+/\ hbm_timed_out = <<FALSE, FALSE, FALSE, FALSE>>
+/\ hbm_chg_pend = <<FALSE, FALSE, FALSE, TRUE>>
+/\ vc_start_dropped = <<FALSE, FALSE, FALSE, FALSE>>
+/\ msgs = {}
+/\ ctrl_decisions = <<0, 0, 0, 0>>
+/\ ctrl_updating = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view = <<0, 0, 0, 0>>
+/\ hbm_artif_pending = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view_pending = <<0, 0, 0, 0>>
+
+State 9: <TraceProcessChangeRole line 128, col 5 to line 139, col 17 of module Trace>
+/\ phase = <<"NORMAL", "NORMAL", "NORMAL", "NORMAL">>
+/\ hbm_view = <<0, 0, 0, 0>>
+/\ commit_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ blacklist = <<{}, {}, {}, {}>>
+/\ log = <<<<>>, <<>>, <<>>, <<>>>>
+/\ committed_during_vc = <<0, 0, 0, 0>>
+/\ l = 5
+/\ vc_view = <<0, 0, 0, 0>>
+/\ prepare_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ vc_delivered_seq = <<0, 0, 0, 0>>
+/\ in_flight = <<0, 0, 0, 0>>
+/\ hbm_role = <<"LEADER", "FOLLOWER", "FOLLOWER", "FOLLOWER">>
+/\ vc_quorum = <<{}, {}, {}, {}>>
+/\ hbm_timed_out = <<FALSE, FALSE, FALSE, FALSE>>
+/\ hbm_chg_pend = <<FALSE, FALSE, FALSE, FALSE>>
+/\ vc_start_dropped = <<FALSE, FALSE, FALSE, FALSE>>
+/\ msgs = {}
+/\ ctrl_decisions = <<0, 0, 0, 0>>
+/\ ctrl_updating = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view = <<0, 0, 0, 0>>
+/\ hbm_artif_pending = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view_pending = <<0, 0, 0, 0>>
+
+State 10: <TracePropose line 56, col 5 to line 63, col 17 of module Trace>
+/\ phase = <<"NORMAL", "NORMAL", "NORMAL", "NORMAL">>
+/\ hbm_view = <<0, 0, 0, 0>>
+/\ commit_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ blacklist = <<{}, {}, {}, {}>>
+/\ log = <<<<>>, <<>>, <<>>, <<>>>>
+/\ committed_during_vc = <<0, 0, 0, 0>>
+/\ l = 6
+/\ vc_view = <<0, 0, 0, 0>>
+/\ prepare_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ vc_delivered_seq = <<0, 0, 0, 0>>
+/\ in_flight = <<0, 0, 0, 0>>
+/\ hbm_role = <<"LEADER", "FOLLOWER", "FOLLOWER", "FOLLOWER">>
+/\ vc_quorum = <<{}, {}, {}, {}>>
+/\ hbm_timed_out = <<FALSE, FALSE, FALSE, FALSE>>
+/\ hbm_chg_pend = <<FALSE, FALSE, FALSE, FALSE>>
+/\ vc_start_dropped = <<FALSE, FALSE, FALSE, FALSE>>
+/\ msgs = {[view |-> 0, seq |-> 1, type |-> "PREPREPARE", sender |-> 1, digest |-> 1]}
+/\ ctrl_decisions = <<0, 0, 0, 0>>
+/\ ctrl_updating = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view = <<0, 0, 0, 0>>
+/\ hbm_artif_pending = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view_pending = <<0, 0, 0, 0>>
+
+State 11: <TraceHandlePrePrepare line 70, col 5 to line 76, col 17 of module Trace>
+/\ phase = <<"NORMAL", "NORMAL", "NORMAL", "NORMAL">>
+/\ hbm_view = <<0, 0, 0, 0>>
+/\ commit_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ blacklist = <<{}, {}, {}, {}>>
+/\ log = <<<<>>, <<>>, <<>>, <<>>>>
+/\ committed_during_vc = <<0, 0, 0, 0>>
+/\ l = 7
+/\ vc_view = <<0, 0, 0, 0>>
+/\ prepare_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ vc_delivered_seq = <<0, 0, 0, 0>>
+/\ in_flight = <<1, 0, 0, 0>>
+/\ hbm_role = <<"LEADER", "FOLLOWER", "FOLLOWER", "FOLLOWER">>
+/\ vc_quorum = <<{}, {}, {}, {}>>
+/\ hbm_timed_out = <<FALSE, FALSE, FALSE, FALSE>>
+/\ hbm_chg_pend = <<FALSE, FALSE, FALSE, FALSE>>
+/\ vc_start_dropped = <<FALSE, FALSE, FALSE, FALSE>>
+/\ msgs = { [view |-> 0, seq |-> 1, type |-> "PREPREPARE", sender |-> 1, digest |-> 1],
+  [view |-> 0, seq |-> 1, type |-> "PREPARE", sender |-> 1, digest |-> 1] }
+/\ ctrl_decisions = <<0, 0, 0, 0>>
+/\ ctrl_updating = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view = <<0, 0, 0, 0>>
+/\ hbm_artif_pending = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view_pending = <<0, 0, 0, 0>>
+
+State 12: <TraceHandlePrePrepare line 70, col 5 to line 76, col 17 of module Trace>
+/\ phase = <<"NORMAL", "NORMAL", "NORMAL", "NORMAL">>
+/\ hbm_view = <<0, 0, 0, 0>>
+/\ commit_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ blacklist = <<{}, {}, {}, {}>>
+/\ log = <<<<>>, <<>>, <<>>, <<>>>>
+/\ committed_during_vc = <<0, 0, 0, 0>>
+/\ l = 8
+/\ vc_view = <<0, 0, 0, 0>>
+/\ prepare_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ vc_delivered_seq = <<0, 0, 0, 0>>
+/\ in_flight = <<1, 0, 0, 1>>
+/\ hbm_role = <<"LEADER", "FOLLOWER", "FOLLOWER", "FOLLOWER">>
+/\ vc_quorum = <<{}, {}, {}, {}>>
+/\ hbm_timed_out = <<FALSE, FALSE, FALSE, FALSE>>
+/\ hbm_chg_pend = <<FALSE, FALSE, FALSE, FALSE>>
+/\ vc_start_dropped = <<FALSE, FALSE, FALSE, FALSE>>
+/\ msgs = { [view |-> 0, seq |-> 1, type |-> "PREPREPARE", sender |-> 1, digest |-> 1],
+  [view |-> 0, seq |-> 1, type |-> "PREPARE", sender |-> 1, digest |-> 1],
+  [view |-> 0, seq |-> 1, type |-> "PREPARE", sender |-> 4, digest |-> 1] }
+/\ ctrl_decisions = <<0, 0, 0, 0>>
+/\ ctrl_updating = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view = <<0, 0, 0, 0>>
+/\ hbm_artif_pending = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view_pending = <<0, 0, 0, 0>>
+
+State 13: <TraceHandlePrePrepare line 70, col 5 to line 76, col 17 of module Trace>
+/\ phase = <<"NORMAL", "NORMAL", "NORMAL", "NORMAL">>
+/\ hbm_view = <<0, 0, 0, 0>>
+/\ commit_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ blacklist = <<{}, {}, {}, {}>>
+/\ log = <<<<>>, <<>>, <<>>, <<>>>>
+/\ committed_during_vc = <<0, 0, 0, 0>>
+/\ l = 9
+/\ vc_view = <<0, 0, 0, 0>>
+/\ prepare_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ vc_delivered_seq = <<0, 0, 0, 0>>
+/\ in_flight = <<1, 0, 1, 1>>
+/\ hbm_role = <<"LEADER", "FOLLOWER", "FOLLOWER", "FOLLOWER">>
+/\ vc_quorum = <<{}, {}, {}, {}>>
+/\ hbm_timed_out = <<FALSE, FALSE, FALSE, FALSE>>
+/\ hbm_chg_pend = <<FALSE, FALSE, FALSE, FALSE>>
+/\ vc_start_dropped = <<FALSE, FALSE, FALSE, FALSE>>
+/\ msgs = { [view |-> 0, seq |-> 1, type |-> "PREPREPARE", sender |-> 1, digest |-> 1],
+  [view |-> 0, seq |-> 1, type |-> "PREPARE", sender |-> 1, digest |-> 1],
+  [view |-> 0, seq |-> 1, type |-> "PREPARE", sender |-> 3, digest |-> 1],
+  [view |-> 0, seq |-> 1, type |-> "PREPARE", sender |-> 4, digest |-> 1] }
+/\ ctrl_decisions = <<0, 0, 0, 0>>
+/\ ctrl_updating = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view = <<0, 0, 0, 0>>
+/\ hbm_artif_pending = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view_pending = <<0, 0, 0, 0>>
+
+State 14: <TraceDecide line 89, col 5 to line 107, col 17 of module Trace>
+/\ phase = <<"NORMAL", "NORMAL", "NORMAL", "NORMAL">>
+/\ hbm_view = <<0, 0, 0, 0>>
+/\ commit_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {1, 2, 3, 4} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ blacklist = <<{}, {}, {}, {}>>
+/\ log = <<<<>>, <<>>, <<1>>, <<>>>>
+/\ committed_during_vc = <<0, 0, 0, 0>>
+/\ l = 10
+/\ vc_view = <<0, 0, 0, 0>>
+/\ prepare_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ vc_delivered_seq = <<0, 0, 0, 0>>
+/\ in_flight = <<1, 0, 0, 1>>
+/\ hbm_role = <<"LEADER", "FOLLOWER", "FOLLOWER", "FOLLOWER">>
+/\ vc_quorum = <<{}, {}, {}, {}>>
+/\ hbm_timed_out = <<FALSE, FALSE, FALSE, FALSE>>
+/\ hbm_chg_pend = <<FALSE, FALSE, FALSE, FALSE>>
+/\ vc_start_dropped = <<FALSE, FALSE, FALSE, FALSE>>
+/\ msgs = { [view |-> 0, seq |-> 1, type |-> "PREPREPARE", sender |-> 1, digest |-> 1],
+  [view |-> 0, seq |-> 1, type |-> "PREPARE", sender |-> 1, digest |-> 1],
+  [view |-> 0, seq |-> 1, type |-> "PREPARE", sender |-> 3, digest |-> 1],
+  [view |-> 0, seq |-> 1, type |-> "PREPARE", sender |-> 4, digest |-> 1] }
+/\ ctrl_decisions = <<0, 0, 1, 0>>
+/\ ctrl_updating = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view = <<0, 0, 0, 0>>
+/\ hbm_artif_pending = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view_pending = <<0, 0, 0, 0>>
+
+State 15: <TraceDecide line 89, col 5 to line 107, col 17 of module Trace>
+/\ phase = <<"NORMAL", "NORMAL", "NORMAL", "NORMAL">>
+/\ hbm_view = <<0, 0, 0, 0>>
+/\ commit_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {1, 2, 3, 4} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {1, 2, 3, 4} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ blacklist = <<{}, {}, {}, {}>>
+/\ log = <<<<>>, <<>>, <<1>>, <<1>>>>
+/\ committed_during_vc = <<0, 0, 0, 0>>
+/\ l = 11
+/\ vc_view = <<0, 0, 0, 0>>
+/\ prepare_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ vc_delivered_seq = <<0, 0, 0, 0>>
+/\ in_flight = <<1, 0, 0, 0>>
+/\ hbm_role = <<"LEADER", "FOLLOWER", "FOLLOWER", "FOLLOWER">>
+/\ vc_quorum = <<{}, {}, {}, {}>>
+/\ hbm_timed_out = <<FALSE, FALSE, FALSE, FALSE>>
+/\ hbm_chg_pend = <<FALSE, FALSE, FALSE, FALSE>>
+/\ vc_start_dropped = <<FALSE, FALSE, FALSE, FALSE>>
+/\ msgs = { [view |-> 0, seq |-> 1, type |-> "PREPREPARE", sender |-> 1, digest |-> 1],
+  [view |-> 0, seq |-> 1, type |-> "PREPARE", sender |-> 1, digest |-> 1],
+  [view |-> 0, seq |-> 1, type |-> "PREPARE", sender |-> 3, digest |-> 1],
+  [view |-> 0, seq |-> 1, type |-> "PREPARE", sender |-> 4, digest |-> 1] }
+/\ ctrl_decisions = <<0, 0, 1, 1>>
+/\ ctrl_updating = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view = <<0, 0, 0, 0>>
+/\ hbm_artif_pending = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view_pending = <<0, 0, 0, 0>>
+
+State 16: <TraceDecide line 89, col 5 to line 107, col 17 of module Trace>
+/\ phase = <<"NORMAL", "NORMAL", "NORMAL", "NORMAL">>
+/\ hbm_view = <<0, 0, 0, 0>>
+/\ commit_votes = << ( 0 :> {} @@
+     1 :> {1, 2, 3, 4} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {1, 2, 3, 4} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {1, 2, 3, 4} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ blacklist = <<{}, {}, {}, {}>>
+/\ log = <<<<1>>, <<>>, <<1>>, <<1>>>>
+/\ committed_during_vc = <<0, 0, 0, 0>>
+/\ l = 12
+/\ vc_view = <<0, 0, 0, 0>>
+/\ prepare_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ vc_delivered_seq = <<0, 0, 0, 0>>
+/\ in_flight = <<0, 0, 0, 0>>
+/\ hbm_role = <<"LEADER", "FOLLOWER", "FOLLOWER", "FOLLOWER">>
+/\ vc_quorum = <<{}, {}, {}, {}>>
+/\ hbm_timed_out = <<FALSE, FALSE, FALSE, FALSE>>
+/\ hbm_chg_pend = <<FALSE, FALSE, FALSE, FALSE>>
+/\ vc_start_dropped = <<FALSE, FALSE, FALSE, FALSE>>
+/\ msgs = { [view |-> 0, seq |-> 1, type |-> "PREPREPARE", sender |-> 1, digest |-> 1],
+  [view |-> 0, seq |-> 1, type |-> "PREPARE", sender |-> 1, digest |-> 1],
+  [view |-> 0, seq |-> 1, type |-> "PREPARE", sender |-> 3, digest |-> 1],
+  [view |-> 0, seq |-> 1, type |-> "PREPARE", sender |-> 4, digest |-> 1] }
+/\ ctrl_decisions = <<1, 0, 1, 1>>
+/\ ctrl_updating = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view = <<0, 0, 0, 0>>
+/\ hbm_artif_pending = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view_pending = <<0, 0, 0, 0>>
+
+State 17: <SilentHBFollowerTickBeforeVC line 265, col 5 to line 270, col 18 of module Trace>
+/\ phase = <<"NORMAL", "NORMAL", "NORMAL", "NORMAL">>
+/\ hbm_view = <<0, 0, 0, 0>>
+/\ commit_votes = << ( 0 :> {} @@
+     1 :> {1, 2, 3, 4} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {1, 2, 3, 4} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {1, 2, 3, 4} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ blacklist = <<{}, {}, {}, {}>>
+/\ log = <<<<1>>, <<>>, <<1>>, <<1>>>>
+/\ committed_during_vc = <<0, 0, 0, 0>>
+/\ l = 12
+/\ vc_view = <<0, 0, 0, 0>>
+/\ prepare_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ vc_delivered_seq = <<0, 0, 0, 0>>
+/\ in_flight = <<0, 0, 0, 0>>
+/\ hbm_role = <<"LEADER", "FOLLOWER", "FOLLOWER", "FOLLOWER">>
+/\ vc_quorum = <<{}, {}, {}, {}>>
+/\ hbm_timed_out = <<FALSE, FALSE, TRUE, FALSE>>
+/\ hbm_chg_pend = <<FALSE, FALSE, FALSE, FALSE>>
+/\ vc_start_dropped = <<FALSE, FALSE, FALSE, FALSE>>
+/\ msgs = { [view |-> 0, leader |-> 1, type |-> "COMPLAINT", sender |-> 3],
+  [view |-> 0, seq |-> 1, type |-> "PREPREPARE", sender |-> 1, digest |-> 1],
+  [view |-> 0, seq |-> 1, type |-> "PREPARE", sender |-> 1, digest |-> 1],
+  [view |-> 0, seq |-> 1, type |-> "PREPARE", sender |-> 3, digest |-> 1],
+  [view |-> 0, seq |-> 1, type |-> "PREPARE", sender |-> 4, digest |-> 1] }
+/\ ctrl_decisions = <<1, 0, 1, 1>>
+/\ ctrl_updating = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view = <<0, 0, 0, 0>>
+/\ hbm_artif_pending = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view_pending = <<0, 0, 0, 0>>
+
+State 18: <SilentOnHeartbeatTimeout line 278, col 5 to line 283, col 18 of module Trace>
+/\ phase = <<"NORMAL", "NORMAL", "VC_STARTED", "NORMAL">>
+/\ hbm_view = <<0, 0, 0, 0>>
+/\ commit_votes = << ( 0 :> {} @@
+     1 :> {1, 2, 3, 4} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {1, 2, 3, 4} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {1, 2, 3, 4} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ blacklist = <<{}, {}, {}, {}>>
+/\ log = <<<<1>>, <<>>, <<1>>, <<1>>>>
+/\ committed_during_vc = <<0, 0, 0, 0>>
+/\ l = 12
+/\ vc_view = <<0, 0, 0, 0>>
+/\ prepare_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ vc_delivered_seq = <<0, 0, 0, 0>>
+/\ in_flight = <<0, 0, 0, 0>>
+/\ hbm_role = <<"LEADER", "FOLLOWER", "FOLLOWER", "FOLLOWER">>
+/\ vc_quorum = <<{}, {}, {}, {}>>
+/\ hbm_timed_out = <<FALSE, FALSE, TRUE, FALSE>>
+/\ hbm_chg_pend = <<FALSE, FALSE, FALSE, FALSE>>
+/\ vc_start_dropped = <<FALSE, FALSE, FALSE, FALSE>>
+/\ msgs = { [view |-> 0, seq |-> 1, type |-> "PREPREPARE", sender |-> 1, digest |-> 1],
+  [view |-> 0, seq |-> 1, type |-> "PREPARE", sender |-> 1, digest |-> 1],
+  [view |-> 0, seq |-> 1, type |-> "PREPARE", sender |-> 3, digest |-> 1],
+  [view |-> 0, seq |-> 1, type |-> "PREPARE", sender |-> 4, digest |-> 1] }
+/\ ctrl_decisions = <<1, 0, 1, 1>>
+/\ ctrl_updating = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view = <<0, 0, 0, 0>>
+/\ hbm_artif_pending = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view_pending = <<0, 0, 0, 0>>
+
+State 19: <TraceStartViewChange line 146, col 5 to line 152, col 17 of module Trace>
+/\ phase = <<"NORMAL", "NORMAL", "VC_STARTED", "NORMAL">>
+/\ hbm_view = <<0, 0, 0, 0>>
+/\ commit_votes = << ( 0 :> {} @@
+     1 :> {1, 2, 3, 4} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {1, 2, 3, 4} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {1, 2, 3, 4} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ blacklist = <<{}, {}, {}, {}>>
+/\ log = <<<<1>>, <<>>, <<1>>, <<1>>>>
+/\ committed_during_vc = <<0, 0, 0, 0>>
+/\ l = 13
+/\ vc_view = <<0, 0, 0, 0>>
+/\ prepare_votes = << ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ),
+   ( 0 :> {} @@
+     1 :> {} @@
+     2 :> {} @@
+     3 :> {} @@
+     4 :> {} @@
+     5 :> {} @@
+     6 :> {} @@
+     7 :> {} @@
+     8 :> {} @@
+     9 :> {} @@
+     10 :> {} ) >>
+/\ vc_delivered_seq = <<0, 0, 0, 0>>
+/\ in_flight = <<0, 0, 0, 0>>
+/\ hbm_role = <<"LEADER", "FOLLOWER", "FOLLOWER", "FOLLOWER">>
+/\ vc_quorum = <<{}, {}, {}, {}>>
+/\ hbm_timed_out = <<FALSE, FALSE, TRUE, FALSE>>
+/\ hbm_chg_pend = <<FALSE, FALSE, FALSE, FALSE>>
+/\ vc_start_dropped = <<FALSE, FALSE, FALSE, FALSE>>
+/\ msgs = {[type |-> "VIEW_CHANGE", sender |-> 3, next_view |-> 1], [view |-> 0, seq |-> 1, type |-> "PREPREPARE", sender |-> 1, digest |-> 1], [view |-> 0, seq |-> 1, type |-> "PREPARE", sender |-> 1, digest |-> 1], [view |-> 0, seq |-> 1, type |-> "PREPARE", sender |-> 3, digest |-> 1], [view |-> 0, seq |-> 1, type |-> "PREPARE", sender |-> 4, digest |-> 1]}
+/\ ctrl_decisions = <<1, 0, 1, 1>>
+/\ ctrl_updating = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view = <<0, 0, 0, 0>>
+/\ hbm_artif_pending = <<FALSE, FALSE, FALSE, FALSE>>
+/\ ctrl_view_pending = <<0, 0, 0, 0>>
+
+4478 states generated, 1336 distinct states found, 493 states left on queue.
+The depth of the complete state graph search is 19.
+Finished in 01s at (2026-06-12 23:12:34)
+Trace exploration spec path: ./Trace_TTrace_1781298753.tla
+
+success: True

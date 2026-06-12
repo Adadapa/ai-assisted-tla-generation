@@ -1,0 +1,200 @@
+2026-06-12T16:34:23.856+0200	DEBUG	test/test_app.go:309	Deliver view 0 last seq 1 prevSeq 0	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.856+0200	DEBUG	bft/viewchanger.go:1223	Delivering end to app from deliverDecision the last decision proposal	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.856+0200	DEBUG	bft/requestpool.go:382	request {alice 1} is not in the pool at remove time	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.856+0200	WARN	bft/viewchanger.go:1228	Error during remove of request {alice 1} from the pool, err: request {alice 1} is not in the pool at remove time	{"t": "TestTLATraceVCDeliver", "id": 2}
+github.com/hyperledger-labs/SmartBFT/internal/bft.(*ViewChanger).deliverDecision
+	/Users/tess/dev/Specula/case-studies/smartbft/SmartBFT/internal/bft/viewchanger.go:1228
+github.com/hyperledger-labs/SmartBFT/internal/bft.(*ViewChanger).checkLastDecision
+	/Users/tess/dev/Specula/case-studies/smartbft/SmartBFT/internal/bft/viewchanger.go:661
+github.com/hyperledger-labs/SmartBFT/internal/bft.(*ViewChanger).validateViewDataMsg
+	/Users/tess/dev/Specula/case-studies/smartbft/SmartBFT/internal/bft/viewchanger.go:527
+github.com/hyperledger-labs/SmartBFT/internal/bft.(*ViewChanger).processMsg
+	/Users/tess/dev/Specula/case-studies/smartbft/SmartBFT/internal/bft/viewchanger.go:306
+github.com/hyperledger-labs/SmartBFT/internal/bft.(*ViewChanger).run
+	/Users/tess/dev/Specula/case-studies/smartbft/SmartBFT/internal/bft/viewchanger.go:218
+github.com/hyperledger-labs/SmartBFT/internal/bft.(*ViewChanger).Start.func1
+	/Users/tess/dev/Specula/case-studies/smartbft/SmartBFT/internal/bft/viewchanger.go:157
+2026-06-12T16:34:23.856+0200	DEBUG	bft/viewchanger.go:533	Node 2 got <ViewData signed by 4 with NextView: 1> from 4, and it passed the last decision check	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.856+0200	DEBUG	bft/viewchanger.go:540	Node 2 got <ViewData signed by 4 with NextView: 1> from 4, and the in flight proposal is valid	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.860+0200	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=16, recordLength=4, dataCRC=C0834760; file=/var/folders/t4/47krvbs96xs48n5zvds52dg80000gn/T/TestTLATraceVCDeliver3571511958/node3/0000000000000002.wal, new-offset=320	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:23.860+0200	DEBUG	bft/controller.go:481	AbortView, the current view num is 0	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:23.860+0200	DEBUG	bft/viewchanger.go:499	Node 3's in flight proposal and the last decision has the same sequence: 1	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:23.860+0200	DEBUG	bft/viewchanger.go:440	Node 3 sent view data msg, with next view 1, to the new leader 2	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:23.860+0200	DEBUG	bft/controller.go:331	2 got message from 3: <ViewData signed by 3 with NextView: 1>	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.860+0200	DEBUG	bft/viewchanger.go:305	Node 2 is processing a view data message <ViewData signed by 3 with NextView: 1> from 3	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.860+0200	DEBUG	bft/viewchanger.go:591	Node 2 got <ViewData signed by 3 with NextView: 1> from 3, the last decision seq is 1 and this node's current sequence is 1	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.860+0200	DEBUG	bft/controller.go:453	view for abort 0, current view 0	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:23.860+0200	DEBUG	bft/controller.go:465	Aborting current view with number 0	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:23.860+0200	DEBUG	bft/viewchanger.go:533	Node 2 got <ViewData signed by 3 with NextView: 1> from 3, and it passed the last decision check	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.860+0200	DEBUG	bft/viewchanger.go:540	Node 2 got <ViewData signed by 3 with NextView: 1> from 3, and the in flight proposal is valid	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.860+0200	DEBUG	bft/viewchanger.go:791	Node 2 got a quorum of viewData messages	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.860+0200	DEBUG	bft/viewchanger.go:800	Node 2 checked the in flight and it was valid	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.860+0200	DEBUG	bft/viewchanger.go:471	Node 2's in flight proposal is not set	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.860+0200	DEBUG	bft/viewchanger.go:819	Node 2 is broadcasting a new view msg	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.860+0200	DEBUG	bft/viewchanger.go:821	Node 2 sent a new view msg to self	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.860+0200	DEBUG	bft/viewchanger.go:316	Node 2 is processing a new view message < NewView with <ViewData signed by 2 with NextView: 1>, <ViewData signed by 4 with NextView: 1>, <ViewData signed by 3 with NextView: 1>> from 2	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.860+0200	DEBUG	bft/viewchanger.go:1133	Node 2 found a quorum of valid view data messages within the new view message	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.860+0200	DEBUG	bft/controller.go:331	3 got message from 2: < NewView with <ViewData signed by 2 with NextView: 1>, <ViewData signed by 4 with NextView: 1>, <ViewData signed by 3 with NextView: 1>>	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:23.860+0200	DEBUG	bft/controller.go:331	4 got message from 2: < NewView with <ViewData signed by 2 with NextView: 1>, <ViewData signed by 4 with NextView: 1>, <ViewData signed by 3 with NextView: 1>>	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:23.860+0200	DEBUG	bft/viewchanger.go:316	Node 3 is processing a new view message < NewView with <ViewData signed by 2 with NextView: 1>, <ViewData signed by 4 with NextView: 1>, <ViewData signed by 3 with NextView: 1>> from 2	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:23.860+0200	DEBUG	bft/viewchanger.go:316	Node 4 is processing a new view message < NewView with <ViewData signed by 2 with NextView: 1>, <ViewData signed by 4 with NextView: 1>, <ViewData signed by 3 with NextView: 1>> from 2	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:23.860+0200	DEBUG	bft/viewchanger.go:1133	Node 4 found a quorum of valid view data messages within the new view message	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:23.860+0200	DEBUG	bft/viewchanger.go:1133	Node 3 found a quorum of valid view data messages within the new view message	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:23.866+0200	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=16, recordLength=8, dataCRC=C6455064; file=/var/folders/t4/47krvbs96xs48n5zvds52dg80000gn/T/TestTLATraceVCDeliver3571511958/node2/0000000000000002.wal, new-offset=48	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.866+0200	DEBUG	bft/controller.go:490	ViewChanged, the new view is 1	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.866+0200	DEBUG	bft/controller.go:525	get newView from viewChange	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.866+0200	DEBUG	bft/controller.go:453	view for abort 0, current view 0	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.866+0200	DEBUG	bft/controller.go:465	Aborting current view with number 0	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.866+0200	DEBUG	bft/requestpool.go:489	Restarted all timers: size=0	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.866+0200	DEBUG	bft/viewchanger.go:824	Node 2 sent a new view msg	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.866+0200	DEBUG	bft/controller.go:443	Starting view after setting decisions in view to 0	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.866+0200	DEBUG	bft/controller.go:396	Acquiring leader token when starting view with phase COMMITTED	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.866+0200	INFO	bft/heartbeatmonitor.go:186	Changing to leader role, current view: 1, current leader: 2	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.866+0200	INFO	bft/controller.go:404	Starting view with number 1, sequence 2, and decisions 0	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:23.871+0200	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=16, recordLength=8, dataCRC=15E44C17; file=/var/folders/t4/47krvbs96xs48n5zvds52dg80000gn/T/TestTLATraceVCDeliver3571511958/node4/0000000000000002.wal, new-offset=336	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:23.871+0200	DEBUG	bft/controller.go:490	ViewChanged, the new view is 1	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:23.871+0200	DEBUG	bft/controller.go:525	get newView from viewChange	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:23.871+0200	DEBUG	bft/controller.go:453	view for abort 0, current view 0	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:23.871+0200	DEBUG	bft/controller.go:465	Aborting current view with number 0	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:23.871+0200	DEBUG	bft/requestpool.go:489	Restarted all timers: size=0	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:23.871+0200	DEBUG	bft/controller.go:443	Starting view after setting decisions in view to 0	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:23.871+0200	INFO	bft/heartbeatmonitor.go:186	Changing to follower role, current view: 1, current leader: 2	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:23.871+0200	INFO	bft/controller.go:404	Starting view with number 1, sequence 2, and decisions 0	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:23.875+0200	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=16, recordLength=8, dataCRC=A986B605; file=/var/folders/t4/47krvbs96xs48n5zvds52dg80000gn/T/TestTLATraceVCDeliver3571511958/node3/0000000000000002.wal, new-offset=336	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:23.876+0200	DEBUG	bft/controller.go:490	ViewChanged, the new view is 1	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:23.876+0200	DEBUG	bft/requestpool.go:489	Restarted all timers: size=1	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:23.876+0200	DEBUG	bft/controller.go:525	get newView from viewChange	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:23.876+0200	DEBUG	bft/controller.go:453	view for abort 0, current view 0	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:23.876+0200	DEBUG	bft/controller.go:465	Aborting current view with number 0	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:23.876+0200	DEBUG	bft/controller.go:443	Starting view after setting decisions in view to 0	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:23.876+0200	INFO	bft/heartbeatmonitor.go:186	Changing to follower role, current view: 1, current leader: 2	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:23.876+0200	INFO	bft/controller.go:404	Starting view with number 1, sequence 2, and decisions 0	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:23.942+0200	DEBUG	bft/heartbeatmonitor.go:416	Last heartbeat from 2 was 2.10058875s ago	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:23.942+0200	DEBUG	bft/heartbeatmonitor.go:416	Last heartbeat from 2 was 2.10058875s ago	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.043+0200	DEBUG	bft/heartbeatmonitor.go:416	Last heartbeat from 2 was 4.20162075s ago	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.043+0200	DEBUG	bft/heartbeatmonitor.go:416	Last heartbeat from 2 was 4.20162075s ago	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.144+0200	DEBUG	bft/heartbeatmonitor.go:416	Last heartbeat from 2 was 6.3018735s ago	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.144+0200	DEBUG	bft/heartbeatmonitor.go:416	Last heartbeat from 2 was 6.3018735s ago	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.144+0200	DEBUG	bft/heartbeatmonitor.go:379	Sending heartbeat with view 1, sequence 2	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.144+0200	DEBUG	bft/controller.go:331	4 got message from 2: <HeartBeat with view: 1, seq: 2	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.144+0200	DEBUG	bft/controller.go:331	3 got message from 2: <HeartBeat with view: 1, seq: 2	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.144+0200	DEBUG	bft/heartbeatmonitor.go:256	Received heartbeat from 2, last heartbeat was 6.3018735s ago	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.144+0200	DEBUG	bft/heartbeatmonitor.go:256	Received heartbeat from 2, last heartbeat was 6.3018735s ago	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.244+0200	DEBUG	bft/heartbeatmonitor.go:416	Last heartbeat from 2 was 2.101057625s ago	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.244+0200	DEBUG	bft/heartbeatmonitor.go:416	Last heartbeat from 2 was 2.101057625s ago	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.344+0200	DEBUG	bft/heartbeatmonitor.go:416	Last heartbeat from 2 was 4.201613708s ago	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.344+0200	DEBUG	bft/heartbeatmonitor.go:416	Last heartbeat from 2 was 4.201613708s ago	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.376+0200	DEBUG	bft/requestpool.go:515	Request {alice 2}; started a leader-forwarding timeout: 2s	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.376+0200	DEBUG	bft/requestpool.go:520	Request {alice 2} timeout expired, going to send to leader	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.376+0200	INFO	bft/controller.go:284	Request {alice 2} timeout expired, forwarding request to leader: 2	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.376+0200	DEBUG	bft/controller.go:253	Got request from 3	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.376+0200	DEBUG	bft/requestpool.go:273	Request {alice 2} submitted; started a timeout: 500ms	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.376+0200	DEBUG	bft/controller.go:270	Request {alice 2} was submitted	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.387+0200	DEBUG	bft/requestpool.go:328	Returning batch of 1 requests totalling 81B	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.387+0200	DEBUG	bft/view.go:914	GetMetadata with view 1, seq 2, dec 0	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.387+0200	DEBUG	bft/view.go:944	Proposing proposal 2 with verification sequence of 0 and 3 commit signatures	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.387+0200	DEBUG	bft/view.go:1046	Rotation is disabled, setting blacklist to be empty	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.387+0200	DEBUG	bft/view.go:999	Leader rotation is disabled, will not bind signatures to proposals	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.387+0200	DEBUG	bft/view.go:986	Proposing proposal sequence 2 in view 1	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.387+0200	DEBUG	bft/view.go:223	2 got message <PrePrepare with view: 1, seq: 2, payload of 87 bytes, header: > from 2 with seq 2	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.387+0200	DEBUG	bft/view.go:623	Previous proposal verification sequence: 0, current verification sequence: 0	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.387+0200	DEBUG	bft/view.go:661	DecisionsPerLeader is 0, hence leader rotation is inactive	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.394+0200	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=192, recordLength=183, dataCRC=BA89BF00; file=/var/folders/t4/47krvbs96xs48n5zvds52dg80000gn/T/TestTLATraceVCDeliver3571511958/node2/0000000000000002.wal, new-offset=240	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.394+0200	INFO	bft/view.go:435	Processed proposal with seq 2	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.394+0200	DEBUG	bft/controller.go:331	3 got message from 2: <PrePrepare with view: 1, seq: 2, payload of 87 bytes, header: >	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.394+0200	DEBUG	bft/controller.go:331	4 got message from 2: <PrePrepare with view: 1, seq: 2, payload of 87 bytes, header: >	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.394+0200	DEBUG	bft/heartbeatmonitor.go:256	Received heartbeat from 2, last heartbeat was 4.201613708s ago	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.394+0200	DEBUG	bft/view.go:223	3 got message <PrePrepare with view: 1, seq: 2, payload of 87 bytes, header: > from 2 with seq 2	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.394+0200	DEBUG	bft/controller.go:331	4 got message from 2: prepare:{view:1  seq:2  digest:"ec725c790b5fe10a3a31ef6519d4803d14e9f06262ff09533aa4db3e02b3aa39"}	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.394+0200	DEBUG	bft/view.go:623	Previous proposal verification sequence: 0, current verification sequence: 0	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.394+0200	DEBUG	bft/view.go:661	DecisionsPerLeader is 0, hence leader rotation is inactive	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.394+0200	DEBUG	bft/heartbeatmonitor.go:256	Received heartbeat from 2, last heartbeat was 4.201613708s ago	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.394+0200	DEBUG	bft/heartbeatmonitor.go:256	Received heartbeat from 2, last heartbeat was 0s ago	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.394+0200	DEBUG	bft/view.go:223	4 got message <PrePrepare with view: 1, seq: 2, payload of 87 bytes, header: > from 2 with seq 2	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.394+0200	DEBUG	bft/view.go:223	4 got message prepare:{view:1  seq:2  digest:"ec725c790b5fe10a3a31ef6519d4803d14e9f06262ff09533aa4db3e02b3aa39"} from 2 with seq 2	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.394+0200	DEBUG	bft/view.go:623	Previous proposal verification sequence: 0, current verification sequence: 0	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.394+0200	DEBUG	bft/view.go:661	DecisionsPerLeader is 0, hence leader rotation is inactive	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.394+0200	DEBUG	bft/controller.go:331	3 got message from 2: prepare:{view:1  seq:2  digest:"ec725c790b5fe10a3a31ef6519d4803d14e9f06262ff09533aa4db3e02b3aa39"}	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.394+0200	DEBUG	bft/heartbeatmonitor.go:256	Received heartbeat from 2, last heartbeat was 0s ago	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.399+0200	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=192, recordLength=183, dataCRC=CD5098CD; file=/var/folders/t4/47krvbs96xs48n5zvds52dg80000gn/T/TestTLATraceVCDeliver3571511958/node3/0000000000000002.wal, new-offset=528	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.399+0200	INFO	bft/view.go:435	Processed proposal with seq 2	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.399+0200	DEBUG	bft/view.go:223	3 got message prepare:{view:1  seq:2  digest:"ec725c790b5fe10a3a31ef6519d4803d14e9f06262ff09533aa4db3e02b3aa39"} from 2 with seq 2	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.399+0200	DEBUG	bft/controller.go:331	4 got message from 3: prepare:{view:1  seq:2  digest:"ec725c790b5fe10a3a31ef6519d4803d14e9f06262ff09533aa4db3e02b3aa39"}	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.399+0200	DEBUG	bft/controller.go:331	2 got message from 3: prepare:{view:1  seq:2  digest:"ec725c790b5fe10a3a31ef6519d4803d14e9f06262ff09533aa4db3e02b3aa39"}	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.399+0200	DEBUG	bft/view.go:223	2 got message prepare:{view:1  seq:2  digest:"ec725c790b5fe10a3a31ef6519d4803d14e9f06262ff09533aa4db3e02b3aa39"} from 3 with seq 2	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.403+0200	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=192, recordLength=183, dataCRC=73571CDB; file=/var/folders/t4/47krvbs96xs48n5zvds52dg80000gn/T/TestTLATraceVCDeliver3571511958/node4/0000000000000002.wal, new-offset=528	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.403+0200	INFO	bft/view.go:435	Processed proposal with seq 2	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.403+0200	DEBUG	bft/view.go:223	4 got message prepare:{view:1  seq:2  digest:"ec725c790b5fe10a3a31ef6519d4803d14e9f06262ff09533aa4db3e02b3aa39"} from 3 with seq 2	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.403+0200	INFO	bft/view.go:473	4 collected 2 prepares from [2 3]	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.403+0200	DEBUG	bft/controller.go:331	2 got message from 4: prepare:{view:1  seq:2  digest:"ec725c790b5fe10a3a31ef6519d4803d14e9f06262ff09533aa4db3e02b3aa39"}	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.403+0200	DEBUG	bft/controller.go:331	3 got message from 4: prepare:{view:1  seq:2  digest:"ec725c790b5fe10a3a31ef6519d4803d14e9f06262ff09533aa4db3e02b3aa39"}	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.403+0200	DEBUG	bft/view.go:223	3 got message prepare:{view:1  seq:2  digest:"ec725c790b5fe10a3a31ef6519d4803d14e9f06262ff09533aa4db3e02b3aa39"} from 4 with seq 2	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.403+0200	INFO	bft/view.go:473	3 collected 2 prepares from [2 4]	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.403+0200	DEBUG	bft/view.go:223	2 got message prepare:{view:1  seq:2  digest:"ec725c790b5fe10a3a31ef6519d4803d14e9f06262ff09533aa4db3e02b3aa39"} from 4 with seq 2	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.403+0200	INFO	bft/view.go:473	2 collected 2 prepares from [3 4]	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.412+0200	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=96, recordLength=86, dataCRC=8FFD9D7A; file=/var/folders/t4/47krvbs96xs48n5zvds52dg80000gn/T/TestTLATraceVCDeliver3571511958/node4/0000000000000002.wal, new-offset=624	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.412+0200	INFO	bft/view.go:525	Processed prepares for proposal with seq 2	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.412+0200	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=96, recordLength=86, dataCRC=A5AF5DB5; file=/var/folders/t4/47krvbs96xs48n5zvds52dg80000gn/T/TestTLATraceVCDeliver3571511958/node3/0000000000000002.wal, new-offset=624	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.412+0200	DEBUG	bft/controller.go:331	2 got message from 4: commit:{view:1  seq:2  digest:"ec725c790b5fe10a3a31ef6519d4803d14e9f06262ff09533aa4db3e02b3aa39"  signature:{signer:4  msg:"\n\x02\x02\x03"}}	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.412+0200	INFO	bft/view.go:525	Processed prepares for proposal with seq 2	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.412+0200	DEBUG	bft/controller.go:331	3 got message from 4: commit:{view:1  seq:2  digest:"ec725c790b5fe10a3a31ef6519d4803d14e9f06262ff09533aa4db3e02b3aa39"  signature:{signer:4  msg:"\n\x02\x02\x03"}}	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.412+0200	DEBUG	bft/controller.go:331	4 got message from 3: commit:{view:1  seq:2  digest:"ec725c790b5fe10a3a31ef6519d4803d14e9f06262ff09533aa4db3e02b3aa39"  signature:{signer:3  msg:"\n\x02\x02\x04"}}	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.412+0200	DEBUG	bft/controller.go:331	2 got message from 3: commit:{view:1  seq:2  digest:"ec725c790b5fe10a3a31ef6519d4803d14e9f06262ff09533aa4db3e02b3aa39"  signature:{signer:3  msg:"\n\x02\x02\x04"}}	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.412+0200	DEBUG	bft/view.go:223	4 got message commit:{view:1  seq:2  digest:"ec725c790b5fe10a3a31ef6519d4803d14e9f06262ff09533aa4db3e02b3aa39"  signature:{signer:3  msg:"\n\x02\x02\x04"}} from 3 with seq 2	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.412+0200	DEBUG	bft/view.go:223	3 got message commit:{view:1  seq:2  digest:"ec725c790b5fe10a3a31ef6519d4803d14e9f06262ff09533aa4db3e02b3aa39"  signature:{signer:4  msg:"\n\x02\x02\x03"}} from 4 with seq 2	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.416+0200	DEBUG	wal/writeaheadlog.go:485	LogRecord appended successfully: total size=96, recordLength=86, dataCRC=1793860D; file=/var/folders/t4/47krvbs96xs48n5zvds52dg80000gn/T/TestTLATraceVCDeliver3571511958/node2/0000000000000002.wal, new-offset=336	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.416+0200	INFO	bft/view.go:525	Processed prepares for proposal with seq 2	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.416+0200	DEBUG	bft/view.go:223	2 got message commit:{view:1  seq:2  digest:"ec725c790b5fe10a3a31ef6519d4803d14e9f06262ff09533aa4db3e02b3aa39"  signature:{signer:4  msg:"\n\x02\x02\x03"}} from 4 with seq 2	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.416+0200	DEBUG	bft/view.go:223	2 got message commit:{view:1  seq:2  digest:"ec725c790b5fe10a3a31ef6519d4803d14e9f06262ff09533aa4db3e02b3aa39"  signature:{signer:3  msg:"\n\x02\x02\x04"}} from 3 with seq 2	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.416+0200	INFO	bft/view.go:558	2 collected 2 commits from [3 4]	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.416+0200	INFO	bft/view.go:336	2 processed commits for proposal with seq 2	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.416+0200	INFO	bft/view.go:862	Deciding on seq 2	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.416+0200	INFO	bft/view.go:881	Sequence: 2-->3	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.416+0200	DEBUG	bft/controller.go:331	3 got message from 2: commit:{view:1  seq:2  digest:"ec725c790b5fe10a3a31ef6519d4803d14e9f06262ff09533aa4db3e02b3aa39"  signature:{signer:2  msg:"\n\x02\x03\x04"}}	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.416+0200	DEBUG	bft/controller.go:552	Delivering to app from Controller decide the last decision proposal	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.416+0200	DEBUG	bft/controller.go:331	4 got message from 2: commit:{view:1  seq:2  digest:"ec725c790b5fe10a3a31ef6519d4803d14e9f06262ff09533aa4db3e02b3aa39"  signature:{signer:2  msg:"\n\x02\x03\x04"}}	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.416+0200	DEBUG	bft/heartbeatmonitor.go:256	Received heartbeat from 2, last heartbeat was 0s ago	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.416+0200	DEBUG	bft/heartbeatmonitor.go:256	Received heartbeat from 2, last heartbeat was 0s ago	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.416+0200	DEBUG	bft/view.go:223	3 got message commit:{view:1  seq:2  digest:"ec725c790b5fe10a3a31ef6519d4803d14e9f06262ff09533aa4db3e02b3aa39"  signature:{signer:2  msg:"\n\x02\x03\x04"}} from 2 with seq 2	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.416+0200	DEBUG	bft/view.go:223	4 got message commit:{view:1  seq:2  digest:"ec725c790b5fe10a3a31ef6519d4803d14e9f06262ff09533aa4db3e02b3aa39"  signature:{signer:2  msg:"\n\x02\x03\x04"}} from 2 with seq 2	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.416+0200	INFO	bft/view.go:558	3 collected 2 commits from [4 2]	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.416+0200	DEBUG	test/test_app.go:309	Deliver view 1 last seq 2 prevSeq 1	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.416+0200	INFO	bft/view.go:336	3 processed commits for proposal with seq 2	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.416+0200	INFO	bft/view.go:862	Deciding on seq 2	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.416+0200	INFO	bft/view.go:558	4 collected 2 commits from [3 2]	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.416+0200	INFO	bft/view.go:336	4 processed commits for proposal with seq 2	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.416+0200	INFO	bft/view.go:862	Deciding on seq 2	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.416+0200	DEBUG	bft/controller.go:557	Node 2 delivered proposal	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.416+0200	DEBUG	bft/requestpool.go:400	Removed request {alice 2} from request pool	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.416+0200	INFO	bft/view.go:881	Sequence: 2-->3	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.416+0200	INFO	bft/view.go:881	Sequence: 2-->3	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.416+0200	DEBUG	bft/controller.go:552	Delivering to app from Controller decide the last decision proposal	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.416+0200	DEBUG	bft/controller.go:600	view(1) + (decisionsInView(1) / decisionsPerLeader(0)), N(4), blacklist([])	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.416+0200	DEBUG	bft/controller.go:552	Delivering to app from Controller decide the last decision proposal	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.416+0200	DEBUG	test/test_app.go:309	Deliver view 1 last seq 2 prevSeq 1	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.416+0200	DEBUG	test/test_app.go:309	Deliver view 1 last seq 2 prevSeq 1	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.416+0200	DEBUG	bft/controller.go:557	Node 3 delivered proposal	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.416+0200	DEBUG	bft/requestpool.go:400	Removed request {alice 2} from request pool	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.416+0200	DEBUG	bft/controller.go:557	Node 4 delivered proposal	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.416+0200	DEBUG	bft/controller.go:600	view(1) + (decisionsInView(1) / decisionsPerLeader(0)), N(4), blacklist([])	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.416+0200	DEBUG	bft/requestpool.go:382	request {alice 2} is not in the pool at remove time	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.416+0200	DEBUG	bft/controller.go:935	Request {alice 2} wasn't found in the pool : request {alice 2} is not in the pool at remove time	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.416+0200	DEBUG	bft/controller.go:600	view(1) + (decisionsInView(1) / decisionsPerLeader(0)), N(4), blacklist([])	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.417+0200	INFO	bft/controller.go:516	Exiting controller run; ID: 1	{"t": "TestTLATraceVCDeliver", "id": 1}
+2026-06-12T16:34:24.417+0200	INFO	consensus/consensus.go:169	Exiting consensus run; ID: 1	{"t": "TestTLATraceVCDeliver", "id": 1}
+2026-06-12T16:34:24.417+0200	INFO	bft/controller.go:516	Exiting controller run; ID: 2	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.417+0200	INFO	consensus/consensus.go:169	Exiting consensus run; ID: 2	{"t": "TestTLATraceVCDeliver", "id": 2}
+2026-06-12T16:34:24.417+0200	INFO	bft/controller.go:516	Exiting controller run; ID: 3	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.417+0200	INFO	consensus/consensus.go:169	Exiting consensus run; ID: 3	{"t": "TestTLATraceVCDeliver", "id": 3}
+2026-06-12T16:34:24.417+0200	INFO	bft/controller.go:516	Exiting controller run; ID: 4	{"t": "TestTLATraceVCDeliver", "id": 4}
+2026-06-12T16:34:24.417+0200	INFO	consensus/consensus.go:169	Exiting consensus run; ID: 4	{"t": "TestTLATraceVCDeliver", "id": 4}
+--- PASS: TestTLATraceVCDeliver (4.39s)
+PASS
+ok  	github.com/hyperledger-labs/SmartBFT/test	4.636s
+[run] Trace file line counts:
+      70 /Users/tess/dev/Specula/case-studies/smartbft/.specula-output/traces/trace_hb_timeout.ndjson
+      31 /Users/tess/dev/Specula/case-studies/smartbft/.specula-output/traces/trace_normal.ndjson
+      40 /Users/tess/dev/Specula/case-studies/smartbft/.specula-output/traces/trace_vc_deliver.ndjson
+      49 /Users/tess/dev/Specula/case-studies/smartbft/.specula-output/traces/trace_view_change.ndjson
+     190 total
+[run] Done.
