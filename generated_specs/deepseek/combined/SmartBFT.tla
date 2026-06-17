@@ -12,40 +12,7 @@
 \*   4. Advances l
 
 EXTENDS Json, IOUtils, Sequences, FiniteSets, TLC, Integers
-
-\* ─── Trace file ───────────────────────────────────────────────────────────────
-
-JsonFile ==
-    IF "JSON" \in DOMAIN IOEnv THEN IOEnv.JSON
-    ELSE "../traces/trace.ndjson"
-
-TraceLog == ndJsonDeserialize(JsonFile)
-
-\* ─── Trace cursor ─────────────────────────────────────────────────────────────
-
-VARIABLE l
-
-\* ─── TraceInit ────────────────────────────────────────────────────────────────
-\* Bootstrap state matches implementation startup (view=0, no committed decisions).
-
-TraceInit ==
-    /\ Init
-    /\ l = 1
-
-\* ─── Helper: current trace event ──────────────────────────────────────────────
-
-Logline == TraceLog[l]
-
-IsEvent(name) == Logline.event = name
-IsNodeEvent(name, s) == IsEvent(name) /\ Logline.node = s
-
-\* ─── Post-state validation helpers ───────────────────────────────────────────
-\* ValidatePostState is MANDATORY per spec — not a stub.
-\* Each wrapper checks the key fields the action modifies.
-
-\* Convert trace node identifier to Server element (trace uses integer node IDs).
-NodeID(id) == id    \* assumes trace emits integer node IDs matching Server set
-
+\* base
 \* SmartBFT — PBFT-family BFT consensus with rotating leader
 \* hyperledger-labs/SmartBFT, internal/bft/
 \*
@@ -56,7 +23,6 @@ NodeID(id) == id    \* assumes trace emits integer node IDs matching Server set
 \*   F3 — Non-Atomic View+DecisionsInView Update (two-lock window)
 \*   F4 — View Change Processing Correctness (informChan drop, deliver-loop)
 \*   F5 — In-Flight Proposal Lifecycle (stale committedDuringViewChange)
-
 
 \* ─── Constants ───────────────────────────────────────────────────────────────
 
@@ -973,6 +939,41 @@ StructuralInv ==
     /\ TypeOK
     /\ LogMonotonic
 
+
+
+
+\* ─── Trace file ───────────────────────────────────────────────────────────────
+
+JsonFile ==
+    IF "JSON" \in DOMAIN IOEnv THEN IOEnv.JSON
+    ELSE "../traces/trace.ndjson"
+
+TraceLog == ndJsonDeserialize(JsonFile)
+
+\* ─── Trace cursor ─────────────────────────────────────────────────────────────
+
+VARIABLE l
+
+\* ─── TraceInit ────────────────────────────────────────────────────────────────
+\* Bootstrap state matches implementation startup (view=0, no committed decisions).
+
+TraceInit ==
+    /\ Init
+    /\ l = 1
+
+\* ─── Helper: current trace event ──────────────────────────────────────────────
+
+Logline == TraceLog[l]
+
+IsEvent(name) == Logline.event = name
+IsNodeEvent(name, s) == IsEvent(name) /\ Logline.node = s
+
+\* ─── Post-state validation helpers ───────────────────────────────────────────
+\* ValidatePostState is MANDATORY per spec — not a stub.
+\* Each wrapper checks the key fields the action modifies.
+
+\* Convert trace node identifier to Server element (trace uses integer node IDs).
+NodeID(id) == id    \* assumes trace emits integer node IDs matching Server set
 
 \* ─── Action wrappers ──────────────────────────────────────────────────────────
 
