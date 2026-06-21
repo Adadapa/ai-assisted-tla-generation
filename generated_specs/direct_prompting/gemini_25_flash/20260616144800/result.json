@@ -1,0 +1,387 @@
+{
+  "overall_success": true,
+  "generation_successful": true,
+  "compilation_successful": false,
+  "generation_time": 239.1078507900238,
+  "compilation_time": 4.442954063415527,
+  "total_actions": 25,
+  "successful_actions": 12,
+  "action_success_rate": 0.48,
+  "total_variables_added": 48,
+  "total_functions_added": 18,
+  "total_recovery_attempts": 24,
+  "syntax_errors": [
+    "Leader: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Leader.tla\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Leader.tla\n\njava.util.UnknownFormatConversionException: Conversion = 'i'",
+    "MaxSet: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_MaxSet.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"Phase\" at line 6, column 1 and token \"y\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_MaxSet.tla\n\nIn module SmartBFT_MaxSet\n\nCould not parse module SmartBFT_MaxSet from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_MaxSet.tla\n*** Errors: 1\n\nIn module SmartBFT_MaxSet\n\nCould not parse module SmartBFT_MaxSet from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_MaxSet.tla",
+    "VDInfo: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_VDInfo.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"MsgType\" at line 10, column 1 and token \"]\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_VDInfo.tla\n\nIn module SmartBFT_VDInfo\n\nCould not parse module SmartBFT_VDInfo from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_VDInfo.tla\n*** Errors: 1\n\nIn module SmartBFT_VDInfo\n\nCould not parse module SmartBFT_VDInfo from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_VDInfo.tla",
+    "Msg: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Msg.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"currentView\" at line 18, column 5 and token \"ALL_NODES\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Msg.tla\n\nIn module SmartBFT_Msg\n\nCould not parse module SmartBFT_Msg from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Msg.tla\n*** Errors: 1\n\nIn module SmartBFT_Msg\n\nCould not parse module SmartBFT_Msg from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Msg.tla",
+    "Receive: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Receive.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"{\" at line 7, column 43 and token \"setminus\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Receive.tla\n\nIn module SmartBFT_Receive\n\nCould not parse module SmartBFT_Receive from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Receive.tla\n*** Errors: 1\n\nIn module SmartBFT_Receive\n\nCould not parse module SmartBFT_Receive from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Receive.tla",
+    "Preprepare: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Preprepare.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"LET\" at line 8, column 5 and token \"0\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Preprepare.tla\n\nIn module SmartBFT_Preprepare\n\nCould not parse module SmartBFT_Preprepare from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Preprepare.tla\n*** Errors: 1\n\nIn module SmartBFT_Preprepare\n\nCould not parse module SmartBFT_Preprepare from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Preprepare.tla",
+    "Prepare: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Prepare.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"LET\" at line 13, column 9 and token \"seq\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Prepare.tla\n\nIn module SmartBFT_Prepare\n\nCould not parse module SmartBFT_Prepare from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Prepare.tla\n*** Errors: 1\n\nIn module SmartBFT_Prepare\n\nCould not parse module SmartBFT_Prepare from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Prepare.tla",
+    "Commit: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Commit.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"LET\" at line 13, column 9 and token \")\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Commit.tla\n\nIn module SmartBFT_Commit\n\nCould not parse module SmartBFT_Commit from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Commit.tla\n*** Errors: 1\n\nIn module SmartBFT_Commit\n\nCould not parse module SmartBFT_Commit from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Commit.tla",
+    "Decide: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Decide.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"IN\" at line 13, column 9 and token \")\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Decide.tla\n\nIn module SmartBFT_Decide\n\nCould not parse module SmartBFT_Decide from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Decide.tla\n*** Errors: 1\n\nIn module SmartBFT_Decide\n\nCould not parse module SmartBFT_Decide from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Decide.tla",
+    "ViewChange: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_ViewChange.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"LET\" at line 9, column 5 and token \"TRUE\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_ViewChange.tla\n\nIn module SmartBFT_ViewChange\n\nCould not parse module SmartBFT_ViewChange from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_ViewChange.tla\n*** Errors: 1\n\nIn module SmartBFT_ViewChange\n\nCould not parse module SmartBFT_ViewChange from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_ViewChange.tla",
+    "ViewData: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_ViewData.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"LET\" at line 13, column 9 and token \")\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_ViewData.tla\n\nIn module SmartBFT_ViewData\n\nCould not parse module SmartBFT_ViewData from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_ViewData.tla\n*** Errors: 1\n\nIn module SmartBFT_ViewData\n\nCould not parse module SmartBFT_ViewData from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_ViewData.tla",
+    "NewView: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_NewView.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"LET\" at line 12, column 9 and token \")\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_NewView.tla\n\nIn module SmartBFT_NewView\n\nCould not parse module SmartBFT_NewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_NewView.tla\n*** Errors: 1\n\nIn module SmartBFT_NewView\n\nCould not parse module SmartBFT_NewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_NewView.tla",
+    "Spec: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Spec.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-16076434016669354059/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-16076434016669354059/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-16076434016669354059/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-16076434016669354059/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-16076434016669354059/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-16076434016669354059/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_Spec\nSemantic errors:\n\n*** Errors: 7\n\nline 27, col 11 to line 27, col 11 of module SmartBFT_Spec\n\nMultiply-defined symbol 'i': this definition or declaration conflicts \nwith the one at line 26, col 11 to line 26, col 11 of module SmartBFT_Spec.\n\n\nline 28, col 11 to line 28, col 11 of module SmartBFT_Spec\n\nMultiply-defined symbol 'i': this definition or declaration conflicts \nwith the one at line 26, col 11 to line 26, col 11 of module SmartBFT_Spec.\n\n\nline 29, col 11 to line 29, col 11 of module SmartBFT_Spec\n\nMultiply-defined symbol 'i': this definition or declaration conflicts \nwith the one at line 26, col 11 to line 26, col 11 of module SmartBFT_Spec.\n\n\nline 30, col 11 to line 30, col 11 of module SmartBFT_Spec\n\nMultiply-defined symbol 'i': this definition or declaration conflicts \nwith the one at line 26, col 11 to line 26, col 11 of module SmartBFT_Spec.\n\n\nline 31, col 11 to line 31, col 11 of module SmartBFT_Spec\n\nMultiply-defined symbol 'i': this definition or declaration conflicts \nwith the one at line 26, col 11 to line 26, col 11 of module SmartBFT_Spec.\n\n\nline 32, col 11 to line 32, col 11 of module SmartBFT_Spec\n\nMultiply-defined symbol 'i': this definition or declaration conflicts \nwith the one at line 26, col 11 to line 26, col 11 of module SmartBFT_Spec.\n\n\nline 33, col 11 to line 33, col 11 of module SmartBFT_Spec\n\nMultiply-defined symbol 'i': this definition or declaration conflicts \nwith the one at line 26, col 11 to line 26, col 11 of module SmartBFT_Spec.",
+    "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /Users/adaturgut/SysMoBench/data/spec/hyperledger/SmartBFT.tla\n\nFatal errors while parsing TLA+ spec in file /Users/adaturgut/SysMoBench/data/spec/hyperledger/SmartBFT.tla\n\njava.util.UnknownFormatConversionException: Conversion = 'i'"
+  ],
+  "semantic_errors": [],
+  "action_results": [
+    {
+      "action_name": "QuorumSize",
+      "success": true,
+      "compilation_time": 0.1517500877380371,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "F"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "IsQuorum",
+      "success": true,
+      "compilation_time": 0.14569687843322754,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "QuorumSize"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Leader",
+      "success": false,
+      "compilation_time": 0.11470890045166016,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Leader.tla\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Leader.tla\n\njava.util.UnknownFormatConversionException: Conversion = 'i'"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ALL_NODES",
+      "success": true,
+      "compilation_time": 0.14989495277404785,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Nodes"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Min2",
+      "success": true,
+      "compilation_time": 0.15128612518310547,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "Max2",
+      "success": true,
+      "compilation_time": 0.15924978256225586,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "MinSet",
+      "success": true,
+      "compilation_time": 0.1506638526916504,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "MaxSet",
+      "success": false,
+      "compilation_time": 0.12705612182617188,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_MaxSet.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"Phase\" at line 6, column 1 and token \"y\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_MaxSet.tla\n\nIn module SmartBFT_MaxSet\n\nCould not parse module SmartBFT_MaxSet from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_MaxSet.tla\n*** Errors: 1\n\nIn module SmartBFT_MaxSet\n\nCould not parse module SmartBFT_MaxSet from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_MaxSet.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Proposal",
+      "success": true,
+      "compilation_time": 0.18735980987548828,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "RequestID"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "VCInfo",
+      "success": true,
+      "compilation_time": 0.1564338207244873,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Proposal",
+        "Nil"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "VDInfo",
+      "success": false,
+      "compilation_time": 0.11912012100219727,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_VDInfo.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"MsgType\" at line 10, column 1 and token \"]\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_VDInfo.tla\n\nIn module SmartBFT_VDInfo\n\nCould not parse module SmartBFT_VDInfo from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_VDInfo.tla\n*** Errors: 1\n\nIn module SmartBFT_VDInfo\n\nCould not parse module SmartBFT_VDInfo from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_VDInfo.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Msg",
+      "success": false,
+      "compilation_time": 0.11495590209960938,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Msg.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"currentView\" at line 18, column 5 and token \"ALL_NODES\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Msg.tla\n\nIn module SmartBFT_Msg\n\nCould not parse module SmartBFT_Msg from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Msg.tla\n*** Errors: 1\n\nIn module SmartBFT_Msg\n\nCould not parse module SmartBFT_Msg from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Msg.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [
+        "VDInfo",
+        "MsgType",
+        "VCInfo",
+        "Proposal",
+        "Nodes",
+        "ALL_NODES"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 2
+    },
+    {
+      "action_name": "Init",
+      "success": true,
+      "compilation_time": 0.1456918716430664,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "phase",
+        "currentSequence",
+        "Nil",
+        "currentDecisionsInView",
+        "committedProposal",
+        "IDLE",
+        "preparedProposal",
+        "currentView",
+        "requests",
+        "messages",
+        "Nodes"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Receive",
+      "success": false,
+      "compilation_time": 0.11226701736450195,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Receive.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"{\" at line 7, column 43 and token \"setminus\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Receive.tla\n\nIn module SmartBFT_Receive\n\nCould not parse module SmartBFT_Receive from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Receive.tla\n*** Errors: 1\n\nIn module SmartBFT_Receive\n\nCould not parse module SmartBFT_Receive from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Receive.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ClientSubmitRequest",
+      "success": true,
+      "compilation_time": 0.15524792671203613,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "phase",
+        "currentSequence",
+        "RequestID",
+        "currentDecisionsInView",
+        "committedProposal",
+        "preparedProposal",
+        "currentView",
+        "requests",
+        "messages",
+        "Nodes"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Preprepare",
+      "success": false,
+      "compilation_time": 0.1165001392364502,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Preprepare.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"LET\" at line 8, column 5 and token \"0\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Preprepare.tla\n\nIn module SmartBFT_Preprepare\n\nCould not parse module SmartBFT_Preprepare from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Preprepare.tla\n*** Errors: 1\n\nIn module SmartBFT_Preprepare\n\nCould not parse module SmartBFT_Preprepare from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Preprepare.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Prepare",
+      "success": false,
+      "compilation_time": 0.16402387619018555,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Prepare.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"LET\" at line 13, column 9 and token \"seq\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Prepare.tla\n\nIn module SmartBFT_Prepare\n\nCould not parse module SmartBFT_Prepare from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Prepare.tla\n*** Errors: 1\n\nIn module SmartBFT_Prepare\n\nCould not parse module SmartBFT_Prepare from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Prepare.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Commit",
+      "success": false,
+      "compilation_time": 0.6790189743041992,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Commit.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"LET\" at line 13, column 9 and token \")\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Commit.tla\n\nIn module SmartBFT_Commit\n\nCould not parse module SmartBFT_Commit from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Commit.tla\n*** Errors: 1\n\nIn module SmartBFT_Commit\n\nCould not parse module SmartBFT_Commit from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Commit.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Decide",
+      "success": false,
+      "compilation_time": 0.11782193183898926,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Decide.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"IN\" at line 13, column 9 and token \")\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Decide.tla\n\nIn module SmartBFT_Decide\n\nCould not parse module SmartBFT_Decide from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Decide.tla\n*** Errors: 1\n\nIn module SmartBFT_Decide\n\nCould not parse module SmartBFT_Decide from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Decide.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewChange",
+      "success": false,
+      "compilation_time": 0.1261610984802246,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_ViewChange.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"LET\" at line 9, column 5 and token \"TRUE\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_ViewChange.tla\n\nIn module SmartBFT_ViewChange\n\nCould not parse module SmartBFT_ViewChange from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_ViewChange.tla\n*** Errors: 1\n\nIn module SmartBFT_ViewChange\n\nCould not parse module SmartBFT_ViewChange from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_ViewChange.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewData",
+      "success": false,
+      "compilation_time": 0.19111394882202148,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_ViewData.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"LET\" at line 13, column 9 and token \")\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_ViewData.tla\n\nIn module SmartBFT_ViewData\n\nCould not parse module SmartBFT_ViewData from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_ViewData.tla\n*** Errors: 1\n\nIn module SmartBFT_ViewData\n\nCould not parse module SmartBFT_ViewData from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_ViewData.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "NewView",
+      "success": false,
+      "compilation_time": 0.25956201553344727,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_NewView.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"LET\" at line 12, column 9 and token \")\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_NewView.tla\n\nIn module SmartBFT_NewView\n\nCould not parse module SmartBFT_NewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_NewView.tla\n*** Errors: 1\n\nIn module SmartBFT_NewView\n\nCould not parse module SmartBFT_NewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_NewView.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Next",
+      "success": true,
+      "compilation_time": 0.1596848964691162,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "RequestID",
+        "Nodes"
+      ],
+      "functions_added": [
+        "ClientSubmitRequest",
+        "ViewChange",
+        "Receive",
+        "Prepare",
+        "ViewData",
+        "NewView",
+        "Commit",
+        "Preprepare",
+        "Decide"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Spec",
+      "success": false,
+      "compilation_time": 0.17315411567687988,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4515pwmp/SmartBFT_Spec.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-16076434016669354059/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-16076434016669354059/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-16076434016669354059/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-16076434016669354059/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-16076434016669354059/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-16076434016669354059/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_Spec\nSemantic errors:\n\n*** Errors: 7\n\nline 27, col 11 to line 27, col 11 of module SmartBFT_Spec\n\nMultiply-defined symbol 'i': this definition or declaration conflicts \nwith the one at line 26, col 11 to line 26, col 11 of module SmartBFT_Spec.\n\n\nline 28, col 11 to line 28, col 11 of module SmartBFT_Spec\n\nMultiply-defined symbol 'i': this definition or declaration conflicts \nwith the one at line 26, col 11 to line 26, col 11 of module SmartBFT_Spec.\n\n\nline 29, col 11 to line 29, col 11 of module SmartBFT_Spec\n\nMultiply-defined symbol 'i': this definition or declaration conflicts \nwith the one at line 26, col 11 to line 26, col 11 of module SmartBFT_Spec.\n\n\nline 30, col 11 to line 30, col 11 of module SmartBFT_Spec\n\nMultiply-defined symbol 'i': this definition or declaration conflicts \nwith the one at line 26, col 11 to line 26, col 11 of module SmartBFT_Spec.\n\n\nline 31, col 11 to line 31, col 11 of module SmartBFT_Spec\n\nMultiply-defined symbol 'i': this definition or declaration conflicts \nwith the one at line 26, col 11 to line 26, col 11 of module SmartBFT_Spec.\n\n\nline 32, col 11 to line 32, col 11 of module SmartBFT_Spec\n\nMultiply-defined symbol 'i': this definition or declaration conflicts \nwith the one at line 26, col 11 to line 26, col 11 of module SmartBFT_Spec.\n\n\nline 33, col 11 to line 33, col 11 of module SmartBFT_Spec\n\nMultiply-defined symbol 'i': this definition or declaration conflicts \nwith the one at line 26, col 11 to line 26, col 11 of module SmartBFT_Spec."
+      ],
+      "semantic_errors": [],
+      "variables_added": [
+        "Next",
+        "RequestID",
+        "Init",
+        "vars",
+        "Nodes"
+      ],
+      "functions_added": [
+        "ClientSubmitRequest",
+        "ViewChange",
+        "Receive",
+        "Prepare",
+        "ViewData",
+        "NewView",
+        "Commit",
+        "Preprepare",
+        "Decide"
+      ],
+      "recovery_attempts": 2
+    },
+    {
+      "action_name": "vars",
+      "success": true,
+      "compilation_time": 0.16460895538330078,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "phase",
+        "currentSequence",
+        "currentDecisionsInView",
+        "committedProposal",
+        "preparedProposal",
+        "currentView",
+        "requests",
+        "messages"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    }
+  ]
+}

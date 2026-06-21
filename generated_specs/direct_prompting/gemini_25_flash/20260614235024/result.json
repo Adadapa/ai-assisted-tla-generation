@@ -1,0 +1,512 @@
+{
+  "overall_success": true,
+  "generation_successful": true,
+  "compilation_successful": false,
+  "generation_time": 272.6770100593567,
+  "compilation_time": 4.828878879547119,
+  "total_actions": 32,
+  "successful_actions": 24,
+  "action_success_rate": 0.75,
+  "total_variables_added": 100,
+  "total_functions_added": 22,
+  "total_recovery_attempts": 31,
+  "syntax_errors": [
+    "Prepare: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_Prepare.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"LET\" at line 14, column 13 and token \"IDLE\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_Prepare.tla\n\nIn module SmartBFT_Prepare\n\nCould not parse module SmartBFT_Prepare from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_Prepare.tla\n*** Errors: 1\n\nIn module SmartBFT_Prepare\n\nCould not parse module SmartBFT_Prepare from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_Prepare.tla",
+    "Commit: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_Commit.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"LET\" at line 12, column 13 and token \"PREPARED\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_Commit.tla\n\nIn module SmartBFT_Commit\n\nCould not parse module SmartBFT_Commit from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_Commit.tla\n*** Errors: 1\n\nIn module SmartBFT_Commit\n\nCould not parse module SmartBFT_Commit from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_Commit.tla",
+    "Decide: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_Decide.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"LET\" at line 13, column 13 and token \"seq\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_Decide.tla\n\nIn module SmartBFT_Decide\n\nCould not parse module SmartBFT_Decide from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_Decide.tla\n*** Errors: 1\n\nIn module SmartBFT_Decide\n\nCould not parse module SmartBFT_Decide from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_Decide.tla",
+    "ViewChange: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_ViewChange.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"LET\" at line 7, column 5 and token \"FALSE\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_ViewChange.tla\n\nIn module SmartBFT_ViewChange\n\nCould not parse module SmartBFT_ViewChange from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_ViewChange.tla\n*** Errors: 1\n\nIn module SmartBFT_ViewChange\n\nCould not parse module SmartBFT_ViewChange from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_ViewChange.tla",
+    "ViewData: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_ViewData.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"LET\" at line 12, column 13 and token \"1\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_ViewData.tla\n\nIn module SmartBFT_ViewData\n\nCould not parse module SmartBFT_ViewData from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_ViewData.tla\n*** Errors: 1\n\nIn module SmartBFT_ViewData\n\nCould not parse module SmartBFT_ViewData from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_ViewData.tla",
+    "NewView: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_NewView.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"LET\" at line 12, column 13 and token \"1\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_NewView.tla\n\nIn module SmartBFT_NewView\n\nCould not parse module SmartBFT_NewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_NewView.tla\n*** Errors: 1\n\nIn module SmartBFT_NewView\n\nCould not parse module SmartBFT_NewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_NewView.tla",
+    "HandleNewView: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_HandleNewView.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"LET\" at line 12, column 13 and token \"1\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_HandleNewView.tla\n\nIn module SmartBFT_HandleNewView\n\nCould not parse module SmartBFT_HandleNewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_HandleNewView.tla\n*** Errors: 1\n\nIn module SmartBFT_HandleNewView\n\nCould not parse module SmartBFT_HandleNewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_HandleNewView.tla",
+    "DiscardMessage: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_DiscardMessage.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-686482237159166948/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-686482237159166948/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-686482237159166948/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-686482237159166948/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-686482237159166948/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-686482237159166948/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_DiscardMessage\nSemantic errors:\n\n*** Errors: 2\n\nline 10, col 16 to line 10, col 90 of module SmartBFT_DiscardMessage\n\nOperator received_d_msg already defined or declared.\n\n\nline 10, col 16 to line 10, col 90 of module SmartBFT_DiscardMessage\n\nMultiply-defined symbol 'received_d_msg': this definition or declaration conflicts \nwith the one at line 3, col 11 to line 3, col 24 of module SmartBFT_DiscardMessage.",
+    "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /Users/adaturgut/SysMoBench/data/spec/hyperledger/SmartBFT.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"LET\" at line 189, column 13 and token \"IDLE\" \n\nResidual stack trace follows:\nModule definition starting at line 2, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /Users/adaturgut/SysMoBench/data/spec/hyperledger/SmartBFT.tla\n\nIn module SmartBFT\n\nCould not parse module SmartBFT from file /Users/adaturgut/SysMoBench/data/spec/hyperledger/SmartBFT.tla\n*** Errors: 1\n\nIn module SmartBFT\n\nCould not parse module SmartBFT from file /Users/adaturgut/SysMoBench/data/spec/hyperledger/SmartBFT.tla"
+  ],
+  "semantic_errors": [],
+  "action_results": [
+    {
+      "action_name": "N",
+      "success": true,
+      "compilation_time": 0.1485297679901123,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Nodes"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "QuorumSize",
+      "success": true,
+      "compilation_time": 0.1478278636932373,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "f"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "getLeaderID",
+      "success": true,
+      "compilation_time": 0.1470489501953125,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "N"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "IsQuorum",
+      "success": true,
+      "compilation_time": 0.15001893043518066,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "QuorumSize"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Max2",
+      "success": true,
+      "compilation_time": 0.14858293533325195,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "ReplicaStateRecord",
+      "success": true,
+      "compilation_time": 0.15656185150146484,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "ViewDataMsgType",
+        "IDLE",
+        "PREPARED",
+        "VIEW_CHANGE_PHASE",
+        "ProposalType",
+        "Nil",
+        "NEW_VIEW_PHASE",
+        "Nodes",
+        "ViewChangeMsgType",
+        "PreprepareMsgType",
+        "CommitMsgType",
+        "VIEW_DATA_PHASE",
+        "COMMITTED"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ProposalType",
+      "success": true,
+      "compilation_time": 0.14669013023376465,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "RequestType"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "RequestType",
+      "success": true,
+      "compilation_time": 0.14713382720947266,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "PreprepareMsgType",
+      "success": true,
+      "compilation_time": 0.14985084533691406,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "ProposalType"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "PrepareMsgType",
+      "success": true,
+      "compilation_time": 0.14815497398376465,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "ProposalType"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "CommitMsgType",
+      "success": true,
+      "compilation_time": 0.14784622192382812,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "ProposalType"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewChangeMsgType",
+      "success": true,
+      "compilation_time": 0.14978504180908203,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "ProposalType",
+        "Nil"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewDataMsgType",
+      "success": true,
+      "compilation_time": 0.14565777778625488,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "ProposalType",
+        "Nil",
+        "Nodes"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "NewViewMsgType",
+      "success": true,
+      "compilation_time": 0.14815902709960938,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "ProposalType"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MessageType",
+      "success": true,
+      "compilation_time": 0.14772987365722656,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "ViewDataMsgType",
+        "PrepareMsgType",
+        "ViewChangeMsgType",
+        "PreprepareMsgType",
+        "CommitMsgType",
+        "NewViewMsgType"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MessageInTransit",
+      "success": true,
+      "compilation_time": 0.1489560604095459,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "MessageType",
+        "Nodes"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Init",
+      "success": true,
+      "compilation_time": 0.14902305603027344,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "requests",
+        "IDLE",
+        "currentView",
+        "Nil",
+        "Nodes",
+        "replicaState",
+        "messages",
+        "decidedProposals",
+        "currentSequence"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Preprepare",
+      "success": true,
+      "compilation_time": 0.15102910995483398,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "requests",
+        "IDLE",
+        "currentView",
+        "PREPARED",
+        "Nodes",
+        "replicaState",
+        "messages",
+        "decidedProposals",
+        "currentSequence"
+      ],
+      "functions_added": [
+        "getLeaderID"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Prepare",
+      "success": false,
+      "compilation_time": 0.11500883102416992,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_Prepare.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"LET\" at line 14, column 13 and token \"IDLE\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_Prepare.tla\n\nIn module SmartBFT_Prepare\n\nCould not parse module SmartBFT_Prepare from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_Prepare.tla\n*** Errors: 1\n\nIn module SmartBFT_Prepare\n\nCould not parse module SmartBFT_Prepare from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_Prepare.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Commit",
+      "success": false,
+      "compilation_time": 0.11311173439025879,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_Commit.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"LET\" at line 12, column 13 and token \"PREPARED\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_Commit.tla\n\nIn module SmartBFT_Commit\n\nCould not parse module SmartBFT_Commit from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_Commit.tla\n*** Errors: 1\n\nIn module SmartBFT_Commit\n\nCould not parse module SmartBFT_Commit from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_Commit.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Decide",
+      "success": false,
+      "compilation_time": 0.11365604400634766,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_Decide.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"LET\" at line 13, column 13 and token \"seq\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_Decide.tla\n\nIn module SmartBFT_Decide\n\nCould not parse module SmartBFT_Decide from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_Decide.tla\n*** Errors: 1\n\nIn module SmartBFT_Decide\n\nCould not parse module SmartBFT_Decide from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_Decide.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewChange",
+      "success": false,
+      "compilation_time": 0.11082816123962402,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_ViewChange.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"LET\" at line 7, column 5 and token \"FALSE\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_ViewChange.tla\n\nIn module SmartBFT_ViewChange\n\nCould not parse module SmartBFT_ViewChange from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_ViewChange.tla\n*** Errors: 1\n\nIn module SmartBFT_ViewChange\n\nCould not parse module SmartBFT_ViewChange from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_ViewChange.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewData",
+      "success": false,
+      "compilation_time": 0.11367511749267578,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_ViewData.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"LET\" at line 12, column 13 and token \"1\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_ViewData.tla\n\nIn module SmartBFT_ViewData\n\nCould not parse module SmartBFT_ViewData from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_ViewData.tla\n*** Errors: 1\n\nIn module SmartBFT_ViewData\n\nCould not parse module SmartBFT_ViewData from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_ViewData.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "NewView",
+      "success": false,
+      "compilation_time": 0.11309313774108887,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_NewView.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"LET\" at line 12, column 13 and token \"1\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_NewView.tla\n\nIn module SmartBFT_NewView\n\nCould not parse module SmartBFT_NewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_NewView.tla\n*** Errors: 1\n\nIn module SmartBFT_NewView\n\nCould not parse module SmartBFT_NewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_NewView.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "HandleNewView",
+      "success": false,
+      "compilation_time": 0.11354398727416992,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_HandleNewView.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"LET\" at line 12, column 13 and token \"1\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_HandleNewView.tla\n\nIn module SmartBFT_HandleNewView\n\nCould not parse module SmartBFT_HandleNewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_HandleNewView.tla\n*** Errors: 1\n\nIn module SmartBFT_HandleNewView\n\nCould not parse module SmartBFT_HandleNewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_HandleNewView.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ProcessViewChangeMessage",
+      "success": true,
+      "compilation_time": 0.1514730453491211,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "requests",
+        "currentView",
+        "VIEW_CHANGE_PHASE",
+        "Nodes",
+        "replicaState",
+        "messages",
+        "MessageType",
+        "VIEW_DATA_PHASE",
+        "decidedProposals",
+        "currentSequence"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "DiscardMessage",
+      "success": false,
+      "compilation_time": 0.16344904899597168,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_tcgd6ug0/SmartBFT_DiscardMessage.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-686482237159166948/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-686482237159166948/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-686482237159166948/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-686482237159166948/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-686482237159166948/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-686482237159166948/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_DiscardMessage\nSemantic errors:\n\n*** Errors: 2\n\nline 10, col 16 to line 10, col 90 of module SmartBFT_DiscardMessage\n\nOperator received_d_msg already defined or declared.\n\n\nline 10, col 16 to line 10, col 90 of module SmartBFT_DiscardMessage\n\nMultiply-defined symbol 'received_d_msg': this definition or declaration conflicts \nwith the one at line 3, col 11 to line 3, col 24 of module SmartBFT_DiscardMessage."
+      ],
+      "semantic_errors": [],
+      "variables_added": [
+        "received_d_msg",
+        "requests",
+        "IDLE",
+        "currentView",
+        "Nodes",
+        "replicaState",
+        "messages",
+        "MessageType",
+        "decidedProposals",
+        "currentSequence"
+      ],
+      "functions_added": [
+        "getLeaderID"
+      ],
+      "recovery_attempts": 2
+    },
+    {
+      "action_name": "AddRequest",
+      "success": true,
+      "compilation_time": 0.1485300064086914,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "requests",
+        "currentView",
+        "replicaState",
+        "messages",
+        "RequestType",
+        "decidedProposals",
+        "currentSequence"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Stutter",
+      "success": true,
+      "compilation_time": 0.14769411087036133,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "requests",
+        "currentView",
+        "replicaState",
+        "messages",
+        "decidedProposals",
+        "currentSequence"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Next",
+      "success": true,
+      "compilation_time": 0.1493830680847168,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Stutter",
+        "Nodes",
+        "AddRequest"
+      ],
+      "functions_added": [
+        "Prepare",
+        "DiscardMessage",
+        "ViewData",
+        "ViewChange",
+        "Preprepare",
+        "Decide",
+        "HandleNewView",
+        "Commit",
+        "ProcessViewChangeMessage",
+        "NewView"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Spec",
+      "success": true,
+      "compilation_time": 0.14949989318847656,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "vars",
+        "Next",
+        "Nodes",
+        "Init",
+        "AddRequest"
+      ],
+      "functions_added": [
+        "Prepare",
+        "DiscardMessage",
+        "ViewData",
+        "ViewChange",
+        "Preprepare",
+        "Decide",
+        "HandleNewView",
+        "Commit",
+        "ProcessViewChangeMessage",
+        "NewView"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "vars",
+      "success": true,
+      "compilation_time": 0.2700052261352539,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "requests",
+        "currentView",
+        "replicaState",
+        "messages",
+        "decidedProposals",
+        "currentSequence"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    }
+  ]
+}

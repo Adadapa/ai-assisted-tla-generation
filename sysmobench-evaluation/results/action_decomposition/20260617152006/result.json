@@ -1,0 +1,692 @@
+{
+  "overall_success": true,
+  "generation_successful": true,
+  "compilation_successful": false,
+  "generation_time": 0.0,
+  "compilation_time": 5.653849840164185,
+  "total_actions": 35,
+  "successful_actions": 35,
+  "action_success_rate": 1.0,
+  "total_variables_added": 195,
+  "total_functions_added": 69,
+  "total_recovery_attempts": 34,
+  "syntax_errors": [
+    "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /Users/adaturgut/SysMoBench/data/spec/hyperledger/SmartBFT.tla\n\nFatal errors while parsing TLA+ spec in file /Users/adaturgut/SysMoBench/data/spec/hyperledger/SmartBFT.tla\n\nIn module SmartBFT\n\nCannot find source file for module base imported in module SmartBFT.\n*** Errors: 1\n\nIn module SmartBFT\n\nCannot find source file for module base imported in module SmartBFT."
+  ],
+  "semantic_errors": [],
+  "action_results": [
+    {
+      "action_name": "JsonFile",
+      "success": true,
+      "compilation_time": 0.14790701866149902,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "IOEnv"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "TraceLog",
+      "success": true,
+      "compilation_time": 0.1614382266998291,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [
+        "ndJsonDeserialize",
+        "JsonFile"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "TraceInit",
+      "success": true,
+      "compilation_time": 0.1855931282043457,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "l",
+        "Init"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Logline",
+      "success": true,
+      "compilation_time": 0.15483498573303223,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "l",
+        "TraceLog"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "IsEvent",
+      "success": true,
+      "compilation_time": 0.16300606727600098,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Logline"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "IsNodeEvent",
+      "success": true,
+      "compilation_time": 0.14278197288513184,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Logline"
+      ],
+      "functions_added": [
+        "IsEvent"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "NodeID",
+      "success": true,
+      "compilation_time": 0.1556401252746582,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "TracePropose",
+      "success": true,
+      "compilation_time": 0.14934921264648438,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "TraceLog",
+        "l",
+        "Logline",
+        "ctrl_view"
+      ],
+      "functions_added": [
+        "IsEvent",
+        "Propose",
+        "CommittedSeq",
+        "NodeID"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "TraceHandlePrePrepare",
+      "success": true,
+      "compilation_time": 0.15104079246520996,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "in_flight",
+        "TraceLog",
+        "l",
+        "Logline"
+      ],
+      "functions_added": [
+        "IsEvent",
+        "NodeID",
+        "HandlePrePrepare"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "TraceDecide",
+      "success": true,
+      "compilation_time": 0.15636396408081055,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "msgs",
+        "NULL",
+        "Server",
+        "prepare_votes",
+        "hbmVars",
+        "log",
+        "Logline",
+        "vcVars",
+        "in_flight",
+        "commit_votes",
+        "l",
+        "ctrl_view_pending",
+        "ctrl_decisions",
+        "phase",
+        "ctrl_view",
+        "TraceLog",
+        "ctrl_updating",
+        "blacklist"
+      ],
+      "functions_added": [
+        "IsEvent",
+        "CommittedSeq",
+        "NodeID"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "TraceHBFollowerTick",
+      "success": true,
+      "compilation_time": 0.1583240032196045,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "TraceLog",
+        "l",
+        "HBFollowerTick",
+        "Logline",
+        "hbm_view",
+        "hbm_timed_out"
+      ],
+      "functions_added": [
+        "HBFollowerTick",
+        "IsEvent",
+        "NodeID"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "TraceHBFollowerTickAbsorb",
+      "success": true,
+      "compilation_time": 0.15368390083312988,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "TraceLog",
+        "l",
+        "vars",
+        "Logline",
+        "hbm_view",
+        "hbm_timed_out"
+      ],
+      "functions_added": [
+        "IsEvent",
+        "NodeID"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "TraceProcessChangeRole",
+      "success": true,
+      "compilation_time": 0.15822315216064453,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "hbm_role",
+        "TraceLog",
+        "l",
+        "Logline",
+        "hbm_view",
+        "hbm_timed_out"
+      ],
+      "functions_added": [
+        "IsEvent",
+        "ProcessChangeRole",
+        "NodeID"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "TraceStartViewChange",
+      "success": true,
+      "compilation_time": 0.1578068733215332,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "TraceLog",
+        "vc_start_dropped",
+        "l",
+        "Logline"
+      ],
+      "functions_added": [
+        "IsEvent",
+        "MaybeStartViewChange",
+        "NodeID"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "TraceProcessViewDataDeliver",
+      "success": true,
+      "compilation_time": 0.1530780792236328,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "TraceLog",
+        "l",
+        "log",
+        "vc_delivered_seq",
+        "Logline"
+      ],
+      "functions_added": [
+        "IsEvent",
+        "ProcessViewDataDeliver",
+        "NodeID"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "TraceProcessViewDataValidate",
+      "success": true,
+      "compilation_time": 0.16428589820861816,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "vc_quorum",
+        "TraceLog",
+        "l",
+        "Logline"
+      ],
+      "functions_added": [
+        "IsEvent",
+        "ProcessViewDataValidate",
+        "NodeID"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "TraceEnterNewView",
+      "success": true,
+      "compilation_time": 0.1592390537261963,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "msgs",
+        "vc_inform_dropped",
+        "NULL",
+        "vc_quorum",
+        "vc_enter_seq",
+        "prepare_votes",
+        "vc_start_dropped",
+        "hbmVars",
+        "log",
+        "vc_delivered_seq",
+        "Logline",
+        "vc_view",
+        "in_flight",
+        "commit_votes",
+        "l",
+        "ctrl_view_pending",
+        "ctrl_decisions",
+        "phase",
+        "committed_during_vc",
+        "ctrl_view",
+        "TraceLog",
+        "ctrl_updating",
+        "blacklist"
+      ],
+      "functions_added": [
+        "IsEvent",
+        "CommittedSeq",
+        "NodeID",
+        "GetLeaderID"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "TraceChangeViewUpdateView",
+      "success": true,
+      "compilation_time": 0.15144109725952148,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "TraceLog",
+        "l",
+        "ctrl_updating",
+        "Logline",
+        "ctrl_view"
+      ],
+      "functions_added": [
+        "IsEvent",
+        "NodeID",
+        "ChangeViewUpdateView"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "TraceProcessViewDataSameSeq",
+      "success": true,
+      "compilation_time": 0.1574859619140625,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Logline",
+        "vc_quorum",
+        "TraceLog",
+        "l"
+      ],
+      "functions_added": [
+        "IsEvent",
+        "ProcessViewDataSameSeq",
+        "NodeID"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "TraceChangeViewUpdateDecisions",
+      "success": true,
+      "compilation_time": 0.157426118850708,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "TraceLog",
+        "l",
+        "ctrl_updating",
+        "Logline",
+        "ctrl_decisions"
+      ],
+      "functions_added": [
+        "IsEvent",
+        "ChangeViewUpdateDecisions",
+        "NodeID"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "SilentSendChangeRole",
+      "success": true,
+      "compilation_time": 0.15072202682495117,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "SendChangeRole",
+        "TraceLog",
+        "l"
+      ],
+      "functions_added": [
+        "SendChangeRole",
+        "IsEvent",
+        "NodeID",
+        "Logline"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "SilentHBFollowerTickBeforeVC",
+      "success": true,
+      "compilation_time": 0.16168689727783203,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "TraceLog",
+        "l",
+        "HBFollowerTick",
+        "hbm_timed_out"
+      ],
+      "functions_added": [
+        "HBFollowerTick",
+        "IsEvent",
+        "NodeID",
+        "Logline"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "SilentOnHeartbeatTimeout",
+      "success": true,
+      "compilation_time": 0.1657249927520752,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "phase",
+        "TraceLog",
+        "l"
+      ],
+      "functions_added": [
+        "IsEvent",
+        "OnHeartbeatTimeout",
+        "NodeID",
+        "Logline"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "SilentReceiveCommit",
+      "success": true,
+      "compilation_time": 0.15682101249694824,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Decide",
+        "msgs",
+        "Server",
+        "Quorum",
+        "TraceLog",
+        "commit_votes",
+        "l",
+        "log",
+        "ctrl_view"
+      ],
+      "functions_added": [
+        "Decide",
+        "IsEvent",
+        "CommittedSeq",
+        "NodeID",
+        "Logline"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "SilentHandlePrepare",
+      "success": true,
+      "compilation_time": 0.15585088729858398,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Server",
+        "TraceLog",
+        "l",
+        "Logline"
+      ],
+      "functions_added": [
+        "HandlePrepare",
+        "NodeID"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "SilentHandleHeartbeat",
+      "success": true,
+      "compilation_time": 0.1707148551940918,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "msgs",
+        "Server",
+        "TraceLog",
+        "l"
+      ],
+      "functions_added": [
+        "HandleHeartbeat"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "SilentBuildNewView",
+      "success": true,
+      "compilation_time": 0.16328215599060059,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Server",
+        "TraceLog",
+        "l",
+        "BuildNewView",
+        "Logline"
+      ],
+      "functions_added": [
+        "BuildNewView"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "SilentHandleViewChange",
+      "success": true,
+      "compilation_time": 0.15700197219848633,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Server",
+        "TraceLog",
+        "l",
+        "Logline",
+        "HandleViewChange"
+      ],
+      "functions_added": [
+        "HandleViewChange"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "SilentActivateCtrlWindow",
+      "success": true,
+      "compilation_time": 0.14866399765014648,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "in_flight",
+        "msgs",
+        "phase",
+        "blacklist",
+        "TraceLog",
+        "prepare_votes",
+        "l",
+        "commit_votes",
+        "ctrl_view_pending",
+        "log",
+        "hbmVars",
+        "ctrl_updating",
+        "Logline",
+        "vcVars",
+        "ctrl_view",
+        "ctrl_decisions"
+      ],
+      "functions_added": [
+        "IsEvent",
+        "NodeID"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "SilentProcessViewDataSameSeq",
+      "success": true,
+      "compilation_time": 0.16038799285888672,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Logline",
+        "Server",
+        "TraceLog",
+        "l"
+      ],
+      "functions_added": [
+        "ProcessViewDataSameSeq"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "SilentHandlePrePrepare",
+      "success": true,
+      "compilation_time": 0.1555471420288086,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "msgs",
+        "Server",
+        "TraceLog",
+        "l",
+        "Logline"
+      ],
+      "functions_added": [
+        "HandlePrePrepare"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "TraceTermination",
+      "success": true,
+      "compilation_time": 0.14697027206420898,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "l",
+        "vars",
+        "TraceLog"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "TraceNext",
+      "success": true,
+      "compilation_time": 0.16466808319091797,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "TraceTermination",
+        "SilentSendChangeRole",
+        "TraceHBFollowerTickAbsorb",
+        "TraceProcessViewDataDeliver",
+        "SilentHandleHeartbeat",
+        "SilentHandlePrePrepare",
+        "SilentBuildNewView",
+        "SilentProcessViewDataSameSeq",
+        "SilentActivateCtrlWindow",
+        "SilentHBFollowerTickBeforeVC",
+        "TraceProcessViewDataSameSeq",
+        "TracePropose",
+        "TraceHBFollowerTick",
+        "TraceHandlePrePrepare",
+        "TraceProcessViewDataValidate",
+        "SilentOnHeartbeatTimeout",
+        "TraceProcessChangeRole",
+        "TraceDecide",
+        "TraceEnterNewView",
+        "TraceStartViewChange",
+        "TraceChangeViewUpdateView",
+        "TraceChangeViewUpdateDecisions",
+        "SilentHandleViewChange"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "TraceMatched",
+      "success": true,
+      "compilation_time": 0.15407586097717285,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "l",
+        "TraceLog"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "TraceSpec",
+      "success": true,
+      "compilation_time": 0.15973901748657227,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "TraceInit",
+        "l",
+        "TraceNext",
+        "vars"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    }
+  ]
+}

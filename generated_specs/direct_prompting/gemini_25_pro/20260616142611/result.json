@@ -1,0 +1,303 @@
+{
+  "overall_success": true,
+  "generation_successful": true,
+  "compilation_successful": false,
+  "generation_time": 736.0540030002594,
+  "compilation_time": 3.023845911026001,
+  "total_actions": 19,
+  "successful_actions": 15,
+  "action_success_rate": 0.7894736842105263,
+  "total_variables_added": 48,
+  "total_functions_added": 20,
+  "total_recovery_attempts": 13,
+  "syntax_errors": [
+    "Commit: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_Commit.tla\n***Parse Error***\nEncountered \".\" at line 11, column 34 and token \"m\" \n\nResidual stack trace follows:\nQuant Bound starting at line 11, column 33.\nSome { } form starting at line 10, column 29.\nExtendableExpr starting at line 10, column 29.\nExpression starting at line 10, column 29.\nDefinition starting at line 10, column 17.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_Commit.tla\n\nIn module SmartBFT_Commit\n\nCould not parse module SmartBFT_Commit from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_Commit.tla\n*** Errors: 1\n\nIn module SmartBFT_Commit\n\nCould not parse module SmartBFT_Commit from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_Commit.tla",
+    "Decide: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_Decide.tla\n***Parse Error***\nEncountered \".\" at line 11, column 34 and token \"m\" \n\nResidual stack trace follows:\nQuant Bound starting at line 11, column 33.\nSome { } form starting at line 10, column 28.\nExtendableExpr starting at line 10, column 28.\nExpression starting at line 10, column 28.\nDefinition starting at line 10, column 17.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_Decide.tla\n\nIn module SmartBFT_Decide\n\nCould not parse module SmartBFT_Decide from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_Decide.tla\n*** Errors: 1\n\nIn module SmartBFT_Decide\n\nCould not parse module SmartBFT_Decide from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_Decide.tla",
+    "ViewData: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_ViewData.tla\n***Parse Error***\nEncountered \".\" at line 7, column 47 and token \"m\" \n\nResidual stack trace follows:\nQuant Bound starting at line 7, column 46.\nSome { } form starting at line 7, column 19.\nExtendableExpr starting at line 7, column 19.\nExpression starting at line 7, column 19.\nDefinition starting at line 7, column 12.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_ViewData.tla\n\nIn module SmartBFT_ViewData\n\nCould not parse module SmartBFT_ViewData from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_ViewData.tla\n*** Errors: 1\n\nIn module SmartBFT_ViewData\n\nCould not parse module SmartBFT_ViewData from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_ViewData.tla",
+    "NewView: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_NewView.tla\n***Parse Error***\nEncountered \".\" at line 8, column 40 and token \"m\" \n\nResidual stack trace follows:\nQuant Bound starting at line 8, column 39.\nSome { } form starting at line 8, column 19.\nExtendableExpr starting at line 8, column 19.\nExpression starting at line 8, column 19.\nDefinition starting at line 8, column 12.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_NewView.tla\n\nIn module SmartBFT_NewView\n\nCould not parse module SmartBFT_NewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_NewView.tla\n*** Errors: 1\n\nIn module SmartBFT_NewView\n\nCould not parse module SmartBFT_NewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_NewView.tla",
+    "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /Users/adaturgut/SysMoBench/data/spec/hyperledger/SmartBFT.tla\n***Parse Error***\nEncountered \".\" at line 91, column 34 and token \"m\" \n\nResidual stack trace follows:\nQuant Bound starting at line 91, column 33.\nSome { } form starting at line 90, column 29.\nExtendableExpr starting at line 90, column 29.\nExpression starting at line 90, column 29.\nDefinition starting at line 90, column 17.\n\n\nFatal errors while parsing TLA+ spec in file /Users/adaturgut/SysMoBench/data/spec/hyperledger/SmartBFT.tla\n\nIn module SmartBFT\n\nCould not parse module SmartBFT from file /Users/adaturgut/SysMoBench/data/spec/hyperledger/SmartBFT.tla\n*** Errors: 1\n\nIn module SmartBFT\n\nCould not parse module SmartBFT from file /Users/adaturgut/SysMoBench/data/spec/hyperledger/SmartBFT.tla"
+  ],
+  "semantic_errors": [],
+  "action_results": [
+    {
+      "action_name": "vars",
+      "success": true,
+      "compilation_time": 0.1356658935546875,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "view",
+        "network",
+        "phase",
+        "preparedValue",
+        "decidedLog"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Leader",
+      "success": true,
+      "compilation_time": 0.14700102806091309,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "N"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Init",
+      "success": true,
+      "compilation_time": 0.14651107788085938,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "view",
+        "network",
+        "phase",
+        "preparedValue",
+        "decidedLog",
+        "MaxSeq",
+        "NULL",
+        "Nodes"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "PreprepareMsg",
+      "success": true,
+      "compilation_time": 0.13611197471618652,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "PrepareMsg",
+      "success": true,
+      "compilation_time": 0.1469271183013916,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "CommitMsg",
+      "success": true,
+      "compilation_time": 0.14716720581054688,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "ViewChangeMsg",
+      "success": true,
+      "compilation_time": 0.1480998992919922,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "ViewDataMsg",
+      "success": true,
+      "compilation_time": 0.14835786819458008,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "NewViewMsg",
+      "success": true,
+      "compilation_time": 0.1555018424987793,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "Preprepare",
+      "success": true,
+      "compilation_time": 0.25583887100219727,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "view",
+        "network",
+        "phase",
+        "preparedValue",
+        "decidedLog",
+        "Requests",
+        "MaxSeq"
+      ],
+      "functions_added": [
+        "Leader",
+        "PreprepareMsg"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Prepare",
+      "success": true,
+      "compilation_time": 0.18823027610778809,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "view",
+        "network",
+        "phase",
+        "preparedValue",
+        "decidedLog",
+        "Requests",
+        "MaxSeq",
+        "Nodes"
+      ],
+      "functions_added": [
+        "PrepareMsg",
+        "Leader",
+        "PreprepareMsg"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Commit",
+      "success": false,
+      "compilation_time": 0.11402201652526855,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_Commit.tla\n***Parse Error***\nEncountered \".\" at line 11, column 34 and token \"m\" \n\nResidual stack trace follows:\nQuant Bound starting at line 11, column 33.\nSome { } form starting at line 10, column 29.\nExtendableExpr starting at line 10, column 29.\nExpression starting at line 10, column 29.\nDefinition starting at line 10, column 17.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_Commit.tla\n\nIn module SmartBFT_Commit\n\nCould not parse module SmartBFT_Commit from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_Commit.tla\n*** Errors: 1\n\nIn module SmartBFT_Commit\n\nCould not parse module SmartBFT_Commit from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_Commit.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Decide",
+      "success": false,
+      "compilation_time": 0.11361908912658691,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_Decide.tla\n***Parse Error***\nEncountered \".\" at line 11, column 34 and token \"m\" \n\nResidual stack trace follows:\nQuant Bound starting at line 11, column 33.\nSome { } form starting at line 10, column 28.\nExtendableExpr starting at line 10, column 28.\nExpression starting at line 10, column 28.\nDefinition starting at line 10, column 17.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_Decide.tla\n\nIn module SmartBFT_Decide\n\nCould not parse module SmartBFT_Decide from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_Decide.tla\n*** Errors: 1\n\nIn module SmartBFT_Decide\n\nCould not parse module SmartBFT_Decide from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_Decide.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewChange",
+      "success": true,
+      "compilation_time": 0.1561431884765625,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "MaxView",
+        "view",
+        "network",
+        "phase",
+        "preparedValue",
+        "decidedLog"
+      ],
+      "functions_added": [
+        "ViewChangeMsg"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewData",
+      "success": false,
+      "compilation_time": 0.18895506858825684,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_ViewData.tla\n***Parse Error***\nEncountered \".\" at line 7, column 47 and token \"m\" \n\nResidual stack trace follows:\nQuant Bound starting at line 7, column 46.\nSome { } form starting at line 7, column 19.\nExtendableExpr starting at line 7, column 19.\nExpression starting at line 7, column 19.\nDefinition starting at line 7, column 12.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_ViewData.tla\n\nIn module SmartBFT_ViewData\n\nCould not parse module SmartBFT_ViewData from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_ViewData.tla\n*** Errors: 1\n\nIn module SmartBFT_ViewData\n\nCould not parse module SmartBFT_ViewData from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_ViewData.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "NewView",
+      "success": false,
+      "compilation_time": 0.11027789115905762,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_NewView.tla\n***Parse Error***\nEncountered \".\" at line 8, column 40 and token \"m\" \n\nResidual stack trace follows:\nQuant Bound starting at line 8, column 39.\nSome { } form starting at line 8, column 19.\nExtendableExpr starting at line 8, column 19.\nExpression starting at line 8, column 19.\nDefinition starting at line 8, column 12.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_NewView.tla\n\nIn module SmartBFT_NewView\n\nCould not parse module SmartBFT_NewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_NewView.tla\n*** Errors: 1\n\nIn module SmartBFT_NewView\n\nCould not parse module SmartBFT_NewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_4xb419do/SmartBFT_NewView.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Next",
+      "success": true,
+      "compilation_time": 0.15607881546020508,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "MaxView",
+        "Requests",
+        "MaxSeq",
+        "Nodes"
+      ],
+      "functions_added": [
+        "Preprepare",
+        "NewView",
+        "Decide",
+        "Prepare",
+        "ViewChange",
+        "Commit",
+        "ViewData"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Fairness",
+      "success": true,
+      "compilation_time": 0.1529829502105713,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "MaxView",
+        "Nodes",
+        "Requests",
+        "MaxSeq",
+        "vars"
+      ],
+      "functions_added": [
+        "Preprepare",
+        "NewView",
+        "Decide",
+        "Prepare",
+        "ViewChange",
+        "Commit",
+        "ViewData"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Spec",
+      "success": true,
+      "compilation_time": 0.15229201316833496,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Fairness",
+        "Next",
+        "vars",
+        "Init"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    }
+  ]
+}

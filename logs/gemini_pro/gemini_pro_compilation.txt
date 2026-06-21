@@ -1,0 +1,137 @@
+python3 scripts/run_benchmark.py --task hyperledger --method direct_call --model gemini25_google --metric action_decomposition
+10:59:06 - LiteLLM:WARNING: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+10:59:06 - LiteLLM:WARNING: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+[INFO] Validating prerequisites...
+[INFO] ✓ All prerequisites validated
+[INFO] Loading existing global error statistics from /Users/adaturgut/SysMoBench/output/global_error_statistics.yaml
+[INFO] Running metric 'action_decomposition': hyperledger/direct_call/gemini25_google
+[INFO] Loaded task: hyperledger (distributed)
+[INFO] Loaded prompt template (6008 chars, language=TLA+)
+[INFO] Loaded model: gemini25_google
+[INFO] Using method: direct_call (language=TLA+)
+[INFO] [direct_call] Attempt 1/3
+10:59:06 - LiteLLM:INFO: utils.py:4054 -
+LiteLLM completion() model= gemini-2.5-pro; provider = gemini
+[INFO]
+LiteLLM completion() model= gemini-2.5-pro; provider = gemini
+11:05:06 - LiteLLM:INFO: utils.py:1656 - Wrapper: Completed Call, calling success_handler
+[INFO] Wrapper: Completed Call, calling success_handler
+[INFO] [direct_call] ✗ TLA+ validation failed on attempt 1 — 1 errors
+[INFO] [direct_call] Attempt 2/3
+11:05:06 - LiteLLM:INFO: utils.py:4054 -
+LiteLLM completion() model= gemini-2.5-pro; provider = gemini
+[INFO]
+LiteLLM completion() model= gemini-2.5-pro; provider = gemini
+11:10:11 - LiteLLM:INFO: utils.py:1656 - Wrapper: Completed Call, calling success_handler
+[INFO] Wrapper: Completed Call, calling success_handler
+[WARNING] SANY Error Classification Failed - Unknown Error Pattern
+[WARNING] Full error message content: "\n****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/direct_call_validate_odm5dyp6/SmartBFT.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-8448135347105384252/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-8448135347105384252/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-8448135347105384252/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-8448135347105384252/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-8448135347105384252/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Integers\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module SmartBFT\nSemantic errors:\n\n*** Errors: 4\n\nline 102, col 57 to line 102, col 57 of module SmartBFT\n\nCould not find declaration or definition of symbol '|'.\n\n\nline 102, col 47 to line 102, col 69 of module SmartBFT\n\nCouldn't resolve infix operator symbol `|'.\n\n\nline 116, col 73 to line 116, col 73 of module SmartBFT\n\nCould not find declaration or definition of symbol '|'.\n\n\nline 116, col 56 to line 116, col 78 of module SmartBFT\n\nCouldn't resolve infix operator symbol `|'.\n\n\n"
+[INFO] [direct_call] ✗ TLA+ validation failed on attempt 2 — 1 errors
+[INFO] [direct_call] Attempt 3/3
+11:10:11 - LiteLLM:INFO: utils.py:4054 -
+LiteLLM completion() model= gemini-2.5-pro; provider = gemini
+[INFO]
+LiteLLM completion() model= gemini-2.5-pro; provider = gemini
+11:14:43 - LiteLLM:INFO: utils.py:1656 - Wrapper: Completed Call, calling success_handler
+[INFO] Wrapper: Completed Call, calling success_handler
+[WARNING] SANY Error Classification Failed - Unknown Error Pattern
+[WARNING] Full error message content: "\n****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/direct_call_validate_7jpgo48f/SmartBFT.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4791027413853917132/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4791027413853917132/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4791027413853917132/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4791027413853917132/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4791027413853917132/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Integers\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module SmartBFT\nSemantic errors:\n\n*** Errors: 4\n\nline 92, col 61 to line 92, col 61 of module SmartBFT\n\nCould not find declaration or definition of symbol '|'.\n\n\nline 92, col 51 to line 92, col 73 of module SmartBFT\n\nCouldn't resolve infix operator symbol `|'.\n\n\nline 106, col 73 to line 106, col 73 of module SmartBFT\n\nCould not find declaration or definition of symbol '|'.\n\n\nline 106, col 56 to line 106, col 78 of module SmartBFT\n\nCouldn't resolve infix operator symbol `|'.\n\n\n"
+[INFO] [direct_call] ✗ TLA+ validation failed on attempt 3 — 1 errors
+[INFO] [direct_call] Max attempts reached; returning last response.
+[INFO] Generation completed in 936.72s
+[INFO] ActionDecompositionEvaluator initialized with 30s timeout
+[INFO] Loading existing global error statistics from /Users/adaturgut/SysMoBench/output/global_error_statistics.yaml
+[INFO] Evaluating action decomposition: hyperledger/direct_call/gemini25_google
+[INFO] Decomposed specification into 18 actions
+[INFO] Processing action 1/18: Nodes
+[INFO]   ✓ Action 'Nodes' validated successfully
+[INFO] Processing action 2/18: QuorumSize
+[INFO]   ✓ Action 'QuorumSize' validated successfully
+[INFO] Processing action 3/18: MaxSeq
+[INFO]   ✓ Action 'MaxSeq' validated successfully
+[INFO] Processing action 4/18: Sequences
+[INFO]   ✓ Action 'Sequences' validated successfully
+[INFO] Processing action 5/18: Phases
+[INFO]   ✓ Action 'Phases' validated successfully
+[INFO] Processing action 6/18: vars
+[INFO]   ✓ Action 'vars' validated successfully
+[INFO] Processing action 7/18: Leader
+[INFO]   ✓ Action 'Leader' validated successfully
+[INFO] Processing action 8/18: Init
+[INFO]   ✓ Action 'Init' validated successfully
+[INFO] Processing action 9/18: Preprepare
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['Leader(x1) == TRUE']
+DEBUG: Inserting 'Leader(x1) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['Leader']
+[INFO]   ✓ Action 'Preprepare' validated successfully
+[INFO] Processing action 10/18: Prepare
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['Leader(x1) == TRUE']
+DEBUG: Inserting 'Leader(x1) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['Leader']
+[INFO]   ✓ Action 'Prepare' validated successfully
+[INFO] Processing action 11/18: Commit
+[INFO]   ✓ Action 'Commit' validated successfully
+[INFO] Processing action 12/18: Decide
+[INFO]   ✓ Action 'Decide' validated successfully
+[INFO] Processing action 13/18: ViewChange
+[INFO]   ✓ Action 'ViewChange' validated successfully
+[INFO] Processing action 14/18: ViewData
+[WARNING] SANY Error Classification Failed - Unknown Error Pattern
+[WARNING] Full error message content: "\n****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_6y0gurxk/SmartBFT_ViewData.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-3845609285163482044/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-3845609285163482044/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-3845609285163482044/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-3845609285163482044/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-3845609285163482044/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-3845609285163482044/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_ViewData\nSemantic errors:\n\n*** Errors: 2\n\nline 10, col 61 to line 10, col 61 of module SmartBFT_ViewData\n\nCould not find declaration or definition of symbol '|'.\n\n\nline 10, col 51 to line 10, col 73 of module SmartBFT_ViewData\n\nCouldn't resolve infix operator symbol `|'.\n\n\n"
+[WARNING] SANY Error Classification Failed - Unknown Error Pattern
+[WARNING] Full error message content: "\n****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_6y0gurxk/SmartBFT_ViewData.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-7571653073792350733/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-7571653073792350733/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-7571653073792350733/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-7571653073792350733/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-7571653073792350733/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-7571653073792350733/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_ViewData\nSemantic errors:\n\n*** Errors: 2\n\nline 10, col 61 to line 10, col 61 of module SmartBFT_ViewData\n\nCould not find declaration or definition of symbol '|'.\n\n\nline 10, col 51 to line 10, col 73 of module SmartBFT_ViewData\n\nCouldn't resolve infix operator symbol `|'.\n\n\n"
+[WARNING] SANY Error Classification Failed - Unknown Error Pattern
+[WARNING] Full error message content: "\n****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_6y0gurxk/SmartBFT_ViewData.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-13705165650922539371/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-13705165650922539371/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-13705165650922539371/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-13705165650922539371/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-13705165650922539371/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-13705165650922539371/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_ViewData\nSemantic errors:\n\n*** Errors: 2\n\nline 10, col 61 to line 10, col 61 of module SmartBFT_ViewData\n\nCould not find declaration or definition of symbol '|'.\n\n\nline 10, col 51 to line 10, col 73 of module SmartBFT_ViewData\n\nCouldn't resolve infix operator symbol `|'.\n\n\n"
+[WARNING]   ✗ Action 'ViewData' failed validation (1 errors)
+[INFO] Processing action 15/18: HighestPrepared
+[WARNING] SANY Error Classification Failed - Unknown Error Pattern
+[WARNING] Full error message content: "\n****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_6y0gurxk/SmartBFT_HighestPrepared.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-17718546126669026089/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-17718546126669026089/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-17718546126669026089/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-17718546126669026089/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-17718546126669026089/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-17718546126669026089/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_HighestPrepared\nSemantic errors:\n\n*** Errors: 2\n\nline 13, col 73 to line 13, col 73 of module SmartBFT_HighestPrepared\n\nCould not find declaration or definition of symbol '|'.\n\n\nline 13, col 56 to line 13, col 78 of module SmartBFT_HighestPrepared\n\nCouldn't resolve infix operator symbol `|'.\n\n\n"
+[WARNING] SANY Error Classification Failed - Unknown Error Pattern
+[WARNING] Full error message content: "\n****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_6y0gurxk/SmartBFT_HighestPrepared.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-10448492156793571751/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-10448492156793571751/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-10448492156793571751/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-10448492156793571751/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-10448492156793571751/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-10448492156793571751/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_HighestPrepared\nSemantic errors:\n\n*** Errors: 2\n\nline 13, col 73 to line 13, col 73 of module SmartBFT_HighestPrepared\n\nCould not find declaration or definition of symbol '|'.\n\n\nline 13, col 56 to line 13, col 78 of module SmartBFT_HighestPrepared\n\nCouldn't resolve infix operator symbol `|'.\n\n\n"
+[WARNING] SANY Error Classification Failed - Unknown Error Pattern
+[WARNING] Full error message content: "\n****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_6y0gurxk/SmartBFT_HighestPrepared.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4228968689246161716/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4228968689246161716/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4228968689246161716/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4228968689246161716/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4228968689246161716/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4228968689246161716/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_HighestPrepared\nSemantic errors:\n\n*** Errors: 2\n\nline 13, col 73 to line 13, col 73 of module SmartBFT_HighestPrepared\n\nCould not find declaration or definition of symbol '|'.\n\n\nline 13, col 56 to line 13, col 78 of module SmartBFT_HighestPrepared\n\nCouldn't resolve infix operator symbol `|'.\n\n\n"
+[WARNING]   ✗ Action 'HighestPrepared' failed validation (1 errors)
+[INFO] Processing action 16/18: NewView
+DEBUG: Will insert 2 functions at position 4
+DEBUG: Functions to add: ['HighestPrepared(x1) == TRUE', 'Leader(x1) == TRUE']
+DEBUG: Inserting 'HighestPrepared(x1) == TRUE' at position 4
+DEBUG: Inserting 'Leader(x1) == TRUE' at position 6
+DEBUG: Updated all_added_funcs: ['HighestPrepared', 'Leader']
+[INFO]   ✓ Action 'NewView' validated successfully
+[INFO] Processing action 17/18: Next
+DEBUG: Will insert 7 functions at position 4
+DEBUG: Functions to add: ['Preprepare(x1, x2, x3) == TRUE', 'Decide(x1, x2) == TRUE', 'ViewData(x1) == TRUE', 'Prepare(x1, x2) == TRUE', 'ViewChange(x1) == TRUE', 'NewView(x1, x2) == TRUE', 'Commit(x1, x2) == TRUE']
+DEBUG: Inserting 'Preprepare(x1, x2, x3) == TRUE' at position 4
+DEBUG: Inserting 'Decide(x1, x2) == TRUE' at position 6
+DEBUG: Inserting 'ViewData(x1) == TRUE' at position 8
+DEBUG: Inserting 'Prepare(x1, x2) == TRUE' at position 10
+DEBUG: Inserting 'ViewChange(x1) == TRUE' at position 12
+DEBUG: Inserting 'NewView(x1, x2) == TRUE' at position 14
+DEBUG: Inserting 'Commit(x1, x2) == TRUE' at position 16
+DEBUG: Updated all_added_funcs: ['Preprepare', 'Decide', 'ViewData', 'Prepare', 'ViewChange', 'NewView', 'Commit']
+[INFO]   ✓ Action 'Next' validated successfully
+[INFO] Processing action 18/18: Spec
+[INFO]   ✓ Action 'Spec' validated successfully
+[INFO] Action validation progress: 16/18 actions successful so far
+[INFO] Action decomposition summary: 16/18 actions successful (88.9%)
+[WARNING] SANY Error Classification Failed - Unknown Error Pattern
+[WARNING] Full error message content: "\n****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /Users/adaturgut/SysMoBench/data/spec/hyperledger/SmartBFT.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4076616004229983021/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4076616004229983021/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4076616004229983021/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4076616004229983021/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4076616004229983021/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Integers\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module SmartBFT\nSemantic errors:\n\n*** Errors: 4\n\nline 93, col 61 to line 93, col 61 of module SmartBFT\n\nCould not find declaration or definition of symbol '|'.\n\n\nline 93, col 51 to line 93, col 73 of module SmartBFT\n\nCouldn't resolve infix operator symbol `|'.\n\n\nline 107, col 73 to line 107, col 73 of module SmartBFT\n\nCould not find declaration or definition of symbol '|'.\n\n\nline 107, col 56 to line 107, col 78 of module SmartBFT\n\nCouldn't resolve infix operator symbol `|'.\n\n\n"
+[INFO] Action decomposition complete: 18 actions evaluated
+[INFO] Created experiment directory: output/action_decomposition/tla/hyperledger/direct_call_gemini25_google/20260616111457
+[INFO] Saved results to output/action_decomposition/tla/hyperledger/direct_call_gemini25_google/20260616111457
+[INFO] Results saved to: output/action_decomposition/tla/hyperledger/direct_call_gemini25_google/20260616111457
+[INFO] Saved experiment error statistics to: output/action_decomposition/tla/hyperledger/direct_call_gemini25_google/20260616111457/error_statistics.yaml
+[INFO] Error statistics saved to: output/action_decomposition/tla/hyperledger/direct_call_gemini25_google/20260616111457/error_statistics.yaml
+[INFO] Evaluation complete: success=True
+[INFO] Metric 'action_decomposition': ✓ PASS
+
+Syntax Evaluation Results: ✓ PASS
+Generation time: 936.72s
+Compilation time: 2.91s
+Syntax errors: 3
+Semantic errors: 0
+Action success rate: 16/18 (88.9%)
+Recovery statistics: 69 variables, 11 functions added, 18 attempts
+Results saved to: output/action_decomposition/tla/hyperledger/direct_call_gemini25_google/20260616111457

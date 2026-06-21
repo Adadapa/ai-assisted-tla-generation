@@ -1,0 +1,10 @@
+{
+  "task_name": "hyperledger",
+  "method_name": "direct_call",
+  "model_name": "claude",
+  "metric": "action_decomposition",
+  "evaluation_timestamp": 1781702406.064217,
+  "validation_timeout": 30,
+  "keep_temp_files": false,
+  "specification_file": "output/action_decomposition/tla/hyperledger/direct_call_claude/20260617152006/SmartBFT.tla"
+}

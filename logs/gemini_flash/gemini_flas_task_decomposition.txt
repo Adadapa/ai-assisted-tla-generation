@@ -1,0 +1,271 @@
+python3 scripts/run_benchmark.py --task hyperledger --method direct_call --model gemini25flash_google --metric action_decomposition
+22:59:31 - LiteLLM:WARNING: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+22:59:31 - LiteLLM:WARNING: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+[INFO] Validating prerequisites...
+[INFO] ✓ All prerequisites validated
+[INFO] Loading existing global error statistics from /Users/adaturgut/SysMoBench/output/global_error_statistics.yaml
+[INFO] Running metric 'action_decomposition': hyperledger/direct_call/gemini25flash_google
+[INFO] Loaded task: hyperledger (distributed)
+[INFO] Loaded prompt template (6008 chars, language=TLA+)
+[INFO] Loaded model: gemini25flash_google
+[INFO] Using method: direct_call (language=TLA+)
+[INFO] [direct_call] Attempt 1/3
+22:59:32 - LiteLLM:INFO: utils.py:4054 -
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+[INFO]
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+23:01:46 - LiteLLM:INFO: utils.py:1656 - Wrapper: Completed Call, calling success_handler
+[INFO] Wrapper: Completed Call, calling success_handler
+[INFO] [direct_call] ✗ TLA+ validation failed on attempt 1 — 1 errors
+[INFO] [direct_call] Attempt 2/3
+23:01:47 - LiteLLM:INFO: utils.py:4054 -
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+[INFO]
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+23:03:21 - LiteLLM:INFO: utils.py:1656 - Wrapper: Completed Call, calling success_handler
+[INFO] Wrapper: Completed Call, calling success_handler
+[INFO] [direct_call] ✗ TLA+ validation failed on attempt 2 — 1 errors
+[INFO] [direct_call] Attempt 3/3
+23:03:22 - LiteLLM:INFO: utils.py:4054 -
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+[INFO]
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+23:04:31 - LiteLLM:INFO: utils.py:1656 - Wrapper: Completed Call, calling success_handler
+[INFO] Wrapper: Completed Call, calling success_handler
+[INFO] [direct_call] ✗ TLA+ validation failed on attempt 3 — 1 errors
+[INFO] [direct_call] Max attempts reached; returning last response.
+[INFO] Generation completed in 299.13s
+[INFO] ActionDecompositionEvaluator initialized with 30s timeout
+[INFO] Loading existing global error statistics from /Users/adaturgut/SysMoBench/output/global_error_statistics.yaml
+[INFO] Evaluating action decomposition: hyperledger/direct_call/gemini25flash_google
+[INFO] Decomposed specification into 49 actions
+[INFO] Processing action 1/49: Phase
+[INFO]   ✓ Action 'Phase' validated successfully
+[INFO] Processing action 2/49: MessageTypes
+[INFO]   ✓ Action 'MessageTypes' validated successfully
+[INFO] Processing action 3/49: quorumSize
+[INFO]   ✓ Action 'quorumSize' validated successfully
+[INFO] Processing action 4/49: Leader
+[INFO]   ✓ Action 'Leader' validated successfully
+[INFO] Processing action 5/49: IsLeader
+DEBUG: Will insert 1 functions at position 2
+DEBUG: Functions to add: ['Leader(x1) == TRUE']
+DEBUG: Inserting 'Leader(x1) == TRUE' at position 2
+DEBUG: Updated all_added_funcs: ['Leader']
+[INFO]   ✓ Action 'IsLeader' validated successfully
+[INFO] Processing action 6/49: IsNewerView
+[INFO]   ✓ Action 'IsNewerView' validated successfully
+[INFO] Processing action 7/49: IsCurrentView
+[INFO]   ✓ Action 'IsCurrentView' validated successfully
+[INFO] Processing action 8/49: IsNextSeq
+[INFO]   ✓ Action 'IsNextSeq' validated successfully
+[INFO] Processing action 9/49: IsIdle
+[INFO]   ✓ Action 'IsIdle' validated successfully
+[INFO] Processing action 10/49: IsPrepared
+[INFO]   ✓ Action 'IsPrepared' validated successfully
+[INFO] Processing action 11/49: IsCommitted
+[INFO]   ✓ Action 'IsCommitted' validated successfully
+[INFO] Processing action 12/49: Digest
+[INFO]   ✓ Action 'Digest' validated successfully
+[INFO] Processing action 13/49: AnyValue
+[INFO]   ✓ Action 'AnyValue' validated successfully
+[INFO] Processing action 14/49: Message
+[INFO]   ✓ Action 'Message' validated successfully
+[INFO] Processing action 15/49: PreprepareMsg
+[INFO]   ✓ Action 'PreprepareMsg' validated successfully
+[INFO] Processing action 16/49: PrepareMsg
+[INFO]   ✓ Action 'PrepareMsg' validated successfully
+[INFO] Processing action 17/49: CommitMsg
+[INFO]   ✓ Action 'CommitMsg' validated successfully
+[INFO] Processing action 18/49: ViewChangeMsg
+[INFO]   ✓ Action 'ViewChangeMsg' validated successfully
+[INFO] Processing action 19/49: ViewDataMsg
+[INFO]   ✓ Action 'ViewDataMsg' validated successfully
+[INFO] Processing action 20/49: NewViewMsg
+[INFO]   ✓ Action 'NewViewMsg' validated successfully
+[INFO] Processing action 21/49: GetMessages
+[INFO]   ✓ Action 'GetMessages' validated successfully
+[INFO] Processing action 22/49: GetViewChangeMessages
+[INFO]   ✓ Action 'GetViewChangeMessages' validated successfully
+[INFO] Processing action 23/49: GetViewDataMessages
+[INFO]   ✓ Action 'GetViewDataMessages' validated successfully
+[INFO] Processing action 24/49: HasQuorum
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['GetMessages(x1, x2, x3, x4, x5) == TRUE']
+DEBUG: Inserting 'GetMessages(x1, x2, x3, x4, x5) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['GetMessages']
+[INFO]   ✓ Action 'HasQuorum' validated successfully
+[INFO] Processing action 25/49: HasViewChangeQuorum
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['GetViewChangeMessages(x1, x2) == TRUE']
+DEBUG: Inserting 'GetViewChangeMessages(x1, x2) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['GetViewChangeMessages']
+[INFO]   ✓ Action 'HasViewChangeQuorum' validated successfully
+[INFO] Processing action 26/49: HasViewDataQuorum
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['GetViewDataMessages(x1, x2) == TRUE']
+DEBUG: Inserting 'GetViewDataMessages(x1, x2) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['GetViewDataMessages']
+[INFO]   ✓ Action 'HasViewDataQuorum' validated successfully
+[INFO] Processing action 27/49: Init
+[INFO]   ✓ Action 'Init' validated successfully
+[INFO] Processing action 28/49: Deliver
+[INFO]   ✓ Action 'Deliver' validated successfully
+[INFO] Processing action 29/49: Preprepare
+DEBUG: Will insert 6 functions at position 4
+DEBUG: Functions to add: ['Digest(x1) == TRUE', 'PreprepareMsg(x1, x2, x3, x4, x5, x6) == TRUE', 'IsLeader(x1, x2) == TRUE', 'IsCurrentView(x1, x2) == TRUE', 'IsNextSeq(x1, x2) == TRUE', 'IsIdle(x1, x2, x3) == TRUE']
+DEBUG: Inserting 'Digest(x1) == TRUE' at position 4
+DEBUG: Inserting 'PreprepareMsg(x1, x2, x3, x4, x5, x6) == TRUE' at position 6
+DEBUG: Inserting 'IsLeader(x1, x2) == TRUE' at position 8
+DEBUG: Inserting 'IsCurrentView(x1, x2) == TRUE' at position 10
+DEBUG: Inserting 'IsNextSeq(x1, x2) == TRUE' at position 12
+DEBUG: Inserting 'IsIdle(x1, x2, x3) == TRUE' at position 14
+DEBUG: Updated all_added_funcs: ['Digest', 'PreprepareMsg', 'IsLeader', 'IsCurrentView', 'IsNextSeq', 'IsIdle']
+[INFO]   ✓ Action 'Preprepare' validated successfully
+[INFO] Processing action 30/49: Prepare
+DEBUG: Will insert 6 functions at position 4
+DEBUG: Functions to add: ['PrepareMsg(x1, x2, x3, x4, x5) == TRUE', 'Digest(x1) == TRUE', 'IsCurrentView(x1, x2) == TRUE', 'IsNextSeq(x1, x2) == TRUE', 'Leader(x1) == TRUE', 'IsIdle(x1, x2, x3) == TRUE']
+DEBUG: Inserting 'PrepareMsg(x1, x2, x3, x4, x5) == TRUE' at position 4
+DEBUG: Inserting 'Digest(x1) == TRUE' at position 6
+DEBUG: Inserting 'IsCurrentView(x1, x2) == TRUE' at position 8
+DEBUG: Inserting 'IsNextSeq(x1, x2) == TRUE' at position 10
+DEBUG: Inserting 'Leader(x1) == TRUE' at position 12
+DEBUG: Inserting 'IsIdle(x1, x2, x3) == TRUE' at position 14
+DEBUG: Updated all_added_funcs: ['PrepareMsg', 'Digest', 'IsCurrentView', 'IsNextSeq', 'Leader', 'IsIdle']
+[WARNING]   ✗ Action 'Prepare' failed validation (1 errors)
+[INFO] Processing action 31/49: Commit
+DEBUG: Will insert 5 functions at position 4
+DEBUG: Functions to add: ['IsPrepared(x1, x2, x3) == TRUE', 'Digest(x1) == TRUE', 'HasQuorum(x1, x2, x3, x4, x5) == TRUE', 'IsCurrentView(x1, x2) == TRUE', 'CommitMsg(x1, x2, x3, x4, x5) == TRUE']
+DEBUG: Inserting 'IsPrepared(x1, x2, x3) == TRUE' at position 4
+DEBUG: Inserting 'Digest(x1) == TRUE' at position 6
+DEBUG: Inserting 'HasQuorum(x1, x2, x3, x4, x5) == TRUE' at position 8
+DEBUG: Inserting 'IsCurrentView(x1, x2) == TRUE' at position 10
+DEBUG: Inserting 'CommitMsg(x1, x2, x3, x4, x5) == TRUE' at position 12
+DEBUG: Updated all_added_funcs: ['IsPrepared', 'Digest', 'HasQuorum', 'IsCurrentView', 'CommitMsg']
+[INFO]   ✓ Action 'Commit' validated successfully
+[INFO] Processing action 32/49: Decide
+DEBUG: Will insert 3 functions at position 4
+DEBUG: Functions to add: ['HasQuorum(x1, x2, x3, x4) == TRUE', 'IsCurrentView(x1, x2) == TRUE', 'IsCommitted(x1, x2, x3) == TRUE']
+DEBUG: Inserting 'HasQuorum(x1, x2, x3, x4) == TRUE' at position 4
+DEBUG: Inserting 'IsCurrentView(x1, x2) == TRUE' at position 6
+DEBUG: Inserting 'IsCommitted(x1, x2, x3) == TRUE' at position 8
+DEBUG: Updated all_added_funcs: ['HasQuorum', 'IsCurrentView', 'IsCommitted']
+DEBUG: Updated all_added_funcs: ['HasQuorum', 'IsCurrentView', 'IsCommitted']
+DEBUG: No new functions added in iteration 2, stopping
+[WARNING]   ✗ Action 'Decide' failed validation (1 errors)
+[INFO] Processing action 33/49: ViewChange
+DEBUG: Will insert 2 functions at position 4
+DEBUG: Functions to add: ['ViewChangeMsg(x1, x2, x3, x4, x5, x6) == TRUE', 'IsCurrentView(x1, x2) == TRUE']
+DEBUG: Inserting 'ViewChangeMsg(x1, x2, x3, x4, x5, x6) == TRUE' at position 4
+DEBUG: Inserting 'IsCurrentView(x1, x2) == TRUE' at position 6
+DEBUG: Updated all_added_funcs: ['ViewChangeMsg', 'IsCurrentView']
+[INFO]   ✓ Action 'ViewChange' validated successfully
+[INFO] Processing action 34/49: ViewData
+DEBUG: Will insert 4 functions at position 4
+DEBUG: Functions to add: ['ViewDataMsg(x1, x2) == TRUE', 'HasViewChangeQuorum(x1, x2) == TRUE', 'IsCurrentView(x1, x2) == TRUE', 'GetViewChangeMessages(x1, x2) == TRUE']
+DEBUG: Inserting 'ViewDataMsg(x1, x2) == TRUE' at position 4
+DEBUG: Inserting 'HasViewChangeQuorum(x1, x2) == TRUE' at position 6
+DEBUG: Inserting 'IsCurrentView(x1, x2) == TRUE' at position 8
+DEBUG: Inserting 'GetViewChangeMessages(x1, x2) == TRUE' at position 10
+DEBUG: Updated all_added_funcs: ['ViewDataMsg', 'HasViewChangeQuorum', 'IsCurrentView', 'GetViewChangeMessages']
+DEBUG: Updated all_added_funcs: ['ViewDataMsg', 'HasViewChangeQuorum', 'IsCurrentView', 'GetViewChangeMessages']
+DEBUG: No new functions added in iteration 2, stopping
+[WARNING]   ✗ Action 'ViewData' failed validation (1 errors)
+[INFO] Processing action 35/49: NewView
+DEBUG: Will insert 6 functions at position 4
+DEBUG: Functions to add: ['HasViewDataQuorum(x1, x2) == TRUE', 'GetViewDataMessages(x1, x2) == TRUE', 'Digest(x1) == TRUE', 'IsLeader(x1, x2) == TRUE', 'IsCurrentView(x1, x2) == TRUE', 'NewViewMsg(x1, x2, x3, x4, x5, x6, x7) == TRUE']
+DEBUG: Inserting 'HasViewDataQuorum(x1, x2) == TRUE' at position 4
+DEBUG: Inserting 'GetViewDataMessages(x1, x2) == TRUE' at position 6
+DEBUG: Inserting 'Digest(x1) == TRUE' at position 8
+DEBUG: Inserting 'IsLeader(x1, x2) == TRUE' at position 10
+DEBUG: Inserting 'IsCurrentView(x1, x2) == TRUE' at position 12
+DEBUG: Inserting 'NewViewMsg(x1, x2, x3, x4, x5, x6, x7) == TRUE' at position 14
+DEBUG: Updated all_added_funcs: ['HasViewDataQuorum', 'GetViewDataMessages', 'Digest', 'IsLeader', 'IsCurrentView', 'NewViewMsg']
+[INFO]   ✓ Action 'NewView' validated successfully
+[INFO] Processing action 36/49: CatchUp
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['Digest(x1) == TRUE']
+DEBUG: Inserting 'Digest(x1) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['Digest']
+[WARNING]   ✗ Action 'CatchUp' failed validation (1 errors)
+[INFO] Processing action 37/49: Action_Deliver
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['Deliver(x1) == TRUE']
+DEBUG: Inserting 'Deliver(x1) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['Deliver']
+[INFO]   ✓ Action 'Action_Deliver' validated successfully
+[INFO] Processing action 38/49: Action_Preprepare
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['Preprepare(x1, x2, x3, x4) == TRUE']
+DEBUG: Inserting 'Preprepare(x1, x2, x3, x4) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['Preprepare']
+[INFO]   ✓ Action 'Action_Preprepare' validated successfully
+[INFO] Processing action 39/49: Action_Prepare
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['Prepare(x1, x2, x3, x4, x5) == TRUE']
+DEBUG: Inserting 'Prepare(x1, x2, x3, x4, x5) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['Prepare']
+[INFO]   ✓ Action 'Action_Prepare' validated successfully
+[INFO] Processing action 40/49: Action_Commit
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['Commit(x1, x2, x3, x4) == TRUE']
+DEBUG: Inserting 'Commit(x1, x2, x3, x4) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['Commit']
+[INFO]   ✓ Action 'Action_Commit' validated successfully
+[INFO] Processing action 41/49: Action_Decide
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['Decide(x1, x2, x3, x4) == TRUE']
+DEBUG: Inserting 'Decide(x1, x2, x3, x4) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['Decide']
+[INFO]   ✓ Action 'Action_Decide' validated successfully
+[INFO] Processing action 42/49: Action_ViewChange
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['ViewChange(x1, x2) == TRUE']
+DEBUG: Inserting 'ViewChange(x1, x2) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['ViewChange']
+[INFO]   ✓ Action 'Action_ViewChange' validated successfully
+[INFO] Processing action 43/49: Action_ViewData
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['ViewData(x1, x2) == TRUE']
+DEBUG: Inserting 'ViewData(x1, x2) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['ViewData']
+[INFO]   ✓ Action 'Action_ViewData' validated successfully
+[INFO] Processing action 44/49: Action_NewView
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['NewView(x1, x2) == TRUE']
+DEBUG: Inserting 'NewView(x1, x2) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['NewView']
+[INFO]   ✓ Action 'Action_NewView' validated successfully
+[INFO] Processing action 45/49: Action_CatchUp
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['CatchUp(x1) == TRUE']
+DEBUG: Inserting 'CatchUp(x1) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['CatchUp']
+[INFO]   ✓ Action 'Action_CatchUp' validated successfully
+[INFO] Processing action 46/49: Next
+[INFO]   ✓ Action 'Next' validated successfully
+[INFO] Processing action 47/49: vars
+[INFO]   ✓ Action 'vars' validated successfully
+[INFO] Processing action 48/49: Fairness
+[INFO]   ✓ Action 'Fairness' validated successfully
+[INFO] Processing action 49/49: Spec
+[INFO]   ✓ Action 'Spec' validated successfully
+[INFO] Action validation progress: 45/49 actions successful so far
+[INFO] Action decomposition summary: 45/49 actions successful (91.8%)
+[INFO] Action decomposition complete: 49 actions evaluated
+[INFO] Created experiment directory: output/action_decomposition/tla/hyperledger/direct_call_gemini25flash_google/20260614230508
+[INFO] Saved results to output/action_decomposition/tla/hyperledger/direct_call_gemini25flash_google/20260614230508
+[INFO] Results saved to: output/action_decomposition/tla/hyperledger/direct_call_gemini25flash_google/20260614230508
+[INFO] Saved experiment error statistics to: output/action_decomposition/tla/hyperledger/direct_call_gemini25flash_google/20260614230508/error_statistics.yaml
+[INFO] Error statistics saved to: output/action_decomposition/tla/hyperledger/direct_call_gemini25flash_google/20260614230508/error_statistics.yaml
+[INFO] Evaluation complete: success=True
+[INFO] Metric 'action_decomposition': ✓ PASS
+
+Syntax Evaluation Results: ✓ PASS
+Generation time: 299.13s
+Compilation time: 7.78s
+Syntax errors: 5
+Semantic errors: 0
+Action success rate: 45/49 (91.8%)
+Recovery statistics: 211 variables, 46 functions added, 43 attempts
+Results saved to: output/action_decomposition/tla/hyperledger/direct_call_gemini25flash_google/20260614230508

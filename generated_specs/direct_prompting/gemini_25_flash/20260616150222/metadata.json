@@ -1,0 +1,10 @@
+{
+  "task_name": "hyperledger",
+  "method_name": "direct_call",
+  "model_name": "gemini25flash_google",
+  "metric": "action_decomposition",
+  "evaluation_timestamp": 1781614942.129035,
+  "validation_timeout": 30,
+  "keep_temp_files": false,
+  "specification_file": "output/action_decomposition/tla/hyperledger/direct_call_gemini25flash_google/20260616150222/SmartBFT.tla"
+}

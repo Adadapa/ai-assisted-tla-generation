@@ -1,0 +1,1925 @@
+{
+  "overall_success": true,
+  "generation_successful": true,
+  "compilation_successful": true,
+  "generation_time": 0.0,
+  "compilation_time": 15.259866952896118,
+  "total_actions": 100,
+  "successful_actions": 98,
+  "action_success_rate": 0.98,
+  "total_variables_added": 592,
+  "total_functions_added": 155,
+  "total_recovery_attempts": 97,
+  "syntax_errors": [
+    "MCNodesList: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_9meavnt5/SmartBFT_MCNodesList.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-12367474133869649699/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-12367474133869649699/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-12367474133869649699/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-12367474133869649699/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-12367474133869649699/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-12367474133869649699/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_MCNodesList\nSemantic errors:\n\n*** Errors: 5\n\nline 8, col 1 to line 8, col 33 of module SmartBFT_MCNodesList\n\nLevel error: assumptions must be level 0 (Constant), \nbut this one has level 1.\n\n\nline 9, col 1 to line 9, col 34 of module SmartBFT_MCNodesList\n\nLevel error: assumptions must be level 0 (Constant), \nbut this one has level 1.\n\n\nline 10, col 1 to line 10, col 32 of module SmartBFT_MCNodesList\n\nLevel error: assumptions must be level 0 (Constant), \nbut this one has level 1.\n\n\nline 11, col 1 to line 11, col 43 of module SmartBFT_MCNodesList\n\nLevel error: assumptions must be level 0 (Constant), \nbut this one has level 1.\n\n\nline 12, col 1 to line 12, col 76 of module SmartBFT_MCNodesList\n\nLevel error: assumptions must be level 0 (Constant), \nbut this one has level 1.",
+    "Agreement: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_9meavnt5/SmartBFT_Agreement.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-7545515369103026918/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-7545515369103026918/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-7545515369103026918/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-7545515369103026918/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-7545515369103026918/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-7545515369103026918/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_Agreement\nSemantic errors:\n\n*** Errors: 1\n\nline 10, col 24 to line 10, col 51 of module SmartBFT_Agreement\n\nThe operator Min requires 1 arguments."
+  ],
+  "semantic_errors": [],
+  "action_results": [
+    {
+      "action_name": "Correct",
+      "success": true,
+      "compilation_time": 0.14895319938659668,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Byzantine",
+        "Server"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCNodesList",
+      "success": false,
+      "compilation_time": 0.15912699699401855,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_9meavnt5/SmartBFT_MCNodesList.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-12367474133869649699/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-12367474133869649699/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-12367474133869649699/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-12367474133869649699/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-12367474133869649699/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-12367474133869649699/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_MCNodesList\nSemantic errors:\n\n*** Errors: 5\n\nline 8, col 1 to line 8, col 33 of module SmartBFT_MCNodesList\n\nLevel error: assumptions must be level 0 (Constant), \nbut this one has level 1.\n\n\nline 9, col 1 to line 9, col 34 of module SmartBFT_MCNodesList\n\nLevel error: assumptions must be level 0 (Constant), \nbut this one has level 1.\n\n\nline 10, col 1 to line 10, col 32 of module SmartBFT_MCNodesList\n\nLevel error: assumptions must be level 0 (Constant), \nbut this one has level 1.\n\n\nline 11, col 1 to line 11, col 43 of module SmartBFT_MCNodesList\n\nLevel error: assumptions must be level 0 (Constant), \nbut this one has level 1.\n\n\nline 12, col 1 to line 12, col 76 of module SmartBFT_MCNodesList\n\nLevel error: assumptions must be level 0 (Constant), \nbut this one has level 1."
+      ],
+      "semantic_errors": [],
+      "variables_added": [
+        "NodesList",
+        "Byzantine",
+        "Server",
+        "F"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 2
+    },
+    {
+      "action_name": "Phase",
+      "success": true,
+      "compilation_time": 0.15704131126403809,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "HBMRole",
+      "success": true,
+      "compilation_time": 0.14899611473083496,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "MsgType",
+      "success": true,
+      "compilation_time": 0.15108370780944824,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "controllerVars",
+      "success": true,
+      "compilation_time": 0.15194082260131836,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "phase",
+        "commit_votes",
+        "log",
+        "prepare_votes",
+        "ctrl_decisions",
+        "ctrl_updating",
+        "ctrl_view_pending",
+        "in_flight",
+        "ctrl_view",
+        "blacklist"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "vcVars",
+      "success": true,
+      "compilation_time": 0.14917516708374023,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "vc_inform_dropped",
+        "committed_during_vc",
+        "vc_quorum",
+        "vc_view",
+        "vc_delivered_seq",
+        "vc_start_dropped",
+        "vc_enter_seq"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "hbmVars",
+      "success": true,
+      "compilation_time": 0.15190887451171875,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "hbm_chg_pend",
+        "hbm_role",
+        "hbm_view",
+        "hbm_artif_pending",
+        "hbm_timed_out"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "msgVars",
+      "success": true,
+      "compilation_time": 0.15254592895507812,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "msgs"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "vars",
+      "success": true,
+      "compilation_time": 0.16432595252990723,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "msgVars",
+        "controllerVars",
+        "hbmVars",
+        "vcVars"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "N",
+      "success": true,
+      "compilation_time": 0.15160799026489258,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "NodesList"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "GetLeaderID",
+      "success": true,
+      "compilation_time": 0.14359688758850098,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Server",
+        "NodesList",
+        "N",
+        "DecisionsPerLeader",
+        "LeaderRotation"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "CtrlLeader",
+      "success": true,
+      "compilation_time": 0.14863109588623047,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [
+        "GetLeaderID",
+        "ctrl_decisions",
+        "ctrl_view",
+        "blacklist"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "HBMLeader",
+      "success": true,
+      "compilation_time": 0.1486959457397461,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [
+        "GetLeaderID",
+        "hbm_view"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "VCLeader",
+      "success": true,
+      "compilation_time": 0.15594029426574707,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [
+        "GetLeaderID",
+        "blacklist",
+        "vc_view"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "CommittedSeq",
+      "success": true,
+      "compilation_time": 0.14954614639282227,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "log"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "LeaderAliveInView",
+      "success": true,
+      "compilation_time": 0.1488666534423828,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Correct",
+        "ctrl_view",
+        "phase"
+      ],
+      "functions_added": [
+        "GetLeaderID"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Send",
+      "success": true,
+      "compilation_time": 0.15029096603393555,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "msgs"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Discard",
+      "success": true,
+      "compilation_time": 0.13506197929382324,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "msgs"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "OuterSigValid",
+      "success": true,
+      "compilation_time": 0.15468692779541016,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "TypeOK",
+      "success": true,
+      "compilation_time": 0.16456198692321777,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "HBMRole",
+        "vc_quorum",
+        "ctrl_view_pending",
+        "msgs",
+        "phase",
+        "vc_inform_dropped",
+        "hbm_view",
+        "ctrl_updating",
+        "vc_delivered_seq",
+        "blacklist",
+        "hbm_chg_pend",
+        "Server",
+        "hbm_role",
+        "log",
+        "hbm_artif_pending",
+        "ctrl_decisions",
+        "MsgType",
+        "vc_view",
+        "hbm_timed_out",
+        "vc_start_dropped",
+        "in_flight",
+        "ctrl_view",
+        "vc_enter_seq",
+        "Phase",
+        "committed_during_vc",
+        "NULL"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Init",
+      "success": true,
+      "compilation_time": 0.15219998359680176,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "commit_votes",
+        "MaxSeq",
+        "vc_quorum",
+        "ctrl_view_pending",
+        "msgs",
+        "phase",
+        "vc_inform_dropped",
+        "hbm_view",
+        "ctrl_updating",
+        "vc_delivered_seq",
+        "blacklist",
+        "hbm_chg_pend",
+        "Server",
+        "hbm_role",
+        "log",
+        "hbm_artif_pending",
+        "prepare_votes",
+        "ctrl_decisions",
+        "vc_view",
+        "hbm_timed_out",
+        "vc_start_dropped",
+        "in_flight",
+        "ctrl_view",
+        "vc_enter_seq",
+        "committed_during_vc",
+        "NULL"
+      ],
+      "functions_added": [
+        "GetLeaderID"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Propose",
+      "success": true,
+      "compilation_time": 0.15206408500671387,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Correct",
+        "phase",
+        "MaxSeq",
+        "ctrl_updating",
+        "hbmVars",
+        "controllerVars",
+        "vcVars"
+      ],
+      "functions_added": [
+        "CommittedSeq",
+        "Send",
+        "CtrlLeader",
+        "ctrl_view"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "HandlePrePrepare",
+      "success": true,
+      "compilation_time": 0.15108919143676758,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Correct",
+        "phase",
+        "log",
+        "commit_votes",
+        "ctrl_view",
+        "ctrl_decisions",
+        "ctrl_updating",
+        "prepare_votes",
+        "NULL",
+        "hbmVars",
+        "ctrl_view_pending",
+        "in_flight",
+        "msgs",
+        "blacklist",
+        "vcVars"
+      ],
+      "functions_added": [
+        "CommittedSeq",
+        "Send",
+        "CtrlLeader"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "HandlePrepare",
+      "success": true,
+      "compilation_time": 0.14694499969482422,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Correct",
+        "phase",
+        "log",
+        "commit_votes",
+        "ctrl_view",
+        "prepare_votes",
+        "ctrl_decisions",
+        "ctrl_updating",
+        "hbmVars",
+        "ctrl_view_pending",
+        "in_flight",
+        "msgs",
+        "Quorum",
+        "blacklist",
+        "vcVars"
+      ],
+      "functions_added": [
+        "CommittedSeq",
+        "Send"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Decide",
+      "success": true,
+      "compilation_time": 0.14945411682128906,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Correct",
+        "phase",
+        "commit_votes",
+        "log",
+        "ctrl_view",
+        "ctrl_decisions",
+        "ctrl_updating",
+        "prepare_votes",
+        "NULL",
+        "hbmVars",
+        "ctrl_view_pending",
+        "in_flight",
+        "msgs",
+        "Quorum",
+        "blacklist",
+        "vcVars"
+      ],
+      "functions_added": [
+        "CommittedSeq",
+        "GetLeaderID"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "HBLeaderTick",
+      "success": true,
+      "compilation_time": 0.1482560634613037,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Correct",
+        "hbm_role",
+        "phase",
+        "hbmVars",
+        "controllerVars",
+        "vcVars"
+      ],
+      "functions_added": [
+        "Send",
+        "CommittedSeq",
+        "hbm_view"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "HBFollowerTick",
+      "success": true,
+      "compilation_time": 0.14800310134887695,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "hbm_chg_pend",
+        "Correct",
+        "hbm_role",
+        "phase",
+        "hbm_view",
+        "hbm_artif_pending",
+        "hbm_timed_out",
+        "controllerVars",
+        "msgs",
+        "vcVars"
+      ],
+      "functions_added": [
+        "HBMLeader"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "HandleHeartbeat",
+      "success": true,
+      "compilation_time": 0.14783692359924316,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "hbm_chg_pend",
+        "Correct",
+        "hbm_role",
+        "phase",
+        "hbm_view",
+        "hbm_artif_pending",
+        "hbm_timed_out",
+        "controllerVars",
+        "msgs",
+        "vcVars"
+      ],
+      "functions_added": [
+        "HBMLeader"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "InjectArtificialHeartbeat",
+      "success": true,
+      "compilation_time": 0.14824390411376953,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "hbm_chg_pend",
+        "Correct",
+        "phase",
+        "hbm_role",
+        "hbm_view",
+        "ctrl_view",
+        "hbm_artif_pending",
+        "hbm_timed_out",
+        "controllerVars",
+        "msgs",
+        "vcVars"
+      ],
+      "functions_added": [
+        "CtrlLeader"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "HandleArtificialHeartbeat",
+      "success": true,
+      "compilation_time": 0.1467430591583252,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "hbm_chg_pend",
+        "Correct",
+        "hbm_role",
+        "hbm_view",
+        "hbm_artif_pending",
+        "hbm_timed_out",
+        "controllerVars",
+        "msgs",
+        "vcVars"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "SendChangeRole",
+      "success": true,
+      "compilation_time": 0.15326380729675293,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "hbm_chg_pend",
+        "Correct",
+        "hbm_role",
+        "hbm_view",
+        "hbm_artif_pending",
+        "hbm_timed_out",
+        "controllerVars",
+        "msgs",
+        "vcVars"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ProcessChangeRole",
+      "success": true,
+      "compilation_time": 0.151123046875,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "hbm_chg_pend",
+        "Correct",
+        "hbm_role",
+        "hbm_view",
+        "hbm_artif_pending",
+        "hbm_timed_out",
+        "controllerVars",
+        "ctrl_view",
+        "msgs",
+        "vcVars"
+      ],
+      "functions_added": [
+        "CtrlLeader"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "OnHeartbeatTimeout",
+      "success": true,
+      "compilation_time": 0.14986085891723633,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Correct",
+        "phase",
+        "log",
+        "commit_votes",
+        "ctrl_view",
+        "prepare_votes",
+        "ctrl_decisions",
+        "ctrl_updating",
+        "hbmVars",
+        "ctrl_view_pending",
+        "in_flight",
+        "msgs",
+        "blacklist",
+        "vcVars"
+      ],
+      "functions_added": [
+        "CtrlLeader",
+        "Discard"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MaybeStartViewChange",
+      "success": true,
+      "compilation_time": 0.14986205101013184,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Correct",
+        "phase",
+        "vc_inform_dropped",
+        "committed_during_vc",
+        "vc_quorum",
+        "controllerVars",
+        "vc_view",
+        "vc_delivered_seq",
+        "hbmVars",
+        "vc_start_dropped",
+        "msgs",
+        "vc_enter_seq"
+      ],
+      "functions_added": [
+        "Send"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "HandleViewChange",
+      "success": true,
+      "compilation_time": 0.15134501457214355,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "commit_votes",
+        "vc_quorum",
+        "ctrl_view_pending",
+        "msgs",
+        "phase",
+        "vc_inform_dropped",
+        "ctrl_updating",
+        "vc_delivered_seq",
+        "hbmVars",
+        "blacklist",
+        "Correct",
+        "log",
+        "prepare_votes",
+        "ctrl_decisions",
+        "vc_view",
+        "in_flight",
+        "ctrl_view",
+        "vc_start_dropped",
+        "vc_enter_seq",
+        "committed_during_vc",
+        "F"
+      ],
+      "functions_added": [
+        "Send",
+        "CommittedSeq",
+        "GetLeaderID"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ByzantineViewData",
+      "success": true,
+      "compilation_time": 0.15131592750549316,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Byzantine",
+        "Correct",
+        "phase",
+        "hbmVars",
+        "controllerVars",
+        "vcVars"
+      ],
+      "functions_added": [
+        "CommittedSeq",
+        "Send",
+        "GetLeaderID",
+        "NULL",
+        "blacklist",
+        "vc_view"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ProcessViewDataDeliver",
+      "success": true,
+      "compilation_time": 0.15549898147583008,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "commit_votes",
+        "vc_quorum",
+        "ctrl_view_pending",
+        "msgs",
+        "phase",
+        "vc_inform_dropped",
+        "ctrl_updating",
+        "vc_delivered_seq",
+        "hbmVars",
+        "blacklist",
+        "Correct",
+        "log",
+        "prepare_votes",
+        "ctrl_decisions",
+        "vc_view",
+        "vc_start_dropped",
+        "ctrl_view",
+        "in_flight",
+        "vc_enter_seq",
+        "committed_during_vc"
+      ],
+      "functions_added": [
+        "CommittedSeq",
+        "GetLeaderID"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ProcessViewDataValidate",
+      "success": true,
+      "compilation_time": 0.15747714042663574,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "commit_votes",
+        "vc_quorum",
+        "ctrl_view_pending",
+        "msgs",
+        "phase",
+        "vc_inform_dropped",
+        "ctrl_updating",
+        "vc_delivered_seq",
+        "hbmVars",
+        "blacklist",
+        "Correct",
+        "log",
+        "prepare_votes",
+        "ctrl_decisions",
+        "vc_view",
+        "in_flight",
+        "ctrl_view",
+        "vc_start_dropped",
+        "vc_enter_seq",
+        "committed_during_vc"
+      ],
+      "functions_added": [
+        "OuterSigValid",
+        "GetLeaderID",
+        "Discard"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ProcessViewDataSameSeq",
+      "success": true,
+      "compilation_time": 0.15082788467407227,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "commit_votes",
+        "vc_quorum",
+        "ctrl_view_pending",
+        "msgs",
+        "phase",
+        "vc_inform_dropped",
+        "ctrl_updating",
+        "vc_delivered_seq",
+        "hbmVars",
+        "blacklist",
+        "Correct",
+        "log",
+        "prepare_votes",
+        "ctrl_decisions",
+        "vc_view",
+        "in_flight",
+        "ctrl_view",
+        "vc_start_dropped",
+        "vc_enter_seq",
+        "committed_during_vc"
+      ],
+      "functions_added": [
+        "CommittedSeq",
+        "OuterSigValid",
+        "GetLeaderID",
+        "Discard"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "BuildNewView",
+      "success": true,
+      "compilation_time": 0.15164589881896973,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "commit_votes",
+        "vc_quorum",
+        "ctrl_view_pending",
+        "msgs",
+        "phase",
+        "vc_inform_dropped",
+        "ctrl_updating",
+        "vc_delivered_seq",
+        "hbmVars",
+        "blacklist",
+        "Correct",
+        "log",
+        "prepare_votes",
+        "ctrl_decisions",
+        "vc_view",
+        "in_flight",
+        "ctrl_view",
+        "vc_start_dropped",
+        "vc_enter_seq",
+        "committed_during_vc",
+        "NULL",
+        "Quorum"
+      ],
+      "functions_added": [
+        "Send",
+        "GetLeaderID"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "EnterNewView",
+      "success": true,
+      "compilation_time": 0.15272188186645508,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "commit_votes",
+        "vc_quorum",
+        "ctrl_view_pending",
+        "msgs",
+        "phase",
+        "vc_inform_dropped",
+        "ctrl_updating",
+        "vc_delivered_seq",
+        "hbmVars",
+        "blacklist",
+        "Correct",
+        "log",
+        "prepare_votes",
+        "ctrl_decisions",
+        "vc_view",
+        "vc_start_dropped",
+        "ctrl_view",
+        "in_flight",
+        "vc_enter_seq",
+        "committed_during_vc",
+        "NULL"
+      ],
+      "functions_added": [
+        "CommittedSeq",
+        "GetLeaderID"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "InformNewView",
+      "success": true,
+      "compilation_time": 0.13915228843688965,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "commit_votes",
+        "vc_quorum",
+        "ctrl_view_pending",
+        "msgs",
+        "phase",
+        "vc_inform_dropped",
+        "ctrl_updating",
+        "vc_delivered_seq",
+        "hbmVars",
+        "blacklist",
+        "Correct",
+        "log",
+        "prepare_votes",
+        "ctrl_decisions",
+        "vc_view",
+        "vc_start_dropped",
+        "in_flight",
+        "ctrl_view",
+        "vc_enter_seq",
+        "committed_during_vc"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ProcessNewViewDeliverLoop",
+      "success": true,
+      "compilation_time": 0.15053796768188477,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Correct",
+        "phase",
+        "log",
+        "commit_votes",
+        "ctrl_view",
+        "ctrl_decisions",
+        "ctrl_updating",
+        "prepare_votes",
+        "vc_view",
+        "NULL",
+        "ctrl_view_pending",
+        "hbmVars",
+        "in_flight",
+        "msgs",
+        "blacklist",
+        "vcVars"
+      ],
+      "functions_added": [
+        "CommittedSeq",
+        "GetLeaderID"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ByzantineViewDataToFollower",
+      "success": true,
+      "compilation_time": 0.1520540714263916,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Byzantine",
+        "Correct",
+        "phase",
+        "hbmVars",
+        "controllerVars",
+        "vcVars"
+      ],
+      "functions_added": [
+        "CommittedSeq",
+        "Send",
+        "GetLeaderID",
+        "NULL",
+        "blacklist",
+        "vc_view"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ChangeViewUpdateView",
+      "success": true,
+      "compilation_time": 0.14850807189941406,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Correct",
+        "phase",
+        "log",
+        "commit_votes",
+        "msgs",
+        "prepare_votes",
+        "ctrl_updating",
+        "ctrl_decisions",
+        "hbmVars",
+        "ctrl_view_pending",
+        "in_flight",
+        "ctrl_view",
+        "blacklist",
+        "vcVars"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ChangeViewUpdateDecisions",
+      "success": true,
+      "compilation_time": 0.14922285079956055,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "hbm_chg_pend",
+        "Correct",
+        "phase",
+        "log",
+        "commit_votes",
+        "hbm_role",
+        "hbm_view",
+        "msgs",
+        "hbm_artif_pending",
+        "prepare_votes",
+        "ctrl_updating",
+        "ctrl_decisions",
+        "ctrl_view_pending",
+        "hbm_timed_out",
+        "in_flight",
+        "ctrl_view",
+        "blacklist",
+        "vcVars"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ReadLeaderID",
+      "success": true,
+      "compilation_time": 0.15015292167663574,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "ctrl_updating",
+        "Correct",
+        "vars"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "GetInFlightSeq",
+      "success": true,
+      "compilation_time": 0.1485140323638916,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "committed_during_vc",
+        "in_flight",
+        "NULL"
+      ],
+      "functions_added": [
+        "CommittedSeq"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Crash",
+      "success": true,
+      "compilation_time": 0.15062975883483887,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "commit_votes",
+        "MaxSeq",
+        "vc_quorum",
+        "ctrl_view_pending",
+        "msgs",
+        "phase",
+        "vc_inform_dropped",
+        "hbm_view",
+        "ctrl_updating",
+        "vc_delivered_seq",
+        "blacklist",
+        "hbm_chg_pend",
+        "Correct",
+        "hbm_role",
+        "log",
+        "hbm_artif_pending",
+        "prepare_votes",
+        "ctrl_decisions",
+        "vc_view",
+        "hbm_timed_out",
+        "vc_start_dropped",
+        "in_flight",
+        "ctrl_view",
+        "vc_enter_seq",
+        "committed_during_vc",
+        "NULL"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Recover",
+      "success": true,
+      "compilation_time": 0.15311408042907715,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "commit_votes",
+        "vc_quorum",
+        "ctrl_view_pending",
+        "msgs",
+        "phase",
+        "vc_inform_dropped",
+        "hbm_view",
+        "ctrl_updating",
+        "vc_delivered_seq",
+        "blacklist",
+        "hbm_chg_pend",
+        "hbm_role",
+        "log",
+        "hbm_artif_pending",
+        "prepare_votes",
+        "ctrl_decisions",
+        "vc_view",
+        "hbm_timed_out",
+        "vc_start_dropped",
+        "in_flight",
+        "ctrl_view",
+        "vc_enter_seq",
+        "committed_during_vc"
+      ],
+      "functions_added": [
+        "CtrlLeader"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Next",
+      "success": true,
+      "compilation_time": 0.17972779273986816,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "MaxView",
+        "MaxSeq",
+        "Server",
+        "ByzantineViewData",
+        "Byzantine"
+      ],
+      "functions_added": [
+        "ByzantineViewData",
+        "HandleArtificialHeartbeat",
+        "BuildNewView",
+        "ProcessChangeRole",
+        "ChangeViewUpdateDecisions",
+        "HandlePrepare",
+        "ProcessNewViewDeliverLoop",
+        "HandleViewChange",
+        "ByzantineViewDataToFollower",
+        "HandleHeartbeat",
+        "ProcessViewDataValidate",
+        "SendChangeRole",
+        "Recover",
+        "MaybeStartViewChange",
+        "ProcessViewDataDeliver",
+        "HBFollowerTick",
+        "Crash",
+        "ChangeViewUpdateView",
+        "InformNewView",
+        "InjectArtificialHeartbeat",
+        "ProcessViewDataSameSeq",
+        "HandlePrePrepare",
+        "Propose",
+        "Decide",
+        "ReadLeaderID",
+        "EnterNewView",
+        "OnHeartbeatTimeout",
+        "HBLeaderTick"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Spec",
+      "success": true,
+      "compilation_time": 0.1530139446258545,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "vars",
+        "Next",
+        "Init"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Min",
+      "success": true,
+      "compilation_time": 0.1499178409576416,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "Agreement",
+      "success": false,
+      "compilation_time": 0.22241497039794922,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_9meavnt5/SmartBFT_Agreement.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-7545515369103026918/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-7545515369103026918/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-7545515369103026918/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-7545515369103026918/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-7545515369103026918/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-7545515369103026918/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_Agreement\nSemantic errors:\n\n*** Errors: 1\n\nline 10, col 24 to line 10, col 51 of module SmartBFT_Agreement\n\nThe operator Min requires 1 arguments."
+      ],
+      "semantic_errors": [],
+      "variables_added": [
+        "Correct",
+        "log"
+      ],
+      "functions_added": [
+        "Min"
+      ],
+      "recovery_attempts": 2
+    },
+    {
+      "action_name": "ViewChangeSafety",
+      "success": true,
+      "compilation_time": 0.15039277076721191,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Correct",
+        "phase",
+        "log"
+      ],
+      "functions_added": [
+        "CommittedSeq"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "NoViewFork",
+      "success": true,
+      "compilation_time": 0.14907598495483398,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Correct",
+        "ctrl_view",
+        "vc_view"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "NoFalseTimeout",
+      "success": true,
+      "compilation_time": 0.13643217086791992,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "hbm_timed_out",
+        "Correct"
+      ],
+      "functions_added": [
+        "LeaderAliveInView",
+        "hbm_view"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "DeliverImpliesViewEntered",
+      "success": true,
+      "compilation_time": 0.1494767665863037,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Correct",
+        "phase",
+        "vc_quorum",
+        "NULL",
+        "vc_delivered_seq",
+        "Quorum"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "LeaderIdentityConsistency",
+      "success": true,
+      "compilation_time": 0.14988994598388672,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "ctrl_decisions",
+        "Correct",
+        "ctrl_view"
+      ],
+      "functions_added": [
+        "CtrlLeader"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "InFlightReplay",
+      "success": true,
+      "compilation_time": 0.1490020751953125,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Correct",
+        "NULL",
+        "in_flight"
+      ],
+      "functions_added": [
+        "CommittedSeq",
+        "GetInFlightSeq"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "InformViewNotDropped",
+      "success": true,
+      "compilation_time": 0.13643693923950195,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Correct",
+        "ctrl_view",
+        "vc_view",
+        "vc_inform_dropped"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "LogMonotonic",
+      "success": true,
+      "compilation_time": 0.1483309268951416,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Correct",
+        "log"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "StructuralInv",
+      "success": true,
+      "compilation_time": 0.14661288261413574,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "LogMonotonic",
+        "TypeOK"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "faultVars",
+      "success": true,
+      "compilation_time": 0.14893484115600586,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultCounts"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCInit",
+      "success": true,
+      "compilation_time": 0.14747309684753418,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultCounts",
+        "Init"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCCrash",
+      "success": true,
+      "compilation_time": 0.14553523063659668,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultCounts",
+        "MaxCrashes"
+      ],
+      "functions_added": [
+        "Crash"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCByzantineViewData",
+      "success": true,
+      "compilation_time": 0.14808917045593262,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultCounts",
+        "MaxByzMsgs"
+      ],
+      "functions_added": [
+        "ByzantineViewData"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCByzantineViewDataToFollower",
+      "success": true,
+      "compilation_time": 0.14867782592773438,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultCounts",
+        "MaxByzMsgs"
+      ],
+      "functions_added": [
+        "ByzantineViewDataToFollower"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCMaybeStartViewChange",
+      "success": true,
+      "compilation_time": 0.14795303344726562,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultCounts",
+        "vc_start_dropped",
+        "MaxVCDrops"
+      ],
+      "functions_added": [
+        "MaybeStartViewChange"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCInformNewView",
+      "success": true,
+      "compilation_time": 0.14878201484680176,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultCounts",
+        "MaxInformDrops",
+        "vc_inform_dropped"
+      ],
+      "functions_added": [
+        "InformNewView"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCHandleViewChange",
+      "success": true,
+      "compilation_time": 0.1463160514831543,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultCounts",
+        "MaxViewChanges"
+      ],
+      "functions_added": [
+        "HandleViewChange"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCPropose",
+      "success": true,
+      "compilation_time": 0.13553714752197266,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "Propose"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCHBLeaderTick",
+      "success": true,
+      "compilation_time": 0.15547990798950195,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "HBLeaderTick"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCHBFollowerTick",
+      "success": true,
+      "compilation_time": 0.14798617362976074,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "HBFollowerTick"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCInjectArtificialHeartbeat",
+      "success": true,
+      "compilation_time": 0.1494588851928711,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "InjectArtificialHeartbeat"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCHandleArtificialHeartbeat",
+      "success": true,
+      "compilation_time": 0.14868998527526855,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "HandleArtificialHeartbeat"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCHandleHeartbeat",
+      "success": true,
+      "compilation_time": 0.14912891387939453,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "HandleHeartbeat"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCOnHeartbeatTimeout",
+      "success": true,
+      "compilation_time": 0.14984393119812012,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "OnHeartbeatTimeout"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCHandlePrePrepare",
+      "success": true,
+      "compilation_time": 0.1500709056854248,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "HandlePrePrepare"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCHandlePrepare",
+      "success": true,
+      "compilation_time": 0.14907598495483398,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "HandlePrepare"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCDecide",
+      "success": true,
+      "compilation_time": 0.14812397956848145,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "Decide"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCProcessViewDataDeliver",
+      "success": true,
+      "compilation_time": 0.14930200576782227,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "ProcessViewDataDeliver"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCProcessViewDataValidate",
+      "success": true,
+      "compilation_time": 0.14776611328125,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "ProcessViewDataValidate"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCProcessViewDataSameSeq",
+      "success": true,
+      "compilation_time": 0.14833617210388184,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "ProcessViewDataSameSeq"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCBuildNewView",
+      "success": true,
+      "compilation_time": 0.14934587478637695,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "BuildNewView"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCEnterNewView",
+      "success": true,
+      "compilation_time": 0.1501920223236084,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "EnterNewView"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCProcessNewViewDeliverLoop",
+      "success": true,
+      "compilation_time": 0.14649510383605957,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "ProcessNewViewDeliverLoop"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCChangeViewUpdateView",
+      "success": true,
+      "compilation_time": 0.1471407413482666,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "ChangeViewUpdateView"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCChangeViewUpdateDecisions",
+      "success": true,
+      "compilation_time": 0.14898204803466797,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "ChangeViewUpdateDecisions"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCReadLeaderID",
+      "success": true,
+      "compilation_time": 0.1471881866455078,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "ReadLeaderID"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCRecover",
+      "success": true,
+      "compilation_time": 0.1480426788330078,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "Recover"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCSendChangeRole",
+      "success": true,
+      "compilation_time": 0.14928984642028809,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "SendChangeRole"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCProcessChangeRole",
+      "success": true,
+      "compilation_time": 0.14892101287841797,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "ProcessChangeRole"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCNext",
+      "success": true,
+      "compilation_time": 0.15415501594543457,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "MaxView",
+        "MaxSeq",
+        "MCByzantineViewData",
+        "Server",
+        "Correct",
+        "Byzantine"
+      ],
+      "functions_added": [
+        "MCByzantineViewData",
+        "MCProcessViewDataDeliver",
+        "MCSendChangeRole",
+        "MCProcessViewDataSameSeq",
+        "MCHandlePrePrepare",
+        "MCChangeViewUpdateView",
+        "MCHBFollowerTick",
+        "MCHandleArtificialHeartbeat",
+        "MCProcessViewDataValidate",
+        "MCPropose",
+        "MCBuildNewView",
+        "MCEnterNewView",
+        "MCProcessChangeRole",
+        "MCChangeViewUpdateDecisions",
+        "MCHandleViewChange",
+        "MCCrash",
+        "MCInjectArtificialHeartbeat",
+        "MCOnHeartbeatTimeout",
+        "MCHandleHeartbeat",
+        "MCReadLeaderID",
+        "MCHBLeaderTick",
+        "MCDecide",
+        "MCMaybeStartViewChange",
+        "MCProcessNewViewDeliverLoop",
+        "MCInformNewView",
+        "MCRecover",
+        "MCByzantineViewDataToFollower",
+        "MCHandlePrepare"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCSpec",
+      "success": true,
+      "compilation_time": 0.14865493774414062,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "MCInit",
+        "faultVars",
+        "vars",
+        "MCNext"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Symmetry",
+      "success": true,
+      "compilation_time": 0.14848828315734863,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Server"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCView",
+      "success": true,
+      "compilation_time": 0.14552807807922363,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "vars"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MsgBufConstraint",
+      "success": true,
+      "compilation_time": 0.14751386642456055,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "msgs"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCTypeOK",
+      "success": true,
+      "compilation_time": 0.14878296852111816,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultCounts",
+        "TypeOK"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    }
+  ]
+}

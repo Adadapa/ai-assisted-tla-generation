@@ -1,0 +1,837 @@
+{
+  "overall_success": true,
+  "generation_successful": true,
+  "compilation_successful": false,
+  "generation_time": 299.12666606903076,
+  "compilation_time": 7.781792879104614,
+  "total_actions": 49,
+  "successful_actions": 45,
+  "action_success_rate": 0.9183673469387755,
+  "total_variables_added": 211,
+  "total_functions_added": 46,
+  "total_recovery_attempts": 43,
+  "syntax_errors": [
+    "Prepare: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_eb1g39bp/SmartBFT_Prepare.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-14269733077191049084/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-14269733077191049084/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-14269733077191049084/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-14269733077191049084/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-14269733077191049084/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-14269733077191049084/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_Prepare\nSemantic errors:\n\n*** Errors: 1\n\nline 26, col 11 to line 26, col 11 of module SmartBFT_Prepare\n\nMultiply-defined symbol 'm': this definition or declaration conflicts \nwith the one at line 3, col 11 to line 3, col 11 of module SmartBFT_Prepare.",
+    "Decide: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_eb1g39bp/SmartBFT_Decide.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-1322925225509148713/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-1322925225509148713/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-1322925225509148713/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-1322925225509148713/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-1322925225509148713/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-1322925225509148713/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_Decide\nSemantic errors:\n\n*** Errors: 1\n\nline 22, col 17 to line 22, col 52 of module SmartBFT_Decide\n\nThe operator HasQuorum requires 4 arguments.",
+    "ViewData: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_eb1g39bp/SmartBFT_ViewData.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-10491715420829505593/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-10491715420829505593/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-10491715420829505593/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-10491715420829505593/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-10491715420829505593/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-10491715420829505593/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_ViewData\nSemantic errors:\n\n*** Errors: 1\n\nline 29, col 42 to line 29, col 90 of module SmartBFT_ViewData\n\nThe operator ViewDataMsg requires 2 arguments.",
+    "CatchUp: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_eb1g39bp/SmartBFT_CatchUp.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-3884515895877376260/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-3884515895877376260/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-3884515895877376260/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-3884515895877376260/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-3884515895877376260/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-3884515895877376260/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_CatchUp\nSemantic errors:\n\n*** Errors: 3\n\nline 10, col 11 to line 10, col 15 of module SmartBFT_CatchUp\n\nMultiply-defined symbol 'v_dec': this definition or declaration conflicts \nwith the one at line 3, col 41 to line 3, col 45 of module SmartBFT_CatchUp.\n\n\nline 10, col 18 to line 10, col 22 of module SmartBFT_CatchUp\n\nMultiply-defined symbol 's_dec': this definition or declaration conflicts \nwith the one at line 3, col 169 to line 3, col 173 of module SmartBFT_CatchUp.\n\n\nline 10, col 25 to line 10, col 29 of module SmartBFT_CatchUp\n\nMultiply-defined symbol 'P_dec': this definition or declaration conflicts \nwith the one at line 3, col 176 to line 3, col 180 of module SmartBFT_CatchUp.",
+    "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /Users/adaturgut/SysMoBench/data/spec/hyperledger/SmartBFT.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-5919998408788136760/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-5919998408788136760/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-5919998408788136760/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-5919998408788136760/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module SmartBFT\nSemantic errors:\n\n*** Errors: 8\n\nline 175, col 25 to line 175, col 25 of module SmartBFT\n\nUnknown operator: `m'.\n\n\nline 309, col 24 to line 309, col 28 of module SmartBFT\n\nUnknown operator: `v_dec'.\n\n\nline 310, col 23 to line 310, col 27 of module SmartBFT\n\nUnknown operator: `s_dec'.\n\n\nline 311, col 33 to line 311, col 37 of module SmartBFT\n\nUnknown operator: `P_dec'.\n\n\nline 316, col 101 to line 316, col 105 of module SmartBFT\n\nUnknown operator: `P_dec'.\n\n\nline 317, col 103 to line 317, col 107 of module SmartBFT\n\nUnknown operator: `P_dec'.\n\n\nline 321, col 86 to line 321, col 90 of module SmartBFT\n\nUnknown operator: `P_dec'.\n\n\nline 323, col 56 to line 323, col 60 of module SmartBFT\n\nUnknown operator: `P_dec'."
+  ],
+  "semantic_errors": [],
+  "action_results": [
+    {
+      "action_name": "Phase",
+      "success": true,
+      "compilation_time": 0.15003585815429688,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "MessageTypes",
+      "success": true,
+      "compilation_time": 0.14810585975646973,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "quorumSize",
+      "success": true,
+      "compilation_time": 0.1379849910736084,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "f"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Leader",
+      "success": true,
+      "compilation_time": 0.16231822967529297,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Nodes",
+        "N"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "IsLeader",
+      "success": true,
+      "compilation_time": 0.15681791305541992,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [
+        "Leader"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "IsNewerView",
+      "success": true,
+      "compilation_time": 0.27367520332336426,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "replica_view"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "IsCurrentView",
+      "success": true,
+      "compilation_time": 0.15031981468200684,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "replica_view"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "IsNextSeq",
+      "success": true,
+      "compilation_time": 0.1500260829925537,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "replica_seq"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "IsIdle",
+      "success": true,
+      "compilation_time": 0.15164518356323242,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "replica_phase"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "IsPrepared",
+      "success": true,
+      "compilation_time": 0.13506317138671875,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "replica_phase"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "IsCommitted",
+      "success": true,
+      "compilation_time": 0.15093302726745605,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "replica_phase"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Digest",
+      "success": true,
+      "compilation_time": 0.1356649398803711,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "AnyValue",
+      "success": true,
+      "compilation_time": 0.1501760482788086,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "Message",
+      "success": true,
+      "compilation_time": 0.15174508094787598,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "AnyValue",
+        "MessageTypes",
+        "Nodes"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "PreprepareMsg",
+      "success": true,
+      "compilation_time": 0.15271401405334473,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "PrepareMsg",
+      "success": true,
+      "compilation_time": 0.13860702514648438,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "CommitMsg",
+      "success": true,
+      "compilation_time": 0.15040373802185059,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "ViewChangeMsg",
+      "success": true,
+      "compilation_time": 0.14996981620788574,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "ViewDataMsg",
+      "success": true,
+      "compilation_time": 0.1537952423095703,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "NewViewMsg",
+      "success": true,
+      "compilation_time": 0.1734471321105957,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "GetMessages",
+      "success": true,
+      "compilation_time": 0.15193819999694824,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "msgs"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "GetViewChangeMessages",
+      "success": true,
+      "compilation_time": 0.14995694160461426,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "msgs"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "GetViewDataMessages",
+      "success": true,
+      "compilation_time": 0.1498279571533203,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "msgs"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "HasQuorum",
+      "success": true,
+      "compilation_time": 0.151231050491333,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "quorumSize"
+      ],
+      "functions_added": [
+        "GetMessages"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "HasViewChangeQuorum",
+      "success": true,
+      "compilation_time": 0.1515030860900879,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "quorumSize"
+      ],
+      "functions_added": [
+        "GetViewChangeMessages"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "HasViewDataQuorum",
+      "success": true,
+      "compilation_time": 0.1499478816986084,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "quorumSize"
+      ],
+      "functions_added": [
+        "GetViewDataMessages"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Init",
+      "success": true,
+      "compilation_time": 0.14838409423828125,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "MAX_VIEW",
+        "replica_seq",
+        "Nodes",
+        "proposals_by_leader",
+        "requests_available",
+        "replica_view",
+        "MAX_SEQ",
+        "replica_committed_proposal",
+        "replica_last_committed_info",
+        "NULL_INFO",
+        "NULL_PROPOSAL",
+        "Requests",
+        "decided_proposals",
+        "replica_last_prepared_info",
+        "replica_phase",
+        "msgs",
+        "replica_prepared_proposal"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Deliver",
+      "success": true,
+      "compilation_time": 0.15590691566467285,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "replica_seq",
+        "proposals_by_leader",
+        "requests_available",
+        "replica_view",
+        "replica_committed_proposal",
+        "replica_last_committed_info",
+        "decided_proposals",
+        "replica_last_prepared_info",
+        "replica_phase",
+        "msgs",
+        "replica_prepared_proposal"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Preprepare",
+      "success": true,
+      "compilation_time": 0.15818285942077637,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "proposals_by_leader",
+        "replica_prepared_proposal",
+        "requests_available",
+        "replica_committed_proposal",
+        "MAX_VIEW",
+        "replica_seq",
+        "MAX_SEQ",
+        "msgs",
+        "Nodes",
+        "replica_view",
+        "replica_last_committed_info",
+        "NULL_PROPOSAL",
+        "decided_proposals",
+        "replica_last_prepared_info",
+        "replica_phase"
+      ],
+      "functions_added": [
+        "Digest",
+        "PreprepareMsg",
+        "IsLeader",
+        "IsCurrentView",
+        "IsNextSeq",
+        "IsIdle"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Prepare",
+      "success": false,
+      "compilation_time": 0.15041494369506836,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_eb1g39bp/SmartBFT_Prepare.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-14269733077191049084/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-14269733077191049084/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-14269733077191049084/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-14269733077191049084/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-14269733077191049084/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-14269733077191049084/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_Prepare\nSemantic errors:\n\n*** Errors: 1\n\nline 26, col 11 to line 26, col 11 of module SmartBFT_Prepare\n\nMultiply-defined symbol 'm': this definition or declaration conflicts \nwith the one at line 3, col 11 to line 3, col 11 of module SmartBFT_Prepare."
+      ],
+      "semantic_errors": [],
+      "variables_added": [
+        "m",
+        "proposals_by_leader",
+        "replica_prepared_proposal",
+        "requests_available",
+        "replica_committed_proposal",
+        "MAX_VIEW",
+        "replica_seq",
+        "MAX_SEQ",
+        "msgs",
+        "Nodes",
+        "replica_view",
+        "replica_last_committed_info",
+        "decided_proposals",
+        "replica_last_prepared_info",
+        "replica_phase"
+      ],
+      "functions_added": [
+        "PrepareMsg",
+        "Digest",
+        "IsCurrentView",
+        "IsNextSeq",
+        "Leader",
+        "IsIdle"
+      ],
+      "recovery_attempts": 2
+    },
+    {
+      "action_name": "Commit",
+      "success": true,
+      "compilation_time": 0.13809990882873535,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "proposals_by_leader",
+        "replica_prepared_proposal",
+        "requests_available",
+        "replica_committed_proposal",
+        "MAX_VIEW",
+        "replica_seq",
+        "MAX_SEQ",
+        "msgs",
+        "Nodes",
+        "replica_view",
+        "replica_last_committed_info",
+        "NULL_PROPOSAL",
+        "decided_proposals",
+        "replica_last_prepared_info",
+        "replica_phase"
+      ],
+      "functions_added": [
+        "IsPrepared",
+        "Digest",
+        "HasQuorum",
+        "IsCurrentView",
+        "CommitMsg"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Decide",
+      "success": false,
+      "compilation_time": 0.16547513008117676,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_eb1g39bp/SmartBFT_Decide.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-1322925225509148713/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-1322925225509148713/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-1322925225509148713/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-1322925225509148713/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-1322925225509148713/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-1322925225509148713/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_Decide\nSemantic errors:\n\n*** Errors: 1\n\nline 22, col 17 to line 22, col 52 of module SmartBFT_Decide\n\nThe operator HasQuorum requires 4 arguments."
+      ],
+      "semantic_errors": [],
+      "variables_added": [
+        "MAX_VIEW",
+        "replica_seq",
+        "Nodes",
+        "proposals_by_leader",
+        "requests_available",
+        "replica_view",
+        "replica_committed_proposal",
+        "MAX_SEQ",
+        "replica_last_committed_info",
+        "NULL_PROPOSAL",
+        "decided_proposals",
+        "replica_last_prepared_info",
+        "replica_phase",
+        "msgs",
+        "replica_prepared_proposal"
+      ],
+      "functions_added": [
+        "HasQuorum",
+        "IsCurrentView",
+        "IsCommitted"
+      ],
+      "recovery_attempts": 2
+    },
+    {
+      "action_name": "ViewChange",
+      "success": true,
+      "compilation_time": 0.1507260799407959,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "MAX_VIEW",
+        "replica_seq",
+        "Nodes",
+        "proposals_by_leader",
+        "requests_available",
+        "replica_view",
+        "MAX_SEQ",
+        "replica_committed_proposal",
+        "replica_last_committed_info",
+        "decided_proposals",
+        "replica_last_prepared_info",
+        "replica_phase",
+        "msgs",
+        "replica_prepared_proposal"
+      ],
+      "functions_added": [
+        "ViewChangeMsg",
+        "IsCurrentView"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewData",
+      "success": false,
+      "compilation_time": 0.1667482852935791,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_eb1g39bp/SmartBFT_ViewData.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-10491715420829505593/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-10491715420829505593/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-10491715420829505593/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-10491715420829505593/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-10491715420829505593/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-10491715420829505593/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_ViewData\nSemantic errors:\n\n*** Errors: 1\n\nline 29, col 42 to line 29, col 90 of module SmartBFT_ViewData\n\nThe operator ViewDataMsg requires 2 arguments."
+      ],
+      "semantic_errors": [],
+      "variables_added": [
+        "MAX_VIEW",
+        "replica_seq",
+        "Nodes",
+        "proposals_by_leader",
+        "requests_available",
+        "replica_view",
+        "replica_committed_proposal",
+        "replica_last_committed_info",
+        "decided_proposals",
+        "replica_last_prepared_info",
+        "replica_phase",
+        "msgs",
+        "replica_prepared_proposal"
+      ],
+      "functions_added": [
+        "ViewDataMsg",
+        "HasViewChangeQuorum",
+        "IsCurrentView",
+        "GetViewChangeMessages"
+      ],
+      "recovery_attempts": 2
+    },
+    {
+      "action_name": "NewView",
+      "success": true,
+      "compilation_time": 0.14906024932861328,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "proposals_by_leader",
+        "replica_prepared_proposal",
+        "requests_available",
+        "replica_committed_proposal",
+        "MAX_VIEW",
+        "replica_seq",
+        "HasViewDataQuorum",
+        "msgs",
+        "Nodes",
+        "replica_view",
+        "replica_last_committed_info",
+        "NULL_PROPOSAL",
+        "decided_proposals",
+        "replica_last_prepared_info",
+        "replica_phase"
+      ],
+      "functions_added": [
+        "HasViewDataQuorum",
+        "GetViewDataMessages",
+        "Digest",
+        "IsLeader",
+        "IsCurrentView",
+        "NewViewMsg"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "CatchUp",
+      "success": false,
+      "compilation_time": 0.15010690689086914,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_eb1g39bp/SmartBFT_CatchUp.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-3884515895877376260/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-3884515895877376260/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-3884515895877376260/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-3884515895877376260/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-3884515895877376260/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-3884515895877376260/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_CatchUp\nSemantic errors:\n\n*** Errors: 3\n\nline 10, col 11 to line 10, col 15 of module SmartBFT_CatchUp\n\nMultiply-defined symbol 'v_dec': this definition or declaration conflicts \nwith the one at line 3, col 41 to line 3, col 45 of module SmartBFT_CatchUp.\n\n\nline 10, col 18 to line 10, col 22 of module SmartBFT_CatchUp\n\nMultiply-defined symbol 's_dec': this definition or declaration conflicts \nwith the one at line 3, col 169 to line 3, col 173 of module SmartBFT_CatchUp.\n\n\nline 10, col 25 to line 10, col 29 of module SmartBFT_CatchUp\n\nMultiply-defined symbol 'P_dec': this definition or declaration conflicts \nwith the one at line 3, col 176 to line 3, col 180 of module SmartBFT_CatchUp."
+      ],
+      "semantic_errors": [],
+      "variables_added": [
+        "MAX_VIEW",
+        "replica_seq",
+        "Nodes",
+        "v_dec",
+        "proposals_by_leader",
+        "requests_available",
+        "replica_view",
+        "MAX_SEQ",
+        "replica_committed_proposal",
+        "replica_last_committed_info",
+        "s_dec",
+        "P_dec",
+        "decided_proposals",
+        "replica_last_prepared_info",
+        "replica_phase",
+        "msgs",
+        "replica_prepared_proposal"
+      ],
+      "functions_added": [
+        "Digest"
+      ],
+      "recovery_attempts": 2
+    },
+    {
+      "action_name": "Action_Deliver",
+      "success": true,
+      "compilation_time": 0.18271112442016602,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Nodes"
+      ],
+      "functions_added": [
+        "Deliver"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Action_Preprepare",
+      "success": true,
+      "compilation_time": 0.15053009986877441,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Nodes",
+        "Requests"
+      ],
+      "functions_added": [
+        "Preprepare"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Action_Prepare",
+      "success": true,
+      "compilation_time": 0.14927887916564941,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Nodes",
+        "Requests"
+      ],
+      "functions_added": [
+        "Prepare"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Action_Commit",
+      "success": true,
+      "compilation_time": 0.15035319328308105,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Nodes"
+      ],
+      "functions_added": [
+        "Commit"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Action_Decide",
+      "success": true,
+      "compilation_time": 0.15065288543701172,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Nodes",
+        "Requests"
+      ],
+      "functions_added": [
+        "Decide"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Action_ViewChange",
+      "success": true,
+      "compilation_time": 0.15062236785888672,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Nodes"
+      ],
+      "functions_added": [
+        "ViewChange"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Action_ViewData",
+      "success": true,
+      "compilation_time": 0.1495528221130371,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Nodes"
+      ],
+      "functions_added": [
+        "ViewData"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Action_NewView",
+      "success": true,
+      "compilation_time": 0.1613450050354004,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Nodes"
+      ],
+      "functions_added": [
+        "NewView"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Action_CatchUp",
+      "success": true,
+      "compilation_time": 0.15574097633361816,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Nodes"
+      ],
+      "functions_added": [
+        "CatchUp"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Next",
+      "success": true,
+      "compilation_time": 0.17754173278808594,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Action_NewView",
+        "Action_Deliver",
+        "Action_Prepare",
+        "Action_CatchUp",
+        "Action_Preprepare",
+        "Action_ViewData",
+        "Action_ViewChange",
+        "Action_Decide",
+        "Action_Commit"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "vars",
+      "success": true,
+      "compilation_time": 0.15275073051452637,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "replica_seq",
+        "proposals_by_leader",
+        "requests_available",
+        "replica_view",
+        "replica_committed_proposal",
+        "replica_last_committed_info",
+        "decided_proposals",
+        "replica_last_prepared_info",
+        "replica_phase",
+        "msgs",
+        "replica_prepared_proposal"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Fairness",
+      "success": true,
+      "compilation_time": 0.15282201766967773,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Action_NewView",
+        "Action_Deliver",
+        "Action_Prepare",
+        "Action_CatchUp",
+        "Action_Preprepare",
+        "Action_ViewData",
+        "Action_ViewChange",
+        "Action_Decide",
+        "Action_Commit",
+        "vars"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Spec",
+      "success": true,
+      "compilation_time": 0.14750003814697266,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Next",
+        "Init",
+        "Fairness",
+        "vars"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    }
+  ]
+}

@@ -1,0 +1,305 @@
+{
+  "overall_success": true,
+  "generation_successful": true,
+  "compilation_successful": false,
+  "generation_time": 936.7172250747681,
+  "compilation_time": 2.9094998836517334,
+  "total_actions": 18,
+  "successful_actions": 16,
+  "action_success_rate": 0.8888888888888888,
+  "total_variables_added": 69,
+  "total_functions_added": 11,
+  "total_recovery_attempts": 18,
+  "syntax_errors": [
+    "ViewData: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_6y0gurxk/SmartBFT_ViewData.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-13705165650922539371/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-13705165650922539371/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-13705165650922539371/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-13705165650922539371/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-13705165650922539371/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-13705165650922539371/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_ViewData\nSemantic errors:\n\n*** Errors: 2\n\nline 10, col 61 to line 10, col 61 of module SmartBFT_ViewData\n\nCould not find declaration or definition of symbol '|'.\n\n\nline 10, col 51 to line 10, col 73 of module SmartBFT_ViewData\n\nCouldn't resolve infix operator symbol `|'.",
+    "HighestPrepared: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_6y0gurxk/SmartBFT_HighestPrepared.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4228968689246161716/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4228968689246161716/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4228968689246161716/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4228968689246161716/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4228968689246161716/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4228968689246161716/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_HighestPrepared\nSemantic errors:\n\n*** Errors: 2\n\nline 13, col 73 to line 13, col 73 of module SmartBFT_HighestPrepared\n\nCould not find declaration or definition of symbol '|'.\n\n\nline 13, col 56 to line 13, col 78 of module SmartBFT_HighestPrepared\n\nCouldn't resolve infix operator symbol `|'.",
+    "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /Users/adaturgut/SysMoBench/data/spec/hyperledger/SmartBFT.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4076616004229983021/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4076616004229983021/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4076616004229983021/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4076616004229983021/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4076616004229983021/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Integers\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module SmartBFT\nSemantic errors:\n\n*** Errors: 4\n\nline 93, col 61 to line 93, col 61 of module SmartBFT\n\nCould not find declaration or definition of symbol '|'.\n\n\nline 93, col 51 to line 93, col 73 of module SmartBFT\n\nCouldn't resolve infix operator symbol `|'.\n\n\nline 107, col 73 to line 107, col 73 of module SmartBFT\n\nCould not find declaration or definition of symbol '|'.\n\n\nline 107, col 56 to line 107, col 78 of module SmartBFT\n\nCouldn't resolve infix operator symbol `|'."
+  ],
+  "semantic_errors": [],
+  "action_results": [
+    {
+      "action_name": "Nodes",
+      "success": true,
+      "compilation_time": 0.1358940601348877,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "N"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "QuorumSize",
+      "success": true,
+      "compilation_time": 0.14928364753723145,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "F"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MaxSeq",
+      "success": true,
+      "compilation_time": 0.14707422256469727,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "Sequences",
+      "success": true,
+      "compilation_time": 0.1470317840576172,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "MaxSeq"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Phases",
+      "success": true,
+      "compilation_time": 0.14784574508666992,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "vars",
+      "success": true,
+      "compilation_time": 0.15411829948425293,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "proposal",
+        "phase",
+        "view",
+        "messages"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Leader",
+      "success": true,
+      "compilation_time": 0.1553952693939209,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "N"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Init",
+      "success": true,
+      "compilation_time": 0.16194796562194824,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "messages",
+        "proposal",
+        "view",
+        "Sequences",
+        "phase",
+        "NULL",
+        "Nodes"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Preprepare",
+      "success": true,
+      "compilation_time": 0.13557696342468262,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "messages",
+        "proposal",
+        "Data",
+        "view",
+        "Sequences",
+        "phase"
+      ],
+      "functions_added": [
+        "Leader"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Prepare",
+      "success": true,
+      "compilation_time": 0.15009617805480957,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "messages",
+        "proposal",
+        "view",
+        "phase",
+        "Nodes"
+      ],
+      "functions_added": [
+        "Leader"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Commit",
+      "success": true,
+      "compilation_time": 0.15241765975952148,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "messages",
+        "QuorumSize",
+        "proposal",
+        "view",
+        "Sequences",
+        "phase",
+        "NULL",
+        "Nodes"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Decide",
+      "success": true,
+      "compilation_time": 0.18136119842529297,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "messages",
+        "QuorumSize",
+        "proposal",
+        "view",
+        "Sequences",
+        "phase",
+        "NULL",
+        "Nodes"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewChange",
+      "success": true,
+      "compilation_time": 0.1471097469329834,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "messages",
+        "proposal",
+        "view",
+        "phase",
+        "Nodes"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewData",
+      "success": false,
+      "compilation_time": 0.16410088539123535,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_6y0gurxk/SmartBFT_ViewData.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-13705165650922539371/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-13705165650922539371/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-13705165650922539371/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-13705165650922539371/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-13705165650922539371/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-13705165650922539371/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_ViewData\nSemantic errors:\n\n*** Errors: 2\n\nline 10, col 61 to line 10, col 61 of module SmartBFT_ViewData\n\nCould not find declaration or definition of symbol '|'.\n\n\nline 10, col 51 to line 10, col 73 of module SmartBFT_ViewData\n\nCouldn't resolve infix operator symbol `|'."
+      ],
+      "semantic_errors": [],
+      "variables_added": [
+        "QuorumSize",
+        "messages",
+        "proposal",
+        "view",
+        "phase",
+        "Nodes"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 2
+    },
+    {
+      "action_name": "HighestPrepared",
+      "success": false,
+      "compilation_time": 0.14852237701416016,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_6y0gurxk/SmartBFT_HighestPrepared.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4228968689246161716/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4228968689246161716/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4228968689246161716/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4228968689246161716/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4228968689246161716/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4228968689246161716/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_HighestPrepared\nSemantic errors:\n\n*** Errors: 2\n\nline 13, col 73 to line 13, col 73 of module SmartBFT_HighestPrepared\n\nCould not find declaration or definition of symbol '|'.\n\n\nline 13, col 56 to line 13, col 78 of module SmartBFT_HighestPrepared\n\nCouldn't resolve infix operator symbol `|'."
+      ],
+      "semantic_errors": [],
+      "variables_added": [
+        "NULL"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 2
+    },
+    {
+      "action_name": "NewView",
+      "success": true,
+      "compilation_time": 0.15071797370910645,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "QuorumSize",
+        "messages",
+        "proposal",
+        "view",
+        "phase",
+        "NULL"
+      ],
+      "functions_added": [
+        "HighestPrepared",
+        "Leader"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Next",
+      "success": true,
+      "compilation_time": 0.14979887008666992,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "messages",
+        "Data",
+        "N",
+        "Sequences",
+        "MaxSeq",
+        "Nodes"
+      ],
+      "functions_added": [
+        "Preprepare",
+        "Decide",
+        "ViewData",
+        "Prepare",
+        "ViewChange",
+        "NewView",
+        "Commit"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Spec",
+      "success": true,
+      "compilation_time": 0.14994001388549805,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "vars",
+        "Init",
+        "Next"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    }
+  ]
+}

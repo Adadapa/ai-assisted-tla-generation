@@ -1,0 +1,136 @@
+python3 scripts/run_benchmark.py --task hyperledger --method direct_call --model gemini25flash_google --metric action_decomposition
+14:43:43 - LiteLLM:WARNING: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+14:43:43 - LiteLLM:WARNING: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+[INFO] Validating prerequisites...
+[INFO] ✓ All prerequisites validated
+[INFO] Loading existing global error statistics from /Users/adaturgut/SysMoBench/output/global_error_statistics.yaml
+[INFO] Running metric 'action_decomposition': hyperledger/direct_call/gemini25flash_google
+[INFO] Loaded task: hyperledger (distributed)
+[INFO] Loaded prompt template (6008 chars, language=TLA+)
+[WARNING] Environment variable GEMINI_FREE_API_KEY not set for model gemini25flash_google
+[INFO] Loaded model: gemini25flash_google
+[INFO] Using method: direct_call (language=TLA+)
+[WARNING] Environment variable GEMINI_FREE_API_KEY not set for model gemini25flash_google
+[INFO] [direct_call] Attempt 1/3
+14:43:43 - LiteLLM:INFO: utils.py:4054 -
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+[INFO]
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+14:45:11 - LiteLLM:INFO: utils.py:1656 - Wrapper: Completed Call, calling success_handler
+[INFO] Wrapper: Completed Call, calling success_handler
+[INFO] [direct_call] ✗ TLA+ validation failed on attempt 1 — 1 errors
+[INFO] [direct_call] Attempt 2/3
+14:45:11 - LiteLLM:INFO: utils.py:4054 -
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+[INFO]
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+14:46:25 - LiteLLM:INFO: utils.py:1656 - Wrapper: Completed Call, calling success_handler
+[INFO] Wrapper: Completed Call, calling success_handler
+[INFO] [direct_call] ✗ TLA+ validation failed on attempt 2 — 1 errors
+[INFO] [direct_call] Attempt 3/3
+14:46:25 - LiteLLM:INFO: utils.py:4054 -
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+[INFO]
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+14:47:42 - LiteLLM:INFO: utils.py:1656 - Wrapper: Completed Call, calling success_handler
+[INFO] Wrapper: Completed Call, calling success_handler
+[INFO] [direct_call] ✗ TLA+ validation failed on attempt 3 — 1 errors
+[INFO] [direct_call] Max attempts reached; returning last response.
+[INFO] Generation completed in 239.11s
+[INFO] ActionDecompositionEvaluator initialized with 30s timeout
+[INFO] Loading existing global error statistics from /Users/adaturgut/SysMoBench/output/global_error_statistics.yaml
+[INFO] Evaluating action decomposition: hyperledger/direct_call/gemini25flash_google
+[INFO] Decomposed specification into 25 actions
+[INFO] Processing action 1/25: QuorumSize
+[INFO]   ✓ Action 'QuorumSize' validated successfully
+[INFO] Processing action 2/25: IsQuorum
+[INFO]   ✓ Action 'IsQuorum' validated successfully
+[INFO] Processing action 3/25: Leader
+[WARNING]   ✗ Action 'Leader' failed validation (1 errors)
+[INFO] Processing action 4/25: ALL_NODES
+[INFO]   ✓ Action 'ALL_NODES' validated successfully
+[INFO] Processing action 5/25: Min2
+[INFO]   ✓ Action 'Min2' validated successfully
+[INFO] Processing action 6/25: Max2
+[INFO]   ✓ Action 'Max2' validated successfully
+[INFO] Processing action 7/25: MinSet
+[INFO]   ✓ Action 'MinSet' validated successfully
+[INFO] Processing action 8/25: MaxSet
+[WARNING]   ✗ Action 'MaxSet' failed validation (1 errors)
+[INFO] Processing action 9/25: Proposal
+[INFO]   ✓ Action 'Proposal' validated successfully
+[INFO] Processing action 10/25: VCInfo
+[INFO]   ✓ Action 'VCInfo' validated successfully
+[INFO] Processing action 11/25: VDInfo
+[WARNING]   ✗ Action 'VDInfo' failed validation (1 errors)
+[INFO] Processing action 12/25: Msg
+[WARNING]   ✗ Action 'Msg' failed validation (1 errors)
+[INFO] Processing action 13/25: Init
+[INFO]   ✓ Action 'Init' validated successfully
+[INFO] Processing action 14/25: Receive
+[WARNING]   ✗ Action 'Receive' failed validation (1 errors)
+[INFO] Processing action 15/25: ClientSubmitRequest
+[INFO]   ✓ Action 'ClientSubmitRequest' validated successfully
+[INFO] Processing action 16/25: Preprepare
+[WARNING]   ✗ Action 'Preprepare' failed validation (1 errors)
+[INFO] Processing action 17/25: Prepare
+[WARNING]   ✗ Action 'Prepare' failed validation (1 errors)
+[INFO] Processing action 18/25: Commit
+[WARNING]   ✗ Action 'Commit' failed validation (1 errors)
+[INFO] Processing action 19/25: Decide
+[WARNING]   ✗ Action 'Decide' failed validation (1 errors)
+[INFO] Processing action 20/25: ViewChange
+[WARNING]   ✗ Action 'ViewChange' failed validation (1 errors)
+[INFO] Processing action 21/25: ViewData
+[WARNING]   ✗ Action 'ViewData' failed validation (1 errors)
+[INFO] Processing action 22/25: NewView
+[WARNING]   ✗ Action 'NewView' failed validation (1 errors)
+[INFO] Processing action 23/25: Next
+DEBUG: Will insert 9 functions at position 4
+DEBUG: Functions to add: ['ClientSubmitRequest(x1) == TRUE', 'ViewChange(x1) == TRUE', 'Receive(x1) == TRUE', 'Prepare(x1) == TRUE', 'ViewData(x1) == TRUE', 'NewView(x1) == TRUE', 'Commit(x1) == TRUE', 'Preprepare(x1) == TRUE', 'Decide(x1) == TRUE']
+DEBUG: Inserting 'ClientSubmitRequest(x1) == TRUE' at position 4
+DEBUG: Inserting 'ViewChange(x1) == TRUE' at position 6
+DEBUG: Inserting 'Receive(x1) == TRUE' at position 8
+DEBUG: Inserting 'Prepare(x1) == TRUE' at position 10
+DEBUG: Inserting 'ViewData(x1) == TRUE' at position 12
+DEBUG: Inserting 'NewView(x1) == TRUE' at position 14
+DEBUG: Inserting 'Commit(x1) == TRUE' at position 16
+DEBUG: Inserting 'Preprepare(x1) == TRUE' at position 18
+DEBUG: Inserting 'Decide(x1) == TRUE' at position 20
+DEBUG: Updated all_added_funcs: ['ClientSubmitRequest', 'ViewChange', 'Receive', 'Prepare', 'ViewData', 'NewView', 'Commit', 'Preprepare', 'Decide']
+[INFO]   ✓ Action 'Next' validated successfully
+[INFO] Processing action 24/25: Spec
+DEBUG: Will insert 9 functions at position 4
+DEBUG: Functions to add: ['ClientSubmitRequest(x1) == TRUE', 'ViewChange(x1) == TRUE', 'Receive(x1) == TRUE', 'Prepare(x1) == TRUE', 'ViewData(x1) == TRUE', 'NewView(x1) == TRUE', 'Commit(x1) == TRUE', 'Preprepare(x1) == TRUE', 'Decide(x1) == TRUE']
+DEBUG: Inserting 'ClientSubmitRequest(x1) == TRUE' at position 4
+DEBUG: Inserting 'ViewChange(x1) == TRUE' at position 6
+DEBUG: Inserting 'Receive(x1) == TRUE' at position 8
+DEBUG: Inserting 'Prepare(x1) == TRUE' at position 10
+DEBUG: Inserting 'ViewData(x1) == TRUE' at position 12
+DEBUG: Inserting 'NewView(x1) == TRUE' at position 14
+DEBUG: Inserting 'Commit(x1) == TRUE' at position 16
+DEBUG: Inserting 'Preprepare(x1) == TRUE' at position 18
+DEBUG: Inserting 'Decide(x1) == TRUE' at position 20
+DEBUG: Updated all_added_funcs: ['ClientSubmitRequest', 'ViewChange', 'Receive', 'Prepare', 'ViewData', 'NewView', 'Commit', 'Preprepare', 'Decide']
+[WARNING]   ✗ Action 'Spec' failed validation (1 errors)
+[INFO] Processing action 25/25: vars
+[INFO]   ✓ Action 'vars' validated successfully
+[INFO] Action validation progress: 12/25 actions successful so far
+[INFO] Action decomposition summary: 12/25 actions successful (48.0%)
+[INFO] Action decomposition complete: 25 actions evaluated
+[INFO] Created experiment directory: output/action_decomposition/tla/hyperledger/direct_call_gemini25flash_google/20260616144800
+[INFO] Saved results to output/action_decomposition/tla/hyperledger/direct_call_gemini25flash_google/20260616144800
+[INFO] Results saved to: output/action_decomposition/tla/hyperledger/direct_call_gemini25flash_google/20260616144800
+[INFO] Saved experiment error statistics to: output/action_decomposition/tla/hyperledger/direct_call_gemini25flash_google/20260616144800/error_statistics.yaml
+[INFO] Error statistics saved to: output/action_decomposition/tla/hyperledger/direct_call_gemini25flash_google/20260616144800/error_statistics.yaml
+[INFO] Evaluation complete: success=True
+[INFO] Metric 'action_decomposition': ✓ PASS
+
+Syntax Evaluation Results: ✓ PASS
+Generation time: 239.11s
+Compilation time: 4.44s
+Syntax errors: 14
+Semantic errors: 0
+Action success rate: 12/25 (48.0%)
+Recovery statistics: 48 variables, 18 functions added, 24 attempts
+Results saved to: output/action_decomposition/tla/hyperledger/direct_call_gemini25flash_google/20260616144800

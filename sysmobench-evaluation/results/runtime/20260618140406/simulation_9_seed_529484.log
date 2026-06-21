@@ -1,0 +1,3974 @@
+Command: java -cp /Users/adaturgut/SysMoBench/lib/tla2tools.jar tlc2.TLC -tool -coverage 1 -simulate num=50 -depth 50 -seed 529484 -deadlock -config SmartBFT.cfg SmartBFT.tla
+Exit code: 0
+Seed: 529484
+Success: True
+
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2026.05.26.235334 (rev: 4ba7d88)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2401:3 @!@!@
+Please run the Java VM, which executes TLC with a throughput optimized garbage collector, by passing the "-XX:+UseParallelGC" property.
+@!@!@ENDMSG 2401 @!@!@
+@!@!@STARTMSG 2188:0 @!@!@
+Running Random Simulation with seed 529484 with 1 worker on 8 cores with 2048MB heap and 64MB offheap memory [pid: 16756] (Mac OS X 15.6 aarch64, Amazon.com Inc. 21.0.9 64bit).
+@!@!@ENDMSG 2188 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file /Users/adaturgut/SysMoBench/output/runtime_coverage/tla/hyperledger/direct_call_claude/20260618140406/SmartBFT.tla
+Parsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-9244470775240328954/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)
+Parsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-9244470775240328954/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Parsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-9244470775240328954/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Parsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-9244470775240328954/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)
+Parsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-9244470775240328954/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module SmartBFT
+Linting of module SmartBFT
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2026-06-18 14:04:13)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2269:0 @!@!@
+Computed 1 initial states...
+@!@!@ENDMSG 2269 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2026-06-18 14:04:13.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2209:0 @!@!@
+Progress(50) at 2026-06-18 14:04:13: 2582 states generated, -1 distinct states found, -1 states left on queue.
+@!@!@ENDMSG 2209 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2026-06-18 14:04:13 (see https://explain.tlapl.us/module-coverage-statistics for how to interpret the following statistics).
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<phase line 62, col 5 to line 62, col 9 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<hbm_view line 80, col 5 to line 80, col 12 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<vc_inform_dropped line 76, col 5 to line 76, col 21 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<commit_votes line 65, col 5 to line 65, col 16 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<blacklist line 67, col 5 to line 67, col 13 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<log line 63, col 5 to line 63, col 7 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<committed_during_vc line 72, col 5 to line 72, col 23 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<vc_enter_seq line 77, col 5 to line 77, col 16 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<vc_view line 70, col 5 to line 70, col 11 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<prepare_votes line 64, col 5 to line 64, col 17 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<vc_delivered_seq line 74, col 5 to line 74, col 20 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<in_flight line 66, col 5 to line 66, col 13 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<hbm_role line 84, col 5 to line 84, col 12 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<vc_quorum line 71, col 5 to line 71, col 13 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<hbm_timed_out line 81, col 5 to line 81, col 17 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<hbm_chg_pend line 85, col 5 to line 85, col 16 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<vc_start_dropped line 75, col 5 to line 75, col 20 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<msgs line 90, col 5 to line 90, col 8 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<ctrl_decisions line 58, col 5 to line 58, col 18 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<ctrl_updating line 59, col 5 to line 59, col 17 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<ctrl_view line 57, col 5 to line 57, col 13 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<faultCounts line 935, col 10 to line 935, col 20 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<hbm_artif_pending line 86, col 5 to line 86, col 21 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<ctrl_view_pending line 61, col 5 to line 61, col 21 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<MCInit line 949, col 1 to line 949, col 6 of module SmartBFT>: 1:1
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 172, col 29 to line 172, col 48 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 172, col 36 to line 172, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 173, col 29 to line 173, col 48 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 173, col 36 to line 173, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 174, col 29 to line 174, col 52 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 174, col 47 to line 174, col 51 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 174, col 36 to line 174, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 175, col 29 to line 175, col 48 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 175, col 36 to line 175, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 176, col 29 to line 176, col 55 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 176, col 36 to line 176, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 177, col 29 to line 177, col 51 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 177, col 47 to line 177, col 50 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 177, col 36 to line 177, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 178, col 29 to line 178, col 73 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |line 178, col 47 to line 178, col 72 of module SmartBFT: 4:12
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 178, col 70 to line 178, col 71 of module SmartBFT: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 178, col 56 to line 178, col 64 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 178, col 36 to line 178, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 179, col 29 to line 179, col 73 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |line 179, col 47 to line 179, col 72 of module SmartBFT: 4:12
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 179, col 70 to line 179, col 71 of module SmartBFT: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 179, col 56 to line 179, col 64 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 179, col 36 to line 179, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 180, col 29 to line 180, col 51 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 180, col 47 to line 180, col 50 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 180, col 36 to line 180, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 181, col 29 to line 181, col 49 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |line 181, col 47 to line 181, col 48 of module SmartBFT: 4:10328
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 181, col 36 to line 181, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 182, col 29 to line 182, col 48 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 182, col 36 to line 182, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 183, col 29 to line 183, col 49 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |line 183, col 47 to line 183, col 48 of module SmartBFT: 4:6861
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 183, col 36 to line 183, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 184, col 30 to line 184, col 52 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 184, col 48 to line 184, col 51 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 184, col 37 to line 184, col 42 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 185, col 29 to line 185, col 51 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 185, col 47 to line 185, col 50 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 185, col 36 to line 185, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 186, col 29 to line 186, col 52 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 186, col 47 to line 186, col 51 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 186, col 36 to line 186, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 187, col 29 to line 187, col 52 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 187, col 47 to line 187, col 51 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 187, col 36 to line 187, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 188, col 29 to line 188, col 51 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 188, col 47 to line 188, col 50 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 188, col 36 to line 188, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 189, col 29 to line 189, col 48 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 189, col 36 to line 189, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 190, col 29 to line 190, col 52 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 190, col 47 to line 190, col 51 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 190, col 36 to line 190, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 191, col 29 to line 191, col 105 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 191, col 47 to line 191, col 104 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 191, col 36 to line 191, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 192, col 29 to line 192, col 52 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 192, col 47 to line 192, col 51 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 192, col 36 to line 192, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 193, col 29 to line 193, col 52 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 193, col 47 to line 193, col 51 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 193, col 36 to line 193, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 194, col 8 to line 194, col 30 of module SmartBFT: 1:837
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 951, col 8 to line 955, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCCrash line 960, col 1 to line 960, col 10 of module SmartBFT>: 99:99
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 961, col 8 to line 961, col 39 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 961, col 8 to line 961, col 26 of module SmartBFT: 279
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 961, col 30 to line 961, col 39 of module SmartBFT: 279
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 782, col 8 to line 782, col 20 of module SmartBFT: 198
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 782, col 8 to line 782, col 8 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 782, col 14 to line 782, col 20 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 783, col 8 to line 783, col 73 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 784, col 8 to line 784, col 90 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 784, col 30 to line 784, col 90 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 784, col 31 to line 784, col 43 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 784, col 57 to line 784, col 89 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 784, col 64 to line 784, col 89 of module SmartBFT: 99:297
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 784, col 87 to line 784, col 88 of module SmartBFT: 297
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 784, col 73 to line 784, col 81 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 785, col 8 to line 785, col 90 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 785, col 30 to line 785, col 90 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 785, col 31 to line 785, col 42 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 785, col 57 to line 785, col 89 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 785, col 64 to line 785, col 89 of module SmartBFT: 99:297
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 785, col 87 to line 785, col 88 of module SmartBFT: 297
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 785, col 73 to line 785, col 81 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 786, col 8 to line 786, col 68 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 787, col 8 to line 787, col 69 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 788, col 8 to line 788, col 76 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 789, col 8 to line 789, col 66 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 789, col 30 to line 789, col 66 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 789, col 31 to line 789, col 39 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 789, col 57 to line 789, col 65 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 789, col 64 to line 789, col 65 of module SmartBFT: 99:3467
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 790, col 8 to line 790, col 68 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 791, col 8 to line 791, col 69 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 792, col 8 to line 792, col 69 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 793, col 8 to line 793, col 68 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 795, col 8 to line 795, col 70 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 796, col 8 to line 796, col 69 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 797, col 8 to line 797, col 69 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 798, col 8 to line 798, col 69 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 799, col 8 to line 799, col 97 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 962, col 14 to line 962, col 14 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 963, col 8 to line 963, col 60 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCMaybeStartViewChange line 982, col 1 to line 982, col 25 of module SmartBFT>: 74:74
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 431, col 8 to line 431, col 20 of module SmartBFT: 394
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 431, col 8 to line 431, col 8 of module SmartBFT: 355
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 431, col 14 to line 431, col 20 of module SmartBFT: 355
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 432, col 8 to line 432, col 30 of module SmartBFT: 394
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 432, col 8 to line 432, col 15 of module SmartBFT: 355
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 435, col 15 to line 435, col 72 of module SmartBFT: 39
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 137, col 15 to line 137, col 35 of module SmartBFT: 39
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 137, col 23 to line 137, col 35 of module SmartBFT: 39
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 137, col 23 to line 137, col 26 of module SmartBFT: 39
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 137, col 33 to line 137, col 35 of module SmartBFT: 39:162
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 137, col 34 to line 137, col 34 of module SmartBFT: 39
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 436, col 20 to line 438, col 36 of module SmartBFT: 39
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 440, col 15 to line 440, col 71 of module SmartBFT: 35
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 440, col 35 to line 440, col 71 of module SmartBFT: 39
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 441, col 15 to line 441, col 28 of module SmartBFT: 35
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 442, col 8 to line 443, col 61 of module SmartBFT: 74
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 983, col 29 to line 983, col 29 of module SmartBFT: 355
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 984, col 11 to line 984, col 30 of module SmartBFT: 78
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 986, col 15 to line 986, col 47 of module SmartBFT: 35
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 986, col 15 to line 986, col 34 of module SmartBFT: 39
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 986, col 38 to line 986, col 47 of module SmartBFT: 39
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 987, col 15 to line 987, col 68 of module SmartBFT: 35
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 989, col 12 to line 989, col 32 of module SmartBFT: 39
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCInformNewView line 993, col 1 to line 993, col 27 of module SmartBFT>: 1335:1335
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 636, col 8 to line 636, col 20 of module SmartBFT: 2670
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 636, col 8 to line 636, col 8 of module SmartBFT: 1335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 636, col 14 to line 636, col 20 of module SmartBFT: 1335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 638, col 15 to line 638, col 74 of module SmartBFT: 1335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 640, col 18 to line 640, col 37 of module SmartBFT: 1335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 641, col 19 to line 641, col 60 of module SmartBFT: 377
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 643, col 19 to line 643, col 35 of module SmartBFT: 958
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 645, col 15 to line 645, col 73 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 645, col 36 to line 645, col 73 of module SmartBFT: 1335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 646, col 15 to line 646, col 31 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 647, col 8 to line 650, col 48 of module SmartBFT: 1335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 994, col 22 to line 994, col 22 of module SmartBFT: 1335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 994, col 25 to line 994, col 31 of module SmartBFT: 1335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 995, col 11 to line 995, col 31 of module SmartBFT: 2670
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 996, col 15 to line 996, col 55 of module SmartBFT: 1335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 997, col 15 to line 997, col 72 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 999, col 12 to line 999, col 32 of module SmartBFT: 1335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCHandleViewChange line 1002, col 1 to line 1002, col 21 of module SmartBFT>: 2:2
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1003, col 8 to line 1003, col 48 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1003, col 8 to line 1003, col 31 of module SmartBFT: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1003, col 35 to line 1003, col 48 of module SmartBFT: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 447, col 8 to line 447, col 20 of module SmartBFT: 399
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 447, col 8 to line 447, col 8 of module SmartBFT: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 447, col 14 to line 447, col 20 of module SmartBFT: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 449, col 12 to line 449, col 38 of module SmartBFT: 931
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 449, col 12 to line 449, col 17 of module SmartBFT: 929
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 450, col 12 to line 450, col 39 of module SmartBFT: 45
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 450, col 12 to line 450, col 22 of module SmartBFT: 43
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 450, col 26 to line 450, col 39 of module SmartBFT: 43
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 454, col 15 to line 454, col 43 of module SmartBFT: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 454, col 15 to line 454, col 34 of module SmartBFT: 26
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 454, col 27 to line 454, col 33 of module SmartBFT: 26
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 451, col 27 to line 452, col 91 of module SmartBFT: 26
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 451, col 28 to line 451, col 36 of module SmartBFT: 28
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||||line 451, col 47 to line 452, col 90 of module SmartBFT: 26:54
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 452, col 32 to line 452, col 89 of module SmartBFT: 87
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 452, col 32 to line 452, col 55 of module SmartBFT: 87
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 452, col 60 to line 452, col 89 of module SmartBFT: 28
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 451, col 56 to line 451, col 59 of module SmartBFT: 26
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 454, col 39 to line 454, col 43 of module SmartBFT: 26
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 456, col 12 to line 456, col 61 of module SmartBFT: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 457, col 12 to line 457, col 59 of module SmartBFT: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 137, col 15 to line 137, col 35 of module SmartBFT: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 137, col 23 to line 137, col 35 of module SmartBFT: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 137, col 23 to line 137, col 26 of module SmartBFT: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 137, col 33 to line 137, col 35 of module SmartBFT: 2:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 137, col 34 to line 137, col 34 of module SmartBFT: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 458, col 17 to line 464, col 80 of module SmartBFT: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 448, col 17 to line 448, col 20 of module SmartBFT: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 465, col 8 to line 469, col 28 of module SmartBFT: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1004, col 25 to line 1004, col 25 of module SmartBFT: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1005, col 8 to line 1005, col 65 of module SmartBFT: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCPropose line 1009, col 1 to line 1009, col 12 of module SmartBFT>: 73:73
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 200, col 8 to line 200, col 20 of module SmartBFT: 387
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 200, col 8 to line 200, col 8 of module SmartBFT: 314
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 200, col 14 to line 200, col 20 of module SmartBFT: 314
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 201, col 8 to line 201, col 26 of module SmartBFT: 387
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 201, col 8 to line 201, col 15 of module SmartBFT: 314
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 202, col 8 to line 202, col 24 of module SmartBFT: 291
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 202, col 9 to line 202, col 24 of module SmartBFT: 218
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 203, col 8 to line 203, col 24 of module SmartBFT: 291
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 203, col 8 to line 203, col 20 of module SmartBFT: 218
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 203, col 24 to line 203, col 24 of module SmartBFT: 218
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 204, col 8 to line 204, col 31 of module SmartBFT: 73
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 137, col 15 to line 137, col 35 of module SmartBFT: 73
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 137, col 23 to line 137, col 35 of module SmartBFT: 73
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 137, col 23 to line 137, col 26 of module SmartBFT: 73
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 137, col 33 to line 137, col 35 of module SmartBFT: 73:428
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 137, col 34 to line 137, col 34 of module SmartBFT: 73
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 207, col 16 to line 211, col 30 of module SmartBFT: 73
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 212, col 8 to line 212, col 52 of module SmartBFT: 73
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1009, col 50 to line 1009, col 50 of module SmartBFT: 314
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1009, col 81 to line 1009, col 99 of module SmartBFT: 73
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCHBLeaderTick line 1010, col 1 to line 1010, col 17 of module SmartBFT>: 65:65
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 304, col 8 to line 304, col 20 of module SmartBFT: 390
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 304, col 8 to line 304, col 8 of module SmartBFT: 325
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 304, col 14 to line 304, col 20 of module SmartBFT: 325
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 305, col 8 to line 305, col 29 of module SmartBFT: 390
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 305, col 8 to line 305, col 18 of module SmartBFT: 325
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 306, col 8 to line 306, col 28 of module SmartBFT: 149
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 306, col 8 to line 306, col 15 of module SmartBFT: 84
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 137, col 15 to line 137, col 35 of module SmartBFT: 65
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 137, col 23 to line 137, col 35 of module SmartBFT: 65
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 137, col 23 to line 137, col 26 of module SmartBFT: 65
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 137, col 33 to line 137, col 35 of module SmartBFT: 65:544
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 137, col 34 to line 137, col 34 of module SmartBFT: 65
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 307, col 13 to line 310, col 26 of module SmartBFT: 65
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 311, col 8 to line 311, col 52 of module SmartBFT: 65
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1010, col 55 to line 1010, col 55 of module SmartBFT: 325
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1010, col 81 to line 1010, col 99 of module SmartBFT: 65
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCHBFollowerTick line 1011, col 1 to line 1011, col 19 of module SmartBFT>: 119:119
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 317, col 8 to line 317, col 20 of module SmartBFT: 489
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 317, col 8 to line 317, col 8 of module SmartBFT: 370
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 317, col 14 to line 317, col 20 of module SmartBFT: 370
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 318, col 8 to line 318, col 31 of module SmartBFT: 489
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 318, col 8 to line 318, col 18 of module SmartBFT: 370
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 319, col 8 to line 319, col 28 of module SmartBFT: 403
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 319, col 8 to line 319, col 15 of module SmartBFT: 284
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 321, col 8 to line 321, col 24 of module SmartBFT: 353
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 321, col 9 to line 321, col 24 of module SmartBFT: 234
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 323, col 8 to line 323, col 95 of module SmartBFT: 260
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 323, col 9 to line 323, col 95 of module SmartBFT: 141
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 323, col 25 to line 323, col 95 of module SmartBFT: 240
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 323, col 25 to line 323, col 71 of module SmartBFT: 240
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 323, col 25 to line 323, col 44 of module SmartBFT: 240
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 323, col 49 to line 323, col 71 of module SmartBFT: 22
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 323, col 76 to line 323, col 95 of module SmartBFT: 22
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 323, col 18 to line 323, col 21 of module SmartBFT: 141
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 325, col 8 to line 325, col 58 of module SmartBFT: 119
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 327, col 8 to line 330, col 52 of module SmartBFT: 119
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 327, col 16 to line 330, col 52 of module SmartBFT: 119
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 327, col 16 to line 327, col 19 of module SmartBFT: 119
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 327, col 26 to line 330, col 52 of module SmartBFT: 119:1569
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 327, col 27 to line 330, col 51 of module SmartBFT: 119
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 331, col 8 to line 331, col 96 of module SmartBFT: 119
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1011, col 57 to line 1011, col 57 of module SmartBFT: 370
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1011, col 81 to line 1011, col 99 of module SmartBFT: 119
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCInjectArtificialHeartbeat line 1012, col 1 to line 1012, col 30 of module SmartBFT>: 157:157
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 358, col 8 to line 358, col 20 of module SmartBFT: 510
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 358, col 8 to line 358, col 8 of module SmartBFT: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 358, col 14 to line 358, col 20 of module SmartBFT: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 359, col 8 to line 359, col 26 of module SmartBFT: 510
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 359, col 8 to line 359, col 15 of module SmartBFT: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 363, col 12 to line 363, col 57 of module SmartBFT: 740
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 363, col 12 to line 363, col 17 of module SmartBFT: 583
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 363, col 23 to line 363, col 57 of module SmartBFT: 583
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 364, col 12 to line 364, col 35 of module SmartBFT: 422
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 364, col 12 to line 364, col 19 of module SmartBFT: 265
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 364, col 23 to line 364, col 35 of module SmartBFT: 265
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 365, col 12 to line 365, col 32 of module SmartBFT: 314
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 365, col 12 to line 365, col 17 of module SmartBFT: 157
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 365, col 21 to line 365, col 32 of module SmartBFT: 157
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 362, col 17 to line 362, col 20 of module SmartBFT: 256
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 366, col 11 to line 366, col 30 of module SmartBFT: 157
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 367, col 12 to line 367, col 48 of module SmartBFT: 31
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 369, col 15 to line 369, col 73 of module SmartBFT: 126
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 370, col 15 to line 370, col 28 of module SmartBFT: 126
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 371, col 8 to line 371, col 92 of module SmartBFT: 157
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1012, col 68 to line 1012, col 68 of module SmartBFT: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1012, col 81 to line 1012, col 99 of module SmartBFT: 157
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCHandleArtificialHeartbeat line 1013, col 1 to line 1013, col 30 of module SmartBFT>: 40:40
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 376, col 8 to line 376, col 20 of module SmartBFT: 403
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 376, col 8 to line 376, col 8 of module SmartBFT: 363
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 376, col 14 to line 376, col 20 of module SmartBFT: 363
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 377, col 8 to line 377, col 27 of module SmartBFT: 40
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 377, col 8 to line 377, col 24 of module SmartBFT: 363
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 377, col 26 to line 377, col 26 of module SmartBFT: 363
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 378, col 8 to line 378, col 67 of module SmartBFT: 40
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 382, col 8 to line 382, col 98 of module SmartBFT: 40
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1013, col 68 to line 1013, col 68 of module SmartBFT: 363
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1013, col 81 to line 1013, col 99 of module SmartBFT: 40
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCHandleHeartbeat line 1014, col 1 to line 1014, col 26 of module SmartBFT>: 33:33
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 336, col 8 to line 336, col 20 of module SmartBFT: 1411
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 336, col 8 to line 336, col 8 of module SmartBFT: 1378
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 336, col 14 to line 336, col 20 of module SmartBFT: 1378
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 337, col 8 to line 337, col 31 of module SmartBFT: 1411
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 337, col 8 to line 337, col 18 of module SmartBFT: 1378
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 338, col 8 to line 338, col 28 of module SmartBFT: 1058
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 338, col 8 to line 338, col 15 of module SmartBFT: 1025
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 340, col 12 to line 340, col 33 of module SmartBFT: 1855
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 340, col 12 to line 340, col 17 of module SmartBFT: 1822
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 341, col 12 to line 341, col 26 of module SmartBFT: 193
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 341, col 12 to line 341, col 19 of module SmartBFT: 160
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 341, col 23 to line 341, col 26 of module SmartBFT: 160
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 343, col 12 to line 343, col 33 of module SmartBFT: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 343, col 12 to line 343, col 17 of module SmartBFT: 33
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 343, col 23 to line 343, col 33 of module SmartBFT: 33
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 344, col 12 to line 344, col 30 of module SmartBFT: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 344, col 12 to line 344, col 15 of module SmartBFT: 33
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 344, col 19 to line 344, col 30 of module SmartBFT: 33
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 348, col 12 to line 349, col 99 of module SmartBFT: 33
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 348, col 20 to line 349, col 99 of module SmartBFT: 33
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 348, col 21 to line 348, col 30 of module SmartBFT: 33
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 349, col 20 to line 349, col 99 of module SmartBFT: 33:256
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 349, col 21 to line 349, col 98 of module SmartBFT: 33
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 339, col 17 to line 339, col 20 of module SmartBFT: 814
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 350, col 8 to line 350, col 111 of module SmartBFT: 33
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1014, col 58 to line 1014, col 58 of module SmartBFT: 1378
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1014, col 61 to line 1014, col 64 of module SmartBFT: 160
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1014, col 81 to line 1014, col 99 of module SmartBFT: 33
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCOnHeartbeatTimeout line 1015, col 1 to line 1015, col 23 of module SmartBFT>: 62:62
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 415, col 8 to line 415, col 20 of module SmartBFT: 439
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 415, col 8 to line 415, col 8 of module SmartBFT: 377
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 415, col 14 to line 415, col 20 of module SmartBFT: 377
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 416, col 8 to line 416, col 26 of module SmartBFT: 439
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 416, col 8 to line 416, col 15 of module SmartBFT: 377
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 418, col 12 to line 418, col 33 of module SmartBFT: 688
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 418, col 12 to line 418, col 17 of module SmartBFT: 626
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 419, col 12 to line 419, col 23 of module SmartBFT: 278
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 419, col 12 to line 419, col 19 of module SmartBFT: 216
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 419, col 23 to line 419, col 23 of module SmartBFT: 216
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 420, col 12 to line 420, col 34 of module SmartBFT: 124
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 420, col 12 to line 420, col 17 of module SmartBFT: 62
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 420, col 23 to line 420, col 34 of module SmartBFT: 62
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 421, col 12 to line 421, col 35 of module SmartBFT: 124
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 421, col 12 to line 421, col 19 of module SmartBFT: 62
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 421, col 23 to line 421, col 35 of module SmartBFT: 62
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 422, col 12 to line 422, col 21 of module SmartBFT: 62
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 417, col 17 to line 417, col 20 of module SmartBFT: 256
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 423, col 8 to line 423, col 50 of module SmartBFT: 62
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 424, col 8 to line 425, col 92 of module SmartBFT: 62
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1015, col 61 to line 1015, col 61 of module SmartBFT: 377
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1015, col 81 to line 1015, col 99 of module SmartBFT: 62
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCHandlePrePrepare line 1016, col 1 to line 1016, col 21 of module SmartBFT>: 72:72
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 217, col 8 to line 217, col 20 of module SmartBFT: 455
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 217, col 8 to line 217, col 8 of module SmartBFT: 383
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 217, col 14 to line 217, col 20 of module SmartBFT: 383
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 218, col 8 to line 218, col 26 of module SmartBFT: 455
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 218, col 8 to line 218, col 15 of module SmartBFT: 383
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 220, col 12 to line 220, col 32 of module SmartBFT: 611
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 220, col 12 to line 220, col 17 of module SmartBFT: 539
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 221, col 12 to line 221, col 32 of module SmartBFT: 179
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 221, col 12 to line 221, col 17 of module SmartBFT: 107
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 221, col 21 to line 221, col 32 of module SmartBFT: 107
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 222, col 12 to line 222, col 39 of module SmartBFT: 179
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 222, col 12 to line 222, col 16 of module SmartBFT: 107
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 222, col 21 to line 222, col 39 of module SmartBFT: 107
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 223, col 12 to line 223, col 35 of module SmartBFT: 179
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 223, col 12 to line 223, col 19 of module SmartBFT: 107
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 223, col 23 to line 223, col 35 of module SmartBFT: 107
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 224, col 12 to line 224, col 30 of module SmartBFT: 179
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 224, col 12 to line 224, col 23 of module SmartBFT: 107
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 224, col 27 to line 224, col 30 of module SmartBFT: 107
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 225, col 12 to line 225, col 55 of module SmartBFT: 72
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 137, col 15 to line 137, col 35 of module SmartBFT: 72
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 137, col 23 to line 137, col 35 of module SmartBFT: 72
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 137, col 23 to line 137, col 26 of module SmartBFT: 72
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 137, col 33 to line 137, col 35 of module SmartBFT: 72:144
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 137, col 34 to line 137, col 34 of module SmartBFT: 72
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 226, col 17 to line 230, col 30 of module SmartBFT: 72
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 219, col 17 to line 219, col 20 of module SmartBFT: 246
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 231, col 8 to line 233, col 36 of module SmartBFT: 72
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1016, col 59 to line 1016, col 59 of module SmartBFT: 383
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1016, col 81 to line 1016, col 99 of module SmartBFT: 72
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCHandlePrepare line 1017, col 1 to line 1017, col 24 of module SmartBFT>: 66:66
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 238, col 8 to line 238, col 20 of module SmartBFT: 1502
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 238, col 8 to line 238, col 8 of module SmartBFT: 1436
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 238, col 14 to line 238, col 20 of module SmartBFT: 1436
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 239, col 8 to line 239, col 26 of module SmartBFT: 1502
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 239, col 8 to line 239, col 15 of module SmartBFT: 1436
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 240, col 8 to line 240, col 16 of module SmartBFT: 1054
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 240, col 8 to line 240, col 11 of module SmartBFT: 988
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 240, col 16 to line 240, col 16 of module SmartBFT: 988
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 242, col 12 to line 242, col 31 of module SmartBFT: 1881
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 242, col 12 to line 242, col 17 of module SmartBFT: 1815
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 243, col 12 to line 243, col 26 of module SmartBFT: 457
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 243, col 12 to line 243, col 19 of module SmartBFT: 391
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 243, col 23 to line 243, col 26 of module SmartBFT: 391
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 244, col 12 to line 244, col 34 of module SmartBFT: 157
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 244, col 12 to line 244, col 17 of module SmartBFT: 91
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 244, col 23 to line 244, col 34 of module SmartBFT: 91
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 245, col 12 to line 245, col 41 of module SmartBFT: 157
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 245, col 12 to line 245, col 16 of module SmartBFT: 91
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 245, col 23 to line 245, col 41 of module SmartBFT: 91
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 246, col 12 to line 246, col 46 of module SmartBFT: 157
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 246, col 12 to line 246, col 15 of module SmartBFT: 91
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 246, col 24 to line 246, col 46 of module SmartBFT: 91
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 247, col 12 to line 248, col 68 of module SmartBFT: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 247, col 29 to line 248, col 68 of module SmartBFT: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 247, col 30 to line 247, col 42 of module SmartBFT: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 247, col 51 to line 248, col 67 of module SmartBFT: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 248, col 33 to line 248, col 67 of module SmartBFT: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 248, col 33 to line 248, col 55 of module SmartBFT: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |||line 248, col 62 to line 248, col 67 of module SmartBFT: 66:32
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 248, col 63 to line 248, col 66 of module SmartBFT: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 249, col 15 to line 249, col 65 of module SmartBFT: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 251, col 19 to line 251, col 62 of module SmartBFT: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 137, col 15 to line 137, col 35 of module SmartBFT: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 137, col 23 to line 137, col 35 of module SmartBFT: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 137, col 23 to line 137, col 26 of module SmartBFT: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 137, col 33 to line 137, col 35 of module SmartBFT: 16:32
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 137, col 34 to line 137, col 34 of module SmartBFT: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 252, col 24 to line 256, col 37 of module SmartBFT: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 258, col 19 to line 258, col 47 of module SmartBFT: 50
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 241, col 17 to line 241, col 20 of module SmartBFT: 752
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 259, col 8 to line 260, col 73 of module SmartBFT: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1017, col 56 to line 1017, col 56 of module SmartBFT: 1436
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1017, col 59 to line 1017, col 62 of module SmartBFT: 988
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1017, col 81 to line 1017, col 99 of module SmartBFT: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCDecide line 1018, col 1 to line 1018, col 17 of module SmartBFT>: 13:13
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 265, col 8 to line 265, col 20 of module SmartBFT: 1386
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 265, col 8 to line 265, col 8 of module SmartBFT: 1373
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 265, col 14 to line 265, col 20 of module SmartBFT: 1373
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 266, col 8 to line 266, col 26 of module SmartBFT: 1386
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 266, col 8 to line 266, col 15 of module SmartBFT: 1373
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 268, col 12 to line 268, col 30 of module SmartBFT: 2343
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 268, col 12 to line 268, col 17 of module SmartBFT: 2330
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 269, col 12 to line 269, col 26 of module SmartBFT: 72
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 269, col 12 to line 269, col 19 of module SmartBFT: 59
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 269, col 23 to line 269, col 26 of module SmartBFT: 59
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 270, col 12 to line 270, col 34 of module SmartBFT: 26
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 270, col 12 to line 270, col 17 of module SmartBFT: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 270, col 23 to line 270, col 34 of module SmartBFT: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 271, col 12 to line 271, col 41 of module SmartBFT: 26
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 271, col 12 to line 271, col 16 of module SmartBFT: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 271, col 23 to line 271, col 41 of module SmartBFT: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 272, col 12 to line 272, col 45 of module SmartBFT: 26
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 272, col 12 to line 272, col 15 of module SmartBFT: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 272, col 24 to line 272, col 45 of module SmartBFT: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 273, col 12 to line 274, col 67 of module SmartBFT: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 275, col 15 to line 275, col 60 of module SmartBFT: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 277, col 19 to line 277, col 77 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 278, col 19 to line 278, col 66 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 279, col 19 to line 279, col 88 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 285, col 29 to line 285, col 71 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 287, col 29 to line 287, col 43 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 288, col 19 to line 288, col 101 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 290, col 19 to line 292, col 64 of module SmartBFT: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 267, col 17 to line 267, col 20 of module SmartBFT: 967
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 293, col 8 to line 293, col 42 of module SmartBFT: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1018, col 49 to line 1018, col 49 of module SmartBFT: 1373
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1018, col 52 to line 1018, col 55 of module SmartBFT: 42
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1018, col 81 to line 1018, col 99 of module SmartBFT: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCProcessViewDataDeliver line 1019, col 1 to line 1019, col 33 of module SmartBFT>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 494, col 8 to line 494, col 20 of module SmartBFT: 1464
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 495, col 8 to line 495, col 31 of module SmartBFT: 1464
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 506, col 12 to line 506, col 77 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 507, col 12 to line 507, col 74 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 509, col 12 to line 509, col 80 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 510, col 8 to line 513, col 34 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1019, col 65 to line 1019, col 65 of module SmartBFT: 1464
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1019, col 81 to line 1019, col 99 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCProcessViewDataValidate line 1020, col 1 to line 1020, col 34 of module SmartBFT>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 519, col 8 to line 519, col 20 of module SmartBFT: 1507
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 520, col 8 to line 520, col 31 of module SmartBFT: 1507
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 531, col 16 to line 531, col 78 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 535, col 16 to line 535, col 34 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 138, col 15 to line 138, col 32 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 537, col 8 to line 540, col 61 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1020, col 66 to line 1020, col 66 of module SmartBFT: 1507
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1020, col 81 to line 1020, col 99 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCProcessViewDataSameSeq line 1021, col 1 to line 1021, col 33 of module SmartBFT>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 545, col 8 to line 545, col 20 of module SmartBFT: 1640
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 546, col 8 to line 546, col 31 of module SmartBFT: 1640
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 556, col 16 to line 556, col 78 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 558, col 16 to line 558, col 34 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 138, col 15 to line 138, col 32 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 560, col 8 to line 563, col 61 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1021, col 65 to line 1021, col 65 of module SmartBFT: 1640
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1021, col 81 to line 1021, col 99 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCBuildNewView line 1022, col 1 to line 1022, col 17 of module SmartBFT>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 568, col 8 to line 568, col 20 of module SmartBFT: 419
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 569, col 8 to line 569, col 31 of module SmartBFT: 419
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 137, col 15 to line 137, col 35 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 587, col 8 to line 587, col 46 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 588, col 8 to line 588, col 48 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 589, col 8 to line 592, col 61 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1022, col 55 to line 1022, col 55 of module SmartBFT: 419
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1022, col 81 to line 1022, col 99 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCEnterNewView line 1023, col 1 to line 1023, col 17 of module SmartBFT>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 597, col 8 to line 597, col 20 of module SmartBFT: 471
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 598, col 8 to line 598, col 59 of module SmartBFT: 471
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 600, col 12 to line 600, col 32 of module SmartBFT: 843
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 605, col 12 to line 605, col 82 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 606, col 12 to line 606, col 84 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 608, col 12 to line 609, col 78 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 610, col 12 to line 610, col 71 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 612, col 12 to line 612, col 68 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 613, col 12 to line 613, col 70 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 614, col 12 to line 614, col 71 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 617, col 12 to line 617, col 72 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 618, col 12 to line 618, col 74 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 599, col 17 to line 599, col 20 of module SmartBFT: 382
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 619, col 8 to line 620, col 74 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1023, col 55 to line 1023, col 55 of module SmartBFT: 471
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1023, col 81 to line 1023, col 99 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCProcessNewViewDeliverLoop line 1024, col 1 to line 1024, col 30 of module SmartBFT>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 666, col 8 to line 666, col 20 of module SmartBFT: 432
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 667, col 8 to line 667, col 59 of module SmartBFT: 432
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 670, col 12 to line 670, col 32 of module SmartBFT: 860
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 681, col 12 to line 681, col 65 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 682, col 12 to line 682, col 61 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 669, col 17 to line 669, col 20 of module SmartBFT: 344
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 683, col 8 to line 685, col 42 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1024, col 68 to line 1024, col 68 of module SmartBFT: 432
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1024, col 81 to line 1024, col 99 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCChangeViewUpdateView line 1025, col 1 to line 1025, col 25 of module SmartBFT>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 723, col 8 to line 723, col 20 of module SmartBFT: 335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 724, col 8 to line 724, col 23 of module SmartBFT: 335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 725, col 8 to line 725, col 66 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 727, col 8 to line 728, col 93 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1025, col 63 to line 1025, col 63 of module SmartBFT: 335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1025, col 81 to line 1025, col 99 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCChangeViewUpdateDecisions line 1026, col 1 to line 1026, col 33 of module SmartBFT>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 732, col 8 to line 732, col 20 of module SmartBFT: 970
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 733, col 8 to line 733, col 23 of module SmartBFT: 970
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 735, col 8 to line 735, col 68 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 736, col 8 to line 736, col 61 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 738, col 8 to line 738, col 56 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 739, col 8 to line 740, col 109 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1026, col 68 to line 1026, col 68 of module SmartBFT: 970
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1026, col 81 to line 1026, col 99 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCReadLeaderID line 1027, col 1 to line 1027, col 17 of module SmartBFT>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 747, col 8 to line 747, col 20 of module SmartBFT: 316
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 748, col 8 to line 748, col 23 of module SmartBFT: 316
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 750, col 8 to line 750, col 21 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1027, col 55 to line 1027, col 55 of module SmartBFT: 316
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1027, col 81 to line 1027, col 99 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCRecover line 1028, col 1 to line 1028, col 12 of module SmartBFT>: 64:64
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 803, col 8 to line 803, col 27 of module SmartBFT: 374
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 803, col 8 to line 803, col 15 of module SmartBFT: 310
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 804, col 8 to line 804, col 46 of module SmartBFT: 64
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 807, col 8 to line 807, col 54 of module SmartBFT: 64
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 809, col 8 to line 809, col 56 of module SmartBFT: 64
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 810, col 8 to line 810, col 94 of module SmartBFT: 64
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 811, col 8 to line 815, col 73 of module SmartBFT: 64
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1028, col 50 to line 1028, col 50 of module SmartBFT: 310
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1028, col 81 to line 1028, col 99 of module SmartBFT: 64
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCSendChangeRole line 1029, col 1 to line 1029, col 19 of module SmartBFT>: 214:214
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 388, col 8 to line 388, col 20 of module SmartBFT: 522
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 388, col 8 to line 388, col 8 of module SmartBFT: 308
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 388, col 14 to line 388, col 20 of module SmartBFT: 308
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 389, col 8 to line 389, col 23 of module SmartBFT: 522
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 389, col 9 to line 389, col 23 of module SmartBFT: 308
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 390, col 8 to line 390, col 56 of module SmartBFT: 214
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 391, col 8 to line 391, col 103 of module SmartBFT: 214
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1029, col 57 to line 1029, col 57 of module SmartBFT: 308
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1029, col 81 to line 1029, col 99 of module SmartBFT: 214
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCProcessChangeRole line 1030, col 1 to line 1030, col 22 of module SmartBFT>: 93:93
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 397, col 8 to line 397, col 20 of module SmartBFT: 388
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 397, col 8 to line 397, col 8 of module SmartBFT: 295
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 397, col 14 to line 397, col 20 of module SmartBFT: 295
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 398, col 8 to line 398, col 22 of module SmartBFT: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 398, col 8 to line 398, col 19 of module SmartBFT: 295
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 398, col 21 to line 398, col 21 of module SmartBFT: 295
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 404, col 8 to line 407, col 62 of module SmartBFT: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 408, col 8 to line 408, col 68 of module SmartBFT: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1030, col 60 to line 1030, col 60 of module SmartBFT: 295
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1030, col 81 to line 1030, col 99 of module SmartBFT: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCNext line 1034, col 1 to line 1034, col 6 of module SmartBFT (1066 8 1066 77)>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 137, col 15 to line 137, col 35 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 488, col 8 to line 488, col 52 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 971, col 8 to line 971, col 61 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1066, col 19 to line 1066, col 27 of module SmartBFT: 82
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1066, col 39 to line 1066, col 44 of module SmartBFT: 82
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCNext line 1034, col 1 to line 1034, col 6 of module SmartBFT (1067 8 1067 87)>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 137, col 15 to line 137, col 35 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 711, col 8 to line 711, col 52 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 978, col 8 to line 978, col 61 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1067, col 19 to line 1067, col 27 of module SmartBFT: 67
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1067, col 39 to line 1067, col 44 of module SmartBFT: 67
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<MCTypeOK line 1085, col 1 to line 1085, col 8 of module SmartBFT>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1086, col 5 to line 1087, col 105 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1086, col 8 to line 1086, col 13 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 147, col 5 to line 167, col 41 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 147, col 8 to line 147, col 44 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 148, col 8 to line 148, col 44 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 149, col 8 to line 149, col 48 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 150, col 8 to line 150, col 44 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 151, col 8 to line 151, col 46 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 152, col 8 to line 152, col 49 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 153, col 8 to line 153, col 56 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 154, col 8 to line 154, col 54 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 155, col 8 to line 155, col 44 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 156, col 8 to line 156, col 54 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 157, col 8 to line 157, col 58 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 158, col 8 to line 158, col 56 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 159, col 8 to line 159, col 48 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 160, col 8 to line 160, col 48 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 161, col 8 to line 161, col 56 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 162, col 8 to line 162, col 44 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 163, col 8 to line 163, col 48 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 164, col 8 to line 164, col 48 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 165, col 8 to line 165, col 48 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 166, col 8 to line 166, col 48 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 167, col 8 to line 167, col 41 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 167, col 24 to line 167, col 41 of module SmartBFT: 7323
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 167, col 17 to line 167, col 20 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1087, col 8 to line 1087, col 105 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<LogMonotonic line 924, col 1 to line 924, col 12 of module SmartBFT>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 925, col 5 to line 926, col 47 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 926, col 9 to line 926, col 47 of module SmartBFT: 10328
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 925, col 14 to line 925, col 20 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<Agreement line 858, col 1 to line 858, col 9 of module SmartBFT>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 859, col 5 to line 861, col 35 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 860, col 9 to line 861, col 35 of module SmartBFT: 41312
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 859, col 19 to line 859, col 25 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<ViewChangeSafety line 865, col 1 to line 865, col 16 of module SmartBFT>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 866, col 5 to line 868, col 41 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 867, col 9 to line 868, col 41 of module SmartBFT: 10328
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 867, col 9 to line 867, col 27 of module SmartBFT: 10328
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 868, col 13 to line 868, col 41 of module SmartBFT: 7070
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 866, col 14 to line 866, col 20 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<NoViewFork line 874, col 1 to line 874, col 10 of module SmartBFT>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 875, col 5 to line 879, col 42 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 876, col 9 to line 879, col 42 of module SmartBFT: 41312
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 876, col 9 to line 876, col 40 of module SmartBFT: 41312
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 877, col 12 to line 879, col 42 of module SmartBFT: 41312
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 877, col 15 to line 877, col 39 of module SmartBFT: 41312
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 878, col 15 to line 878, col 42 of module SmartBFT: 18158
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 879, col 15 to line 879, col 42 of module SmartBFT: 4139
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 875, col 19 to line 875, col 25 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2778:0 @!@!@
+<MsgBufConstraint line 1081, col 1 to line 1081, col 16 of module SmartBFT>: 2582:2582
+@!@!@ENDMSG 2778 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1081, col 21 to line 1081, col 43 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2026-06-18 14:04:13 (see https://explain.tlapl.us/module-coverage-statistics for how to interpret the following statistics).
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<phase line 62, col 5 to line 62, col 9 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<hbm_view line 80, col 5 to line 80, col 12 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<vc_inform_dropped line 76, col 5 to line 76, col 21 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<commit_votes line 65, col 5 to line 65, col 16 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<blacklist line 67, col 5 to line 67, col 13 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<log line 63, col 5 to line 63, col 7 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<committed_during_vc line 72, col 5 to line 72, col 23 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<vc_enter_seq line 77, col 5 to line 77, col 16 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<vc_view line 70, col 5 to line 70, col 11 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<prepare_votes line 64, col 5 to line 64, col 17 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<vc_delivered_seq line 74, col 5 to line 74, col 20 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<in_flight line 66, col 5 to line 66, col 13 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<hbm_role line 84, col 5 to line 84, col 12 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<vc_quorum line 71, col 5 to line 71, col 13 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<hbm_timed_out line 81, col 5 to line 81, col 17 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<hbm_chg_pend line 85, col 5 to line 85, col 16 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<vc_start_dropped line 75, col 5 to line 75, col 20 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<msgs line 90, col 5 to line 90, col 8 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<ctrl_decisions line 58, col 5 to line 58, col 18 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<ctrl_updating line 59, col 5 to line 59, col 17 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<ctrl_view line 57, col 5 to line 57, col 13 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<faultCounts line 935, col 10 to line 935, col 20 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<hbm_artif_pending line 86, col 5 to line 86, col 21 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<ctrl_view_pending line 61, col 5 to line 61, col 21 of module SmartBFT>: 0
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<MCInit line 949, col 1 to line 949, col 6 of module SmartBFT>: 1:1
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 172, col 29 to line 172, col 48 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 172, col 36 to line 172, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 173, col 29 to line 173, col 48 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 173, col 36 to line 173, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 174, col 29 to line 174, col 52 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 174, col 47 to line 174, col 51 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 174, col 36 to line 174, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 175, col 29 to line 175, col 48 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 175, col 36 to line 175, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 176, col 29 to line 176, col 55 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 176, col 36 to line 176, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 177, col 29 to line 177, col 51 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 177, col 47 to line 177, col 50 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 177, col 36 to line 177, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 178, col 29 to line 178, col 73 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |line 178, col 47 to line 178, col 72 of module SmartBFT: 4:12
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 178, col 70 to line 178, col 71 of module SmartBFT: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 178, col 56 to line 178, col 64 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 178, col 36 to line 178, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 179, col 29 to line 179, col 73 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |line 179, col 47 to line 179, col 72 of module SmartBFT: 4:12
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 179, col 70 to line 179, col 71 of module SmartBFT: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 179, col 56 to line 179, col 64 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 179, col 36 to line 179, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 180, col 29 to line 180, col 51 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 180, col 47 to line 180, col 50 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 180, col 36 to line 180, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 181, col 29 to line 181, col 49 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |line 181, col 47 to line 181, col 48 of module SmartBFT: 4:10328
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 181, col 36 to line 181, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 182, col 29 to line 182, col 48 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 182, col 36 to line 182, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 183, col 29 to line 183, col 49 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |line 183, col 47 to line 183, col 48 of module SmartBFT: 4:6861
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 183, col 36 to line 183, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 184, col 30 to line 184, col 52 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 184, col 48 to line 184, col 51 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 184, col 37 to line 184, col 42 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 185, col 29 to line 185, col 51 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 185, col 47 to line 185, col 50 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 185, col 36 to line 185, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 186, col 29 to line 186, col 52 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 186, col 47 to line 186, col 51 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 186, col 36 to line 186, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 187, col 29 to line 187, col 52 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 187, col 47 to line 187, col 51 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 187, col 36 to line 187, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 188, col 29 to line 188, col 51 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 188, col 47 to line 188, col 50 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 188, col 36 to line 188, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 189, col 29 to line 189, col 48 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 189, col 36 to line 189, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 190, col 29 to line 190, col 52 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 190, col 47 to line 190, col 51 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 190, col 36 to line 190, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 191, col 29 to line 191, col 105 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 191, col 47 to line 191, col 104 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 191, col 36 to line 191, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 192, col 29 to line 192, col 52 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 192, col 47 to line 192, col 51 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 192, col 36 to line 192, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 193, col 29 to line 193, col 52 of module SmartBFT: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 193, col 47 to line 193, col 51 of module SmartBFT: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 193, col 36 to line 193, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 194, col 8 to line 194, col 30 of module SmartBFT: 1:837
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 951, col 8 to line 955, col 41 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCCrash line 960, col 1 to line 960, col 10 of module SmartBFT>: 99:99
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 961, col 8 to line 961, col 39 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 961, col 8 to line 961, col 26 of module SmartBFT: 279
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 961, col 30 to line 961, col 39 of module SmartBFT: 279
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 782, col 8 to line 782, col 20 of module SmartBFT: 198
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 782, col 8 to line 782, col 8 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 782, col 14 to line 782, col 20 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 783, col 8 to line 783, col 73 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 784, col 8 to line 784, col 90 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 784, col 30 to line 784, col 90 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 784, col 31 to line 784, col 43 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 784, col 57 to line 784, col 89 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 784, col 64 to line 784, col 89 of module SmartBFT: 99:297
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 784, col 87 to line 784, col 88 of module SmartBFT: 297
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 784, col 73 to line 784, col 81 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 785, col 8 to line 785, col 90 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 785, col 30 to line 785, col 90 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 785, col 31 to line 785, col 42 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 785, col 57 to line 785, col 89 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 785, col 64 to line 785, col 89 of module SmartBFT: 99:297
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 785, col 87 to line 785, col 88 of module SmartBFT: 297
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 785, col 73 to line 785, col 81 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 786, col 8 to line 786, col 68 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 787, col 8 to line 787, col 69 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 788, col 8 to line 788, col 76 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 789, col 8 to line 789, col 66 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 789, col 30 to line 789, col 66 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 789, col 31 to line 789, col 39 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 789, col 57 to line 789, col 65 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 789, col 64 to line 789, col 65 of module SmartBFT: 99:3467
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 790, col 8 to line 790, col 68 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 791, col 8 to line 791, col 69 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 792, col 8 to line 792, col 69 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 793, col 8 to line 793, col 68 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 795, col 8 to line 795, col 70 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 796, col 8 to line 796, col 69 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 797, col 8 to line 797, col 69 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 798, col 8 to line 798, col 69 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 799, col 8 to line 799, col 97 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 962, col 14 to line 962, col 14 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 963, col 8 to line 963, col 60 of module SmartBFT: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCMaybeStartViewChange line 982, col 1 to line 982, col 25 of module SmartBFT>: 74:74
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 431, col 8 to line 431, col 20 of module SmartBFT: 394
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 431, col 8 to line 431, col 8 of module SmartBFT: 355
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 431, col 14 to line 431, col 20 of module SmartBFT: 355
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 432, col 8 to line 432, col 30 of module SmartBFT: 394
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 432, col 8 to line 432, col 15 of module SmartBFT: 355
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 435, col 15 to line 435, col 72 of module SmartBFT: 39
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 137, col 15 to line 137, col 35 of module SmartBFT: 39
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 137, col 23 to line 137, col 35 of module SmartBFT: 39
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 137, col 23 to line 137, col 26 of module SmartBFT: 39
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 137, col 33 to line 137, col 35 of module SmartBFT: 39:162
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 137, col 34 to line 137, col 34 of module SmartBFT: 39
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 436, col 20 to line 438, col 36 of module SmartBFT: 39
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 440, col 15 to line 440, col 71 of module SmartBFT: 35
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 440, col 35 to line 440, col 71 of module SmartBFT: 39
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 441, col 15 to line 441, col 28 of module SmartBFT: 35
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 442, col 8 to line 443, col 61 of module SmartBFT: 74
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 983, col 29 to line 983, col 29 of module SmartBFT: 355
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 984, col 11 to line 984, col 30 of module SmartBFT: 78
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 986, col 15 to line 986, col 47 of module SmartBFT: 35
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 986, col 15 to line 986, col 34 of module SmartBFT: 39
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 986, col 38 to line 986, col 47 of module SmartBFT: 39
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 987, col 15 to line 987, col 68 of module SmartBFT: 35
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 989, col 12 to line 989, col 32 of module SmartBFT: 39
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCInformNewView line 993, col 1 to line 993, col 27 of module SmartBFT>: 1335:1335
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 636, col 8 to line 636, col 20 of module SmartBFT: 2670
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 636, col 8 to line 636, col 8 of module SmartBFT: 1335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 636, col 14 to line 636, col 20 of module SmartBFT: 1335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 638, col 15 to line 638, col 74 of module SmartBFT: 1335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 640, col 18 to line 640, col 37 of module SmartBFT: 1335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 641, col 19 to line 641, col 60 of module SmartBFT: 377
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 643, col 19 to line 643, col 35 of module SmartBFT: 958
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 645, col 15 to line 645, col 73 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 645, col 36 to line 645, col 73 of module SmartBFT: 1335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 646, col 15 to line 646, col 31 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 647, col 8 to line 650, col 48 of module SmartBFT: 1335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 994, col 22 to line 994, col 22 of module SmartBFT: 1335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 994, col 25 to line 994, col 31 of module SmartBFT: 1335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 995, col 11 to line 995, col 31 of module SmartBFT: 2670
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 996, col 15 to line 996, col 55 of module SmartBFT: 1335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 997, col 15 to line 997, col 72 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 999, col 12 to line 999, col 32 of module SmartBFT: 1335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCHandleViewChange line 1002, col 1 to line 1002, col 21 of module SmartBFT>: 2:2
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1003, col 8 to line 1003, col 48 of module SmartBFT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1003, col 8 to line 1003, col 31 of module SmartBFT: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1003, col 35 to line 1003, col 48 of module SmartBFT: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 447, col 8 to line 447, col 20 of module SmartBFT: 399
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 447, col 8 to line 447, col 8 of module SmartBFT: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 447, col 14 to line 447, col 20 of module SmartBFT: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 449, col 12 to line 449, col 38 of module SmartBFT: 931
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 449, col 12 to line 449, col 17 of module SmartBFT: 929
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 450, col 12 to line 450, col 39 of module SmartBFT: 45
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 450, col 12 to line 450, col 22 of module SmartBFT: 43
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 450, col 26 to line 450, col 39 of module SmartBFT: 43
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 454, col 15 to line 454, col 43 of module SmartBFT: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 454, col 15 to line 454, col 34 of module SmartBFT: 26
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 454, col 27 to line 454, col 33 of module SmartBFT: 26
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 451, col 27 to line 452, col 91 of module SmartBFT: 26
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 451, col 28 to line 451, col 36 of module SmartBFT: 28
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||||line 451, col 47 to line 452, col 90 of module SmartBFT: 26:54
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 452, col 32 to line 452, col 89 of module SmartBFT: 87
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 452, col 32 to line 452, col 55 of module SmartBFT: 87
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 452, col 60 to line 452, col 89 of module SmartBFT: 28
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 451, col 56 to line 451, col 59 of module SmartBFT: 26
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 454, col 39 to line 454, col 43 of module SmartBFT: 26
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 456, col 12 to line 456, col 61 of module SmartBFT: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 457, col 12 to line 457, col 59 of module SmartBFT: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 137, col 15 to line 137, col 35 of module SmartBFT: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 137, col 23 to line 137, col 35 of module SmartBFT: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 137, col 23 to line 137, col 26 of module SmartBFT: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 137, col 33 to line 137, col 35 of module SmartBFT: 2:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 137, col 34 to line 137, col 34 of module SmartBFT: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 458, col 17 to line 464, col 80 of module SmartBFT: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 448, col 17 to line 448, col 20 of module SmartBFT: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 465, col 8 to line 469, col 28 of module SmartBFT: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1004, col 25 to line 1004, col 25 of module SmartBFT: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1005, col 8 to line 1005, col 65 of module SmartBFT: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCPropose line 1009, col 1 to line 1009, col 12 of module SmartBFT>: 73:73
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 200, col 8 to line 200, col 20 of module SmartBFT: 387
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 200, col 8 to line 200, col 8 of module SmartBFT: 314
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 200, col 14 to line 200, col 20 of module SmartBFT: 314
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 201, col 8 to line 201, col 26 of module SmartBFT: 387
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 201, col 8 to line 201, col 15 of module SmartBFT: 314
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 202, col 8 to line 202, col 24 of module SmartBFT: 291
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 202, col 9 to line 202, col 24 of module SmartBFT: 218
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 203, col 8 to line 203, col 24 of module SmartBFT: 291
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 203, col 8 to line 203, col 20 of module SmartBFT: 218
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 203, col 24 to line 203, col 24 of module SmartBFT: 218
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 204, col 8 to line 204, col 31 of module SmartBFT: 73
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 137, col 15 to line 137, col 35 of module SmartBFT: 73
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 137, col 23 to line 137, col 35 of module SmartBFT: 73
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 137, col 23 to line 137, col 26 of module SmartBFT: 73
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 137, col 33 to line 137, col 35 of module SmartBFT: 73:428
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 137, col 34 to line 137, col 34 of module SmartBFT: 73
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 207, col 16 to line 211, col 30 of module SmartBFT: 73
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 212, col 8 to line 212, col 52 of module SmartBFT: 73
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1009, col 50 to line 1009, col 50 of module SmartBFT: 314
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1009, col 81 to line 1009, col 99 of module SmartBFT: 73
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCHBLeaderTick line 1010, col 1 to line 1010, col 17 of module SmartBFT>: 65:65
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 304, col 8 to line 304, col 20 of module SmartBFT: 390
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 304, col 8 to line 304, col 8 of module SmartBFT: 325
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 304, col 14 to line 304, col 20 of module SmartBFT: 325
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 305, col 8 to line 305, col 29 of module SmartBFT: 390
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 305, col 8 to line 305, col 18 of module SmartBFT: 325
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 306, col 8 to line 306, col 28 of module SmartBFT: 149
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 306, col 8 to line 306, col 15 of module SmartBFT: 84
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 137, col 15 to line 137, col 35 of module SmartBFT: 65
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 137, col 23 to line 137, col 35 of module SmartBFT: 65
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 137, col 23 to line 137, col 26 of module SmartBFT: 65
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 137, col 33 to line 137, col 35 of module SmartBFT: 65:544
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 137, col 34 to line 137, col 34 of module SmartBFT: 65
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 307, col 13 to line 310, col 26 of module SmartBFT: 65
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 311, col 8 to line 311, col 52 of module SmartBFT: 65
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1010, col 55 to line 1010, col 55 of module SmartBFT: 325
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1010, col 81 to line 1010, col 99 of module SmartBFT: 65
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCHBFollowerTick line 1011, col 1 to line 1011, col 19 of module SmartBFT>: 119:119
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 317, col 8 to line 317, col 20 of module SmartBFT: 489
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 317, col 8 to line 317, col 8 of module SmartBFT: 370
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 317, col 14 to line 317, col 20 of module SmartBFT: 370
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 318, col 8 to line 318, col 31 of module SmartBFT: 489
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 318, col 8 to line 318, col 18 of module SmartBFT: 370
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 319, col 8 to line 319, col 28 of module SmartBFT: 403
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 319, col 8 to line 319, col 15 of module SmartBFT: 284
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 321, col 8 to line 321, col 24 of module SmartBFT: 353
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 321, col 9 to line 321, col 24 of module SmartBFT: 234
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 323, col 8 to line 323, col 95 of module SmartBFT: 260
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 323, col 9 to line 323, col 95 of module SmartBFT: 141
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 323, col 25 to line 323, col 95 of module SmartBFT: 240
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 323, col 25 to line 323, col 71 of module SmartBFT: 240
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 323, col 25 to line 323, col 44 of module SmartBFT: 240
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 323, col 49 to line 323, col 71 of module SmartBFT: 22
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 323, col 76 to line 323, col 95 of module SmartBFT: 22
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 323, col 18 to line 323, col 21 of module SmartBFT: 141
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 325, col 8 to line 325, col 58 of module SmartBFT: 119
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 327, col 8 to line 330, col 52 of module SmartBFT: 119
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 327, col 16 to line 330, col 52 of module SmartBFT: 119
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 327, col 16 to line 327, col 19 of module SmartBFT: 119
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 327, col 26 to line 330, col 52 of module SmartBFT: 119:1569
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 327, col 27 to line 330, col 51 of module SmartBFT: 119
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 331, col 8 to line 331, col 96 of module SmartBFT: 119
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1011, col 57 to line 1011, col 57 of module SmartBFT: 370
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1011, col 81 to line 1011, col 99 of module SmartBFT: 119
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCInjectArtificialHeartbeat line 1012, col 1 to line 1012, col 30 of module SmartBFT>: 157:157
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 358, col 8 to line 358, col 20 of module SmartBFT: 510
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 358, col 8 to line 358, col 8 of module SmartBFT: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 358, col 14 to line 358, col 20 of module SmartBFT: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 359, col 8 to line 359, col 26 of module SmartBFT: 510
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 359, col 8 to line 359, col 15 of module SmartBFT: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 363, col 12 to line 363, col 57 of module SmartBFT: 740
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 363, col 12 to line 363, col 17 of module SmartBFT: 583
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 363, col 23 to line 363, col 57 of module SmartBFT: 583
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 364, col 12 to line 364, col 35 of module SmartBFT: 422
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 364, col 12 to line 364, col 19 of module SmartBFT: 265
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 364, col 23 to line 364, col 35 of module SmartBFT: 265
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 365, col 12 to line 365, col 32 of module SmartBFT: 314
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 365, col 12 to line 365, col 17 of module SmartBFT: 157
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 365, col 21 to line 365, col 32 of module SmartBFT: 157
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 362, col 17 to line 362, col 20 of module SmartBFT: 256
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 366, col 11 to line 366, col 30 of module SmartBFT: 157
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 367, col 12 to line 367, col 48 of module SmartBFT: 31
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 369, col 15 to line 369, col 73 of module SmartBFT: 126
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 370, col 15 to line 370, col 28 of module SmartBFT: 126
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 371, col 8 to line 371, col 92 of module SmartBFT: 157
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1012, col 68 to line 1012, col 68 of module SmartBFT: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1012, col 81 to line 1012, col 99 of module SmartBFT: 157
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCHandleArtificialHeartbeat line 1013, col 1 to line 1013, col 30 of module SmartBFT>: 40:40
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 376, col 8 to line 376, col 20 of module SmartBFT: 403
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 376, col 8 to line 376, col 8 of module SmartBFT: 363
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 376, col 14 to line 376, col 20 of module SmartBFT: 363
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 377, col 8 to line 377, col 27 of module SmartBFT: 40
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 377, col 8 to line 377, col 24 of module SmartBFT: 363
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 377, col 26 to line 377, col 26 of module SmartBFT: 363
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 378, col 8 to line 378, col 67 of module SmartBFT: 40
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 382, col 8 to line 382, col 98 of module SmartBFT: 40
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1013, col 68 to line 1013, col 68 of module SmartBFT: 363
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1013, col 81 to line 1013, col 99 of module SmartBFT: 40
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCHandleHeartbeat line 1014, col 1 to line 1014, col 26 of module SmartBFT>: 33:33
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 336, col 8 to line 336, col 20 of module SmartBFT: 1411
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 336, col 8 to line 336, col 8 of module SmartBFT: 1378
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 336, col 14 to line 336, col 20 of module SmartBFT: 1378
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 337, col 8 to line 337, col 31 of module SmartBFT: 1411
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 337, col 8 to line 337, col 18 of module SmartBFT: 1378
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 338, col 8 to line 338, col 28 of module SmartBFT: 1058
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 338, col 8 to line 338, col 15 of module SmartBFT: 1025
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 340, col 12 to line 340, col 33 of module SmartBFT: 1855
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 340, col 12 to line 340, col 17 of module SmartBFT: 1822
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 341, col 12 to line 341, col 26 of module SmartBFT: 193
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 341, col 12 to line 341, col 19 of module SmartBFT: 160
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 341, col 23 to line 341, col 26 of module SmartBFT: 160
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 343, col 12 to line 343, col 33 of module SmartBFT: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 343, col 12 to line 343, col 17 of module SmartBFT: 33
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 343, col 23 to line 343, col 33 of module SmartBFT: 33
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 344, col 12 to line 344, col 30 of module SmartBFT: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 344, col 12 to line 344, col 15 of module SmartBFT: 33
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 344, col 19 to line 344, col 30 of module SmartBFT: 33
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 348, col 12 to line 349, col 99 of module SmartBFT: 33
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 348, col 20 to line 349, col 99 of module SmartBFT: 33
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 348, col 21 to line 348, col 30 of module SmartBFT: 33
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 349, col 20 to line 349, col 99 of module SmartBFT: 33:256
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 349, col 21 to line 349, col 98 of module SmartBFT: 33
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 339, col 17 to line 339, col 20 of module SmartBFT: 814
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 350, col 8 to line 350, col 111 of module SmartBFT: 33
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1014, col 58 to line 1014, col 58 of module SmartBFT: 1378
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1014, col 61 to line 1014, col 64 of module SmartBFT: 160
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1014, col 81 to line 1014, col 99 of module SmartBFT: 33
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCOnHeartbeatTimeout line 1015, col 1 to line 1015, col 23 of module SmartBFT>: 62:62
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 415, col 8 to line 415, col 20 of module SmartBFT: 439
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 415, col 8 to line 415, col 8 of module SmartBFT: 377
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 415, col 14 to line 415, col 20 of module SmartBFT: 377
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 416, col 8 to line 416, col 26 of module SmartBFT: 439
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 416, col 8 to line 416, col 15 of module SmartBFT: 377
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 418, col 12 to line 418, col 33 of module SmartBFT: 688
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 418, col 12 to line 418, col 17 of module SmartBFT: 626
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 419, col 12 to line 419, col 23 of module SmartBFT: 278
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 419, col 12 to line 419, col 19 of module SmartBFT: 216
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 419, col 23 to line 419, col 23 of module SmartBFT: 216
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 420, col 12 to line 420, col 34 of module SmartBFT: 124
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 420, col 12 to line 420, col 17 of module SmartBFT: 62
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 420, col 23 to line 420, col 34 of module SmartBFT: 62
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 421, col 12 to line 421, col 35 of module SmartBFT: 124
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 421, col 12 to line 421, col 19 of module SmartBFT: 62
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 421, col 23 to line 421, col 35 of module SmartBFT: 62
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 422, col 12 to line 422, col 21 of module SmartBFT: 62
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 417, col 17 to line 417, col 20 of module SmartBFT: 256
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 423, col 8 to line 423, col 50 of module SmartBFT: 62
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 424, col 8 to line 425, col 92 of module SmartBFT: 62
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1015, col 61 to line 1015, col 61 of module SmartBFT: 377
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1015, col 81 to line 1015, col 99 of module SmartBFT: 62
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCHandlePrePrepare line 1016, col 1 to line 1016, col 21 of module SmartBFT>: 72:72
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 217, col 8 to line 217, col 20 of module SmartBFT: 455
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 217, col 8 to line 217, col 8 of module SmartBFT: 383
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 217, col 14 to line 217, col 20 of module SmartBFT: 383
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 218, col 8 to line 218, col 26 of module SmartBFT: 455
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 218, col 8 to line 218, col 15 of module SmartBFT: 383
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 220, col 12 to line 220, col 32 of module SmartBFT: 611
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 220, col 12 to line 220, col 17 of module SmartBFT: 539
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 221, col 12 to line 221, col 32 of module SmartBFT: 179
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 221, col 12 to line 221, col 17 of module SmartBFT: 107
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 221, col 21 to line 221, col 32 of module SmartBFT: 107
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 222, col 12 to line 222, col 39 of module SmartBFT: 179
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 222, col 12 to line 222, col 16 of module SmartBFT: 107
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 222, col 21 to line 222, col 39 of module SmartBFT: 107
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 223, col 12 to line 223, col 35 of module SmartBFT: 179
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 223, col 12 to line 223, col 19 of module SmartBFT: 107
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 223, col 23 to line 223, col 35 of module SmartBFT: 107
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 224, col 12 to line 224, col 30 of module SmartBFT: 179
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 224, col 12 to line 224, col 23 of module SmartBFT: 107
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 224, col 27 to line 224, col 30 of module SmartBFT: 107
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 225, col 12 to line 225, col 55 of module SmartBFT: 72
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 137, col 15 to line 137, col 35 of module SmartBFT: 72
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 137, col 23 to line 137, col 35 of module SmartBFT: 72
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 137, col 23 to line 137, col 26 of module SmartBFT: 72
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 137, col 33 to line 137, col 35 of module SmartBFT: 72:144
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 137, col 34 to line 137, col 34 of module SmartBFT: 72
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 226, col 17 to line 230, col 30 of module SmartBFT: 72
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 219, col 17 to line 219, col 20 of module SmartBFT: 246
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 231, col 8 to line 233, col 36 of module SmartBFT: 72
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1016, col 59 to line 1016, col 59 of module SmartBFT: 383
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1016, col 81 to line 1016, col 99 of module SmartBFT: 72
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCHandlePrepare line 1017, col 1 to line 1017, col 24 of module SmartBFT>: 66:66
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 238, col 8 to line 238, col 20 of module SmartBFT: 1502
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 238, col 8 to line 238, col 8 of module SmartBFT: 1436
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 238, col 14 to line 238, col 20 of module SmartBFT: 1436
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 239, col 8 to line 239, col 26 of module SmartBFT: 1502
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 239, col 8 to line 239, col 15 of module SmartBFT: 1436
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 240, col 8 to line 240, col 16 of module SmartBFT: 1054
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 240, col 8 to line 240, col 11 of module SmartBFT: 988
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 240, col 16 to line 240, col 16 of module SmartBFT: 988
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 242, col 12 to line 242, col 31 of module SmartBFT: 1881
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 242, col 12 to line 242, col 17 of module SmartBFT: 1815
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 243, col 12 to line 243, col 26 of module SmartBFT: 457
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 243, col 12 to line 243, col 19 of module SmartBFT: 391
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 243, col 23 to line 243, col 26 of module SmartBFT: 391
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 244, col 12 to line 244, col 34 of module SmartBFT: 157
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 244, col 12 to line 244, col 17 of module SmartBFT: 91
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 244, col 23 to line 244, col 34 of module SmartBFT: 91
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 245, col 12 to line 245, col 41 of module SmartBFT: 157
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 245, col 12 to line 245, col 16 of module SmartBFT: 91
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 245, col 23 to line 245, col 41 of module SmartBFT: 91
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 246, col 12 to line 246, col 46 of module SmartBFT: 157
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 246, col 12 to line 246, col 15 of module SmartBFT: 91
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 246, col 24 to line 246, col 46 of module SmartBFT: 91
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 247, col 12 to line 248, col 68 of module SmartBFT: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 247, col 29 to line 248, col 68 of module SmartBFT: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 247, col 30 to line 247, col 42 of module SmartBFT: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 247, col 51 to line 248, col 67 of module SmartBFT: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 248, col 33 to line 248, col 67 of module SmartBFT: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 248, col 33 to line 248, col 55 of module SmartBFT: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |||line 248, col 62 to line 248, col 67 of module SmartBFT: 66:32
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 248, col 63 to line 248, col 66 of module SmartBFT: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 249, col 15 to line 249, col 65 of module SmartBFT: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 251, col 19 to line 251, col 62 of module SmartBFT: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 137, col 15 to line 137, col 35 of module SmartBFT: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 137, col 23 to line 137, col 35 of module SmartBFT: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 137, col 23 to line 137, col 26 of module SmartBFT: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 137, col 33 to line 137, col 35 of module SmartBFT: 16:32
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 137, col 34 to line 137, col 34 of module SmartBFT: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 252, col 24 to line 256, col 37 of module SmartBFT: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 258, col 19 to line 258, col 47 of module SmartBFT: 50
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 241, col 17 to line 241, col 20 of module SmartBFT: 752
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 259, col 8 to line 260, col 73 of module SmartBFT: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1017, col 56 to line 1017, col 56 of module SmartBFT: 1436
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1017, col 59 to line 1017, col 62 of module SmartBFT: 988
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1017, col 81 to line 1017, col 99 of module SmartBFT: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCDecide line 1018, col 1 to line 1018, col 17 of module SmartBFT>: 13:13
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 265, col 8 to line 265, col 20 of module SmartBFT: 1386
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 265, col 8 to line 265, col 8 of module SmartBFT: 1373
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 265, col 14 to line 265, col 20 of module SmartBFT: 1373
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 266, col 8 to line 266, col 26 of module SmartBFT: 1386
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 266, col 8 to line 266, col 15 of module SmartBFT: 1373
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 268, col 12 to line 268, col 30 of module SmartBFT: 2343
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 268, col 12 to line 268, col 17 of module SmartBFT: 2330
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 269, col 12 to line 269, col 26 of module SmartBFT: 72
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 269, col 12 to line 269, col 19 of module SmartBFT: 59
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 269, col 23 to line 269, col 26 of module SmartBFT: 59
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 270, col 12 to line 270, col 34 of module SmartBFT: 26
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 270, col 12 to line 270, col 17 of module SmartBFT: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 270, col 23 to line 270, col 34 of module SmartBFT: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 271, col 12 to line 271, col 41 of module SmartBFT: 26
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 271, col 12 to line 271, col 16 of module SmartBFT: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 271, col 23 to line 271, col 41 of module SmartBFT: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 272, col 12 to line 272, col 45 of module SmartBFT: 26
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 272, col 12 to line 272, col 15 of module SmartBFT: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 272, col 24 to line 272, col 45 of module SmartBFT: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 273, col 12 to line 274, col 67 of module SmartBFT: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 275, col 15 to line 275, col 60 of module SmartBFT: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 277, col 19 to line 277, col 77 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 278, col 19 to line 278, col 66 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 279, col 19 to line 279, col 88 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 285, col 29 to line 285, col 71 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 287, col 29 to line 287, col 43 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 288, col 19 to line 288, col 101 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 290, col 19 to line 292, col 64 of module SmartBFT: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 267, col 17 to line 267, col 20 of module SmartBFT: 967
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 293, col 8 to line 293, col 42 of module SmartBFT: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1018, col 49 to line 1018, col 49 of module SmartBFT: 1373
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1018, col 52 to line 1018, col 55 of module SmartBFT: 42
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1018, col 81 to line 1018, col 99 of module SmartBFT: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCProcessViewDataDeliver line 1019, col 1 to line 1019, col 33 of module SmartBFT>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 494, col 8 to line 494, col 20 of module SmartBFT: 1464
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 495, col 8 to line 495, col 31 of module SmartBFT: 1464
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 506, col 12 to line 506, col 77 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 507, col 12 to line 507, col 74 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 509, col 12 to line 509, col 80 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 510, col 8 to line 513, col 34 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1019, col 65 to line 1019, col 65 of module SmartBFT: 1464
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1019, col 81 to line 1019, col 99 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCProcessViewDataValidate line 1020, col 1 to line 1020, col 34 of module SmartBFT>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 519, col 8 to line 519, col 20 of module SmartBFT: 1507
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 520, col 8 to line 520, col 31 of module SmartBFT: 1507
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 531, col 16 to line 531, col 78 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 535, col 16 to line 535, col 34 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 138, col 15 to line 138, col 32 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 537, col 8 to line 540, col 61 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1020, col 66 to line 1020, col 66 of module SmartBFT: 1507
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1020, col 81 to line 1020, col 99 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCProcessViewDataSameSeq line 1021, col 1 to line 1021, col 33 of module SmartBFT>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 545, col 8 to line 545, col 20 of module SmartBFT: 1640
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 546, col 8 to line 546, col 31 of module SmartBFT: 1640
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 556, col 16 to line 556, col 78 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 558, col 16 to line 558, col 34 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 138, col 15 to line 138, col 32 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 560, col 8 to line 563, col 61 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1021, col 65 to line 1021, col 65 of module SmartBFT: 1640
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1021, col 81 to line 1021, col 99 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCBuildNewView line 1022, col 1 to line 1022, col 17 of module SmartBFT>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 568, col 8 to line 568, col 20 of module SmartBFT: 419
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 569, col 8 to line 569, col 31 of module SmartBFT: 419
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 137, col 15 to line 137, col 35 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 587, col 8 to line 587, col 46 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 588, col 8 to line 588, col 48 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 589, col 8 to line 592, col 61 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1022, col 55 to line 1022, col 55 of module SmartBFT: 419
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1022, col 81 to line 1022, col 99 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCEnterNewView line 1023, col 1 to line 1023, col 17 of module SmartBFT>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 597, col 8 to line 597, col 20 of module SmartBFT: 471
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 598, col 8 to line 598, col 59 of module SmartBFT: 471
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 600, col 12 to line 600, col 32 of module SmartBFT: 843
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 605, col 12 to line 605, col 82 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 606, col 12 to line 606, col 84 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 608, col 12 to line 609, col 78 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 610, col 12 to line 610, col 71 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 612, col 12 to line 612, col 68 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 613, col 12 to line 613, col 70 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 614, col 12 to line 614, col 71 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 617, col 12 to line 617, col 72 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 618, col 12 to line 618, col 74 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 599, col 17 to line 599, col 20 of module SmartBFT: 382
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 619, col 8 to line 620, col 74 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1023, col 55 to line 1023, col 55 of module SmartBFT: 471
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1023, col 81 to line 1023, col 99 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCProcessNewViewDeliverLoop line 1024, col 1 to line 1024, col 30 of module SmartBFT>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 666, col 8 to line 666, col 20 of module SmartBFT: 432
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 667, col 8 to line 667, col 59 of module SmartBFT: 432
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 670, col 12 to line 670, col 32 of module SmartBFT: 860
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 681, col 12 to line 681, col 65 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 682, col 12 to line 682, col 61 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 669, col 17 to line 669, col 20 of module SmartBFT: 344
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 683, col 8 to line 685, col 42 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1024, col 68 to line 1024, col 68 of module SmartBFT: 432
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1024, col 81 to line 1024, col 99 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCChangeViewUpdateView line 1025, col 1 to line 1025, col 25 of module SmartBFT>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 723, col 8 to line 723, col 20 of module SmartBFT: 335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 724, col 8 to line 724, col 23 of module SmartBFT: 335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 725, col 8 to line 725, col 66 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 727, col 8 to line 728, col 93 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1025, col 63 to line 1025, col 63 of module SmartBFT: 335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1025, col 81 to line 1025, col 99 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCChangeViewUpdateDecisions line 1026, col 1 to line 1026, col 33 of module SmartBFT>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 732, col 8 to line 732, col 20 of module SmartBFT: 970
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 733, col 8 to line 733, col 23 of module SmartBFT: 970
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 735, col 8 to line 735, col 68 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 736, col 8 to line 736, col 61 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 738, col 8 to line 738, col 56 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 739, col 8 to line 740, col 109 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1026, col 68 to line 1026, col 68 of module SmartBFT: 970
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1026, col 81 to line 1026, col 99 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCReadLeaderID line 1027, col 1 to line 1027, col 17 of module SmartBFT>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 747, col 8 to line 747, col 20 of module SmartBFT: 316
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 748, col 8 to line 748, col 23 of module SmartBFT: 316
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 750, col 8 to line 750, col 21 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1027, col 55 to line 1027, col 55 of module SmartBFT: 316
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1027, col 81 to line 1027, col 99 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCRecover line 1028, col 1 to line 1028, col 12 of module SmartBFT>: 64:64
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 803, col 8 to line 803, col 27 of module SmartBFT: 374
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 803, col 8 to line 803, col 15 of module SmartBFT: 310
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 804, col 8 to line 804, col 46 of module SmartBFT: 64
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 807, col 8 to line 807, col 54 of module SmartBFT: 64
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 809, col 8 to line 809, col 56 of module SmartBFT: 64
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 810, col 8 to line 810, col 94 of module SmartBFT: 64
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 811, col 8 to line 815, col 73 of module SmartBFT: 64
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1028, col 50 to line 1028, col 50 of module SmartBFT: 310
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1028, col 81 to line 1028, col 99 of module SmartBFT: 64
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCSendChangeRole line 1029, col 1 to line 1029, col 19 of module SmartBFT>: 214:214
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 388, col 8 to line 388, col 20 of module SmartBFT: 522
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 388, col 8 to line 388, col 8 of module SmartBFT: 308
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 388, col 14 to line 388, col 20 of module SmartBFT: 308
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 389, col 8 to line 389, col 23 of module SmartBFT: 522
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 389, col 9 to line 389, col 23 of module SmartBFT: 308
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 390, col 8 to line 390, col 56 of module SmartBFT: 214
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 391, col 8 to line 391, col 103 of module SmartBFT: 214
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1029, col 57 to line 1029, col 57 of module SmartBFT: 308
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1029, col 81 to line 1029, col 99 of module SmartBFT: 214
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCProcessChangeRole line 1030, col 1 to line 1030, col 22 of module SmartBFT>: 93:93
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 397, col 8 to line 397, col 20 of module SmartBFT: 388
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 397, col 8 to line 397, col 8 of module SmartBFT: 295
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 397, col 14 to line 397, col 20 of module SmartBFT: 295
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 398, col 8 to line 398, col 22 of module SmartBFT: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 398, col 8 to line 398, col 19 of module SmartBFT: 295
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 398, col 21 to line 398, col 21 of module SmartBFT: 295
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 404, col 8 to line 407, col 62 of module SmartBFT: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 408, col 8 to line 408, col 68 of module SmartBFT: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1030, col 60 to line 1030, col 60 of module SmartBFT: 295
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1030, col 81 to line 1030, col 99 of module SmartBFT: 93
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCNext line 1034, col 1 to line 1034, col 6 of module SmartBFT (1066 8 1066 77)>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 137, col 15 to line 137, col 35 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 488, col 8 to line 488, col 52 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 971, col 8 to line 971, col 61 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1066, col 19 to line 1066, col 27 of module SmartBFT: 82
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1066, col 39 to line 1066, col 44 of module SmartBFT: 82
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MCNext line 1034, col 1 to line 1034, col 6 of module SmartBFT (1067 8 1067 87)>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 137, col 15 to line 137, col 35 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 711, col 8 to line 711, col 52 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 978, col 8 to line 978, col 61 of module SmartBFT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1067, col 19 to line 1067, col 27 of module SmartBFT: 67
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1067, col 39 to line 1067, col 44 of module SmartBFT: 67
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<MCTypeOK line 1085, col 1 to line 1085, col 8 of module SmartBFT>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1086, col 5 to line 1087, col 105 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1086, col 8 to line 1086, col 13 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 147, col 5 to line 167, col 41 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 147, col 8 to line 147, col 44 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 148, col 8 to line 148, col 44 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 149, col 8 to line 149, col 48 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 150, col 8 to line 150, col 44 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 151, col 8 to line 151, col 46 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 152, col 8 to line 152, col 49 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 153, col 8 to line 153, col 56 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 154, col 8 to line 154, col 54 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 155, col 8 to line 155, col 44 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 156, col 8 to line 156, col 54 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 157, col 8 to line 157, col 58 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 158, col 8 to line 158, col 56 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 159, col 8 to line 159, col 48 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 160, col 8 to line 160, col 48 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 161, col 8 to line 161, col 56 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 162, col 8 to line 162, col 44 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 163, col 8 to line 163, col 48 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 164, col 8 to line 164, col 48 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 165, col 8 to line 165, col 48 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 166, col 8 to line 166, col 48 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 167, col 8 to line 167, col 41 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 167, col 24 to line 167, col 41 of module SmartBFT: 7323
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 167, col 17 to line 167, col 20 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 1087, col 8 to line 1087, col 105 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<LogMonotonic line 924, col 1 to line 924, col 12 of module SmartBFT>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 925, col 5 to line 926, col 47 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 926, col 9 to line 926, col 47 of module SmartBFT: 10328
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 925, col 14 to line 925, col 20 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<Agreement line 858, col 1 to line 858, col 9 of module SmartBFT>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 859, col 5 to line 861, col 35 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 860, col 9 to line 861, col 35 of module SmartBFT: 41312
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 859, col 19 to line 859, col 25 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<ViewChangeSafety line 865, col 1 to line 865, col 16 of module SmartBFT>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 866, col 5 to line 868, col 41 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 867, col 9 to line 868, col 41 of module SmartBFT: 10328
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 867, col 9 to line 867, col 27 of module SmartBFT: 10328
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 868, col 13 to line 868, col 41 of module SmartBFT: 7070
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 866, col 14 to line 866, col 20 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<NoViewFork line 874, col 1 to line 874, col 10 of module SmartBFT>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 875, col 5 to line 879, col 42 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 876, col 9 to line 879, col 42 of module SmartBFT: 41312
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 876, col 9 to line 876, col 40 of module SmartBFT: 41312
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 877, col 12 to line 879, col 42 of module SmartBFT: 41312
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 877, col 15 to line 877, col 39 of module SmartBFT: 41312
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 878, col 15 to line 878, col 42 of module SmartBFT: 18158
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 879, col 15 to line 879, col 42 of module SmartBFT: 4139
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 875, col 19 to line 875, col 25 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2778:0 @!@!@
+<MsgBufConstraint line 1081, col 1 to line 1081, col 16 of module SmartBFT>: 2582:2582
+@!@!@ENDMSG 2778 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 1081, col 21 to line 1081, col 43 of module SmartBFT: 2582
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2209:0 @!@!@
+Progress(50) at 2026-06-18 14:04:13: 2582 states generated, -1 distinct states found, -1 states left on queue.
+@!@!@ENDMSG 2209 @!@!@
+@!@!@STARTMSG 2210:0 @!@!@
+The number of states generated: 2582
+Simulation using seed 529484 and aril 0
+@!@!@ENDMSG 2210 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 552ms at (2026-06-18 14:04:13)
+@!@!@ENDMSG 2186 @!@!@
+

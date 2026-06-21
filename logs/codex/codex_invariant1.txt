@@ -1,0 +1,118 @@
+python3 scripts/run_benchmark.py --task hyperledger --method direct_call --model claude --metric invariant_verification --spec-file made_specs/SmartBFT.tla --config-file made_specs/MC.cfg
+18:19:13 - LiteLLM:WARNING: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+18:19:13 - LiteLLM:WARNING: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+[INFO] Validating prerequisites...
+[INFO] ✓ All prerequisites validated
+[INFO] Loading existing global error statistics from /Users/adaturgut/SysMoBench/output/global_error_statistics.yaml
+[INFO] Running metric 'invariant_verification': hyperledger/direct_call/claude
+[INFO] Loaded task: hyperledger (distributed)
+[INFO] Loaded prompt template (6008 chars, language=TLA+)
+[INFO] Using existing specification file: /Users/adaturgut/SysMoBench/made_specs/SmartBFT.tla
+[INFO] Using existing config file: /Users/adaturgut/SysMoBench/made_specs/MC.cfg
+[INFO] ManualInvariantEvaluator initialized with 60s timeout
+[INFO] Manual invariant evaluation: hyperledger/direct_call/claude
+[INFO] Created experiment directory: output/invariant_verification/tla/hyperledger/direct_call_claude/20260615181913
+[INFO] Using output directory: output/invariant_verification/tla/hyperledger/direct_call_claude/20260615181913
+[INFO] ✓ Composite mode: Reusing existing spec file from runtime check: /Users/adaturgut/SysMoBench/made_specs/SmartBFT.tla
+[INFO] ✓ Copied spec file to invariant verification directory: output/invariant_verification/tla/hyperledger/direct_call_claude/20260615181913/SmartBFT.tla
+[INFO] Step 1: Loading invariant templates...
+[INFO] Step 2: Translating invariants (claude-code)...
+[INFO] Created agent workspace at: /var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/inv_translator_ovfhwnhg
+[INFO] claude agent completed in 149.96s
+[INFO] ✓ Agent translated invariant: Agreement_Safety
+[INFO] ✓ Agent translated invariant: Decision_Liveness
+[INFO] ✓ Agent translated invariant: Validity
+[INFO] Successfully translated 3 invariants via agent
+[INFO] Successfully translated 3 invariants
+[INFO] Step 2.5: Reusing config from runtime check: /Users/adaturgut/SysMoBench/made_specs/MC.cfg
+[INFO] Step 3: Checking invariants via TLA+ backend...
+[INFO] ManualInvariantEvaluator initialized with 60s timeout
+[INFO] 🔍 DEBUG TLC EXECUTION:
+[INFO]   Command: java -cp /Users/adaturgut/SysMoBench/lib/tla2tools.jar tlc2.TLC -config SmartBFT.cfg -deadlock SmartBFT.tla
+[INFO]   Working directory: /Users/adaturgut/SysMoBench/output/invariant_verification/tla/hyperledger/direct_call_claude/20260615181913/Agreement_Safety
+[INFO]   Timeout: 60s
+[INFO] 🔍 DEBUG TLC TIMEOUT:
+[INFO]   Timeout occurred after 60s
+[INFO]   Exception type: <class 'subprocess.TimeoutExpired'>
+[INFO] 🔍 DEBUG TIMEOUT PARTIAL OUTPUT:
+[INFO]   Partial stdout length: 2741 chars
+[INFO]   Partial stderr length: 0 chars
+[INFO]   Partial stdout (first 500 chars): TLC2 Version 2026.05.26.235334 (rev: 4ba7d88)
+Warning: Please run the Java VM, which executes TLC with a throughput optimized garbage collector, by passing the "-XX:+UseParallelGC" property.
+(Use the -nowarning option to disable this warning.)
+Running breadth-first search Model-Checking with fp 82 and seed 1683698566612955353 with 1 worker on 8 cores with 2048MB heap and 64MB offheap memory [pid: 64745] (Mac OS X 15.6 aarch64, Amazon.com Inc. 21.0.9 64bit, MSBDiskFPSet, DiskStateQueue).
+Parsing
+[INFO]   Partial stderr (first 500 chars):
+[INFO] 🔍 DEBUG TIMEOUT ANALYSIS:
+[INFO]   Violations found: 0
+[INFO]   Deadlock found: False
+[INFO]   States explored: 375
+[INFO]   Violations list: []
+[INFO] 🔍 DEBUG: Returning SUCCESS - timeout with no violations
+[INFO] TLC timeout after 60s with no violations found - considering as success
+[INFO] 🔍 DEBUG TLC EXECUTION:
+[INFO]   Command: java -cp /Users/adaturgut/SysMoBench/lib/tla2tools.jar tlc2.TLC -config SmartBFT.cfg -deadlock SmartBFT.tla
+[INFO]   Working directory: /Users/adaturgut/SysMoBench/output/invariant_verification/tla/hyperledger/direct_call_claude/20260615181913/Decision_Liveness
+[INFO]   Timeout: 60s
+[INFO] 🔍 DEBUG TLC RESULT:
+[INFO]   Exit code: 255
+[INFO]   Stdout length: 5668 chars
+[INFO]   Stderr length: 0 chars
+[INFO]   Combined output length: 5668 chars
+[INFO] 🔍 DEBUG TLC STDOUT (first 1000 chars):
+[INFO] TLC2 Version 2026.05.26.235334 (rev: 4ba7d88)
+Warning: Please run the Java VM, which executes TLC with a throughput optimized garbage collector, by passing the "-XX:+UseParallelGC" property.
+(Use the -nowarning option to disable this warning.)
+Running breadth-first search Model-Checking with fp 106 and seed 9129717476397924232 with 1 worker on 8 cores with 2048MB heap and 64MB offheap memory [pid: 64764] (Mac OS X 15.6 aarch64, Amazon.com Inc. 21.0.9 64bit, MSBDiskFPSet, DiskStateQueue).
+Parsing file /Users/adaturgut/SysMoBench/output/invariant_verification/tla/hyperledger/direct_call_claude/20260615181913/Decision_Liveness/SmartBFT.tla
+Parsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-2674447211932488119/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-2674447211932488119/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla
+[INFO] 🔍 DEBUG TLC STDERR (first 1000 chars):
+[INFO]
+[INFO] 🔍 DEBUG TLC EXECUTION:
+[INFO]   Command: java -cp /Users/adaturgut/SysMoBench/lib/tla2tools.jar tlc2.TLC -config SmartBFT.cfg -deadlock SmartBFT.tla
+[INFO]   Working directory: /Users/adaturgut/SysMoBench/output/invariant_verification/tla/hyperledger/direct_call_claude/20260615181913/Validity
+[INFO]   Timeout: 60s
+[INFO] 🔍 DEBUG TLC TIMEOUT:
+[INFO]   Timeout occurred after 60s
+[INFO]   Exception type: <class 'subprocess.TimeoutExpired'>
+[INFO] 🔍 DEBUG TIMEOUT PARTIAL OUTPUT:
+[INFO]   Partial stdout length: 2742 chars
+[INFO]   Partial stderr length: 0 chars
+[INFO]   Partial stdout (first 500 chars): TLC2 Version 2026.05.26.235334 (rev: 4ba7d88)
+Warning: Please run the Java VM, which executes TLC with a throughput optimized garbage collector, by passing the "-XX:+UseParallelGC" property.
+(Use the -nowarning option to disable this warning.)
+Running breadth-first search Model-Checking with fp 122 and seed -6185346594586470723 with 1 worker on 8 cores with 2048MB heap and 64MB offheap memory [pid: 64765] (Mac OS X 15.6 aarch64, Amazon.com Inc. 21.0.9 64bit, MSBDiskFPSet, DiskStateQueue).
+Parsin
+[INFO]   Partial stderr (first 500 chars):
+[INFO] 🔍 DEBUG TIMEOUT ANALYSIS:
+[INFO]   Violations found: 0
+[INFO]   Deadlock found: False
+[INFO]   States explored: 639
+[INFO]   Violations list: []
+[INFO] 🔍 DEBUG: Returning SUCCESS - timeout with no violations
+[INFO] TLC timeout after 60s with no violations found - considering as success
+[INFO] === MANUAL INVARIANT VERIFICATION FINAL SUMMARY ===
+[INFO] Total invariants tested: 3
+[INFO] Passed invariants: 2
+[INFO] Failed invariants: 1
+[INFO]   1. Agreement_Safety: ✓ PASS
+[INFO]   2. Decision_Liveness: ✗ FAIL
+[INFO]   3. Validity: ✓ PASS
+[INFO] Invariant generation successful: True
+[INFO] Model checking successful: True
+[INFO] All invariants passed: False
+[INFO] Overall success: False
+[INFO] Manual invariant testing: 2/3 invariants passed
+[INFO] Saved experiment error statistics to: output/invariant_verification/tla/hyperledger/direct_call_claude/20260615181913/error_statistics.yaml
+[INFO] Metric 'invariant_verification': ✗ FAIL
+
+Semantics Evaluation Results: ✗ FAIL
+Invariant generation time: 149.96s
+Config generation time: 0.00s
+Model checking time: 121.48s
+States explored: 0
+Invariant violations: 0
+Deadlock found: False
+Config generation error: None
+Specification: output/invariant_verification/tla/hyperledger/direct_call_claude/20260615181913/SmartBFT.tla

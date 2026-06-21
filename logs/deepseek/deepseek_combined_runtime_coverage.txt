@@ -1,0 +1,101 @@
+python3 scripts/run_benchmark.py --task hyperledger --method direct_call --model claude --metric runtime_coverage --spec-file made_specs/deepseek/combined/SmartBFT.tla --config-file made_specs/deepseek/MC.cfg
+14:04:05 - LiteLLM:WARNING: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+14:04:05 - LiteLLM:WARNING: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+[INFO] Validating prerequisites...
+[INFO] ✓ All prerequisites validated
+[INFO] Loading existing global error statistics from /Users/adaturgut/SysMoBench/output/global_error_statistics.yaml
+[INFO] Running metric 'runtime_coverage': hyperledger/direct_call/claude
+[INFO] Loaded task: hyperledger (distributed)
+[INFO] Loaded prompt template (6008 chars, language=TLA+)
+[INFO] Using existing specification file: /Users/adaturgut/SysMoBench/made_specs/deepseek/combined/SmartBFT.tla
+[INFO] Using existing config file: /Users/adaturgut/SysMoBench/made_specs/deepseek/MC.cfg
+[INFO] RuntimeCoverageEvaluator initialized with 600s timeout
+[INFO] Runtime coverage evaluation: hyperledger/direct_call/claude
+[INFO] Created experiment directory: output/runtime_coverage/tla/hyperledger/direct_call_claude/20260618140406
+[INFO] Using output directory: output/runtime_coverage/tla/hyperledger/direct_call_claude/20260618140406
+[INFO] Using existing .tla and .cfg files
+[INFO] Running 20 simulations...
+[INFO] Simulation 1/20 with seed 985305
+[INFO] Parsing last complete coverage section (lines 1960-3877)
+[INFO] Coverage summary: 24 vars, 27 actions (16 successful), 519 expressions, 510016 total evaluations, 26044 total cost
+[INFO] Simulation 2/20 with seed 444360
+[INFO] Parsing last complete coverage section (lines 1999-3955)
+[INFO] Coverage summary: 24 vars, 27 actions (17 successful), 528 expressions, 521004 total evaluations, 26583 total cost
+[INFO] Simulation 3/20 with seed 447336
+[INFO] Parsing last complete coverage section (lines 1960-3877)
+[INFO] Coverage summary: 24 vars, 27 actions (16 successful), 519 expressions, 504974 total evaluations, 25920 total cost
+[INFO] Simulation 4/20 with seed 395459
+[INFO] Parsing last complete coverage section (lines 2143-4243)
+[INFO] Coverage summary: 24 vars, 27 actions (18 successful), 575 expressions, 516816 total evaluations, 25701 total cost
+[INFO] Simulation 5/20 with seed 514401
+[INFO] Parsing last complete coverage section (lines 1960-3877)
+[INFO] Coverage summary: 24 vars, 27 actions (16 successful), 519 expressions, 509157 total evaluations, 25659 total cost
+[INFO] Simulation 6/20 with seed 759093
+[INFO] Parsing last complete coverage section (lines 1981-3919)
+[INFO] Coverage summary: 24 vars, 27 actions (16 successful), 525 expressions, 501458 total evaluations, 25911 total cost
+[INFO] Simulation 7/20 with seed 421367
+[INFO] Parsing last complete coverage section (lines 1981-3919)
+[INFO] Coverage summary: 24 vars, 27 actions (16 successful), 525 expressions, 515529 total evaluations, 25543 total cost
+[INFO] Simulation 8/20 with seed 110249
+[INFO] Parsing last complete coverage section (lines 1960-3877)
+[INFO] Coverage summary: 24 vars, 27 actions (16 successful), 519 expressions, 503839 total evaluations, 25720 total cost
+[INFO] Simulation 9/20 with seed 529484
+[INFO] Parsing last complete coverage section (lines 1999-3955)
+[INFO] Coverage summary: 24 vars, 27 actions (17 successful), 528 expressions, 513266 total evaluations, 25424 total cost
+[INFO] Simulation 10/20 with seed 426251
+[INFO] Parsing last complete coverage section (lines 2140-4237)
+[INFO] Coverage summary: 24 vars, 27 actions (18 successful), 575 expressions, 520599 total evaluations, 25262 total cost
+[INFO] Simulation 11/20 with seed 335004
+[INFO] Parsing last complete coverage section (lines 1960-3877)
+[INFO] Coverage summary: 24 vars, 27 actions (16 successful), 519 expressions, 512922 total evaluations, 26508 total cost
+[INFO] Simulation 12/20 with seed 240999
+[INFO] Parsing last complete coverage section (lines 1960-3877)
+[INFO] Coverage summary: 24 vars, 27 actions (16 successful), 519 expressions, 510474 total evaluations, 25914 total cost
+[INFO] Simulation 13/20 with seed 186671
+[INFO] Parsing last complete coverage section (lines 1948-3853)
+[INFO] Coverage summary: 24 vars, 27 actions (16 successful), 515 expressions, 507176 total evaluations, 26157 total cost
+[INFO] Simulation 14/20 with seed 210579
+[INFO] Parsing last complete coverage section (lines 1981-3919)
+[INFO] Coverage summary: 24 vars, 27 actions (16 successful), 525 expressions, 507351 total evaluations, 25965 total cost
+[INFO] Simulation 15/20 with seed 660263
+[INFO] Parsing last complete coverage section (lines 2011-3979)
+[INFO] Coverage summary: 24 vars, 27 actions (17 successful), 532 expressions, 510370 total evaluations, 25212 total cost
+[INFO] Simulation 16/20 with seed 343481
+[INFO] Parsing last complete coverage section (lines 1912-3781)
+[INFO] Coverage summary: 24 vars, 27 actions (15 successful), 503 expressions, 495032 total evaluations, 25765 total cost
+[INFO] Simulation 17/20 with seed 89751
+[INFO] Parsing last complete coverage section (lines 1960-3877)
+[INFO] Coverage summary: 24 vars, 27 actions (16 successful), 519 expressions, 506879 total evaluations, 25953 total cost
+[INFO] Simulation 18/20 with seed 953075
+[INFO] Parsing last complete coverage section (lines 1960-3877)
+[INFO] Coverage summary: 24 vars, 27 actions (16 successful), 519 expressions, 506902 total evaluations, 25915 total cost
+[INFO] Simulation 19/20 with seed 118089
+[INFO] Parsing last complete coverage section (lines 1960-3877)
+[INFO] Coverage summary: 24 vars, 27 actions (16 successful), 519 expressions, 509618 total evaluations, 25501 total cost
+[INFO] Simulation 20/20 with seed 258677
+[INFO] Parsing last complete coverage section (lines 1960-3877)
+[INFO] Coverage summary: 24 vars, 27 actions (16 successful), 519 expressions, 518570 total evaluations, 26235 total cost
+[INFO]
+============================================================
+[INFO] Runtime Coverage Summary:
+[INFO]   Total actions in spec: 27
+[INFO]     All actions: ['MCBuildNewView', 'MCChangeViewUpdateDecisions', 'MCChangeViewUpdateView', 'MCCrash', 'MCDecide', 'MCEnterNewView', 'MCHBFollowerTick', 'MCHBLeaderTick', 'MCHandleArtificialHeartbeat', 'MCHandleHeartbeat', 'MCHandlePrePrepare', 'MCHandlePrepare', 'MCHandleViewChange', 'MCInformNewView', 'MCInjectArtificialHeartbeat', 'MCMaybeStartViewChange', 'MCNext', 'MCOnHeartbeatTimeout', 'MCProcessChangeRole', 'MCProcessNewViewDeliverLoop', 'MCProcessViewDataDeliver', 'MCProcessViewDataSameSeq', 'MCProcessViewDataValidate', 'MCPropose', 'MCReadLeaderID', 'MCRecover', 'MCSendChangeRole']
+[INFO]   Covered actions: 18
+[INFO]     Covered list: ['MCCrash', 'MCDecide', 'MCHBFollowerTick', 'MCHBLeaderTick', 'MCHandleArtificialHeartbeat', 'MCHandleHeartbeat', 'MCHandlePrePrepare', 'MCHandlePrepare', 'MCHandleViewChange', 'MCInformNewView', 'MCInjectArtificialHeartbeat', 'MCMaybeStartViewChange', 'MCOnHeartbeatTimeout', 'MCProcessChangeRole', 'MCProcessViewDataSameSeq', 'MCPropose', 'MCRecover', 'MCSendChangeRole']
+[INFO]   Error actions: 0
+[INFO]     Error list: []
+[INFO]   Successful actions: 18
+[INFO]     Successful list: ['MCCrash', 'MCDecide', 'MCHBFollowerTick', 'MCHBLeaderTick', 'MCHandleArtificialHeartbeat', 'MCHandleHeartbeat', 'MCHandlePrePrepare', 'MCHandlePrepare', 'MCHandleViewChange', 'MCInformNewView', 'MCInjectArtificialHeartbeat', 'MCMaybeStartViewChange', 'MCOnHeartbeatTimeout', 'MCProcessChangeRole', 'MCProcessViewDataSameSeq', 'MCPropose', 'MCRecover', 'MCSendChangeRole']
+[INFO]   Runtime coverage score: 66.67%
+[INFO] ============================================================
+
+[INFO] Metric 'runtime_coverage': ✓ PASS
+
+Semantics Evaluation Results: ✓ PASS
+Invariant generation time: 0.00s
+Config generation time: 0.00s
+Model checking time: 15.22s
+States explored: 10201952
+Invariant violations: 0
+Deadlock found: False
+Specification: output/runtime_coverage/tla/hyperledger/direct_call_claude/20260618140406/SmartBFT.tla

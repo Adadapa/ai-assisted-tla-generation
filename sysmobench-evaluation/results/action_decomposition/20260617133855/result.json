@@ -1,0 +1,554 @@
+{
+  "overall_success": true,
+  "generation_successful": true,
+  "compilation_successful": false,
+  "generation_time": 0.0,
+  "compilation_time": 5.79414176940918,
+  "total_actions": 36,
+  "successful_actions": 36,
+  "action_success_rate": 1.0,
+  "total_variables_added": 54,
+  "total_functions_added": 56,
+  "total_recovery_attempts": 36,
+  "syntax_errors": [
+    "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /Users/adaturgut/SysMoBench/data/spec/hyperledger/SmartBFT.tla\n\nFatal errors while parsing TLA+ spec in file /Users/adaturgut/SysMoBench/data/spec/hyperledger/SmartBFT.tla\n\nUnknown location\n\nFile name 'SmartBFT' does not match the name 'MC' of the top level module it contains.\n*** Errors: 1\n\nUnknown location\n\nFile name 'SmartBFT' does not match the name 'MC' of the top level module it contains."
+  ],
+  "semantic_errors": [],
+  "action_results": [
+    {
+      "action_name": "faultVars",
+      "success": true,
+      "compilation_time": 0.1498708724975586,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultCounts"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCInit",
+      "success": true,
+      "compilation_time": 0.13731098175048828,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultCounts",
+        "Init"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCCrash",
+      "success": true,
+      "compilation_time": 0.14864683151245117,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultCounts",
+        "MaxCrashes"
+      ],
+      "functions_added": [
+        "Crash"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCByzantineViewData",
+      "success": true,
+      "compilation_time": 0.16374588012695312,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultCounts",
+        "MaxByzMsgs"
+      ],
+      "functions_added": [
+        "ByzantineViewData"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCByzantineViewDataToFollower",
+      "success": true,
+      "compilation_time": 0.15253400802612305,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultCounts",
+        "MaxByzMsgs"
+      ],
+      "functions_added": [
+        "ByzantineViewDataToFollower"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCMaybeStartViewChange",
+      "success": true,
+      "compilation_time": 0.159470796585083,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "vc_start_dropped",
+        "faultCounts",
+        "MaxVCDrops"
+      ],
+      "functions_added": [
+        "MaybeStartViewChange"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCInformNewView",
+      "success": true,
+      "compilation_time": 0.15264415740966797,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "MaxInformDrops",
+        "faultCounts",
+        "vc_inform_dropped"
+      ],
+      "functions_added": [
+        "InformNewView"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCHandleViewChange",
+      "success": true,
+      "compilation_time": 0.15964102745056152,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultCounts",
+        "MaxViewChanges"
+      ],
+      "functions_added": [
+        "HandleViewChange"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCPropose",
+      "success": true,
+      "compilation_time": 0.19254302978515625,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "Propose"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCHBLeaderTick",
+      "success": true,
+      "compilation_time": 0.1448838710784912,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "HBLeaderTick"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCHBFollowerTick",
+      "success": true,
+      "compilation_time": 0.1492762565612793,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "HBFollowerTick"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCInjectArtificialHeartbeat",
+      "success": true,
+      "compilation_time": 0.1562061309814453,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "InjectArtificialHeartbeat"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCHandleArtificialHeartbeat",
+      "success": true,
+      "compilation_time": 0.14929986000061035,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "HandleArtificialHeartbeat"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCHandleHeartbeat",
+      "success": true,
+      "compilation_time": 0.14917898178100586,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "HandleHeartbeat"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCOnHeartbeatTimeout",
+      "success": true,
+      "compilation_time": 0.15038490295410156,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "OnHeartbeatTimeout"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCHandlePrePrepare",
+      "success": true,
+      "compilation_time": 0.1562519073486328,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "HandlePrePrepare"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCHandlePrepare",
+      "success": true,
+      "compilation_time": 0.16054487228393555,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "HandlePrepare"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCDecide",
+      "success": true,
+      "compilation_time": 0.16701698303222656,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "Decide"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCProcessViewDataDeliver",
+      "success": true,
+      "compilation_time": 0.15213894844055176,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "ProcessViewDataDeliver"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCProcessViewDataValidate",
+      "success": true,
+      "compilation_time": 0.16092491149902344,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "ProcessViewDataValidate"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCProcessViewDataSameSeq",
+      "success": true,
+      "compilation_time": 0.15686392784118652,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "ProcessViewDataSameSeq"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCBuildNewView",
+      "success": true,
+      "compilation_time": 0.16063284873962402,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "BuildNewView"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCEnterNewView",
+      "success": true,
+      "compilation_time": 0.1654658317565918,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "EnterNewView"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCProcessNewViewDeliverLoop",
+      "success": true,
+      "compilation_time": 0.16060400009155273,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "ProcessNewViewDeliverLoop"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCChangeViewUpdateView",
+      "success": true,
+      "compilation_time": 0.15879416465759277,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "ChangeViewUpdateView"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCChangeViewUpdateDecisions",
+      "success": true,
+      "compilation_time": 0.1549668312072754,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "ChangeViewUpdateDecisions"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCReadLeaderID",
+      "success": true,
+      "compilation_time": 0.16272425651550293,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "ReadLeaderID"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCRecover",
+      "success": true,
+      "compilation_time": 0.1516709327697754,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "Recover"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCSendChangeRole",
+      "success": true,
+      "compilation_time": 0.17376494407653809,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "SendChangeRole"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCProcessChangeRole",
+      "success": true,
+      "compilation_time": 0.15482711791992188,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultVars"
+      ],
+      "functions_added": [
+        "ProcessChangeRole"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCNext",
+      "success": true,
+      "compilation_time": 0.16222786903381348,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "MaxSeq",
+        "Byzantine",
+        "MaxView",
+        "MCByzantineViewData",
+        "Server",
+        "Correct"
+      ],
+      "functions_added": [
+        "MCByzantineViewData",
+        "MCReadLeaderID",
+        "MCHBFollowerTick",
+        "MCProcessViewDataSameSeq",
+        "MCRecover",
+        "MCPropose",
+        "MCEnterNewView",
+        "MCProcessViewDataValidate",
+        "MCCrash",
+        "MCHandleHeartbeat",
+        "MCProcessChangeRole",
+        "MCChangeViewUpdateDecisions",
+        "MCChangeViewUpdateView",
+        "MCProcessViewDataDeliver",
+        "MCProcessNewViewDeliverLoop",
+        "MCOnHeartbeatTimeout",
+        "MCHandlePrepare",
+        "MCInjectArtificialHeartbeat",
+        "MCSendChangeRole",
+        "MCHBLeaderTick",
+        "MCHandlePrePrepare",
+        "MCDecide",
+        "MCInformNewView",
+        "MCHandleViewChange",
+        "MCHandleArtificialHeartbeat",
+        "MCByzantineViewDataToFollower",
+        "MCBuildNewView",
+        "MCMaybeStartViewChange"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCSpec",
+      "success": true,
+      "compilation_time": 0.1661820411682129,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "MCNext",
+        "MCInit",
+        "vars",
+        "faultVars"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Symmetry",
+      "success": true,
+      "compilation_time": 0.15346288681030273,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Server"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCView",
+      "success": true,
+      "compilation_time": 0.17789602279663086,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "vars"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MsgBufConstraint",
+      "success": true,
+      "compilation_time": 0.14763116836547852,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "msgs"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCTypeOK",
+      "success": true,
+      "compilation_time": 0.15138578414916992,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "faultCounts",
+        "TypeOK"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    }
+  ]
+}

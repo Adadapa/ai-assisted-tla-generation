@@ -1,0 +1,35 @@
+python3 scripts/run_benchmark.py --task hyperledger --method direct_call --model claude --metric compilation_check --spec-file made_specs/deepseek/combined/SmartBFT.tla --config-file made_specs/deepseek/MC.cfg
+14:03:44 - LiteLLM:WARNING: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+14:03:44 - LiteLLM:WARNING: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+[INFO] Validating prerequisites...
+[INFO] ✓ All prerequisites validated
+[INFO] Loading existing global error statistics from /Users/adaturgut/SysMoBench/output/global_error_statistics.yaml
+[INFO] Running metric 'compilation_check': hyperledger/direct_call/claude
+[INFO] Loaded task: hyperledger (distributed)
+[INFO] Loaded prompt template (6008 chars, language=TLA+)
+[INFO] Using existing specification file: /Users/adaturgut/SysMoBench/made_specs/deepseek/combined/SmartBFT.tla
+[INFO] Using existing config file: /Users/adaturgut/SysMoBench/made_specs/deepseek/MC.cfg
+[INFO] CompilationCheckEvaluator initialized with 30s timeout
+[INFO] Evaluating compilation (TLA+): hyperledger/direct_call/claude
+[INFO] Created experiment directory: output/compilation_check/tla/hyperledger/direct_call_claude/20260617140345
+[INFO] Using output directory: output/compilation_check/tla/hyperledger/direct_call_claude/20260617140345
+[INFO] Using existing spec file: /Users/adaturgut/SysMoBench/made_specs/deepseek/combined/SmartBFT.tla
+[INFO] DEBUG: validate_syntax success=True, syntax=0, semantic=0
+[INFO] DEBUG: validate_syntax output (first 500 chars):
+****** SANY2 Version 2.2 created 08 July 2020
+
+Parsing file /Users/adaturgut/SysMoBench/output/compilation_check/tla/hyperledger/direct_call_claude/20260617140345/SmartBFT.tla
+Parsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-18271680716155387621/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)
+Parsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-18271680716155387621/Sequences.tla (jar:file:
+[INFO] ✓ Specification compiled successfully
+[WARNING] Model did not emit a ```cfg fenced block — no cfg written, downstream Phase 2/4 will fail
+[INFO] Saved results to output/compilation_check/tla/hyperledger/direct_call_claude/20260617140345
+[INFO] Saved experiment error statistics to: output/compilation_check/tla/hyperledger/direct_call_claude/20260617140345/error_statistics.yaml
+[INFO] Evaluation complete: success=True
+[INFO] Metric 'compilation_check': ✓ PASS
+
+Syntax Evaluation Results: ✓ PASS
+Generation time: 0.00s
+Compilation time: 0.24s
+Syntax errors: 0
+Semantic errors: 0

@@ -1,0 +1,670 @@
+{
+  "overall_success": true,
+  "generation_successful": true,
+  "compilation_successful": false,
+  "generation_time": 333.43844985961914,
+  "compilation_time": 5.556080102920532,
+  "total_actions": 38,
+  "successful_actions": 24,
+  "action_success_rate": 0.631578947368421,
+  "total_variables_added": 200,
+  "total_functions_added": 4,
+  "total_recovery_attempts": 36,
+  "syntax_errors": [
+    "InitialReceivedPrepares: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedPrepares.tla\n***Parse Error***\nEncountered \"|->\" at line 4, column 72 and token \"Nodes\" \n\nResidual stack trace follows:\nSome [] Form starting at line 4, column 58.\nExtendableExpr starting at line 4, column 58.\nExpression starting at line 4, column 58.\nSome [] Form starting at line 4, column 43.\nExtendableExpr starting at line 4, column 43.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedPrepares.tla\n\nIn module SmartBFT_InitialReceivedPrepares\n\nCould not parse module SmartBFT_InitialReceivedPrepares from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedPrepares.tla\n*** Errors: 1\n\nIn module SmartBFT_InitialReceivedPrepares\n\nCould not parse module SmartBFT_InitialReceivedPrepares from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedPrepares.tla",
+    "InitialReceivedCommits: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedCommits.tla\n***Parse Error***\nEncountered \"|->\" at line 4, column 71 and token \"Nodes\" \n\nResidual stack trace follows:\nSome [] Form starting at line 4, column 57.\nExtendableExpr starting at line 4, column 57.\nExpression starting at line 4, column 57.\nSome [] Form starting at line 4, column 42.\nExtendableExpr starting at line 4, column 42.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedCommits.tla\n\nIn module SmartBFT_InitialReceivedCommits\n\nCould not parse module SmartBFT_InitialReceivedCommits from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedCommits.tla\n*** Errors: 1\n\nIn module SmartBFT_InitialReceivedCommits\n\nCould not parse module SmartBFT_InitialReceivedCommits from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedCommits.tla",
+    "InitialReceivedViewChanges: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedViewChanges.tla\n***Parse Error***\nEncountered \"|->\" at line 4, column 60 and token \"Nodes\" \n\nResidual stack trace follows:\nSome [] Form starting at line 4, column 46.\nExtendableExpr starting at line 4, column 46.\nExpression starting at line 4, column 46.\nSome [] Form starting at line 4, column 31.\nExtendableExpr starting at line 4, column 31.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedViewChanges.tla\n\nIn module SmartBFT_InitialReceivedViewChanges\n\nCould not parse module SmartBFT_InitialReceivedViewChanges from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedViewChanges.tla\n*** Errors: 1\n\nIn module SmartBFT_InitialReceivedViewChanges\n\nCould not parse module SmartBFT_InitialReceivedViewChanges from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedViewChanges.tla",
+    "InitialReceivedViewData: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedViewData.tla\n***Parse Error***\nEncountered \"|->\" at line 4, column 57 and token \"Nodes\" \n\nResidual stack trace follows:\nSome [] Form starting at line 4, column 43.\nExtendableExpr starting at line 4, column 43.\nExpression starting at line 4, column 43.\nSome [] Form starting at line 4, column 28.\nExtendableExpr starting at line 4, column 28.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedViewData.tla\n\nIn module SmartBFT_InitialReceivedViewData\n\nCould not parse module SmartBFT_InitialReceivedViewData from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedViewData.tla\n*** Errors: 1\n\nIn module SmartBFT_InitialReceivedViewData\n\nCould not parse module SmartBFT_InitialReceivedViewData from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedViewData.tla",
+    "Preprepare: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Preprepare.tla\n***Parse Error***\nItem at line 26, col 9 to line 26, col 9 of module SmartBFT_Preprepare is not properly indented inside conjunction or  disjunction list item at line 24, col 9 to line 26, col 9 of module SmartBFT_Preprepare\n\nResidual stack trace follows:\nAND-OR Junction starting at line 23, column 9.\nExtendableExpr starting at line 23, column 9.\nExpression starting at line 23, column 9.\nCase Other Arm starting at line 10, column 8.\nExpression starting at line 10, column 8.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Preprepare.tla\n\nIn module SmartBFT_Preprepare\n\nCould not parse module SmartBFT_Preprepare from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Preprepare.tla\n*** Errors: 1\n\nIn module SmartBFT_Preprepare\n\nCould not parse module SmartBFT_Preprepare from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Preprepare.tla",
+    "Prepare: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Prepare.tla\n***Parse Error***\nItem at line 32, col 9 to line 32, col 9 of module SmartBFT_Prepare is not properly indented inside conjunction or  disjunction list item at line 30, col 9 to line 32, col 9 of module SmartBFT_Prepare\n\nResidual stack trace follows:\nAND-OR Junction starting at line 25, column 9.\nExtendableExpr starting at line 25, column 9.\nExpression starting at line 25, column 9.\nCase Other Arm starting at line 13, column 8.\nExpression starting at line 13, column 8.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Prepare.tla\n\nIn module SmartBFT_Prepare\n\nCould not parse module SmartBFT_Prepare from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Prepare.tla\n*** Errors: 1\n\nIn module SmartBFT_Prepare\n\nCould not parse module SmartBFT_Prepare from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Prepare.tla",
+    "Commit: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Commit.tla\n***Parse Error***\nItem at line 13, col 5 to line 13, col 5 of module SmartBFT_Commit is not properly indented inside conjunction or  disjunction list item at line 11, col 5 to line 13, col 5 of module SmartBFT_Commit\n\nResidual stack trace follows:\nAND-OR Junction starting at line 5, column 5.\nExtendableExpr starting at line 5, column 5.\nExpression starting at line 5, column 5.\nDefinition starting at line 4, column 1.\nModule body starting at line 4, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Commit.tla\n\nIn module SmartBFT_Commit\n\nCould not parse module SmartBFT_Commit from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Commit.tla\n*** Errors: 1\n\nIn module SmartBFT_Commit\n\nCould not parse module SmartBFT_Commit from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Commit.tla",
+    "Decide: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Decide.tla\n***Parse Error***\nItem at line 13, col 5 to line 13, col 5 of module SmartBFT_Decide is not properly indented inside conjunction or  disjunction list item at line 11, col 5 to line 13, col 5 of module SmartBFT_Decide\n\nResidual stack trace follows:\nAND-OR Junction starting at line 5, column 5.\nExtendableExpr starting at line 5, column 5.\nExpression starting at line 5, column 5.\nDefinition starting at line 4, column 1.\nModule body starting at line 4, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Decide.tla\n\nIn module SmartBFT_Decide\n\nCould not parse module SmartBFT_Decide from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Decide.tla\n*** Errors: 1\n\nIn module SmartBFT_Decide\n\nCould not parse module SmartBFT_Decide from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Decide.tla",
+    "ViewChange: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_ViewChange.tla\n***Parse Error***\nItem at line 18, col 5 to line 18, col 6 of module SmartBFT_ViewChange is not properly indented inside conjunction or  disjunction list item at line 6, col 5 to line 29, col 60 of module SmartBFT_ViewChange\n\nResidual stack trace follows:\nAND-OR Junction starting at line 5, column 5.\nExtendableExpr starting at line 5, column 5.\nExpression starting at line 5, column 5.\nDefinition starting at line 4, column 1.\nModule body starting at line 4, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_ViewChange.tla\n\nIn module SmartBFT_ViewChange\n\nCould not parse module SmartBFT_ViewChange from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_ViewChange.tla\n*** Errors: 1\n\nIn module SmartBFT_ViewChange\n\nCould not parse module SmartBFT_ViewChange from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_ViewChange.tla",
+    "ViewData: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_ViewData.tla\n***Parse Error***\nItem at line 11, col 5 to line 11, col 5 of module SmartBFT_ViewData is not properly indented inside conjunction or  disjunction list item at line 9, col 5 to line 11, col 5 of module SmartBFT_ViewData\n\nResidual stack trace follows:\nAND-OR Junction starting at line 5, column 5.\nExtendableExpr starting at line 5, column 5.\nExpression starting at line 5, column 5.\nDefinition starting at line 4, column 1.\nModule body starting at line 4, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_ViewData.tla\n\nIn module SmartBFT_ViewData\n\nCould not parse module SmartBFT_ViewData from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_ViewData.tla\n*** Errors: 1\n\nIn module SmartBFT_ViewData\n\nCould not parse module SmartBFT_ViewData from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_ViewData.tla",
+    "NewView: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_NewView.tla\n***Parse Error***\nItem at line 12, col 5 to line 12, col 5 of module SmartBFT_NewView is not properly indented inside conjunction or  disjunction list item at line 10, col 5 to line 12, col 5 of module SmartBFT_NewView\n\nResidual stack trace follows:\nAND-OR Junction starting at line 5, column 5.\nExtendableExpr starting at line 5, column 5.\nExpression starting at line 5, column 5.\nDefinition starting at line 4, column 1.\nModule body starting at line 4, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_NewView.tla\n\nIn module SmartBFT_NewView\n\nCould not parse module SmartBFT_NewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_NewView.tla\n*** Errors: 1\n\nIn module SmartBFT_NewView\n\nCould not parse module SmartBFT_NewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_NewView.tla",
+    "ProcessNewView: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_ProcessNewView.tla\n***Parse Error***\nItem at line 13, col 5 to line 13, col 6 of module SmartBFT_ProcessNewView is not properly indented inside conjunction or  disjunction list item at line 9, col 5 to line 22, col 61 of module SmartBFT_ProcessNewView\n\nResidual stack trace follows:\nAND-OR Junction starting at line 5, column 5.\nExtendableExpr starting at line 5, column 5.\nExpression starting at line 5, column 5.\nDefinition starting at line 4, column 1.\nModule body starting at line 4, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_ProcessNewView.tla\n\nIn module SmartBFT_ProcessNewView\n\nCould not parse module SmartBFT_ProcessNewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_ProcessNewView.tla\n*** Errors: 1\n\nIn module SmartBFT_ProcessNewView\n\nCould not parse module SmartBFT_ProcessNewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_ProcessNewView.tla",
+    "Next: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Next.tla\n***Parse Error***\nEncountered \"\\subseteq\" at line 5, column 89 and token \"new_requests_info\" \n\nResidual stack trace follows:\nQuant Bound starting at line 5, column 71.\nQuantified form starting at line 5, column 8.\nExpression starting at line 5, column 8.\nJunction Item starting at line 5, column 5.\nAND-OR Junction starting at line 5, column 5.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Next.tla\n\nIn module SmartBFT_Next\n\nCould not parse module SmartBFT_Next from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Next.tla\n*** Errors: 1\n\nIn module SmartBFT_Next\n\nCould not parse module SmartBFT_Next from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Next.tla",
+    "Spec: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Spec.tla\n***Parse Error***\nEncountered \"( _\" at line 6, column 26 and token \"Preprepare\" \n\nResidual stack trace follows:\nOptional Arguments starting at line 6, column 15.\nrestricted form of expression starting at line 6, column 11.\nFairness Expression starting at line 6, column 8.\nExtendableExpr starting at line 6, column 8.\nExtendableExpr starting at line 5, column 15.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Spec.tla\n\nIn module SmartBFT_Spec\n\nCould not parse module SmartBFT_Spec from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Spec.tla\n*** Errors: 1\n\nIn module SmartBFT_Spec\n\nCould not parse module SmartBFT_Spec from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Spec.tla",
+    "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /Users/adaturgut/SysMoBench/data/spec/hyperledger/SmartBFT.tla\n***Parse Error***\nEncountered \"|->\" at line 68, column 72 and token \"Nodes\" \n\nResidual stack trace follows:\nSome [] Form starting at line 68, column 58.\nExtendableExpr starting at line 68, column 58.\nExpression starting at line 68, column 58.\nSome [] Form starting at line 68, column 43.\nExtendableExpr starting at line 68, column 43.\n\n\nFatal errors while parsing TLA+ spec in file /Users/adaturgut/SysMoBench/data/spec/hyperledger/SmartBFT.tla\n\nIn module SmartBFT\n\nCould not parse module SmartBFT from file /Users/adaturgut/SysMoBench/data/spec/hyperledger/SmartBFT.tla\n*** Errors: 1\n\nIn module SmartBFT\n\nCould not parse module SmartBFT from file /Users/adaturgut/SysMoBench/data/spec/hyperledger/SmartBFT.tla"
+  ],
+  "semantic_errors": [],
+  "action_results": [
+    {
+      "action_name": "Node",
+      "success": true,
+      "compilation_time": 0.16653800010681152,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Nodes"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "RequestInfo",
+      "success": true,
+      "compilation_time": 0.1467738151550293,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "RequestInfoSet"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ProposalContent",
+      "success": true,
+      "compilation_time": 0.14978790283203125,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "RequestInfo"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Hash",
+      "success": true,
+      "compilation_time": 0.1888258457183838,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "ProposalContent"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewMetadata",
+      "success": true,
+      "compilation_time": 0.18029093742370605,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "Message",
+      "success": true,
+      "compilation_time": 0.17249417304992676,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "ProposalContent",
+        "ViewMetadata",
+        "ViewDataMsg",
+        "PrepareMsg",
+        "CommitMsg",
+        "PreprepareMsg",
+        "NewViewMsg",
+        "Hash",
+        "Node",
+        "ViewChangeMsg"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "GetLeader",
+      "success": true,
+      "compilation_time": 0.16178607940673828,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "N"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "IsLeader",
+      "success": true,
+      "compilation_time": 0.16403412818908691,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [
+        "GetLeader"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "IsQuorum",
+      "success": true,
+      "compilation_time": 0.16395020484924316,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "QuorumSize"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "InitialPhase",
+      "success": true,
+      "compilation_time": 0.14766287803649902,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "IDLE"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "InitialProposals",
+      "success": true,
+      "compilation_time": 0.1513690948486328,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "NULL_PROPOSAL_CONTENT"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "InitialRequestsInProposal",
+      "success": true,
+      "compilation_time": 0.1499767303466797,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "InitialReceivedPrepares",
+      "success": false,
+      "compilation_time": 0.11107492446899414,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedPrepares.tla\n***Parse Error***\nEncountered \"|->\" at line 4, column 72 and token \"Nodes\" \n\nResidual stack trace follows:\nSome [] Form starting at line 4, column 58.\nExtendableExpr starting at line 4, column 58.\nExpression starting at line 4, column 58.\nSome [] Form starting at line 4, column 43.\nExtendableExpr starting at line 4, column 43.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedPrepares.tla\n\nIn module SmartBFT_InitialReceivedPrepares\n\nCould not parse module SmartBFT_InitialReceivedPrepares from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedPrepares.tla\n*** Errors: 1\n\nIn module SmartBFT_InitialReceivedPrepares\n\nCould not parse module SmartBFT_InitialReceivedPrepares from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedPrepares.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "InitialReceivedCommits",
+      "success": false,
+      "compilation_time": 0.12038111686706543,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedCommits.tla\n***Parse Error***\nEncountered \"|->\" at line 4, column 71 and token \"Nodes\" \n\nResidual stack trace follows:\nSome [] Form starting at line 4, column 57.\nExtendableExpr starting at line 4, column 57.\nExpression starting at line 4, column 57.\nSome [] Form starting at line 4, column 42.\nExtendableExpr starting at line 4, column 42.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedCommits.tla\n\nIn module SmartBFT_InitialReceivedCommits\n\nCould not parse module SmartBFT_InitialReceivedCommits from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedCommits.tla\n*** Errors: 1\n\nIn module SmartBFT_InitialReceivedCommits\n\nCould not parse module SmartBFT_InitialReceivedCommits from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedCommits.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "InitialReceivedViewChanges",
+      "success": false,
+      "compilation_time": 0.11158990859985352,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedViewChanges.tla\n***Parse Error***\nEncountered \"|->\" at line 4, column 60 and token \"Nodes\" \n\nResidual stack trace follows:\nSome [] Form starting at line 4, column 46.\nExtendableExpr starting at line 4, column 46.\nExpression starting at line 4, column 46.\nSome [] Form starting at line 4, column 31.\nExtendableExpr starting at line 4, column 31.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedViewChanges.tla\n\nIn module SmartBFT_InitialReceivedViewChanges\n\nCould not parse module SmartBFT_InitialReceivedViewChanges from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedViewChanges.tla\n*** Errors: 1\n\nIn module SmartBFT_InitialReceivedViewChanges\n\nCould not parse module SmartBFT_InitialReceivedViewChanges from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedViewChanges.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "InitialReceivedViewData",
+      "success": false,
+      "compilation_time": 0.11358904838562012,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedViewData.tla\n***Parse Error***\nEncountered \"|->\" at line 4, column 57 and token \"Nodes\" \n\nResidual stack trace follows:\nSome [] Form starting at line 4, column 43.\nExtendableExpr starting at line 4, column 43.\nExpression starting at line 4, column 43.\nSome [] Form starting at line 4, column 28.\nExtendableExpr starting at line 4, column 28.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedViewData.tla\n\nIn module SmartBFT_InitialReceivedViewData\n\nCould not parse module SmartBFT_InitialReceivedViewData from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedViewData.tla\n*** Errors: 1\n\nIn module SmartBFT_InitialReceivedViewData\n\nCould not parse module SmartBFT_InitialReceivedViewData from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_InitialReceivedViewData.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Init",
+      "success": true,
+      "compilation_time": 0.16027379035949707,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "InitialRequestsInProposal",
+        "N",
+        "received_commits",
+        "proposals",
+        "InitialReceivedViewChanges",
+        "received_prepares",
+        "ProposalContent",
+        "requests_in_proposal",
+        "INITIAL_VIEW",
+        "InitialReceivedCommits",
+        "INITIAL_SEQUENCE",
+        "messages",
+        "InitialPhase",
+        "decisions_in_view",
+        "leader_token_held",
+        "phase",
+        "RequestInfoSet",
+        "received_view_data",
+        "NULL_VIEW_METADATA",
+        "InitialProposals",
+        "InitialReceivedViewData",
+        "decided_requests",
+        "NULL_PROPOSAL_CONTENT",
+        "received_view_changes",
+        "decided_proposals",
+        "suspected_leader",
+        "current_sequence",
+        "current_view",
+        "Nodes",
+        "InitialReceivedPrepares",
+        "QuorumSize",
+        "F"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "SendMessage",
+      "success": true,
+      "compilation_time": 0.14995503425598145,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "messages"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ReceiveMessage",
+      "success": true,
+      "compilation_time": 0.14802813529968262,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "messages"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Preprepare",
+      "success": false,
+      "compilation_time": 0.11461925506591797,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Preprepare.tla\n***Parse Error***\nItem at line 26, col 9 to line 26, col 9 of module SmartBFT_Preprepare is not properly indented inside conjunction or  disjunction list item at line 24, col 9 to line 26, col 9 of module SmartBFT_Preprepare\n\nResidual stack trace follows:\nAND-OR Junction starting at line 23, column 9.\nExtendableExpr starting at line 23, column 9.\nExpression starting at line 23, column 9.\nCase Other Arm starting at line 10, column 8.\nExpression starting at line 10, column 8.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Preprepare.tla\n\nIn module SmartBFT_Preprepare\n\nCould not parse module SmartBFT_Preprepare from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Preprepare.tla\n*** Errors: 1\n\nIn module SmartBFT_Preprepare\n\nCould not parse module SmartBFT_Preprepare from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Preprepare.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Prepare",
+      "success": false,
+      "compilation_time": 0.12148094177246094,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Prepare.tla\n***Parse Error***\nItem at line 32, col 9 to line 32, col 9 of module SmartBFT_Prepare is not properly indented inside conjunction or  disjunction list item at line 30, col 9 to line 32, col 9 of module SmartBFT_Prepare\n\nResidual stack trace follows:\nAND-OR Junction starting at line 25, column 9.\nExtendableExpr starting at line 25, column 9.\nExpression starting at line 25, column 9.\nCase Other Arm starting at line 13, column 8.\nExpression starting at line 13, column 8.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Prepare.tla\n\nIn module SmartBFT_Prepare\n\nCould not parse module SmartBFT_Prepare from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Prepare.tla\n*** Errors: 1\n\nIn module SmartBFT_Prepare\n\nCould not parse module SmartBFT_Prepare from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Prepare.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Commit",
+      "success": false,
+      "compilation_time": 0.11168289184570312,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Commit.tla\n***Parse Error***\nItem at line 13, col 5 to line 13, col 5 of module SmartBFT_Commit is not properly indented inside conjunction or  disjunction list item at line 11, col 5 to line 13, col 5 of module SmartBFT_Commit\n\nResidual stack trace follows:\nAND-OR Junction starting at line 5, column 5.\nExtendableExpr starting at line 5, column 5.\nExpression starting at line 5, column 5.\nDefinition starting at line 4, column 1.\nModule body starting at line 4, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Commit.tla\n\nIn module SmartBFT_Commit\n\nCould not parse module SmartBFT_Commit from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Commit.tla\n*** Errors: 1\n\nIn module SmartBFT_Commit\n\nCould not parse module SmartBFT_Commit from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Commit.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Decide",
+      "success": false,
+      "compilation_time": 0.11186408996582031,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Decide.tla\n***Parse Error***\nItem at line 13, col 5 to line 13, col 5 of module SmartBFT_Decide is not properly indented inside conjunction or  disjunction list item at line 11, col 5 to line 13, col 5 of module SmartBFT_Decide\n\nResidual stack trace follows:\nAND-OR Junction starting at line 5, column 5.\nExtendableExpr starting at line 5, column 5.\nExpression starting at line 5, column 5.\nDefinition starting at line 4, column 1.\nModule body starting at line 4, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Decide.tla\n\nIn module SmartBFT_Decide\n\nCould not parse module SmartBFT_Decide from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Decide.tla\n*** Errors: 1\n\nIn module SmartBFT_Decide\n\nCould not parse module SmartBFT_Decide from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Decide.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewChange",
+      "success": false,
+      "compilation_time": 0.11844420433044434,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_ViewChange.tla\n***Parse Error***\nItem at line 18, col 5 to line 18, col 6 of module SmartBFT_ViewChange is not properly indented inside conjunction or  disjunction list item at line 6, col 5 to line 29, col 60 of module SmartBFT_ViewChange\n\nResidual stack trace follows:\nAND-OR Junction starting at line 5, column 5.\nExtendableExpr starting at line 5, column 5.\nExpression starting at line 5, column 5.\nDefinition starting at line 4, column 1.\nModule body starting at line 4, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_ViewChange.tla\n\nIn module SmartBFT_ViewChange\n\nCould not parse module SmartBFT_ViewChange from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_ViewChange.tla\n*** Errors: 1\n\nIn module SmartBFT_ViewChange\n\nCould not parse module SmartBFT_ViewChange from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_ViewChange.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewData",
+      "success": false,
+      "compilation_time": 0.1603400707244873,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_ViewData.tla\n***Parse Error***\nItem at line 11, col 5 to line 11, col 5 of module SmartBFT_ViewData is not properly indented inside conjunction or  disjunction list item at line 9, col 5 to line 11, col 5 of module SmartBFT_ViewData\n\nResidual stack trace follows:\nAND-OR Junction starting at line 5, column 5.\nExtendableExpr starting at line 5, column 5.\nExpression starting at line 5, column 5.\nDefinition starting at line 4, column 1.\nModule body starting at line 4, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_ViewData.tla\n\nIn module SmartBFT_ViewData\n\nCould not parse module SmartBFT_ViewData from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_ViewData.tla\n*** Errors: 1\n\nIn module SmartBFT_ViewData\n\nCould not parse module SmartBFT_ViewData from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_ViewData.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "NewView",
+      "success": false,
+      "compilation_time": 0.11341309547424316,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_NewView.tla\n***Parse Error***\nItem at line 12, col 5 to line 12, col 5 of module SmartBFT_NewView is not properly indented inside conjunction or  disjunction list item at line 10, col 5 to line 12, col 5 of module SmartBFT_NewView\n\nResidual stack trace follows:\nAND-OR Junction starting at line 5, column 5.\nExtendableExpr starting at line 5, column 5.\nExpression starting at line 5, column 5.\nDefinition starting at line 4, column 1.\nModule body starting at line 4, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_NewView.tla\n\nIn module SmartBFT_NewView\n\nCould not parse module SmartBFT_NewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_NewView.tla\n*** Errors: 1\n\nIn module SmartBFT_NewView\n\nCould not parse module SmartBFT_NewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_NewView.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "SuspectLeader",
+      "success": true,
+      "compilation_time": 0.14959073066711426,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "received_prepares",
+        "requests_in_proposal",
+        "received_view_data",
+        "received_commits",
+        "decided_requests",
+        "messages",
+        "decided_proposals",
+        "received_view_changes",
+        "proposals",
+        "suspected_leader",
+        "current_sequence",
+        "decisions_in_view",
+        "current_view",
+        "leader_token_held",
+        "phase"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "AcquireLeaderToken",
+      "success": true,
+      "compilation_time": 0.15172076225280762,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "received_prepares",
+        "requests_in_proposal",
+        "received_view_data",
+        "received_commits",
+        "decided_requests",
+        "messages",
+        "decided_proposals",
+        "received_view_changes",
+        "proposals",
+        "suspected_leader",
+        "current_sequence",
+        "decisions_in_view",
+        "current_view",
+        "leader_token_held",
+        "phase"
+      ],
+      "functions_added": [
+        "IsLeader"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ProcessNewView",
+      "success": false,
+      "compilation_time": 0.11468100547790527,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_ProcessNewView.tla\n***Parse Error***\nItem at line 13, col 5 to line 13, col 6 of module SmartBFT_ProcessNewView is not properly indented inside conjunction or  disjunction list item at line 9, col 5 to line 22, col 61 of module SmartBFT_ProcessNewView\n\nResidual stack trace follows:\nAND-OR Junction starting at line 5, column 5.\nExtendableExpr starting at line 5, column 5.\nExpression starting at line 5, column 5.\nDefinition starting at line 4, column 1.\nModule body starting at line 4, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_ProcessNewView.tla\n\nIn module SmartBFT_ProcessNewView\n\nCould not parse module SmartBFT_ProcessNewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_ProcessNewView.tla\n*** Errors: 1\n\nIn module SmartBFT_ProcessNewView\n\nCould not parse module SmartBFT_ProcessNewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_ProcessNewView.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "IgnoreOldMessage",
+      "success": true,
+      "compilation_time": 0.15141725540161133,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "received_prepares",
+        "requests_in_proposal",
+        "received_view_data",
+        "received_commits",
+        "decided_requests",
+        "messages",
+        "decided_proposals",
+        "received_view_changes",
+        "proposals",
+        "suspected_leader",
+        "current_sequence",
+        "decisions_in_view",
+        "current_view",
+        "leader_token_held",
+        "phase"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "IgnoreFutureConsensusMessage",
+      "success": true,
+      "compilation_time": 0.14806413650512695,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "received_prepares",
+        "requests_in_proposal",
+        "received_view_data",
+        "ViewDataMsg",
+        "decided_requests",
+        "received_commits",
+        "NewViewMsg",
+        "messages",
+        "decided_proposals",
+        "received_view_changes",
+        "proposals",
+        "suspected_leader",
+        "current_sequence",
+        "decisions_in_view",
+        "current_view",
+        "ViewChangeMsg",
+        "leader_token_held",
+        "phase"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "IgnorePreprepareIfNotLeader",
+      "success": true,
+      "compilation_time": 0.15693116188049316,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "received_prepares",
+        "requests_in_proposal",
+        "received_view_data",
+        "received_commits",
+        "decided_requests",
+        "PreprepareMsg",
+        "messages",
+        "decided_proposals",
+        "received_view_changes",
+        "proposals",
+        "suspected_leader",
+        "current_sequence",
+        "decisions_in_view",
+        "current_view",
+        "leader_token_held",
+        "phase"
+      ],
+      "functions_added": [
+        "IsLeader"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "IgnoreStaleSequenceMessage",
+      "success": true,
+      "compilation_time": 0.15548300743103027,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "received_prepares",
+        "requests_in_proposal",
+        "received_view_data",
+        "received_commits",
+        "decided_requests",
+        "PrepareMsg",
+        "CommitMsg",
+        "PreprepareMsg",
+        "messages",
+        "decided_proposals",
+        "received_view_changes",
+        "proposals",
+        "suspected_leader",
+        "current_sequence",
+        "decisions_in_view",
+        "current_view",
+        "leader_token_held",
+        "phase"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "IgnoreMessageFromWrongLeader",
+      "success": true,
+      "compilation_time": 0.15739679336547852,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "received_commits",
+        "proposals",
+        "received_prepares",
+        "requests_in_proposal",
+        "messages",
+        "decisions_in_view",
+        "leader_token_held",
+        "phase",
+        "received_view_data",
+        "decided_requests",
+        "CommitMsg",
+        "received_view_changes",
+        "decided_proposals",
+        "suspected_leader",
+        "current_sequence",
+        "current_view",
+        "PrepareMsg",
+        "PreprepareMsg"
+      ],
+      "functions_added": [
+        "GetLeader"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "IgnoreFutureSequenceMessage",
+      "success": true,
+      "compilation_time": 0.17572999000549316,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "received_prepares",
+        "requests_in_proposal",
+        "received_view_data",
+        "received_commits",
+        "decided_requests",
+        "PrepareMsg",
+        "CommitMsg",
+        "PreprepareMsg",
+        "messages",
+        "decided_proposals",
+        "received_view_changes",
+        "proposals",
+        "suspected_leader",
+        "current_sequence",
+        "decisions_in_view",
+        "current_view",
+        "leader_token_held",
+        "phase"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Next",
+      "success": false,
+      "compilation_time": 0.10991501808166504,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Next.tla\n***Parse Error***\nEncountered \"\\subseteq\" at line 5, column 89 and token \"new_requests_info\" \n\nResidual stack trace follows:\nQuant Bound starting at line 5, column 71.\nQuantified form starting at line 5, column 8.\nExpression starting at line 5, column 8.\nJunction Item starting at line 5, column 5.\nAND-OR Junction starting at line 5, column 5.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Next.tla\n\nIn module SmartBFT_Next\n\nCould not parse module SmartBFT_Next from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Next.tla\n*** Errors: 1\n\nIn module SmartBFT_Next\n\nCould not parse module SmartBFT_Next from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Next.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Spec",
+      "success": false,
+      "compilation_time": 0.11426591873168945,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Spec.tla\n***Parse Error***\nEncountered \"( _\" at line 6, column 26 and token \"Preprepare\" \n\nResidual stack trace follows:\nOptional Arguments starting at line 6, column 15.\nrestricted form of expression starting at line 6, column 11.\nFairness Expression starting at line 6, column 8.\nExtendableExpr starting at line 6, column 8.\nExtendableExpr starting at line 5, column 15.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Spec.tla\n\nIn module SmartBFT_Spec\n\nCould not parse module SmartBFT_Spec from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Spec.tla\n*** Errors: 1\n\nIn module SmartBFT_Spec\n\nCould not parse module SmartBFT_Spec from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_r5qivppr/SmartBFT_Spec.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "vars",
+      "success": true,
+      "compilation_time": 0.14824795722961426,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "received_prepares",
+        "requests_in_proposal",
+        "received_view_data",
+        "received_commits",
+        "decided_requests",
+        "messages",
+        "decided_proposals",
+        "received_view_changes",
+        "proposals",
+        "suspected_leader",
+        "current_sequence",
+        "decisions_in_view",
+        "current_view",
+        "leader_token_held",
+        "phase"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    }
+  ]
+}

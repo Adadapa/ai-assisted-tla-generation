@@ -1,0 +1,396 @@
+scripts/run_benchmark.py --task hyperledger --method direct_call --model claude --metric action_decomposition --spec-file made_specs/deepseek/base.tla --config-file made_specs/deepseek/base.cfg
+13:34:33 - LiteLLM:WARNING: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+13:34:33 - LiteLLM:WARNING: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+[INFO] Validating prerequisites...
+[INFO] ✓ All prerequisites validated
+[INFO] Loading existing global error statistics from /Users/adaturgut/SysMoBench/output/global_error_statistics.yaml
+[INFO] Running metric 'action_decomposition': hyperledger/direct_call/claude
+[INFO] Loaded task: hyperledger (distributed)
+[INFO] Loaded prompt template (6008 chars, language=TLA+)
+[INFO] Using existing specification file: /Users/adaturgut/SysMoBench/made_specs/deepseek/base.tla
+[INFO] Using existing config file: /Users/adaturgut/SysMoBench/made_specs/deepseek/base.cfg
+[INFO] ActionDecompositionEvaluator initialized with 30s timeout
+[INFO] Loading existing global error statistics from /Users/adaturgut/SysMoBench/output/global_error_statistics.yaml
+[INFO] Evaluating action decomposition: hyperledger/direct_call/claude
+[INFO] Using existing spec file: /Users/adaturgut/SysMoBench/made_specs/deepseek/base.tla
+[INFO] Decomposed specification into 64 actions
+[INFO] Processing action 1/64: Correct
+[INFO]   ✓ Action 'Correct' validated successfully
+[INFO] Processing action 2/64: MCNodesList
+[WARNING] SANY Error Classification Failed - Unknown Error Pattern
+[WARNING] Full error message content: '\n****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_dn_v9a6k/SmartBFT_MCNodesList.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-700224881655514478/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-700224881655514478/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-700224881655514478/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-700224881655514478/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-700224881655514478/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-700224881655514478/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_MCNodesList\nSemantic errors:\n\n*** Errors: 5\n\nline 8, col 1 to line 8, col 33 of module SmartBFT_MCNodesList\n\nLevel error: assumptions must be level 0 (Constant), \nbut this one has level 1.\n\n\nline 9, col 1 to line 9, col 34 of module SmartBFT_MCNodesList\n\nLevel error: assumptions must be level 0 (Constant), \nbut this one has level 1.\n\n\nline 10, col 1 to line 10, col 32 of module SmartBFT_MCNodesList\n\nLevel error: assumptions must be level 0 (Constant), \nbut this one has level 1.\n\n\nline 11, col 1 to line 11, col 43 of module SmartBFT_MCNodesList\n\nLevel error: assumptions must be level 0 (Constant), \nbut this one has level 1.\n\n\nline 12, col 1 to line 12, col 76 of module SmartBFT_MCNodesList\n\nLevel error: assumptions must be level 0 (Constant), \nbut this one has level 1.\n\n\n'
+[WARNING] SANY Error Classification Failed - Unknown Error Pattern
+[WARNING] Full error message content: '\n****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_dn_v9a6k/SmartBFT_MCNodesList.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-11366124450849118179/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-11366124450849118179/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-11366124450849118179/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-11366124450849118179/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-11366124450849118179/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-11366124450849118179/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_MCNodesList\nSemantic errors:\n\n*** Errors: 5\n\nline 8, col 1 to line 8, col 33 of module SmartBFT_MCNodesList\n\nLevel error: assumptions must be level 0 (Constant), \nbut this one has level 1.\n\n\nline 9, col 1 to line 9, col 34 of module SmartBFT_MCNodesList\n\nLevel error: assumptions must be level 0 (Constant), \nbut this one has level 1.\n\n\nline 10, col 1 to line 10, col 32 of module SmartBFT_MCNodesList\n\nLevel error: assumptions must be level 0 (Constant), \nbut this one has level 1.\n\n\nline 11, col 1 to line 11, col 43 of module SmartBFT_MCNodesList\n\nLevel error: assumptions must be level 0 (Constant), \nbut this one has level 1.\n\n\nline 12, col 1 to line 12, col 76 of module SmartBFT_MCNodesList\n\nLevel error: assumptions must be level 0 (Constant), \nbut this one has level 1.\n\n\n'
+[WARNING] SANY Error Classification Failed - Unknown Error Pattern
+[WARNING] Full error message content: '\n****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_dn_v9a6k/SmartBFT_MCNodesList.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-9476103030075745407/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-9476103030075745407/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-9476103030075745407/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-9476103030075745407/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-9476103030075745407/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-9476103030075745407/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_MCNodesList\nSemantic errors:\n\n*** Errors: 5\n\nline 8, col 1 to line 8, col 33 of module SmartBFT_MCNodesList\n\nLevel error: assumptions must be level 0 (Constant), \nbut this one has level 1.\n\n\nline 9, col 1 to line 9, col 34 of module SmartBFT_MCNodesList\n\nLevel error: assumptions must be level 0 (Constant), \nbut this one has level 1.\n\n\nline 10, col 1 to line 10, col 32 of module SmartBFT_MCNodesList\n\nLevel error: assumptions must be level 0 (Constant), \nbut this one has level 1.\n\n\nline 11, col 1 to line 11, col 43 of module SmartBFT_MCNodesList\n\nLevel error: assumptions must be level 0 (Constant), \nbut this one has level 1.\n\n\nline 12, col 1 to line 12, col 76 of module SmartBFT_MCNodesList\n\nLevel error: assumptions must be level 0 (Constant), \nbut this one has level 1.\n\n\n'
+[WARNING]   ✗ Action 'MCNodesList' failed validation (1 errors)
+[INFO] Processing action 3/64: Phase
+[INFO]   ✓ Action 'Phase' validated successfully
+[INFO] Processing action 4/64: HBMRole
+[INFO]   ✓ Action 'HBMRole' validated successfully
+[INFO] Processing action 5/64: MsgType
+[INFO]   ✓ Action 'MsgType' validated successfully
+[INFO] Processing action 6/64: controllerVars
+[INFO]   ✓ Action 'controllerVars' validated successfully
+[INFO] Processing action 7/64: vcVars
+[INFO]   ✓ Action 'vcVars' validated successfully
+[INFO] Processing action 8/64: hbmVars
+[INFO]   ✓ Action 'hbmVars' validated successfully
+[INFO] Processing action 9/64: msgVars
+[INFO]   ✓ Action 'msgVars' validated successfully
+[INFO] Processing action 10/64: vars
+[INFO]   ✓ Action 'vars' validated successfully
+[INFO] Processing action 11/64: N
+[INFO]   ✓ Action 'N' validated successfully
+[INFO] Processing action 12/64: GetLeaderID
+[INFO]   ✓ Action 'GetLeaderID' validated successfully
+[INFO] Processing action 13/64: CtrlLeader
+DEBUG: Will insert 1 functions at position 2
+DEBUG: Functions to add: ['GetLeaderID(x1, x2, x3) == TRUE']
+DEBUG: Inserting 'GetLeaderID(x1, x2, x3) == TRUE' at position 2
+DEBUG: Updated all_added_funcs: ['GetLeaderID']
+DEBUG: Will insert 3 functions at position 2
+DEBUG: Functions to add: ['ctrl_decisions == TRUE', 'ctrl_view == TRUE', 'blacklist == TRUE']
+DEBUG: Inserting 'ctrl_decisions == TRUE' at position 2
+DEBUG: Inserting 'ctrl_view == TRUE' at position 4
+DEBUG: Inserting 'blacklist == TRUE' at position 6
+DEBUG: Updated all_added_funcs: ['GetLeaderID', 'ctrl_decisions', 'ctrl_view', 'blacklist']
+[INFO]   ✓ Action 'CtrlLeader' validated successfully
+[INFO] Processing action 14/64: HBMLeader
+DEBUG: Will insert 1 functions at position 2
+DEBUG: Functions to add: ['GetLeaderID(x1, x2, x3) == TRUE']
+DEBUG: Inserting 'GetLeaderID(x1, x2, x3) == TRUE' at position 2
+DEBUG: Updated all_added_funcs: ['GetLeaderID']
+DEBUG: Will insert 1 functions at position 2
+DEBUG: Functions to add: ['hbm_view == TRUE']
+DEBUG: Inserting 'hbm_view == TRUE' at position 2
+DEBUG: Updated all_added_funcs: ['GetLeaderID', 'hbm_view']
+[INFO]   ✓ Action 'HBMLeader' validated successfully
+[INFO] Processing action 15/64: VCLeader
+DEBUG: Will insert 1 functions at position 2
+DEBUG: Functions to add: ['GetLeaderID(x1, x2, x3) == TRUE']
+DEBUG: Inserting 'GetLeaderID(x1, x2, x3) == TRUE' at position 2
+DEBUG: Updated all_added_funcs: ['GetLeaderID']
+DEBUG: Will insert 2 functions at position 2
+DEBUG: Functions to add: ['vc_view == TRUE', 'blacklist == TRUE']
+DEBUG: Inserting 'vc_view == TRUE' at position 2
+DEBUG: Inserting 'blacklist == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['GetLeaderID', 'vc_view', 'blacklist']
+[INFO]   ✓ Action 'VCLeader' validated successfully
+[INFO] Processing action 16/64: CommittedSeq
+[INFO]   ✓ Action 'CommittedSeq' validated successfully
+[INFO] Processing action 17/64: LeaderAliveInView
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['GetLeaderID(x1, x2, x3) == TRUE']
+DEBUG: Inserting 'GetLeaderID(x1, x2, x3) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['GetLeaderID']
+[INFO]   ✓ Action 'LeaderAliveInView' validated successfully
+[INFO] Processing action 18/64: Send
+[INFO]   ✓ Action 'Send' validated successfully
+[INFO] Processing action 19/64: Discard
+[INFO]   ✓ Action 'Discard' validated successfully
+[INFO] Processing action 20/64: OuterSigValid
+[INFO]   ✓ Action 'OuterSigValid' validated successfully
+[INFO] Processing action 21/64: TypeOK
+[INFO]   ✓ Action 'TypeOK' validated successfully
+[INFO] Processing action 22/64: Init
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['GetLeaderID(x1, x2, x3) == TRUE']
+DEBUG: Inserting 'GetLeaderID(x1, x2, x3) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['GetLeaderID']
+[INFO]   ✓ Action 'Init' validated successfully
+[INFO] Processing action 23/64: Propose
+DEBUG: Will insert 3 functions at position 4
+DEBUG: Functions to add: ['CommittedSeq(x1) == TRUE', 'Send(x1) == TRUE', 'CtrlLeader(x1) == TRUE']
+DEBUG: Inserting 'CommittedSeq(x1) == TRUE' at position 4
+DEBUG: Inserting 'Send(x1) == TRUE' at position 6
+DEBUG: Inserting 'CtrlLeader(x1) == TRUE' at position 8
+DEBUG: Updated all_added_funcs: ['CommittedSeq', 'Send', 'CtrlLeader']
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['ctrl_view == TRUE']
+DEBUG: Inserting 'ctrl_view == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['CommittedSeq', 'Send', 'CtrlLeader', 'ctrl_view']
+[INFO]   ✓ Action 'Propose' validated successfully
+[INFO] Processing action 24/64: HandlePrePrepare
+DEBUG: Will insert 3 functions at position 4
+DEBUG: Functions to add: ['CtrlLeader(x1) == TRUE', 'Send(x1) == TRUE', 'CommittedSeq(x1) == TRUE']
+DEBUG: Inserting 'CtrlLeader(x1) == TRUE' at position 4
+DEBUG: Inserting 'Send(x1) == TRUE' at position 6
+DEBUG: Inserting 'CommittedSeq(x1) == TRUE' at position 8
+DEBUG: Updated all_added_funcs: ['CtrlLeader', 'Send', 'CommittedSeq']
+[INFO]   ✓ Action 'HandlePrePrepare' validated successfully
+[INFO] Processing action 25/64: HandlePrepare
+DEBUG: Will insert 2 functions at position 4
+DEBUG: Functions to add: ['Send(x1) == TRUE', 'CommittedSeq(x1) == TRUE']
+DEBUG: Inserting 'Send(x1) == TRUE' at position 4
+DEBUG: Inserting 'CommittedSeq(x1) == TRUE' at position 6
+DEBUG: Updated all_added_funcs: ['Send', 'CommittedSeq']
+[INFO]   ✓ Action 'HandlePrepare' validated successfully
+[INFO] Processing action 26/64: Decide
+DEBUG: Will insert 2 functions at position 4
+DEBUG: Functions to add: ['GetLeaderID(x1, x2, x3) == TRUE', 'CommittedSeq(x1) == TRUE']
+DEBUG: Inserting 'GetLeaderID(x1, x2, x3) == TRUE' at position 4
+DEBUG: Inserting 'CommittedSeq(x1) == TRUE' at position 6
+DEBUG: Updated all_added_funcs: ['GetLeaderID', 'CommittedSeq']
+[INFO]   ✓ Action 'Decide' validated successfully
+[INFO] Processing action 27/64: HBLeaderTick
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['Send(x1) == TRUE']
+DEBUG: Inserting 'Send(x1) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['Send']
+DEBUG: Will insert 2 functions at position 4
+DEBUG: Functions to add: ['hbm_view == TRUE', 'CommittedSeq(x1) == TRUE']
+DEBUG: Inserting 'hbm_view == TRUE' at position 4
+DEBUG: Inserting 'CommittedSeq(x1) == TRUE' at position 6
+DEBUG: Updated all_added_funcs: ['Send', 'hbm_view', 'CommittedSeq']
+[INFO]   ✓ Action 'HBLeaderTick' validated successfully
+[INFO] Processing action 28/64: HBFollowerTick
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['HBMLeader(x1) == TRUE']
+DEBUG: Inserting 'HBMLeader(x1) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['HBMLeader']
+[INFO]   ✓ Action 'HBFollowerTick' validated successfully
+[INFO] Processing action 29/64: HandleHeartbeat
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['HBMLeader(x1) == TRUE']
+DEBUG: Inserting 'HBMLeader(x1) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['HBMLeader']
+[INFO]   ✓ Action 'HandleHeartbeat' validated successfully
+[INFO] Processing action 30/64: InjectArtificialHeartbeat
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['CtrlLeader(x1) == TRUE']
+DEBUG: Inserting 'CtrlLeader(x1) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['CtrlLeader']
+[INFO]   ✓ Action 'InjectArtificialHeartbeat' validated successfully
+[INFO] Processing action 31/64: HandleArtificialHeartbeat
+[INFO]   ✓ Action 'HandleArtificialHeartbeat' validated successfully
+[INFO] Processing action 32/64: SendChangeRole
+[INFO]   ✓ Action 'SendChangeRole' validated successfully
+[INFO] Processing action 33/64: ProcessChangeRole
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['CtrlLeader(x1) == TRUE']
+DEBUG: Inserting 'CtrlLeader(x1) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['CtrlLeader']
+[INFO]   ✓ Action 'ProcessChangeRole' validated successfully
+[INFO] Processing action 34/64: OnHeartbeatTimeout
+DEBUG: Will insert 2 functions at position 4
+DEBUG: Functions to add: ['Discard(x1) == TRUE', 'CtrlLeader(x1) == TRUE']
+DEBUG: Inserting 'Discard(x1) == TRUE' at position 4
+DEBUG: Inserting 'CtrlLeader(x1) == TRUE' at position 6
+DEBUG: Updated all_added_funcs: ['Discard', 'CtrlLeader']
+[INFO]   ✓ Action 'OnHeartbeatTimeout' validated successfully
+[INFO] Processing action 35/64: MaybeStartViewChange
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['Send(x1) == TRUE']
+DEBUG: Inserting 'Send(x1) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['Send']
+[INFO]   ✓ Action 'MaybeStartViewChange' validated successfully
+[INFO] Processing action 36/64: HandleViewChange
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['Send(x1) == TRUE']
+DEBUG: Inserting 'Send(x1) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['Send']
+DEBUG: Will insert 2 functions at position 4
+DEBUG: Functions to add: ['GetLeaderID(x1, x2, x3) == TRUE', 'CommittedSeq(x1) == TRUE']
+DEBUG: Inserting 'GetLeaderID(x1, x2, x3) == TRUE' at position 4
+DEBUG: Inserting 'CommittedSeq(x1) == TRUE' at position 6
+DEBUG: Updated all_added_funcs: ['Send', 'GetLeaderID', 'CommittedSeq']
+[INFO]   ✓ Action 'HandleViewChange' validated successfully
+[INFO] Processing action 37/64: ByzantineViewData
+DEBUG: Will insert 3 functions at position 4
+DEBUG: Functions to add: ['Send(x1) == TRUE', 'GetLeaderID(x1, x2, x3) == TRUE', 'CommittedSeq(x1) == TRUE']
+DEBUG: Inserting 'Send(x1) == TRUE' at position 4
+DEBUG: Inserting 'GetLeaderID(x1, x2, x3) == TRUE' at position 6
+DEBUG: Inserting 'CommittedSeq(x1) == TRUE' at position 8
+DEBUG: Updated all_added_funcs: ['Send', 'GetLeaderID', 'CommittedSeq']
+DEBUG: Will insert 3 functions at position 4
+DEBUG: Functions to add: ['vc_view == TRUE', 'blacklist == TRUE', 'NULL == TRUE']
+DEBUG: Inserting 'vc_view == TRUE' at position 4
+DEBUG: Inserting 'blacklist == TRUE' at position 6
+DEBUG: Inserting 'NULL == TRUE' at position 8
+DEBUG: Updated all_added_funcs: ['Send', 'GetLeaderID', 'CommittedSeq', 'vc_view', 'blacklist', 'NULL']
+[INFO]   ✓ Action 'ByzantineViewData' validated successfully
+[INFO] Processing action 38/64: ProcessViewDataDeliver
+DEBUG: Will insert 2 functions at position 4
+DEBUG: Functions to add: ['GetLeaderID(x1, x2, x3) == TRUE', 'CommittedSeq(x1) == TRUE']
+DEBUG: Inserting 'GetLeaderID(x1, x2, x3) == TRUE' at position 4
+DEBUG: Inserting 'CommittedSeq(x1) == TRUE' at position 6
+DEBUG: Updated all_added_funcs: ['GetLeaderID', 'CommittedSeq']
+[INFO]   ✓ Action 'ProcessViewDataDeliver' validated successfully
+[INFO] Processing action 39/64: ProcessViewDataValidate
+DEBUG: Will insert 3 functions at position 4
+DEBUG: Functions to add: ['OuterSigValid(x1) == TRUE', 'GetLeaderID(x1, x2, x3) == TRUE', 'Discard(x1) == TRUE']
+DEBUG: Inserting 'OuterSigValid(x1) == TRUE' at position 4
+DEBUG: Inserting 'GetLeaderID(x1, x2, x3) == TRUE' at position 6
+DEBUG: Inserting 'Discard(x1) == TRUE' at position 8
+DEBUG: Updated all_added_funcs: ['OuterSigValid', 'GetLeaderID', 'Discard']
+[INFO]   ✓ Action 'ProcessViewDataValidate' validated successfully
+[INFO] Processing action 40/64: ProcessViewDataSameSeq
+DEBUG: Will insert 4 functions at position 4
+DEBUG: Functions to add: ['Discard(x1) == TRUE', 'OuterSigValid(x1) == TRUE', 'GetLeaderID(x1, x2, x3) == TRUE', 'CommittedSeq(x1) == TRUE']
+DEBUG: Inserting 'Discard(x1) == TRUE' at position 4
+DEBUG: Inserting 'OuterSigValid(x1) == TRUE' at position 6
+DEBUG: Inserting 'GetLeaderID(x1, x2, x3) == TRUE' at position 8
+DEBUG: Inserting 'CommittedSeq(x1) == TRUE' at position 10
+DEBUG: Updated all_added_funcs: ['Discard', 'OuterSigValid', 'GetLeaderID', 'CommittedSeq']
+[INFO]   ✓ Action 'ProcessViewDataSameSeq' validated successfully
+[INFO] Processing action 41/64: BuildNewView
+DEBUG: Will insert 2 functions at position 4
+DEBUG: Functions to add: ['Send(x1) == TRUE', 'GetLeaderID(x1, x2, x3) == TRUE']
+DEBUG: Inserting 'Send(x1) == TRUE' at position 4
+DEBUG: Inserting 'GetLeaderID(x1, x2, x3) == TRUE' at position 6
+DEBUG: Updated all_added_funcs: ['Send', 'GetLeaderID']
+[INFO]   ✓ Action 'BuildNewView' validated successfully
+[INFO] Processing action 42/64: EnterNewView
+DEBUG: Will insert 2 functions at position 4
+DEBUG: Functions to add: ['GetLeaderID(x1, x2, x3) == TRUE', 'CommittedSeq(x1) == TRUE']
+DEBUG: Inserting 'GetLeaderID(x1, x2, x3) == TRUE' at position 4
+DEBUG: Inserting 'CommittedSeq(x1) == TRUE' at position 6
+DEBUG: Updated all_added_funcs: ['GetLeaderID', 'CommittedSeq']
+[INFO]   ✓ Action 'EnterNewView' validated successfully
+[INFO] Processing action 43/64: InformNewView
+[INFO]   ✓ Action 'InformNewView' validated successfully
+[INFO] Processing action 44/64: ProcessNewViewDeliverLoop
+DEBUG: Will insert 2 functions at position 4
+DEBUG: Functions to add: ['GetLeaderID(x1, x2, x3) == TRUE', 'CommittedSeq(x1) == TRUE']
+DEBUG: Inserting 'GetLeaderID(x1, x2, x3) == TRUE' at position 4
+DEBUG: Inserting 'CommittedSeq(x1) == TRUE' at position 6
+DEBUG: Updated all_added_funcs: ['GetLeaderID', 'CommittedSeq']
+[INFO]   ✓ Action 'ProcessNewViewDeliverLoop' validated successfully
+[INFO] Processing action 45/64: ByzantineViewDataToFollower
+DEBUG: Will insert 3 functions at position 4
+DEBUG: Functions to add: ['Send(x1) == TRUE', 'GetLeaderID(x1, x2, x3) == TRUE', 'CommittedSeq(x1) == TRUE']
+DEBUG: Inserting 'Send(x1) == TRUE' at position 4
+DEBUG: Inserting 'GetLeaderID(x1, x2, x3) == TRUE' at position 6
+DEBUG: Inserting 'CommittedSeq(x1) == TRUE' at position 8
+DEBUG: Updated all_added_funcs: ['Send', 'GetLeaderID', 'CommittedSeq']
+DEBUG: Will insert 3 functions at position 4
+DEBUG: Functions to add: ['vc_view == TRUE', 'blacklist == TRUE', 'NULL == TRUE']
+DEBUG: Inserting 'vc_view == TRUE' at position 4
+DEBUG: Inserting 'blacklist == TRUE' at position 6
+DEBUG: Inserting 'NULL == TRUE' at position 8
+DEBUG: Updated all_added_funcs: ['Send', 'GetLeaderID', 'CommittedSeq', 'vc_view', 'blacklist', 'NULL']
+[INFO]   ✓ Action 'ByzantineViewDataToFollower' validated successfully
+[INFO] Processing action 46/64: ChangeViewUpdateView
+[INFO]   ✓ Action 'ChangeViewUpdateView' validated successfully
+[INFO] Processing action 47/64: ChangeViewUpdateDecisions
+[INFO]   ✓ Action 'ChangeViewUpdateDecisions' validated successfully
+[INFO] Processing action 48/64: ReadLeaderID
+[INFO]   ✓ Action 'ReadLeaderID' validated successfully
+[INFO] Processing action 49/64: GetInFlightSeq
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['CommittedSeq(x1) == TRUE']
+DEBUG: Inserting 'CommittedSeq(x1) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['CommittedSeq']
+[INFO]   ✓ Action 'GetInFlightSeq' validated successfully
+[INFO] Processing action 50/64: Crash
+[INFO]   ✓ Action 'Crash' validated successfully
+[INFO] Processing action 51/64: Recover
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['CtrlLeader(x1) == TRUE']
+DEBUG: Inserting 'CtrlLeader(x1) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['CtrlLeader']
+[INFO]   ✓ Action 'Recover' validated successfully
+[INFO] Processing action 52/64: Next
+DEBUG: Will insert 28 functions at position 4
+DEBUG: Functions to add: ['ByzantineViewData(x1, x2) == TRUE', 'SendChangeRole(x1) == TRUE', 'Decide(x1, x2) == TRUE', 'HBLeaderTick(x1) == TRUE', 'BuildNewView(x1) == TRUE', 'ProcessNewViewDeliverLoop(x1) == TRUE', 'InjectArtificialHeartbeat(x1) == TRUE', 'HandleArtificialHeartbeat(x1) == TRUE', 'ByzantineViewDataToFollower(x1, x2) == TRUE', 'HandlePrePrepare(x1) == TRUE', 'ReadLeaderID(x1) == TRUE', 'Recover(x1) == TRUE', 'ChangeViewUpdateDecisions(x1, x2) == TRUE', 'Crash(x1) == TRUE', 'HandleHeartbeat(x1, x2) == TRUE', 'ProcessChangeRole(x1) == TRUE', 'OnHeartbeatTimeout(x1) == TRUE', 'ProcessViewDataValidate(x1, x2) == TRUE', 'HandleViewChange(x1) == TRUE', 'HBFollowerTick(x1) == TRUE', 'Propose(x1) == TRUE', 'ProcessViewDataDeliver(x1, x2) == TRUE', 'HandlePrepare(x1, x2) == TRUE', 'ProcessViewDataSameSeq(x1, x2) == TRUE', 'InformNewView(x1, x2) == TRUE', 'EnterNewView(x1) == TRUE', 'ChangeViewUpdateView(x1) == TRUE', 'MaybeStartViewChange(x1) == TRUE']
+DEBUG: Inserting 'ByzantineViewData(x1, x2) == TRUE' at position 4
+DEBUG: Inserting 'SendChangeRole(x1) == TRUE' at position 6
+DEBUG: Inserting 'Decide(x1, x2) == TRUE' at position 8
+DEBUG: Inserting 'HBLeaderTick(x1) == TRUE' at position 10
+DEBUG: Inserting 'BuildNewView(x1) == TRUE' at position 12
+DEBUG: Inserting 'ProcessNewViewDeliverLoop(x1) == TRUE' at position 14
+DEBUG: Inserting 'InjectArtificialHeartbeat(x1) == TRUE' at position 16
+DEBUG: Inserting 'HandleArtificialHeartbeat(x1) == TRUE' at position 18
+DEBUG: Inserting 'ByzantineViewDataToFollower(x1, x2) == TRUE' at position 20
+DEBUG: Inserting 'HandlePrePrepare(x1) == TRUE' at position 22
+DEBUG: Inserting 'ReadLeaderID(x1) == TRUE' at position 24
+DEBUG: Inserting 'Recover(x1) == TRUE' at position 26
+DEBUG: Inserting 'ChangeViewUpdateDecisions(x1, x2) == TRUE' at position 28
+DEBUG: Inserting 'Crash(x1) == TRUE' at position 30
+DEBUG: Inserting 'HandleHeartbeat(x1, x2) == TRUE' at position 32
+DEBUG: Inserting 'ProcessChangeRole(x1) == TRUE' at position 34
+DEBUG: Inserting 'OnHeartbeatTimeout(x1) == TRUE' at position 36
+DEBUG: Inserting 'ProcessViewDataValidate(x1, x2) == TRUE' at position 38
+DEBUG: Inserting 'HandleViewChange(x1) == TRUE' at position 40
+DEBUG: Inserting 'HBFollowerTick(x1) == TRUE' at position 42
+DEBUG: Inserting 'Propose(x1) == TRUE' at position 44
+DEBUG: Inserting 'ProcessViewDataDeliver(x1, x2) == TRUE' at position 46
+DEBUG: Inserting 'HandlePrepare(x1, x2) == TRUE' at position 48
+DEBUG: Inserting 'ProcessViewDataSameSeq(x1, x2) == TRUE' at position 50
+DEBUG: Inserting 'InformNewView(x1, x2) == TRUE' at position 52
+DEBUG: Inserting 'EnterNewView(x1) == TRUE' at position 54
+DEBUG: Inserting 'ChangeViewUpdateView(x1) == TRUE' at position 56
+DEBUG: Inserting 'MaybeStartViewChange(x1) == TRUE' at position 58
+DEBUG: Updated all_added_funcs: ['ByzantineViewData', 'SendChangeRole', 'Decide', 'HBLeaderTick', 'BuildNewView', 'ProcessNewViewDeliverLoop', 'InjectArtificialHeartbeat', 'HandleArtificialHeartbeat', 'ByzantineViewDataToFollower', 'HandlePrePrepare', 'ReadLeaderID', 'Recover', 'ChangeViewUpdateDecisions', 'Crash', 'HandleHeartbeat', 'ProcessChangeRole', 'OnHeartbeatTimeout', 'ProcessViewDataValidate', 'HandleViewChange', 'HBFollowerTick', 'Propose', 'ProcessViewDataDeliver', 'HandlePrepare', 'ProcessViewDataSameSeq', 'InformNewView', 'EnterNewView', 'ChangeViewUpdateView', 'MaybeStartViewChange']
+[INFO]   ✓ Action 'Next' validated successfully
+[INFO] Processing action 53/64: Spec
+[INFO]   ✓ Action 'Spec' validated successfully
+[INFO] Processing action 54/64: Min
+[INFO]   ✓ Action 'Min' validated successfully
+[INFO] Processing action 55/64: Agreement
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['Min(x1) == TRUE']
+DEBUG: Inserting 'Min(x1) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['Min']
+DEBUG: Updated all_added_funcs: ['Min']
+DEBUG: No new functions added in iteration 2, stopping
+[WARNING]   ✗ Action 'Agreement' failed validation (1 errors)
+[INFO] Processing action 56/64: ViewChangeSafety
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['CommittedSeq(x1) == TRUE']
+DEBUG: Inserting 'CommittedSeq(x1) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['CommittedSeq']
+[INFO]   ✓ Action 'ViewChangeSafety' validated successfully
+[INFO] Processing action 57/64: NoViewFork
+[INFO]   ✓ Action 'NoViewFork' validated successfully
+[INFO] Processing action 58/64: NoFalseTimeout
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['LeaderAliveInView(x1) == TRUE']
+DEBUG: Inserting 'LeaderAliveInView(x1) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['LeaderAliveInView']
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['hbm_view == TRUE']
+DEBUG: Inserting 'hbm_view == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['LeaderAliveInView', 'hbm_view']
+[INFO]   ✓ Action 'NoFalseTimeout' validated successfully
+[INFO] Processing action 59/64: DeliverImpliesViewEntered
+[INFO]   ✓ Action 'DeliverImpliesViewEntered' validated successfully
+[INFO] Processing action 60/64: LeaderIdentityConsistency
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['CtrlLeader(x1) == TRUE']
+DEBUG: Inserting 'CtrlLeader(x1) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['CtrlLeader']
+[INFO]   ✓ Action 'LeaderIdentityConsistency' validated successfully
+[INFO] Processing action 61/64: InFlightReplay
+DEBUG: Will insert 2 functions at position 4
+DEBUG: Functions to add: ['GetInFlightSeq(x1) == TRUE', 'CommittedSeq(x1) == TRUE']
+DEBUG: Inserting 'GetInFlightSeq(x1) == TRUE' at position 4
+DEBUG: Inserting 'CommittedSeq(x1) == TRUE' at position 6
+DEBUG: Updated all_added_funcs: ['GetInFlightSeq', 'CommittedSeq']
+[INFO]   ✓ Action 'InFlightReplay' validated successfully
+[INFO] Processing action 62/64: InformViewNotDropped
+[INFO]   ✓ Action 'InformViewNotDropped' validated successfully
+[INFO] Processing action 63/64: LogMonotonic
+[INFO]   ✓ Action 'LogMonotonic' validated successfully
+[INFO] Processing action 64/64: StructuralInv
+[INFO]   ✓ Action 'StructuralInv' validated successfully
+[INFO] Action validation progress: 62/64 actions successful so far
+[INFO] Action decomposition summary: 62/64 actions successful (96.9%)
+[INFO] Action decomposition complete: 64 actions evaluated
+[INFO] Created experiment directory: output/action_decomposition/tla/hyperledger/direct_call_claude/20260617133530
+[INFO] Saved results to output/action_decomposition/tla/hyperledger/direct_call_claude/20260617133530
+[INFO] Results saved to: output/action_decomposition/tla/hyperledger/direct_call_claude/20260617133530
+[INFO] Saved experiment error statistics to: output/action_decomposition/tla/hyperledger/direct_call_claude/20260617133530/error_statistics.yaml
+[INFO] Error statistics saved to: output/action_decomposition/tla/hyperledger/direct_call_claude/20260617133530/error_statistics.yaml
+[INFO] Evaluation complete: success=True
+[INFO] Metric 'action_decomposition': ✓ PASS
+
+Syntax Evaluation Results: ✓ PASS
+Generation time: 0.00s
+Compilation time: 10.46s
+Syntax errors: 3
+Semantic errors: 0
+Action success rate: 62/64 (96.9%)
+Recovery statistics: 538 variables, 99 functions added, 61 attempts
+Results saved to: output/action_decomposition/tla/hyperledger/direct_call_claude/20260617133530

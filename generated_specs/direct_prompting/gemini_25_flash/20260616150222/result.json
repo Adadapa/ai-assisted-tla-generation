@@ -1,0 +1,661 @@
+{
+  "overall_success": true,
+  "generation_successful": true,
+  "compilation_successful": false,
+  "generation_time": 267.3414478302002,
+  "compilation_time": 5.478248834609985,
+  "total_actions": 35,
+  "successful_actions": 32,
+  "action_success_rate": 0.9142857142857143,
+  "total_variables_added": 186,
+  "total_functions_added": 52,
+  "total_recovery_attempts": 34,
+  "syntax_errors": [
+    "MESSAGE: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_3f9gip0m/SmartBFT_MESSAGE.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"currentView\" at line 20, column 5 and token \"ViewChangeInfo\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_3f9gip0m/SmartBFT_MESSAGE.tla\n\nIn module SmartBFT_MESSAGE\n\nCould not parse module SmartBFT_MESSAGE from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_3f9gip0m/SmartBFT_MESSAGE.tla\n*** Errors: 1\n\nIn module SmartBFT_MESSAGE\n\nCould not parse module SmartBFT_MESSAGE from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_3f9gip0m/SmartBFT_MESSAGE.tla",
+    "ViewData: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_3f9gip0m/SmartBFT_ViewData.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-11249217244683935525/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-11249217244683935525/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-11249217244683935525/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-11249217244683935525/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-11249217244683935525/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-11249217244683935525/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_ViewData\nSemantic errors:\n\n*** Errors: 3\n\nline 21, col 36 to line 21, col 37 of module SmartBFT_ViewData\n\nMultiply-defined symbol 'vc': this definition or declaration conflicts \nwith the one at line 3, col 132 to line 3, col 133 of module SmartBFT_ViewData.\n\n\nline 25, col 83 to line 25, col 84 of module SmartBFT_ViewData\n\nMultiply-defined symbol 'vc': this definition or declaration conflicts \nwith the one at line 3, col 132 to line 3, col 133 of module SmartBFT_ViewData.\n\n\nline 31, col 26 to line 31, col 191 of module SmartBFT_ViewData\n\nThe operator SendTo requires 1 arguments.",
+    "NewView: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_3f9gip0m/SmartBFT_NewView.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4451604106466034259/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4451604106466034259/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4451604106466034259/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4451604106466034259/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4451604106466034259/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4451604106466034259/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_NewView\nSemantic errors:\n\n*** Errors: 3\n\nline 28, col 36 to line 28, col 37 of module SmartBFT_NewView\n\nMultiply-defined symbol 'vd': this definition or declaration conflicts \nwith the one at line 3, col 112 to line 3, col 113 of module SmartBFT_NewView.\n\n\nline 32, col 72 to line 32, col 73 of module SmartBFT_NewView\n\nMultiply-defined symbol 'vd': this definition or declaration conflicts \nwith the one at line 3, col 112 to line 3, col 113 of module SmartBFT_NewView.\n\n\nline 44, col 153 to line 44, col 154 of module SmartBFT_NewView\n\nMultiply-defined symbol 'vd': this definition or declaration conflicts \nwith the one at line 3, col 112 to line 3, col 113 of module SmartBFT_NewView.",
+    "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /Users/adaturgut/SysMoBench/data/spec/hyperledger/SmartBFT.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-5296766863462384552/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-5296766863462384552/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-5296766863462384552/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-5296766863462384552/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-5296766863462384552/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Integers\nSemantic processing of module SmartBFT\nSemantic errors:\n\n*** Errors: 13\n\nline 26, col 15 to line 26, col 17 of module SmartBFT\n\nUnknown operator: `Set'.\n\n\nline 44, col 26 to line 44, col 28 of module SmartBFT\n\nUnknown operator: `Set'.\n\n\nline 55, col 19 to line 55, col 21 of module SmartBFT\n\nUnknown operator: `Set'.\n\n\nline 56, col 17 to line 56, col 19 of module SmartBFT\n\nUnknown operator: `Set'.\n\n\nline 59, col 31 to line 59, col 33 of module SmartBFT\n\nUnknown operator: `Set'.\n\n\nline 78, col 14 to line 78, col 24 of module SmartBFT\n\nUnknown operator: `CARDINALITY'.\n\n\nline 152, col 66 to line 152, col 76 of module SmartBFT\n\nUnknown operator: `CARDINALITY'.\n\n\nline 152, col 83 to line 152, col 85 of module SmartBFT\n\nUnknown operator: `Min'.\n\n\nline 258, col 113 to line 258, col 114 of module SmartBFT\n\nUnknown operator: `vc'.\n\n\nline 264, col 26 to line 264, col 191 of module SmartBFT\n\nThe operator SendTo requires 11 arguments.\n\n\nline 284, col 102 to line 284, col 103 of module SmartBFT\n\nUnknown operator: `vd'.\n\n\nline 296, col 183 to line 296, col 184 of module SmartBFT\n\nUnknown operator: `vd'.\n\n\nline 338, col 20 to line 338, col 23 of module SmartBFT\n\nUnknown operator: `vars'."
+  ],
+  "semantic_errors": [],
+  "action_results": [
+    {
+      "action_name": "Request",
+      "success": true,
+      "compilation_time": 0.15119218826293945,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "ActualViewNumber",
+      "success": true,
+      "compilation_time": 0.14792990684509277,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "MaxView"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ActualSequenceNumber",
+      "success": true,
+      "compilation_time": 0.1478898525238037,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "MaxSeq"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ActualProposal",
+      "success": true,
+      "compilation_time": 0.1500539779663086,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "ActualViewNumber",
+        "ActualSequenceNumber"
+      ],
+      "functions_added": [
+        "Set",
+        "Request"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewNumber",
+      "success": true,
+      "compilation_time": 0.14865994453430176,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "ActualViewNumber"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "SequenceNumber",
+      "success": true,
+      "compilation_time": 0.1476118564605713,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Nil",
+        "ActualSequenceNumber"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Proposal",
+      "success": true,
+      "compilation_time": 0.14581990242004395,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Nil",
+        "ActualProposal"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "PhaseType",
+      "success": true,
+      "compilation_time": 0.14871811866760254,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "MsgType",
+      "success": true,
+      "compilation_time": 0.14748787879943848,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "ViewChangeInfo",
+      "success": true,
+      "compilation_time": 0.15035080909729004,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Nil",
+        "ActualProposal",
+        "ActualSequenceNumber"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewDataInfo",
+      "success": true,
+      "compilation_time": 0.1845870018005371,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "ActualProposal",
+        "Nil"
+      ],
+      "functions_added": [
+        "Set",
+        "MESSAGE"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MESSAGE",
+      "success": false,
+      "compilation_time": 0.11627697944641113,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_3f9gip0m/SmartBFT_MESSAGE.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"currentView\" at line 20, column 5 and token \"ViewChangeInfo\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_3f9gip0m/SmartBFT_MESSAGE.tla\n\nIn module SmartBFT_MESSAGE\n\nCould not parse module SmartBFT_MESSAGE from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_3f9gip0m/SmartBFT_MESSAGE.tla\n*** Errors: 1\n\nIn module SmartBFT_MESSAGE\n\nCould not parse module SmartBFT_MESSAGE from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_3f9gip0m/SmartBFT_MESSAGE.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [
+        "ViewDataInfo",
+        "Nodes",
+        "Set",
+        "SequenceNumber",
+        "Proposal",
+        "ViewNumber",
+        "MsgType",
+        "Nil",
+        "ViewChangeInfo"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 2
+    },
+    {
+      "action_name": "Quorum",
+      "success": true,
+      "compilation_time": 0.15429282188415527,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "F"
+      ],
+      "functions_added": [
+        "CARDINALITY"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Leader",
+      "success": true,
+      "compilation_time": 0.1508018970489502,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "N"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "IsLeader",
+      "success": true,
+      "compilation_time": 0.17722201347351074,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [
+        "Leader"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "IsCurrentLeader",
+      "success": true,
+      "compilation_time": 0.14987802505493164,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [
+        "IsLeader",
+        "currentView"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MakeMsg",
+      "success": true,
+      "compilation_time": 0.17591404914855957,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "DefaultViewChangeInfo",
+      "success": true,
+      "compilation_time": 0.14948606491088867,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Nil"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "DefaultViewDataInfo",
+      "success": true,
+      "compilation_time": 0.1496591567993164,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Nil"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Init",
+      "success": true,
+      "compilation_time": 0.15038108825683594,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "phase",
+        "view_data_messages",
+        "requests_pool",
+        "Nodes",
+        "currentDecisionsInView",
+        "currentView",
+        "committed_proposal",
+        "currentSeq",
+        "view_change_messages",
+        "prepared_proposal",
+        "next_request_id",
+        "Nil",
+        "messages",
+        "ActualViewNumber",
+        "ActualSequenceNumber"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Receive",
+      "success": true,
+      "compilation_time": 0.14900493621826172,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Nil",
+        "messages"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Broadcast",
+      "success": true,
+      "compilation_time": 0.1482400894165039,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "messages"
+      ],
+      "functions_added": [
+        "MakeMsg",
+        "Nil"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "SendTo",
+      "success": true,
+      "compilation_time": 0.14956998825073242,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "messages"
+      ],
+      "functions_added": [
+        "MakeMsg"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "SubmitClientRequest",
+      "success": true,
+      "compilation_time": 0.15073704719543457,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "phase",
+        "view_data_messages",
+        "requests_pool",
+        "currentDecisionsInView",
+        "currentView",
+        "committed_proposal",
+        "currentSeq",
+        "view_change_messages",
+        "prepared_proposal",
+        "messages",
+        "next_request_id"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Preprepare",
+      "success": true,
+      "compilation_time": 0.16433119773864746,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "phase",
+        "view_data_messages",
+        "MaxView",
+        "requests_pool",
+        "currentView",
+        "MaxSeq",
+        "currentSeq",
+        "currentDecisionsInView",
+        "committed_proposal",
+        "view_change_messages",
+        "prepared_proposal",
+        "next_request_id"
+      ],
+      "functions_added": [
+        "Min",
+        "Broadcast",
+        "IsCurrentLeader",
+        "CARDINALITY",
+        "MaxRequestsPerBatch",
+        "DefaultViewDataInfo",
+        "DefaultViewChangeInfo"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Prepare",
+      "success": true,
+      "compilation_time": 0.1479201316833496,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "phase",
+        "view_data_messages",
+        "requests_pool",
+        "currentView",
+        "currentDecisionsInView",
+        "currentSeq",
+        "view_change_messages",
+        "committed_proposal",
+        "next_request_id",
+        "prepared_proposal"
+      ],
+      "functions_added": [
+        "Receive",
+        "Leader",
+        "IsCurrentLeader",
+        "Broadcast",
+        "DefaultViewChangeInfo",
+        "DefaultViewDataInfo"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Commit",
+      "success": true,
+      "compilation_time": 0.1510448455810547,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "phase",
+        "view_data_messages",
+        "requests_pool",
+        "currentView",
+        "currentDecisionsInView",
+        "ActualProposal",
+        "currentSeq",
+        "next_request_id",
+        "view_change_messages",
+        "committed_proposal",
+        "ActualSequenceNumber",
+        "messages",
+        "prepared_proposal"
+      ],
+      "functions_added": [
+        "Quorum",
+        "Leader",
+        "Broadcast",
+        "DefaultViewChangeInfo",
+        "DefaultViewDataInfo"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Decide",
+      "success": true,
+      "compilation_time": 0.1509408950805664,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "phase",
+        "view_data_messages",
+        "requests_pool",
+        "currentView",
+        "currentDecisionsInView",
+        "ActualProposal",
+        "currentSeq",
+        "prepared_proposal",
+        "view_change_messages",
+        "committed_proposal",
+        "next_request_id",
+        "messages",
+        "ActualSequenceNumber"
+      ],
+      "functions_added": [
+        "Quorum"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewChange",
+      "success": true,
+      "compilation_time": 0.15295791625976562,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "phase",
+        "view_data_messages",
+        "MaxView",
+        "requests_pool",
+        "currentDecisionsInView",
+        "currentView",
+        "currentSeq",
+        "next_request_id",
+        "view_change_messages",
+        "committed_proposal",
+        "ActualSequenceNumber",
+        "messages",
+        "ActualViewNumber",
+        "prepared_proposal"
+      ],
+      "functions_added": [
+        "Broadcast",
+        "Nil",
+        "DefaultViewDataInfo"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewData",
+      "success": false,
+      "compilation_time": 0.1643681526184082,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_3f9gip0m/SmartBFT_ViewData.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-11249217244683935525/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-11249217244683935525/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-11249217244683935525/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-11249217244683935525/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-11249217244683935525/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-11249217244683935525/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_ViewData\nSemantic errors:\n\n*** Errors: 3\n\nline 21, col 36 to line 21, col 37 of module SmartBFT_ViewData\n\nMultiply-defined symbol 'vc': this definition or declaration conflicts \nwith the one at line 3, col 132 to line 3, col 133 of module SmartBFT_ViewData.\n\n\nline 25, col 83 to line 25, col 84 of module SmartBFT_ViewData\n\nMultiply-defined symbol 'vc': this definition or declaration conflicts \nwith the one at line 3, col 132 to line 3, col 133 of module SmartBFT_ViewData.\n\n\nline 31, col 26 to line 31, col 191 of module SmartBFT_ViewData\n\nThe operator SendTo requires 1 arguments."
+      ],
+      "semantic_errors": [],
+      "variables_added": [
+        "phase",
+        "view_data_messages",
+        "requests_pool",
+        "currentView",
+        "currentDecisionsInView",
+        "committed_proposal",
+        "messages",
+        "currentSeq",
+        "vc",
+        "view_change_messages",
+        "prepared_proposal",
+        "Nil",
+        "next_request_id",
+        "SendTo"
+      ],
+      "functions_added": [
+        "SendTo",
+        "Quorum",
+        "Receive"
+      ],
+      "recovery_attempts": 2
+    },
+    {
+      "action_name": "NewView",
+      "success": false,
+      "compilation_time": 0.1505882740020752,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_3f9gip0m/SmartBFT_NewView.tla\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4451604106466034259/TLC.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4451604106466034259/Sequences.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4451604106466034259/Bags.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Bags.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4451604106466034259/FiniteSets.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4451604106466034259/Integers.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tlc-4451604106466034259/Naturals.tla (jar:file:/Users/adaturgut/SysMoBench/lib/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)\nSemantic processing of module Naturals\nSemantic processing of module Sequences\nSemantic processing of module FiniteSets\nSemantic processing of module TLC\nSemantic processing of module Bags\nSemantic processing of module Integers\nSemantic processing of module SmartBFT_NewView\nSemantic errors:\n\n*** Errors: 3\n\nline 28, col 36 to line 28, col 37 of module SmartBFT_NewView\n\nMultiply-defined symbol 'vd': this definition or declaration conflicts \nwith the one at line 3, col 112 to line 3, col 113 of module SmartBFT_NewView.\n\n\nline 32, col 72 to line 32, col 73 of module SmartBFT_NewView\n\nMultiply-defined symbol 'vd': this definition or declaration conflicts \nwith the one at line 3, col 112 to line 3, col 113 of module SmartBFT_NewView.\n\n\nline 44, col 153 to line 44, col 154 of module SmartBFT_NewView\n\nMultiply-defined symbol 'vd': this definition or declaration conflicts \nwith the one at line 3, col 112 to line 3, col 113 of module SmartBFT_NewView."
+      ],
+      "semantic_errors": [],
+      "variables_added": [
+        "phase",
+        "view_data_messages",
+        "requests_pool",
+        "currentView",
+        "Broadcast",
+        "currentDecisionsInView",
+        "messages",
+        "currentSeq",
+        "vd",
+        "view_change_messages",
+        "committed_proposal",
+        "Nil",
+        "next_request_id",
+        "prepared_proposal"
+      ],
+      "functions_added": [
+        "Broadcast",
+        "Quorum",
+        "Receive",
+        "IsCurrentLeader",
+        "DefaultViewChangeInfo",
+        "DefaultViewDataInfo"
+      ],
+      "recovery_attempts": 2
+    },
+    {
+      "action_name": "AdvanceView",
+      "success": true,
+      "compilation_time": 0.1542370319366455,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "phase",
+        "view_data_messages",
+        "requests_pool",
+        "currentDecisionsInView",
+        "currentView",
+        "committed_proposal",
+        "currentSeq",
+        "Receive",
+        "view_change_messages",
+        "prepared_proposal",
+        "next_request_id",
+        "ActualViewNumber",
+        "ActualSequenceNumber"
+      ],
+      "functions_added": [
+        "Receive"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MessageLoss",
+      "success": true,
+      "compilation_time": 0.1365828514099121,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "phase",
+        "view_data_messages",
+        "requests_pool",
+        "currentDecisionsInView",
+        "currentView",
+        "currentSeq",
+        "view_change_messages",
+        "committed_proposal",
+        "next_request_id",
+        "messages",
+        "prepared_proposal"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Next",
+      "success": true,
+      "compilation_time": 0.15006089210510254,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "ViewData",
+        "Nodes",
+        "currentView",
+        "ActualProposal",
+        "MessageLoss",
+        "Decide",
+        "Commit",
+        "ViewChange",
+        "Nil",
+        "messages",
+        "Preprepare",
+        "ActualSequenceNumber"
+      ],
+      "functions_added": [
+        "Preprepare",
+        "Commit",
+        "Decide",
+        "ViewChange",
+        "ViewData",
+        "AdvanceView",
+        "NewView",
+        "Prepare",
+        "SubmitClientRequest"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Spec",
+      "success": true,
+      "compilation_time": 0.1479640007019043,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "vars",
+        "Init",
+        "Next"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    }
+  ]
+}

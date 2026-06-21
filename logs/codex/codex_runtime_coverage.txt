@@ -1,0 +1,153 @@
+python3 scripts/run_benchmark.py --task hyperledger --method direct_call --model claude --metric runtime_coverage --spec-file made_specs/SmartBFT.tla --config-file made_specs/MC.cfg
+13:22:16 - LiteLLM:WARNING: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+13:22:16 - LiteLLM:WARNING: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+[INFO] Validating prerequisites...
+[INFO] ✓ All prerequisites validated
+[INFO] Loading existing global error statistics from /Users/adaturgut/SysMoBench/output/global_error_statistics.yaml
+[INFO] Running metric 'runtime_coverage': hyperledger/direct_call/claude
+[INFO] Loaded task: hyperledger (distributed)
+[INFO] Loaded prompt template (6008 chars, language=TLA+)
+[INFO] Using existing specification file: /Users/adaturgut/SysMoBench/made_specs/SmartBFT.tla
+[INFO] Using existing config file: /Users/adaturgut/SysMoBench/made_specs/MC.cfg
+[INFO] RuntimeCoverageEvaluator initialized with 600s timeout
+[INFO] Runtime coverage evaluation: hyperledger/direct_call/claude
+[INFO] Created experiment directory: output/runtime_coverage/tla/hyperledger/direct_call_claude/20260617132217
+[INFO] Using output directory: output/runtime_coverage/tla/hyperledger/direct_call_claude/20260617132217
+[INFO] Using existing .tla and .cfg files
+[INFO] Running 20 simulations...
+[INFO] Simulation 1/20 with seed 889122
+[INFO] Parsing last complete coverage section (lines 2254-4465)
+[INFO] Coverage summary: 23 vars, 6 actions (7 successful), 606 expressions, 12966418 total evaluations, 80113433 total cost
+[INFO] Simulation 2/20 with seed 964536
+[INFO] Parsing last complete coverage section (lines 3093-5193)
+[INFO] Coverage summary: 23 vars, 6 actions (7 successful), 570 expressions, 6540501 total evaluations, 37968584 total cost
+[INFO]   Simulation 2: Found behavior trace with 17 actions
+[INFO]     Trace: ['MCInit', 'MCNext', 'MCNext', 'MCNext', 'MCViewChangerProcessViewChange', 'MCNext', 'MCNext', 'MCControllerSyncBegin', 'MCNext', 'MCNext', 'MCViewChangerAcceptViewData', 'MCViewChangerAcceptViewData', 'MCViewChangerAcceptViewData', 'MCViewChangerAcceptViewData', 'MCNext', 'MCNext', 'MCViewPropose']
+[INFO]     Error action: MCViewPropose
+[INFO]   Found error action from behavior trace: MCViewPropose
+[INFO] Simulation 3/20 with seed 931668
+[INFO] Parsing last complete coverage section (lines 3095-5081)
+[INFO] Coverage summary: 23 vars, 6 actions (8 successful), 535 expressions, 1543025 total evaluations, 10363749 total cost
+[INFO]   Simulation 3: Found behavior trace with 18 actions
+[INFO]     Trace: ['MCInit', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCViewChangerAcceptViewData', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCViewChangerAcceptViewData', 'MCViewChangerAcceptViewData', 'MCViewChangerAcceptViewData', 'MCNext', 'MCControllerSyncBegin', 'MCNext', 'MCViewPropose']
+[INFO]     Error action: MCViewPropose
+[INFO]   Found error action from behavior trace: MCViewPropose
+[INFO] Simulation 4/20 with seed 422885
+[INFO] Parsing last complete coverage section (lines 4114-6121)
+[INFO] Coverage summary: 23 vars, 6 actions (9 successful), 540 expressions, 5216174 total evaluations, 36725333 total cost
+[INFO]   Simulation 4: Found behavior trace with 28 actions
+[INFO]     Trace: ['MCInit', 'MCNext', 'MCViewChangerAcceptViewData', 'MCNext', 'MCViewChangerAcceptViewData', 'MCNext', 'MCViewChangerAcceptViewData', 'MCViewChangerAcceptViewData', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCControllerSyncBegin', 'MCNext', 'MCNext', 'MCViewChangerProcessViewChange', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCCrash', 'MCControllerSyncBegin', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCViewPropose']
+[INFO]     Error action: MCViewPropose
+[INFO]   Found error action from behavior trace: MCViewPropose
+[INFO] Simulation 5/20 with seed 627320
+[INFO] Parsing last complete coverage section (lines 2137-4231)
+[INFO] Coverage summary: 23 vars, 6 actions (9 successful), 568 expressions, 12548003 total evaluations, 81501590 total cost
+[INFO] Simulation 6/20 with seed 191376
+[INFO] Parsing last complete coverage section (lines 2191-4339)
+[INFO] Coverage summary: 23 vars, 6 actions (7 successful), 586 expressions, 12667841 total evaluations, 79727672 total cost
+[INFO] Simulation 7/20 with seed 859548
+[INFO] Parsing last complete coverage section (lines 3594-5754)
+[INFO] Coverage summary: 23 vars, 6 actions (7 successful), 590 expressions, 7445074 total evaluations, 44770373 total cost
+[INFO]   Simulation 7: Found behavior trace with 22 actions
+[INFO]     Trace: ['MCInit', 'MCNext', 'MCNext', 'MCNext', 'MCViewChangerAcceptViewData', 'MCNext', 'MCViewChangerAcceptViewData', 'MCNext', 'MCNext', 'MCViewChangerAcceptViewData', 'MCNext', 'MCViewChangerAcceptViewData', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCControllerSyncBegin', 'MCNext', 'MCNext', 'MCNext', 'MCViewPropose']
+[INFO]     Error action: MCViewPropose
+[INFO]   Found error action from behavior trace: MCViewPropose
+[INFO] Simulation 8/20 with seed 963303
+[INFO] Parsing last complete coverage section (lines 2137-4231)
+[INFO] Coverage summary: 23 vars, 6 actions (8 successful), 569 expressions, 12213735 total evaluations, 88496263 total cost
+[INFO] Simulation 9/20 with seed 510591
+[INFO] Parsing last complete coverage section (lines 4425-6570)
+[INFO] Coverage summary: 23 vars, 6 actions (8 successful), 585 expressions, 11398903 total evaluations, 75289800 total cost
+[INFO]   Simulation 9: Found behavior trace with 33 actions
+[INFO]     Trace: ['MCInit', 'MCNext', 'MCViewChangerAcceptViewData', 'MCNext', 'MCViewChangerAcceptViewData', 'MCNext', 'MCViewChangerAcceptViewData', 'MCNext', 'MCNext', 'MCViewChangerAcceptViewData', 'MCNext', 'MCNext', 'MCNext', 'MCCrash', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCControllerSyncBegin', 'MCNext', 'MCNext', 'MCNext', 'MCControllerSyncBegin', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCViewPropose']
+[INFO]     Error action: MCViewPropose
+[INFO]   Found error action from behavior trace: MCViewPropose
+[INFO] Simulation 10/20 with seed 761089
+[INFO] Parsing last complete coverage section (lines 4884-6996)
+[INFO] Coverage summary: 23 vars, 6 actions (8 successful), 575 expressions, 8044887 total evaluations, 50853076 total cost
+[INFO]   Simulation 10: Found behavior trace with 40 actions
+[INFO]     Trace: ['MCInit', 'MCNext', 'MCNext', 'MCViewChangerAcceptViewData', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCViewChangerAcceptViewData', 'MCNext', 'MCNext', 'MCNext', 'MCControllerSyncBegin', 'MCNext', 'MCNext', 'MCViewChangerAcceptViewData', 'MCViewChangerAcceptViewData', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCViewPropose', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCCrash', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCControllerSyncBegin', 'MCNext', 'MCViewPropose']
+[INFO]     Error action: MCViewPropose
+[INFO]   Found error action from behavior trace: MCViewPropose
+[INFO] Simulation 11/20 with seed 893767
+[INFO] Parsing last complete coverage section (lines 2203-4363)
+[INFO] Coverage summary: 23 vars, 6 actions (7 successful), 590 expressions, 12283825 total evaluations, 88366555 total cost
+[INFO] Simulation 12/20 with seed 151497
+[INFO] Parsing last complete coverage section (lines 2113-4183)
+[INFO] Coverage summary: 23 vars, 6 actions (9 successful), 561 expressions, 12411261 total evaluations, 79480936 total cost
+[INFO] Simulation 13/20 with seed 507173
+[INFO] Parsing last complete coverage section (lines 4661-6878)
+[INFO] Coverage summary: 23 vars, 6 actions (7 successful), 608 expressions, 11593800 total evaluations, 71591406 total cost
+[INFO]   Simulation 13: Found behavior trace with 32 actions
+[INFO]     Trace: ['MCInit', 'MCNext', 'MCNext', 'MCNext', 'MCViewChangerAcceptViewData', 'MCNext', 'MCViewChangerAcceptViewData', 'MCNext', 'MCViewChangerAcceptViewData', 'MCViewChangerAcceptViewData', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCControllerSyncBegin', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCControllerSyncBegin', 'MCNext', 'MCNext', 'MCNext', 'MCViewPropose']
+[INFO]     Error action: MCViewPropose
+[INFO]   Found error action from behavior trace: MCViewPropose
+[INFO] Simulation 14/20 with seed 182379
+[INFO] Parsing last complete coverage section (lines 4341-6408)
+[INFO] Coverage summary: 23 vars, 6 actions (9 successful), 560 expressions, 2036800 total evaluations, 11080277 total cost
+[INFO]   Simulation 14: Found behavior trace with 36 actions
+[INFO]     Trace: ['MCInit', 'MCNext', 'MCNext', 'MCNext', 'MCCrash', 'MCNext', 'MCNext', 'MCViewChangerAcceptViewData', 'MCViewChangerProcessViewChange', 'MCNext', 'MCNext', 'MCViewChangerAcceptViewData', 'MCViewChangerAcceptViewData', 'MCViewChangerAcceptViewData', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCControllerSyncBegin', 'MCControllerSyncBegin', 'MCNext', 'MCNext', 'MCViewPropose']
+[INFO]     Error action: MCViewPropose
+[INFO]   Found error action from behavior trace: MCViewPropose
+[INFO] Simulation 15/20 with seed 923268
+[INFO] Parsing last complete coverage section (lines 2239-4435)
+[INFO] Coverage summary: 23 vars, 6 actions (8 successful), 601 expressions, 13221518 total evaluations, 74830362 total cost
+[INFO] Simulation 16/20 with seed 879291
+[INFO] Parsing last complete coverage section (lines 3436-5383)
+[INFO] Coverage summary: 23 vars, 6 actions (9 successful), 520 expressions, 2920355 total evaluations, 19595959 total cost
+[INFO]   Simulation 16: Found behavior trace with 23 actions
+[INFO]     Trace: ['MCInit', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCControllerSyncBegin', 'MCNext', 'MCViewChangerAcceptViewData', 'MCViewChangerAcceptViewData', 'MCViewChangerProcessViewChange', 'MCViewChangerAcceptViewData', 'MCViewChangerAcceptViewData', 'MCNext', 'MCControllerSyncBegin', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCCrash', 'MCViewChangerProcessViewChange', 'MCNext', 'MCNext', 'MCViewPropose']
+[INFO]     Error action: MCViewPropose
+[INFO]   Found error action from behavior trace: MCViewPropose
+[INFO] Simulation 17/20 with seed 513863
+[INFO] Parsing last complete coverage section (lines 4343-6182)
+[INFO] Coverage summary: 23 vars, 6 actions (8 successful), 486 expressions, 1379383 total evaluations, 6703078 total cost
+[INFO]   Simulation 17: Found behavior trace with 34 actions
+[INFO]     Trace: ['MCInit', 'MCNext', 'MCNext', 'MCNext', 'MCViewChangerAcceptViewData', 'MCNext', 'MCViewChangerAcceptViewData', 'MCViewChangerAcceptViewData', 'MCViewChangerAcceptViewData', 'MCNext', 'MCNext', 'MCCrash', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCViewPropose', 'MCNext', 'MCControllerSyncBegin', 'MCNext', 'MCControllerSyncBegin', 'MCNext', 'MCViewPropose']
+[INFO]     Error action: MCViewPropose
+[INFO]   Found error action from behavior trace: MCViewPropose
+[INFO] Simulation 18/20 with seed 537821
+[INFO] Parsing last complete coverage section (lines 3407-5462)
+[INFO] Coverage summary: 23 vars, 6 actions (8 successful), 556 expressions, 7609489 total evaluations, 47965051 total cost
+[INFO]   Simulation 18: Found behavior trace with 19 actions
+[INFO]     Trace: ['MCInit', 'MCNext', 'MCViewChangerProcessViewChange', 'MCNext', 'MCViewChangerAcceptViewData', 'MCViewChangerAcceptViewData', 'MCNext', 'MCViewChangerAcceptViewData', 'MCNext', 'MCNext', 'MCNext', 'MCViewChangerAcceptViewData', 'MCNext', 'MCNext', 'MCNext', 'MCControllerSyncBegin', 'MCNext', 'MCNext', 'MCViewPropose']
+[INFO]     Error action: MCViewPropose
+[INFO]   Found error action from behavior trace: MCViewPropose
+[INFO] Simulation 19/20 with seed 914692
+[INFO] Parsing last complete coverage section (lines 4690-6778)
+[INFO] Coverage summary: 23 vars, 6 actions (9 successful), 567 expressions, 5673245 total evaluations, 37356298 total cost
+[INFO]   Simulation 19: Found behavior trace with 38 actions
+[INFO]     Trace: ['MCInit', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCViewChangerAcceptViewData', 'MCViewChangerAcceptViewData', 'MCViewChangerAcceptViewData', 'MCNext', 'MCViewChangerAcceptViewData', 'MCCrash', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCControllerSyncBegin', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCControllerSyncBegin', 'MCNext', 'MCViewPropose']
+[INFO]     Error action: MCViewPropose
+[INFO]   Found error action from behavior trace: MCViewPropose
+[INFO] Simulation 20/20 with seed 885287
+[INFO] Parsing last complete coverage section (lines 4410-6204)
+[INFO] Coverage summary: 23 vars, 6 actions (8 successful), 471 expressions, 569544 total evaluations, 4891437 total cost
+[INFO]   Simulation 20: Found behavior trace with 34 actions
+[INFO]     Trace: ['MCInit', 'MCNext', 'MCViewChangerProcessViewChange', 'MCViewChangerAcceptViewData', 'MCNext', 'MCNext', 'MCControllerSyncBegin', 'MCViewChangerAcceptViewData', 'MCViewChangerAcceptViewData', 'MCNext', 'MCNext', 'MCViewChangerAcceptViewData', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCControllerSyncBegin', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCNext', 'MCViewPropose']
+[INFO]     Error action: MCViewPropose
+[INFO]   Found error action from behavior trace: MCViewPropose
+[INFO]
+============================================================
+[INFO] Runtime Coverage Summary:
+[INFO]   Total actions in spec: 6
+[INFO]     All actions: ['MCControllerSyncBegin', 'MCCrash', 'MCNext', 'MCViewChangerAcceptViewData', 'MCViewChangerProcessViewChange', 'MCViewPropose']
+[INFO]   Covered actions: 6
+[INFO]     Covered list: ['MCControllerSyncBegin', 'MCCrash', 'MCNext', 'MCViewChangerAcceptViewData', 'MCViewChangerProcessViewChange', 'MCViewPropose']
+[INFO]   Error actions: 1
+[INFO]     Error list: ['MCViewPropose']
+[INFO]   Successful actions: 5
+[INFO]     Successful list: ['MCControllerSyncBegin', 'MCCrash', 'MCNext', 'MCViewChangerAcceptViewData', 'MCViewChangerProcessViewChange']
+[INFO]   Runtime coverage score: 83.33%
+[INFO] ============================================================
+
+[INFO] Metric 'runtime_coverage': ✓ PASS
+
+Semantics Evaluation Results: ✓ PASS
+Invariant generation time: 0.00s
+Config generation time: 0.00s
+Model checking time: 57.62s
+States explored: 160283781
+Invariant violations: 0
+Deadlock found: False
+Specification: output/runtime_coverage/tla/hyperledger/direct_call_claude/20260617132217/SmartBFT.tla

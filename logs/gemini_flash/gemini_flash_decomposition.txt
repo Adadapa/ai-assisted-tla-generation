@@ -1,0 +1,158 @@
+python3 scripts/run_benchmark.py --task hyperledger --method direct_call --model gemini25flash_google --metric action_decomposition
+23:45:28 - LiteLLM:WARNING: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+23:45:28 - LiteLLM:WARNING: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+[INFO] Validating prerequisites...
+[INFO] ✓ All prerequisites validated
+[INFO] Loading existing global error statistics from /Users/adaturgut/SysMoBench/output/global_error_statistics.yaml
+[INFO] Running metric 'action_decomposition': hyperledger/direct_call/gemini25flash_google
+[INFO] Loaded task: hyperledger (distributed)
+[INFO] Loaded prompt template (6008 chars, language=TLA+)
+[INFO] Loaded model: gemini25flash_google
+[INFO] Using method: direct_call (language=TLA+)
+[INFO] [direct_call] Attempt 1/3
+23:45:29 - LiteLLM:INFO: utils.py:4054 -
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+[INFO]
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+23:47:33 - LiteLLM:INFO: utils.py:1656 - Wrapper: Completed Call, calling success_handler
+[INFO] Wrapper: Completed Call, calling success_handler
+[INFO] [direct_call] ✗ TLA+ validation failed on attempt 1 — 1 errors
+[INFO] [direct_call] Attempt 2/3
+23:47:34 - LiteLLM:INFO: utils.py:4054 -
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+[INFO]
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+23:49:20 - LiteLLM:INFO: utils.py:1656 - Wrapper: Completed Call, calling success_handler
+[INFO] Wrapper: Completed Call, calling success_handler
+[INFO] [direct_call] ✗ TLA+ validation failed on attempt 2 — 1 errors
+[INFO] [direct_call] Attempt 3/3
+23:49:20 - LiteLLM:INFO: utils.py:4054 -
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+[INFO]
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+23:50:01 - LiteLLM:INFO: utils.py:1656 - Wrapper: Completed Call, calling success_handler
+[INFO] Wrapper: Completed Call, calling success_handler
+[INFO] [direct_call] ✗ TLA+ validation failed on attempt 3 — 1 errors
+[INFO] [direct_call] Max attempts reached; returning last response.
+[INFO] Generation completed in 272.68s
+[INFO] ActionDecompositionEvaluator initialized with 30s timeout
+[INFO] Loading existing global error statistics from /Users/adaturgut/SysMoBench/output/global_error_statistics.yaml
+[INFO] Evaluating action decomposition: hyperledger/direct_call/gemini25flash_google
+[INFO] Decomposed specification into 32 actions
+[INFO] Processing action 1/32: N
+[INFO]   ✓ Action 'N' validated successfully
+[INFO] Processing action 2/32: QuorumSize
+[INFO]   ✓ Action 'QuorumSize' validated successfully
+[INFO] Processing action 3/32: getLeaderID
+[INFO]   ✓ Action 'getLeaderID' validated successfully
+[INFO] Processing action 4/32: IsQuorum
+[INFO]   ✓ Action 'IsQuorum' validated successfully
+[INFO] Processing action 5/32: Max2
+[INFO]   ✓ Action 'Max2' validated successfully
+[INFO] Processing action 6/32: ReplicaStateRecord
+[INFO]   ✓ Action 'ReplicaStateRecord' validated successfully
+[INFO] Processing action 7/32: ProposalType
+[INFO]   ✓ Action 'ProposalType' validated successfully
+[INFO] Processing action 8/32: RequestType
+[INFO]   ✓ Action 'RequestType' validated successfully
+[INFO] Processing action 9/32: PreprepareMsgType
+[INFO]   ✓ Action 'PreprepareMsgType' validated successfully
+[INFO] Processing action 10/32: PrepareMsgType
+[INFO]   ✓ Action 'PrepareMsgType' validated successfully
+[INFO] Processing action 11/32: CommitMsgType
+[INFO]   ✓ Action 'CommitMsgType' validated successfully
+[INFO] Processing action 12/32: ViewChangeMsgType
+[INFO]   ✓ Action 'ViewChangeMsgType' validated successfully
+[INFO] Processing action 13/32: ViewDataMsgType
+[INFO]   ✓ Action 'ViewDataMsgType' validated successfully
+[INFO] Processing action 14/32: NewViewMsgType
+[INFO]   ✓ Action 'NewViewMsgType' validated successfully
+[INFO] Processing action 15/32: MessageType
+[INFO]   ✓ Action 'MessageType' validated successfully
+[INFO] Processing action 16/32: MessageInTransit
+[INFO]   ✓ Action 'MessageInTransit' validated successfully
+[INFO] Processing action 17/32: Init
+[INFO]   ✓ Action 'Init' validated successfully
+[INFO] Processing action 18/32: Preprepare
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['getLeaderID(x1) == TRUE']
+DEBUG: Inserting 'getLeaderID(x1) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['getLeaderID']
+[INFO]   ✓ Action 'Preprepare' validated successfully
+[INFO] Processing action 19/32: Prepare
+[WARNING]   ✗ Action 'Prepare' failed validation (1 errors)
+[INFO] Processing action 20/32: Commit
+[WARNING]   ✗ Action 'Commit' failed validation (1 errors)
+[INFO] Processing action 21/32: Decide
+[WARNING]   ✗ Action 'Decide' failed validation (1 errors)
+[INFO] Processing action 22/32: ViewChange
+[WARNING]   ✗ Action 'ViewChange' failed validation (1 errors)
+[INFO] Processing action 23/32: ViewData
+[WARNING]   ✗ Action 'ViewData' failed validation (1 errors)
+[INFO] Processing action 24/32: NewView
+[WARNING]   ✗ Action 'NewView' failed validation (1 errors)
+[INFO] Processing action 25/32: HandleNewView
+[WARNING]   ✗ Action 'HandleNewView' failed validation (1 errors)
+[INFO] Processing action 26/32: ProcessViewChangeMessage
+[INFO]   ✓ Action 'ProcessViewChangeMessage' validated successfully
+[INFO] Processing action 27/32: DiscardMessage
+DEBUG: Will insert 1 functions at position 4
+DEBUG: Functions to add: ['getLeaderID(x1) == TRUE']
+DEBUG: Inserting 'getLeaderID(x1) == TRUE' at position 4
+DEBUG: Updated all_added_funcs: ['getLeaderID']
+[WARNING]   ✗ Action 'DiscardMessage' failed validation (1 errors)
+[INFO] Processing action 28/32: AddRequest
+[INFO]   ✓ Action 'AddRequest' validated successfully
+[INFO] Processing action 29/32: Stutter
+[INFO]   ✓ Action 'Stutter' validated successfully
+[INFO] Processing action 30/32: Next
+DEBUG: Will insert 10 functions at position 4
+DEBUG: Functions to add: ['Prepare(x1) == TRUE', 'DiscardMessage(x1) == TRUE', 'ViewData(x1) == TRUE', 'ViewChange(x1) == TRUE', 'Preprepare(x1) == TRUE', 'Decide(x1) == TRUE', 'HandleNewView(x1) == TRUE', 'Commit(x1) == TRUE', 'ProcessViewChangeMessage(x1) == TRUE', 'NewView(x1) == TRUE']
+DEBUG: Inserting 'Prepare(x1) == TRUE' at position 4
+DEBUG: Inserting 'DiscardMessage(x1) == TRUE' at position 6
+DEBUG: Inserting 'ViewData(x1) == TRUE' at position 8
+DEBUG: Inserting 'ViewChange(x1) == TRUE' at position 10
+DEBUG: Inserting 'Preprepare(x1) == TRUE' at position 12
+DEBUG: Inserting 'Decide(x1) == TRUE' at position 14
+DEBUG: Inserting 'HandleNewView(x1) == TRUE' at position 16
+DEBUG: Inserting 'Commit(x1) == TRUE' at position 18
+DEBUG: Inserting 'ProcessViewChangeMessage(x1) == TRUE' at position 20
+DEBUG: Inserting 'NewView(x1) == TRUE' at position 22
+DEBUG: Updated all_added_funcs: ['Prepare', 'DiscardMessage', 'ViewData', 'ViewChange', 'Preprepare', 'Decide', 'HandleNewView', 'Commit', 'ProcessViewChangeMessage', 'NewView']
+[INFO]   ✓ Action 'Next' validated successfully
+[INFO] Processing action 31/32: Spec
+DEBUG: Will insert 10 functions at position 4
+DEBUG: Functions to add: ['Prepare(x1) == TRUE', 'DiscardMessage(x1) == TRUE', 'ViewData(x1) == TRUE', 'ViewChange(x1) == TRUE', 'Preprepare(x1) == TRUE', 'Decide(x1) == TRUE', 'HandleNewView(x1) == TRUE', 'Commit(x1) == TRUE', 'ProcessViewChangeMessage(x1) == TRUE', 'NewView(x1) == TRUE']
+DEBUG: Inserting 'Prepare(x1) == TRUE' at position 4
+DEBUG: Inserting 'DiscardMessage(x1) == TRUE' at position 6
+DEBUG: Inserting 'ViewData(x1) == TRUE' at position 8
+DEBUG: Inserting 'ViewChange(x1) == TRUE' at position 10
+DEBUG: Inserting 'Preprepare(x1) == TRUE' at position 12
+DEBUG: Inserting 'Decide(x1) == TRUE' at position 14
+DEBUG: Inserting 'HandleNewView(x1) == TRUE' at position 16
+DEBUG: Inserting 'Commit(x1) == TRUE' at position 18
+DEBUG: Inserting 'ProcessViewChangeMessage(x1) == TRUE' at position 20
+DEBUG: Inserting 'NewView(x1) == TRUE' at position 22
+DEBUG: Updated all_added_funcs: ['Prepare', 'DiscardMessage', 'ViewData', 'ViewChange', 'Preprepare', 'Decide', 'HandleNewView', 'Commit', 'ProcessViewChangeMessage', 'NewView']
+[INFO]   ✓ Action 'Spec' validated successfully
+[INFO] Processing action 32/32: vars
+[INFO]   ✓ Action 'vars' validated successfully
+[INFO] Action validation progress: 24/32 actions successful so far
+[INFO] Action decomposition summary: 24/32 actions successful (75.0%)
+[INFO] Action decomposition complete: 32 actions evaluated
+[INFO] Created experiment directory: output/action_decomposition/tla/hyperledger/direct_call_gemini25flash_google/20260614235024
+[INFO] Saved results to output/action_decomposition/tla/hyperledger/direct_call_gemini25flash_google/20260614235024
+[INFO] Results saved to: output/action_decomposition/tla/hyperledger/direct_call_gemini25flash_google/20260614235024
+[INFO] Saved experiment error statistics to: output/action_decomposition/tla/hyperledger/direct_call_gemini25flash_google/20260614235024/error_statistics.yaml
+[INFO] Error statistics saved to: output/action_decomposition/tla/hyperledger/direct_call_gemini25flash_google/20260614235024/error_statistics.yaml
+[INFO] Evaluation complete: success=True
+[INFO] Metric 'action_decomposition': ✓ PASS
+
+Syntax Evaluation Results: ✓ PASS
+Generation time: 272.68s
+Compilation time: 4.83s
+Syntax errors: 9
+Semantic errors: 0
+Action success rate: 24/32 (75.0%)
+Recovery statistics: 100 variables, 22 functions added, 31 attempts
+Results saved to: output/action_decomposition/tla/hyperledger/direct_call_gemini25flash_google/20260614235024

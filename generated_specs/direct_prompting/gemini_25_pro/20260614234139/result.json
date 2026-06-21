@@ -1,0 +1,262 @@
+{
+  "overall_success": true,
+  "generation_successful": true,
+  "compilation_successful": false,
+  "generation_time": 516.5553159713745,
+  "compilation_time": 2.111999034881592,
+  "total_actions": 15,
+  "successful_actions": 8,
+  "action_success_rate": 0.5333333333333333,
+  "total_variables_added": 51,
+  "total_functions_added": 9,
+  "total_recovery_attempts": 16,
+  "syntax_errors": [
+    "N: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_N.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"view\" at line 7, column 5 and token \"Nodes\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_N.tla\n\nIn module SmartBFT_N\n\nCould not parse module SmartBFT_N from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_N.tla\n*** Errors: 1\n\nIn module SmartBFT_N\n\nCould not parse module SmartBFT_N from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_N.tla",
+    "Commit: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_Commit.tla\n***Parse Error***\nForm {a \\in b : c \\in d }, at line 10, is not allowed\n\nResidual stack trace follows:\nSome { } form starting at line 10, column 29.\nExtendableExpr starting at line 10, column 29.\nExpression starting at line 10, column 29.\nDefinition starting at line 10, column 12.\nLet Definitions starting at line 8, column 12.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_Commit.tla\n\nIn module SmartBFT_Commit\n\nCould not parse module SmartBFT_Commit from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_Commit.tla\n*** Errors: 1\n\nIn module SmartBFT_Commit\n\nCould not parse module SmartBFT_Commit from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_Commit.tla",
+    "Decide: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_Decide.tla\n***Parse Error***\nForm {a \\in b : c \\in d }, at line 11, is not allowed\n\nResidual stack trace follows:\nSome { } form starting at line 11, column 28.\nExtendableExpr starting at line 11, column 28.\nExpression starting at line 11, column 28.\nDefinition starting at line 11, column 12.\nLet Definitions starting at line 9, column 12.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_Decide.tla\n\nIn module SmartBFT_Decide\n\nCould not parse module SmartBFT_Decide from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_Decide.tla\n*** Errors: 1\n\nIn module SmartBFT_Decide\n\nCould not parse module SmartBFT_Decide from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_Decide.tla",
+    "ViewChange: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_ViewChange.tla\n***Parse Error***\nEncountered \"new_view\" at line 8, column 12 and token \"LET\" \n\nResidual stack trace follows:\nLet Definitions starting at line 8, column 12.\nCase Other Arm starting at line 8, column 8.\nExpression starting at line 8, column 8.\nJunction Item starting at line 8, column 5.\nAND-OR Junction starting at line 5, column 5.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_ViewChange.tla\n\nIn module SmartBFT_ViewChange\n\nCould not parse module SmartBFT_ViewChange from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_ViewChange.tla\n*** Errors: 1\n\nIn module SmartBFT_ViewChange\n\nCould not parse module SmartBFT_ViewChange from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_ViewChange.tla",
+    "ViewData: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_ViewData.tla\n***Parse Error***\nEncountered \"vc_proof\" at line 9, column 12 and token \"LET\" \n\nResidual stack trace follows:\nLet Definitions starting at line 9, column 12.\nCase Other Arm starting at line 9, column 8.\nExpression starting at line 9, column 8.\nJunction Item starting at line 9, column 5.\nAND-OR Junction starting at line 5, column 5.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_ViewData.tla\n\nIn module SmartBFT_ViewData\n\nCould not parse module SmartBFT_ViewData from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_ViewData.tla\n*** Errors: 1\n\nIn module SmartBFT_ViewData\n\nCould not parse module SmartBFT_ViewData from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_ViewData.tla",
+    "NewView: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_NewView.tla\n***Parse Error***\nEncountered \"vd_proof\" at line 10, column 12 and token \"LET\" \n\nResidual stack trace follows:\nLet Definitions starting at line 10, column 12.\nCase Other Arm starting at line 10, column 8.\nExpression starting at line 10, column 8.\nJunction Item starting at line 10, column 5.\nAND-OR Junction starting at line 5, column 5.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_NewView.tla\n\nIn module SmartBFT_NewView\n\nCould not parse module SmartBFT_NewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_NewView.tla\n*** Errors: 1\n\nIn module SmartBFT_NewView\n\nCould not parse module SmartBFT_NewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_NewView.tla",
+    "Spec: ****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_Spec.tla\n***Parse Error***\nIll-structured fairness expression at line 4, column 34\n\nResidual stack trace follows:\nExtendableExpr starting at line 4, column 34.\nExtendableExpr starting at line 4, column 19.\nExtendableExpr starting at line 4, column 9.\nExpression starting at line 4, column 9.\nDefinition starting at line 4, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_Spec.tla\n\nIn module SmartBFT_Spec\n\nCould not parse module SmartBFT_Spec from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_Spec.tla\n*** Errors: 1\n\nIn module SmartBFT_Spec\n\nCould not parse module SmartBFT_Spec from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_Spec.tla",
+    "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /Users/adaturgut/SysMoBench/data/spec/hyperledger/SmartBFT.tla\n***Parse Error***\nForm {a \\in b : c \\in d }, at line 94, is not allowed\n\nResidual stack trace follows:\nSome { } form starting at line 94, column 29.\nExtendableExpr starting at line 94, column 29.\nExpression starting at line 94, column 29.\nDefinition starting at line 94, column 12.\nLet Definitions starting at line 92, column 12.\n\n\nFatal errors while parsing TLA+ spec in file /Users/adaturgut/SysMoBench/data/spec/hyperledger/SmartBFT.tla\n\nIn module SmartBFT\n\nCould not parse module SmartBFT from file /Users/adaturgut/SysMoBench/data/spec/hyperledger/SmartBFT.tla\n*** Errors: 1\n\nIn module SmartBFT\n\nCould not parse module SmartBFT from file /Users/adaturgut/SysMoBench/data/spec/hyperledger/SmartBFT.tla"
+  ],
+  "semantic_errors": [],
+  "action_results": [
+    {
+      "action_name": "QuorumSize",
+      "success": true,
+      "compilation_time": 0.15178394317626953,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "F"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "N",
+      "success": false,
+      "compilation_time": 0.11158466339111328,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_N.tla\n***Parse Error***\nWas expecting \"==== or more Module body\"\nEncountered \"view\" at line 7, column 5 and token \"Nodes\" \n\nResidual stack trace follows:\nModule definition starting at line 1, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_N.tla\n\nIn module SmartBFT_N\n\nCould not parse module SmartBFT_N from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_N.tla\n*** Errors: 1\n\nIn module SmartBFT_N\n\nCould not parse module SmartBFT_N from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_N.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [
+        "Nodes"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 2
+    },
+    {
+      "action_name": "vars",
+      "success": true,
+      "compilation_time": 0.15085220336914062,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "phase",
+        "view",
+        "proposal",
+        "log",
+        "network",
+        "vcStatus"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "TypeOK",
+      "success": true,
+      "compilation_time": 0.15126490592956543,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "MaxView",
+        "phase",
+        "MaxSeq",
+        "view",
+        "Nodes",
+        "proposal",
+        "log",
+        "network",
+        "vcStatus",
+        "NULL",
+        "Requests"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Init",
+      "success": true,
+      "compilation_time": 0.1513500213623047,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "phase",
+        "MaxSeq",
+        "view",
+        "Nodes",
+        "proposal",
+        "log",
+        "network",
+        "vcStatus",
+        "NULL"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Leader",
+      "success": true,
+      "compilation_time": 0.15000176429748535,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "N"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Preprepare",
+      "success": true,
+      "compilation_time": 0.1493968963623047,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "phase",
+        "MaxSeq",
+        "view",
+        "Nodes",
+        "proposal",
+        "log",
+        "network",
+        "vcStatus",
+        "NULL",
+        "Requests"
+      ],
+      "functions_added": [
+        "Leader"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Prepare",
+      "success": true,
+      "compilation_time": 0.15414810180664062,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "phase",
+        "view",
+        "Nodes",
+        "proposal",
+        "log",
+        "network",
+        "vcStatus"
+      ],
+      "functions_added": [
+        "Leader"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Commit",
+      "success": false,
+      "compilation_time": 0.1088249683380127,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_Commit.tla\n***Parse Error***\nForm {a \\in b : c \\in d }, at line 10, is not allowed\n\nResidual stack trace follows:\nSome { } form starting at line 10, column 29.\nExtendableExpr starting at line 10, column 29.\nExpression starting at line 10, column 29.\nDefinition starting at line 10, column 12.\nLet Definitions starting at line 8, column 12.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_Commit.tla\n\nIn module SmartBFT_Commit\n\nCould not parse module SmartBFT_Commit from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_Commit.tla\n*** Errors: 1\n\nIn module SmartBFT_Commit\n\nCould not parse module SmartBFT_Commit from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_Commit.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Decide",
+      "success": false,
+      "compilation_time": 0.11902403831481934,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_Decide.tla\n***Parse Error***\nForm {a \\in b : c \\in d }, at line 11, is not allowed\n\nResidual stack trace follows:\nSome { } form starting at line 11, column 28.\nExtendableExpr starting at line 11, column 28.\nExpression starting at line 11, column 28.\nDefinition starting at line 11, column 12.\nLet Definitions starting at line 9, column 12.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_Decide.tla\n\nIn module SmartBFT_Decide\n\nCould not parse module SmartBFT_Decide from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_Decide.tla\n*** Errors: 1\n\nIn module SmartBFT_Decide\n\nCould not parse module SmartBFT_Decide from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_Decide.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewChange",
+      "success": false,
+      "compilation_time": 0.11302876472473145,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_ViewChange.tla\n***Parse Error***\nEncountered \"new_view\" at line 8, column 12 and token \"LET\" \n\nResidual stack trace follows:\nLet Definitions starting at line 8, column 12.\nCase Other Arm starting at line 8, column 8.\nExpression starting at line 8, column 8.\nJunction Item starting at line 8, column 5.\nAND-OR Junction starting at line 5, column 5.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_ViewChange.tla\n\nIn module SmartBFT_ViewChange\n\nCould not parse module SmartBFT_ViewChange from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_ViewChange.tla\n*** Errors: 1\n\nIn module SmartBFT_ViewChange\n\nCould not parse module SmartBFT_ViewChange from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_ViewChange.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewData",
+      "success": false,
+      "compilation_time": 0.11137700080871582,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_ViewData.tla\n***Parse Error***\nEncountered \"vc_proof\" at line 9, column 12 and token \"LET\" \n\nResidual stack trace follows:\nLet Definitions starting at line 9, column 12.\nCase Other Arm starting at line 9, column 8.\nExpression starting at line 9, column 8.\nJunction Item starting at line 9, column 5.\nAND-OR Junction starting at line 5, column 5.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_ViewData.tla\n\nIn module SmartBFT_ViewData\n\nCould not parse module SmartBFT_ViewData from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_ViewData.tla\n*** Errors: 1\n\nIn module SmartBFT_ViewData\n\nCould not parse module SmartBFT_ViewData from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_ViewData.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "NewView",
+      "success": false,
+      "compilation_time": 0.11009573936462402,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_NewView.tla\n***Parse Error***\nEncountered \"vd_proof\" at line 10, column 12 and token \"LET\" \n\nResidual stack trace follows:\nLet Definitions starting at line 10, column 12.\nCase Other Arm starting at line 10, column 8.\nExpression starting at line 10, column 8.\nJunction Item starting at line 10, column 5.\nAND-OR Junction starting at line 5, column 5.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_NewView.tla\n\nIn module SmartBFT_NewView\n\nCould not parse module SmartBFT_NewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_NewView.tla\n*** Errors: 1\n\nIn module SmartBFT_NewView\n\nCould not parse module SmartBFT_NewView from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_NewView.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Next",
+      "success": true,
+      "compilation_time": 0.14911794662475586,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "MaxView",
+        "MaxSeq",
+        "network",
+        "Nodes",
+        "Requests"
+      ],
+      "functions_added": [
+        "Prepare",
+        "Decide",
+        "NewView",
+        "ViewChange",
+        "Commit",
+        "ViewData",
+        "Preprepare"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Spec",
+      "success": false,
+      "compilation_time": 0.10903310775756836,
+      "syntax_errors": [
+        "****** SANY2 Version 2.2 created 08 July 2020\n\nParsing file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_Spec.tla\n***Parse Error***\nIll-structured fairness expression at line 4, column 34\n\nResidual stack trace follows:\nExtendableExpr starting at line 4, column 34.\nExtendableExpr starting at line 4, column 19.\nExtendableExpr starting at line 4, column 9.\nExpression starting at line 4, column 9.\nDefinition starting at line 4, column 1.\n\n\nFatal errors while parsing TLA+ spec in file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_Spec.tla\n\nIn module SmartBFT_Spec\n\nCould not parse module SmartBFT_Spec from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_Spec.tla\n*** Errors: 1\n\nIn module SmartBFT_Spec\n\nCould not parse module SmartBFT_Spec from file /private/var/folders/0r/ts29mnqs1_qc1ljgsq7smmmw0000gn/T/tla_action_decomp_orhcr9zh/SmartBFT_Spec.tla"
+      ],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 1
+    }
+  ]
+}

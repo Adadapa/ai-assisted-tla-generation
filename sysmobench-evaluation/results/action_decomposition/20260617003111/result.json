@@ -1,0 +1,1385 @@
+{
+  "overall_success": true,
+  "generation_successful": true,
+  "compilation_successful": true,
+  "generation_time": 0.0,
+  "compilation_time": 10.249253273010254,
+  "total_actions": 66,
+  "successful_actions": 66,
+  "action_success_rate": 1.0,
+  "total_variables_added": 532,
+  "total_functions_added": 88,
+  "total_recovery_attempts": 60,
+  "syntax_errors": [],
+  "semantic_errors": [],
+  "action_results": [
+    {
+      "action_name": "controllerVars",
+      "success": true,
+      "compilation_time": 0.14948487281799316,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "viewDecisions",
+        "viewNum",
+        "blacklist",
+        "proposalSeq",
+        "phase",
+        "stopped",
+        "decisionsInView",
+        "leader"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "decisionVars",
+      "success": true,
+      "compilation_time": 0.1505751609802246,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "checkpointSeq",
+        "checkpointVal",
+        "delivered",
+        "deliveredVal"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "inFlightVars",
+      "success": true,
+      "compilation_time": 0.15740418434143066,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "inFlight",
+        "viewData",
+        "inFlightPrepared",
+        "selectedInFlight"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "walVars",
+      "success": true,
+      "compilation_time": 0.14897894859313965,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "restoredPhase",
+        "wal",
+        "crashed"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "netVars",
+      "success": true,
+      "compilation_time": 0.14815807342529297,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "messages",
+        "syncLockHolder",
+        "syncResult"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "vars",
+      "success": true,
+      "compilation_time": 0.14713191986083984,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "netVars",
+        "decisionVars",
+        "inFlightVars",
+        "controllerVars",
+        "walVars"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "NatSeq",
+      "success": true,
+      "compilation_time": 0.14822888374328613,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "MaxSeq"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "NatView",
+      "success": true,
+      "compilation_time": 0.15111517906188965,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "MaxView"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ValueOrNil",
+      "success": true,
+      "compilation_time": 0.14472126960754395,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Values",
+        "Genesis",
+        "Nil"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Metadata",
+      "success": true,
+      "compilation_time": 0.16518282890319824,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "Proposal",
+      "success": true,
+      "compilation_time": 0.15085911750793457,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [
+        "Metadata"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "InitialValueMap",
+      "success": true,
+      "compilation_time": 0.1495070457458496,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Nil",
+        "Genesis",
+        "NatSeq"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "CandidateLeader",
+      "success": true,
+      "compilation_time": 0.15101218223571777,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Server"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Message",
+      "success": true,
+      "compilation_time": 0.15039706230163574,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "Send",
+      "success": true,
+      "compilation_time": 0.14754295349121094,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "messages"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Drop",
+      "success": true,
+      "compilation_time": 0.15139079093933105,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "messages"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "AppendWal",
+      "success": true,
+      "compilation_time": 0.15920400619506836,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "wal",
+        "MaxWalLen"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "LastWal",
+      "success": true,
+      "compilation_time": 0.15317320823669434,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Nil",
+        "wal"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ProposalSeqOf",
+      "success": true,
+      "compilation_time": 0.14979195594787598,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "ProposalViewOf",
+      "success": true,
+      "compilation_time": 0.1480569839477539,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "ProposalDecisionsOf",
+      "success": true,
+      "compilation_time": 0.14974427223205566,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "ProposalBlacklistOf",
+      "success": true,
+      "compilation_time": 0.1526341438293457,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [],
+      "functions_added": [],
+      "recovery_attempts": 0
+    },
+    {
+      "action_name": "ProposalSet",
+      "success": true,
+      "compilation_time": 0.15142202377319336,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "NatView",
+        "Values",
+        "Proposal",
+        "MaxSeq",
+        "Server"
+      ],
+      "functions_added": [
+        "Proposal"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "AgreementForSeq",
+      "success": true,
+      "compilation_time": 0.14909791946411133,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Nil",
+        "deliveredVal",
+        "Server",
+        "delivered"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Init",
+      "success": true,
+      "compilation_time": 0.14860820770263672,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "viewNum",
+        "deliveredVal",
+        "phase",
+        "restoredPhase",
+        "syncLockHolder",
+        "stopped",
+        "crashed",
+        "inFlightPrepared",
+        "messages",
+        "viewDecisions",
+        "inFlight",
+        "checkpointVal",
+        "checkpointSeq",
+        "proposalSeq",
+        "selectedInFlight",
+        "InitialValueMap",
+        "Nil",
+        "viewData",
+        "leader",
+        "syncResult",
+        "blacklist",
+        "wal",
+        "PhaseCommitted",
+        "delivered",
+        "decisionsInView",
+        "Server"
+      ],
+      "functions_added": [
+        "CandidateLeader"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ControllerStartView",
+      "success": true,
+      "compilation_time": 0.15074896812438965,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "NatView",
+        "viewNum",
+        "phase",
+        "restoredPhase",
+        "syncLockHolder",
+        "stopped",
+        "crashed",
+        "inFlightVars",
+        "messages",
+        "viewDecisions",
+        "proposalSeq",
+        "PhaseAbort",
+        "leader",
+        "syncResult",
+        "decisionVars",
+        "blacklist",
+        "PhaseCommitted",
+        "decisionsInView",
+        "walVars"
+      ],
+      "functions_added": [
+        "CandidateLeader"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewPropose",
+      "success": true,
+      "compilation_time": 0.14928913116455078,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "walVars",
+        "inFlightVars",
+        "phase",
+        "PhaseCommitted",
+        "controllerVars",
+        "Values",
+        "syncLockHolder",
+        "syncResult",
+        "stopped",
+        "leader",
+        "crashed",
+        "decisionVars"
+      ],
+      "functions_added": [
+        "Send",
+        "Proposal",
+        "viewDecisions",
+        "viewNum",
+        "blacklist",
+        "proposalSeq",
+        "Message",
+        "MsgPrePrepare"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewProcessPrePrepare",
+      "success": true,
+      "compilation_time": 0.14975905418395996,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "viewNum",
+        "phase",
+        "restoredPhase",
+        "syncLockHolder",
+        "stopped",
+        "crashed",
+        "inFlightPrepared",
+        "messages",
+        "viewDecisions",
+        "inFlight",
+        "proposalSeq",
+        "selectedInFlight",
+        "Nil",
+        "viewData",
+        "leader",
+        "syncResult",
+        "decisionVars",
+        "PhaseProposed",
+        "MsgPrePrepare",
+        "blacklist",
+        "decisionsInView",
+        "Server"
+      ],
+      "functions_added": [
+        "AppendWal",
+        "Message",
+        "MsgPrepare",
+        "WalProposed"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewProcessPrePrepareObserved",
+      "success": true,
+      "compilation_time": 0.1495039463043213,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "viewNum",
+        "phase",
+        "restoredPhase",
+        "syncLockHolder",
+        "stopped",
+        "crashed",
+        "inFlightPrepared",
+        "messages",
+        "viewDecisions",
+        "inFlight",
+        "proposalSeq",
+        "selectedInFlight",
+        "Values",
+        "viewData",
+        "leader",
+        "syncResult",
+        "decisionVars",
+        "PhaseProposed",
+        "blacklist",
+        "decisionsInView",
+        "Server"
+      ],
+      "functions_added": [
+        "Proposal",
+        "AppendWal",
+        "Message",
+        "MsgPrepare",
+        "WalProposed"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewProcessPrepares",
+      "success": true,
+      "compilation_time": 0.150831937789917,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "viewNum",
+        "phase",
+        "restoredPhase",
+        "syncLockHolder",
+        "stopped",
+        "crashed",
+        "inFlightPrepared",
+        "messages",
+        "PhasePrepared",
+        "viewDecisions",
+        "inFlight",
+        "proposalSeq",
+        "selectedInFlight",
+        "Nil",
+        "viewData",
+        "leader",
+        "syncResult",
+        "decisionVars",
+        "PhaseProposed",
+        "blacklist",
+        "decisionsInView",
+        "Server"
+      ],
+      "functions_added": [
+        "AppendWal",
+        "Message",
+        "WalCommit",
+        "MsgCommit"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ControllerDecide",
+      "success": true,
+      "compilation_time": 0.15185880661010742,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "deliveredVal",
+        "viewNum",
+        "phase",
+        "syncLockHolder",
+        "stopped",
+        "crashed",
+        "inFlightPrepared",
+        "messages",
+        "PhasePrepared",
+        "viewDecisions",
+        "inFlight",
+        "checkpointVal",
+        "checkpointSeq",
+        "proposalSeq",
+        "selectedInFlight",
+        "Nil",
+        "viewData",
+        "leader",
+        "syncResult",
+        "blacklist",
+        "delivered",
+        "PhaseCommitted",
+        "decisionsInView",
+        "walVars"
+      ],
+      "functions_added": [
+        "ProposalSeqOf"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ControllerChangeView",
+      "success": true,
+      "compilation_time": 0.14690685272216797,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "NatView",
+        "viewNum",
+        "phase",
+        "syncLockHolder",
+        "stopped",
+        "crashed",
+        "inFlightVars",
+        "messages",
+        "viewDecisions",
+        "proposalSeq",
+        "MaxSeq",
+        "leader",
+        "syncResult",
+        "decisionVars",
+        "blacklist",
+        "PhaseCommitted",
+        "decisionsInView",
+        "walVars"
+      ],
+      "functions_added": [
+        "CandidateLeader"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ControllerChangeViewNoop",
+      "success": true,
+      "compilation_time": 0.15041804313659668,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "NatView",
+        "viewNum",
+        "proposalSeq",
+        "stopped",
+        "MaxSeq",
+        "vars",
+        "decisionsInView",
+        "crashed"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ControllerSyncBegin",
+      "success": true,
+      "compilation_time": 0.14967012405395508,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "walVars",
+        "inFlightVars",
+        "crashed",
+        "controllerVars",
+        "messages",
+        "syncLockHolder",
+        "syncResult",
+        "decisionVars"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ControllerSyncApply",
+      "success": true,
+      "compilation_time": 0.15214204788208008,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "NatView",
+        "viewNum",
+        "deliveredVal",
+        "phase",
+        "syncLockHolder",
+        "stopped",
+        "crashed",
+        "inFlightPrepared",
+        "messages",
+        "NatSeq",
+        "ValueOrNil",
+        "viewDecisions",
+        "inFlight",
+        "checkpointVal",
+        "checkpointSeq",
+        "proposalSeq",
+        "selectedInFlight",
+        "Nil",
+        "viewData",
+        "leader",
+        "syncResult",
+        "blacklist",
+        "delivered",
+        "decisionsInView",
+        "walVars"
+      ],
+      "functions_added": [
+        "CandidateLeader",
+        "ProposalSeqOf"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MutuallyExclusiveDeliver",
+      "success": true,
+      "compilation_time": 0.1378469467163086,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "inFlight",
+        "deliveredVal",
+        "checkpointVal",
+        "checkpointSeq",
+        "inFlightVars",
+        "delivered",
+        "controllerVars",
+        "messages",
+        "syncLockHolder",
+        "syncResult",
+        "Nil",
+        "crashed",
+        "walVars"
+      ],
+      "functions_added": [
+        "ProposalSeqOf"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewChangerProcessViewChange",
+      "success": true,
+      "compilation_time": 0.15026402473449707,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "NatView",
+        "viewNum",
+        "phase",
+        "restoredPhase",
+        "syncLockHolder",
+        "stopped",
+        "crashed",
+        "inFlightPrepared",
+        "messages",
+        "viewDecisions",
+        "inFlight",
+        "proposalSeq",
+        "selectedInFlight",
+        "PhaseAbort",
+        "Nil",
+        "viewData",
+        "leader",
+        "syncResult",
+        "decisionVars",
+        "blacklist",
+        "decisionsInView"
+      ],
+      "functions_added": [
+        "AppendWal",
+        "WalViewChange"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewChangerAcceptViewData",
+      "success": true,
+      "compilation_time": 0.15575480461120605,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "inFlight",
+        "viewNum",
+        "inFlightPrepared",
+        "walVars",
+        "checkpointSeq",
+        "selectedInFlight",
+        "controllerVars",
+        "Values",
+        "messages",
+        "Proposal",
+        "syncLockHolder",
+        "syncResult",
+        "Nil",
+        "viewData",
+        "Server",
+        "crashed",
+        "decisionVars"
+      ],
+      "functions_added": [
+        "Proposal",
+        "ProposalSeqOf",
+        "decisionsInView",
+        "blacklist"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewChangerCheckInFlight",
+      "success": true,
+      "compilation_time": 0.1515209674835205,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "inFlight",
+        "inFlightPrepared",
+        "walVars",
+        "selectedInFlight",
+        "crashed",
+        "controllerVars",
+        "messages",
+        "syncLockHolder",
+        "syncResult",
+        "Nil",
+        "viewData",
+        "Quorum",
+        "decisionVars"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewChangerCommitInFlight",
+      "success": true,
+      "compilation_time": 0.14936017990112305,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "viewNum",
+        "phase",
+        "syncLockHolder",
+        "stopped",
+        "crashed",
+        "inFlightPrepared",
+        "messages",
+        "PhasePrepared",
+        "viewDecisions",
+        "inFlight",
+        "checkpointVal",
+        "checkpointSeq",
+        "proposalSeq",
+        "selectedInFlight",
+        "Nil",
+        "viewData",
+        "leader",
+        "syncResult",
+        "decisionVars",
+        "blacklist",
+        "decisionsInView",
+        "walVars"
+      ],
+      "functions_added": [
+        "ProposalSeqOf"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "ViewChangerProcessNewView",
+      "success": true,
+      "compilation_time": 0.19028401374816895,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "viewNum",
+        "phase",
+        "restoredPhase",
+        "syncLockHolder",
+        "stopped",
+        "crashed",
+        "inFlightVars",
+        "messages",
+        "PhasePrepared",
+        "viewDecisions",
+        "checkpointSeq",
+        "proposalSeq",
+        "PhaseAbort",
+        "leader",
+        "syncResult",
+        "decisionVars",
+        "blacklist",
+        "PhaseCommitted",
+        "decisionsInView"
+      ],
+      "functions_added": [
+        "CandidateLeader",
+        "AppendWal",
+        "WalNewView"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Crash",
+      "success": true,
+      "compilation_time": 0.14983177185058594,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "viewDecisions",
+        "viewNum",
+        "blacklist",
+        "proposalSeq",
+        "phase",
+        "inFlightVars",
+        "wal",
+        "restoredPhase",
+        "messages",
+        "syncLockHolder",
+        "syncResult",
+        "stopped",
+        "decisionsInView",
+        "leader",
+        "crashed",
+        "decisionVars"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Recover",
+      "success": true,
+      "compilation_time": 0.16268610954284668,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "WalCommit",
+        "viewNum",
+        "deliveredVal",
+        "restoredPhase",
+        "phase",
+        "syncLockHolder",
+        "stopped",
+        "crashed",
+        "inFlightPrepared",
+        "WalViewChange",
+        "messages",
+        "PhasePrepared",
+        "WalProposed",
+        "WalNewView",
+        "viewDecisions",
+        "inFlight",
+        "checkpointVal",
+        "checkpointSeq",
+        "proposalSeq",
+        "selectedInFlight",
+        "PhaseAbort",
+        "Nil",
+        "viewData",
+        "leader",
+        "syncResult",
+        "PhaseProposed",
+        "blacklist",
+        "wal",
+        "PhaseCommitted",
+        "delivered",
+        "decisionsInView",
+        "Server"
+      ],
+      "functions_added": [
+        "LastWal",
+        "ProposalSeqOf",
+        "ProposalDecisionsOf"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "LoseMessage",
+      "success": true,
+      "compilation_time": 0.14913678169250488,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "walVars",
+        "inFlightVars",
+        "controllerVars",
+        "messages",
+        "syncLockHolder",
+        "syncResult",
+        "decisionVars"
+      ],
+      "functions_added": [
+        "Drop"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Next",
+      "success": true,
+      "compilation_time": 0.1517181396484375,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "NatView",
+        "ProposalSet",
+        "messages",
+        "NatSeq",
+        "ValueOrNil",
+        "Values",
+        "MaxSeq",
+        "Nil",
+        "ControllerChangeView",
+        "Server"
+      ],
+      "functions_added": [
+        "ControllerChangeView",
+        "ControllerDecide",
+        "MutuallyExclusiveDeliver",
+        "ControllerChangeViewNoop",
+        "LoseMessage",
+        "ControllerStartView",
+        "ViewProcessPrepares",
+        "ViewChangerProcessNewView",
+        "ViewChangerProcessViewChange",
+        "ViewPropose",
+        "ControllerSyncApply",
+        "Crash",
+        "ViewChangerAcceptViewData",
+        "ViewChangerCommitInFlight",
+        "ViewProcessPrePrepare",
+        "ViewChangerCheckInFlight",
+        "ControllerSyncBegin",
+        "Recover"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "TypeOK",
+      "success": true,
+      "compilation_time": 0.15149688720703125,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "NatView",
+        "viewNum",
+        "WalCommit",
+        "phase",
+        "syncLockHolder",
+        "stopped",
+        "MsgNewView",
+        "crashed",
+        "inFlightPrepared",
+        "WalViewChange",
+        "ProposalSet",
+        "messages",
+        "PhasePrepared",
+        "WalProposed",
+        "NatSeq",
+        "ValueOrNil",
+        "WalNewView",
+        "viewDecisions",
+        "MsgViewChange",
+        "MsgPrepare",
+        "checkpointSeq",
+        "proposalSeq",
+        "MsgCommit",
+        "PhaseAbort",
+        "MaxSeq",
+        "Nil",
+        "MsgViewData",
+        "MsgStateTransferRequest",
+        "leader",
+        "syncResult",
+        "MsgStateTransferResponse",
+        "PhaseProposed",
+        "MsgPrePrepare",
+        "blacklist",
+        "wal",
+        "PhaseCommitted",
+        "delivered",
+        "decisionsInView",
+        "Server"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Agreement",
+      "success": true,
+      "compilation_time": 0.1481938362121582,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "NatSeq"
+      ],
+      "functions_added": [
+        "AgreementForSeq"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "NoDuplicateDelivery",
+      "success": true,
+      "compilation_time": 0.1480269432067871,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Server",
+        "delivered"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MonotonicCheckpoint",
+      "success": true,
+      "compilation_time": 0.17784690856933594,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "checkpointSeq",
+        "Server",
+        "MaxSeq"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "LeaderMetadataAgreement",
+      "success": true,
+      "compilation_time": 0.14812493324279785,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "viewNum",
+        "blacklist",
+        "proposalSeq",
+        "leader",
+        "decisionsInView",
+        "Server",
+        "crashed"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "InFlightSelectionSafety",
+      "success": true,
+      "compilation_time": 0.14904403686523438,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "checkpointSeq",
+        "selectedInFlight",
+        "Nil",
+        "Server"
+      ],
+      "functions_added": [
+        "ProposalSeqOf"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "RestorePhaseSoundness",
+      "success": true,
+      "compilation_time": 0.1684889793395996,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "inFlight",
+        "checkpointSeq",
+        "phase",
+        "PhasePrepared",
+        "Nil",
+        "Server",
+        "crashed"
+      ],
+      "functions_added": [
+        "ProposalSeqOf"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "Spec",
+      "success": true,
+      "compilation_time": 0.14868807792663574,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Init",
+        "Next",
+        "vars"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "faultVars",
+      "success": true,
+      "compilation_time": 0.14879798889160156,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "constraintCounters"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "mcVars",
+      "success": true,
+      "compilation_time": 0.14835023880004883,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "constraintCounters",
+        "vars"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCViewPropose",
+      "success": true,
+      "compilation_time": 0.15632176399230957,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "MaxClientProposalLimit",
+        "constraintCounters"
+      ],
+      "functions_added": [
+        "ViewPropose"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCControllerSyncBegin",
+      "success": true,
+      "compilation_time": 0.15261101722717285,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "MaxSyncLimit",
+        "constraintCounters"
+      ],
+      "functions_added": [
+        "ControllerSyncBegin"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCViewChangerProcessViewChange",
+      "success": true,
+      "compilation_time": 0.14857220649719238,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "constraintCounters",
+        "MaxViewChangeLimit"
+      ],
+      "functions_added": [
+        "ViewChangerProcessViewChange"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCViewChangerAcceptViewData",
+      "success": true,
+      "compilation_time": 0.14985322952270508,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "constraintCounters",
+        "MaxViewDataLimit"
+      ],
+      "functions_added": [
+        "ViewChangerAcceptViewData"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCCrash",
+      "success": true,
+      "compilation_time": 0.14829492568969727,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "constraintCounters",
+        "MaxCrashLimit"
+      ],
+      "functions_added": [
+        "Crash"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCLoseMessage",
+      "success": true,
+      "compilation_time": 0.14934015274047852,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "constraintCounters",
+        "MaxLoseLimit"
+      ],
+      "functions_added": [
+        "LoseMessage"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCInit",
+      "success": true,
+      "compilation_time": 0.14876008033752441,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "Init",
+        "constraintCounters"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCNext",
+      "success": true,
+      "compilation_time": 0.13999295234680176,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "NatView",
+        "ProposalSet",
+        "messages",
+        "faultVars",
+        "NatSeq",
+        "ValueOrNil",
+        "Values",
+        "MaxSeq",
+        "Nil",
+        "Server"
+      ],
+      "functions_added": [
+        "ControllerDecide",
+        "MutuallyExclusiveDeliver",
+        "MCLoseMessage",
+        "MCViewChangerAcceptViewData",
+        "ControllerStartView",
+        "ViewChangerCheckInFlight",
+        "ViewProcessPrepares",
+        "ViewChangerProcessNewView",
+        "ControllerSyncApply",
+        "MCControllerSyncBegin",
+        "MCViewChangerProcessViewChange",
+        "ViewChangerCommitInFlight",
+        "ViewProcessPrePrepare",
+        "ControllerChangeView",
+        "MCCrash",
+        "MCViewPropose",
+        "Recover"
+      ],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCTypeOK",
+      "success": true,
+      "compilation_time": 0.14819598197937012,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "MaxClientProposalLimit",
+        "MaxViewDataLimit",
+        "MaxLoseLimit",
+        "TypeOK",
+        "MaxSyncLimit",
+        "MaxCrashLimit",
+        "constraintCounters",
+        "MaxViewChangeLimit"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MessageBufferBound",
+      "success": true,
+      "compilation_time": 0.20454788208007812,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "messages",
+        "MaxMsgBufferLimit"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    },
+    {
+      "action_name": "MCSpec",
+      "success": true,
+      "compilation_time": 0.14862728118896484,
+      "syntax_errors": [],
+      "semantic_errors": [],
+      "variables_added": [
+        "mcVars",
+        "MCInit",
+        "MCNext"
+      ],
+      "functions_added": [],
+      "recovery_attempts": 1
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+python3 scripts/run_benchmark.py --task hyperledger --method direct_call --model claude --metric runtime_check --spec-file made_specs/deepseek/combined/SmartBFT.tla --config-file made_specs/deepseek/MC.cfg
+14:00:00 - LiteLLM:WARNING: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+14:00:00 - LiteLLM:WARNING: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+[INFO] Validating prerequisites...
+[INFO] ✓ All prerequisites validated
+[INFO] Loading existing global error statistics from /Users/adaturgut/SysMoBench/output/global_error_statistics.yaml
+[INFO] Running metric 'runtime_check': hyperledger/direct_call/claude
+[INFO] Loaded task: hyperledger (distributed)
+[INFO] Loaded prompt template (6008 chars, language=TLA+)
+[INFO] Using existing specification file: /Users/adaturgut/SysMoBench/made_specs/deepseek/combined/SmartBFT.tla
+[INFO] Using existing config file: /Users/adaturgut/SysMoBench/made_specs/deepseek/MC.cfg
+[INFO] RuntimeCheckEvaluator initialized with 60s timeout
+[INFO] Runtime check evaluation (TLA+): hyperledger/direct_call/claude
+[INFO] Created experiment directory: output/runtime_check/tla/hyperledger/direct_call_claude/20260618140001
+[INFO] Using output directory: output/runtime_check/tla/hyperledger/direct_call_claude/20260618140001
+[INFO] Using existing spec file: /Users/adaturgut/SysMoBench/made_specs/deepseek/combined/SmartBFT.tla
+[INFO] ⏭️  Skipping invariant generation - using original specification without additional invariants
+[INFO] Using existing config file: /Users/adaturgut/SysMoBench/made_specs/deepseek/MC.cfg
+[INFO] ✓ Using existing config file
+[INFO] Running TLA+ model checker...
+[INFO] 🔍 DEBUG TLC EXECUTION:
+[INFO]   Command: java -cp /Users/adaturgut/SysMoBench/lib/tla2tools.jar tlc2.TLC -config SmartBFT.cfg SmartBFT.tla
+[INFO]   Working directory: /Users/adaturgut/SysMoBench/output/runtime_check/tla/hyperledger/direct_call_claude/20260618140001
+[INFO]   Timeout: 60s
+[INFO] 🔍 DEBUG TLC TIMEOUT:
+[INFO]   Timeout occurred after 60s
+[INFO]   Exception type: <class 'subprocess.TimeoutExpired'>
+[INFO] 🔍 DEBUG TIMEOUT PARTIAL OUTPUT:
+[INFO]   Partial stdout length: 2723 chars
+[INFO]   Partial stderr length: 0 chars
+[INFO]   Partial stdout (first 500 chars): TLC2 Version 2026.05.26.235334 (rev: 4ba7d88)
+Warning: Please run the Java VM, which executes TLC with a throughput optimized garbage collector, by passing the "-XX:+UseParallelGC" property.
+(Use the -nowarning option to disable this warning.)
+Running breadth-first search Model-Checking with fp 61 and seed -8856234635612163684 with 1 worker on 8 cores with 2048MB heap and 64MB offheap memory [pid: 16641] (Mac OS X 15.6 aarch64, Amazon.com Inc. 21.0.9 64bit, MSBDiskFPSet, DiskStateQueue).
+Parsing
+[INFO]   Partial stderr (first 500 chars):
+[INFO] 🔍 DEBUG TIMEOUT ANALYSIS:
+[INFO]   Violations found: 0
+[INFO]   Deadlock found: False
+[INFO]   States explored: 512
+[INFO]   Violations list: []
+[INFO] 🔍 DEBUG: Returning SUCCESS - timeout with no violations
+[INFO] TLC timeout after 60s with no violations found - considering as success
+[INFO] ✓ Model check completed in 60.16s
+[INFO] ✓ Semantic evaluation: PASS
+[INFO] Saved results to output/runtime_check/tla/hyperledger/direct_call_claude/20260618140001
+[INFO] Saved experiment error statistics to: output/runtime_check/tla/hyperledger/direct_call_claude/20260618140001/error_statistics.yaml
+[INFO] Metric 'runtime_check': ✓ PASS
+
+Semantics Evaluation Results: ✓ PASS
+Invariant generation time: 0.00s
+Config generation time: 0.00s
+Model checking time: 60.16s
+States explored: 0
+Invariant violations: 0
+Deadlock found: False
+Specification: output/runtime_check/tla/hyperledger/direct_call_claude/20260618140001/SmartBFT.tla
+Config file: output/runtime_check/tla/hyperledger/direct_call_claude/20260618140001/SmartBFT.cfg
