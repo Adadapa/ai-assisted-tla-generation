@@ -40,3 +40,7 @@ Research project to asses generation of TLA+ specifications using AI-assisted ap
 - `scripts/extract_codex_usage.py` is the script used for extracting token usage out of codex sessions
 - `scripts/promQL_query_for_token_usage` the PromQL query used on the Google Cloud Metrics Dashboard to extract the token usage of Gemini models
 - `scripts/summarize_action_decomp.py` is the script used for gathering compilation error statistics out of SysMoBench results
+
+## Remarks
+For SysMoBench evaluation the run_benchmark commands below were used. Please refr to `sysmobench-generation/models_configuration.yaml` for configuring the LLM models used.
+- python3 scripts/run_benchmark.py --task hyperledger --method direct_call --model [gemini25flash_google, gemini25_google] --metric [direct_call, action_decomposition, invariant_check, runtime_coverage]

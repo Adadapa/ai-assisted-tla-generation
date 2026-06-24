@@ -1,0 +1,20 @@
+# These configurations should be added to config/models.yaml in SysMoBench
+gemini25_google:
+  provider: "genai"
+  model_name: "gemini-2.5-pro"
+  api_key_env: "GEMINI_API_KEY"
+  temperature: 0.1
+  max_tokens: 64000
+  top_p: 0.9
+  thinking_budget: 32768
+  timeout: 1800
+
+gemini25flash_google:
+  provider: "genai"
+  model_name: "gemini-2.5-flash"
+  api_key_env: "GEMINI_FREE_API_KEY"
+  temperature: 0.1
+  max_tokens: 1048576
+  top_p: 0.9
+  thinking_budget: 24500
+  timeout: 1800
