@@ -42,5 +42,7 @@ Research project to asses generation of TLA+ specifications using AI-assisted ap
 - `scripts/summarize_action_decomp.py` is the script used for gathering compilation error statistics out of SysMoBench results
 
 ## Remarks
-For SysMoBench evaluation the run_benchmark commands below were used. Please refr to `sysmobench-generation/models_configuration.yaml` for configuring the LLM models used.
+For SysMoBench evaluation the run_benchmark commands below were used. Please refer to `sysmobench-generation/models_configuration.yaml` for configuring the LLM used.
 - python3 scripts/run_benchmark.py --task hyperledger --method direct_call --model [gemini25flash_google, gemini25_google] --metric [direct_call, action_decomposition, invariant_check, runtime_coverage]
+
+For further instructions on execution, please refer to the guides of [SysMoBench](https://github.com/specula-org/SysMoBench) and [Specula](https://github.com/specula-org/Specula).
